@@ -143,6 +143,27 @@ class="disabled:opacity-50 disabled:cursor-not-allowed"
 - `/tailwind/` - Pure HTML snippets
 - `/design-system.md` - Complete reference
 
+---
+
+## Cross-References
+
+**Need design specs?** See design docs: `/docs/`
+**Need React code?** See engineer docs: `/docs-storybook/`
+
+| Topic | Design Docs | Engineer Docs |
+|-------|-------------|---------------|
+| Button specs | `/docs/components/atoms/button.md` | `/docs-storybook/components/button.md` |
+| All components | `/docs/components/` | `/docs-storybook/components/` |
+| Foundations | `/docs/foundations/` | `/docs-storybook/tokens/` |
+
+**Color mapping:**
+- Neptune = `#024DDF` (primary blue)
+- Earth = `#01A469` (success green)
+- Mars = `#EB0000` (error red)
+- Cosmos = `#121212` (dark/black)
+
+---
+
 ## Source
 
 Full docs: gitmcp.io/jamesodwyerGDS/GDS-MCP

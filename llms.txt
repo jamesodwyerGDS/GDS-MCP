@@ -30,6 +30,55 @@ No prefix? Keywords trigger automatic routing:
 
 ---
 
+## Terminology Mapping
+
+Design docs and code use different terms. Here's the mapping:
+
+| Design Term | Code Value | Context |
+|-------------|------------|---------|
+| transactional | `transaction` | Button colorVariant prop |
+| primary | `primary` | Default button style |
+| Neptune | `#024DDF` | Primary blue color |
+| Cosmos | `#121212` | Dark/black color |
+| Earth | `#01A469` | Green/success color |
+| Mars | `#EB0000` | Red/error color |
+
+**Button colorVariant values:** `primary`, `secondary`, `tertiary`, `transaction`, `inverse`, `ghost`
+
+---
+
+## Search Aliases
+
+Common search terms and their equivalents:
+
+| Query | Also matches |
+|-------|--------------|
+| button variants | button types, button styles, colorVariant, button kinds |
+| spacing | padding, margin, gap, space tokens, spacing scale |
+| colors | colours, palette, color tokens, theme colors |
+| typography | fonts, text styles, font sizes, type scale |
+| form | input, text field, checkbox, radio, select |
+
+---
+
+## Example Queries
+
+**Queries that work well:**
+- "What button variants are available?"
+- "What are the GDS colors?"
+- "Show me the spacing scale"
+- "@vibe button HTML"
+- "@engineer Button props"
+- "GDS primary button"
+
+**If search fails, try:**
+- Add component name: "Button component variants"
+- Use mode prefix: "@design button use cases"
+- Be specific: "GDS button colorVariant values"
+- Try code term: "transaction button" (not "transactional")
+
+---
+
 ## FAQ - Common Questions
 
 ### What button variants are available in GDS?
@@ -200,6 +249,43 @@ GDS provides **6 button variants**:
 
 - **TM (Ticketmaster):** Primary theme - Neptune blue (#024DDF)
 - **LN (LiveNation):** Alternative theme
+
+---
+
+## Component Index
+
+Quick links to documentation across all three doc sets:
+
+| Component | Design | Engineer | Vibe |
+|-----------|--------|----------|------|
+| Button | [specs](/docs/components/atoms/button.md) | [code](/docs-storybook/components/button.md) | [html](/docs-vibe/tailwind/button.html) |
+| InputField | [specs](/docs/components/atoms/input-field.md) | [code](/docs-storybook/components/inputfield.md) | [html](/docs-vibe/tailwind/inputfield.html) |
+| Checkbox | [specs](/docs/components/atoms/checkbox.md) | [code](/docs-storybook/components/checkbox.md) | [html](/docs-vibe/tailwind/checkbox.html) |
+| Modal | [specs](/docs/components/molecules/modal.md) | [code](/docs-storybook/components/modal.md) | [html](/docs-vibe/tailwind/modal.html) |
+| Card | — | [code](/docs-storybook/components/card.md) | [html](/docs-vibe/tailwind/card.html) |
+| AlertBox | [specs](/docs/components/atoms/alert-box.md) | [code](/docs-storybook/components/alertbox.md) | [html](/docs-vibe/tailwind/alertbox.html) |
+
+**Full component lists:**
+- Design (25): `/docs/components/`
+- Engineer (52): `/docs-storybook/components/`
+- Vibe (25): `/docs-vibe/tailwind/`
+
+---
+
+## Raw Markdown Access
+
+**Bypass HTML parsing** - use raw GitHub URLs for direct markdown:
+
+| Content | Raw URL |
+|---------|---------|
+| Root llms.txt | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/llms.txt` |
+| Design llms.txt | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs/llms.txt` |
+| Engineer llms.txt | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs-storybook/llms.txt` |
+| Vibe llms.txt | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs-vibe/llms.txt` |
+| Button (design) | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs/components/atoms/button.md` |
+| Button (engineer) | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs-storybook/components/button.md` |
+
+**Pattern:** `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/{path}`
 
 ---
 

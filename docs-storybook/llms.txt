@@ -105,6 +105,21 @@ import { ComponentName } from '@gds/components';
 Local: http://localhost:6006
 Run: `npm run storybook`
 
+## Cross-References
+
+**Need design specs?** See design docs: `/docs/`
+**Need copy-paste HTML?** See vibe docs: `/docs-vibe/`
+
+| Topic | Design Docs | Vibe Docs |
+|-------|-------------|-----------|
+| Button specs | `/docs/components/atoms/button.md` | `/docs-vibe/tailwind/button.html` |
+| All components | `/docs/components/` | `/docs-vibe/tailwind/` |
+| Foundations | `/docs/foundations/` | `/docs-vibe/design-system.md` |
+
+**Terminology note:** Design docs use "transactional", code uses `colorVariant="transaction"`
+
+---
+
 ## Source
 
 GitHub: github.com/jamesodwyerGDS/GDS-MCP
