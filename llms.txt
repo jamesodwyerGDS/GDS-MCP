@@ -4,6 +4,32 @@
 
 ---
 
+## Query Modes
+
+Use mode prefixes for audience-specific answers:
+
+| Mode | Audience | Source | Response Style |
+|------|----------|--------|----------------|
+| `@design` | Designers | `/docs/` | Design specs, use cases, Figma variables |
+| `@engineer` | Engineers | `/docs-storybook/` | React props, TypeScript, code examples |
+| `@vibe` | AI coders | `/docs-vibe/` | Tailwind HTML, ShadCN, copy-paste snippets |
+
+### Examples
+```
+@design button variants    → Design specs with Figma tokens
+@engineer button variants  → React props and imports
+@vibe button variants      → Copy-paste Tailwind HTML
+```
+
+### Auto-Detection
+No prefix? Keywords trigger automatic routing:
+- **Figma, design spec, use case, when to use** → `@design`
+- **React, props, TypeScript, import, onClick** → `@engineer`
+- **Tailwind, HTML, ShadCN, Lovable, copy-paste** → `@vibe`
+- **No keywords detected** → Summary from all sources
+
+---
+
 ## FAQ - Common Questions
 
 ### What button variants are available in GDS?

@@ -1,4 +1,15 @@
-# GDS (Global Design System) Documentation
+# GDS Design Documentation (`@design` mode)
+
+> For designers. Query with `@design` prefix for design-focused answers.
+
+**This documentation provides:**
+- Design specifications and use cases
+- Figma variable references
+- Token values (colors, spacing, typography)
+- Accessibility requirements
+- Do's and Don'ts
+
+---
 
 This repository contains documentation for the Global Design System components, foundations, and patterns.
 

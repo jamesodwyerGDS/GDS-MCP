@@ -1,6 +1,14 @@
-# GDS Vibe Coding Reference
+# GDS Vibe Documentation (`@vibe` mode)
 
-> Optimized for Lovable, Figma Make, v0.dev, and AI coding tools.
+> For AI coding tools. Query with `@vibe` prefix for copy-paste code.
+
+**This documentation provides:**
+- Tailwind HTML snippets (copy-paste ready)
+- ShadCN component patterns
+- Design token mappings
+- Single-file reference
+
+Optimized for Lovable, Figma Make, v0.dev, and AI coding tools.
 
 ## Quick Copy-Paste Patterns
 

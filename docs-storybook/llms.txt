@@ -1,6 +1,12 @@
-# GDS Storybook Documentation - Engineer Reference
+# GDS Engineer Documentation (`@engineer` mode)
 
-> Engineer-focused documentation for Global Design System React components.
+> For engineers. Query with `@engineer` prefix for code-focused answers.
+
+**This documentation provides:**
+- React component imports
+- TypeScript props and types
+- Code examples
+- Storybook URLs for interactive testing
 
 ## Overview
 
