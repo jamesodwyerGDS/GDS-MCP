@@ -8,7 +8,11 @@
 - Design token mappings
 - Single-file reference
 
+**Styling:** Pure **Tailwind CSS** utility classes (no styled-components)
+
 Optimized for Lovable, Figma Make, v0.dev, and AI coding tools.
+
+> Note: The source React components use styled-components. These docs translate styles to Tailwind for AI tools.
 
 ## Quick Copy-Paste Patterns
 

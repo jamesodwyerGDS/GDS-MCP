@@ -8,6 +8,12 @@
 - Code examples
 - Storybook URLs for interactive testing
 
+**Styling:** Components use **styled-components** (CSS-in-JS)
+```tsx
+import styled from "styled-components";
+```
+For Tailwind CSS versions, see `/docs-vibe/`
+
 ## Overview
 
 This documentation is generated from `GDS-storybook-originals/` and provides:

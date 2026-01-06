@@ -30,6 +30,17 @@ No prefix? Keywords trigger automatic routing:
 
 ---
 
+## Styling Libraries
+
+| Doc Set | Styling Approach |
+|---------|------------------|
+| Engineer (`/docs-storybook/`) | **styled-components** (CSS-in-JS) |
+| Vibe (`/docs-vibe/`) | **Tailwind CSS** (utility classes) |
+
+The source React components use styled-components. Vibe docs translate these to Tailwind for AI coding tools.
+
+---
+
 ## Terminology Mapping
 
 Design docs and code use different terms. Here's the mapping:
