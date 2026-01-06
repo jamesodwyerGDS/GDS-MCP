@@ -46,6 +46,14 @@ Add a new entry when:
 
 ---
 
+## 6th Jan 2026
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| UPDATED - Added comprehensive JSDoc documentation to `core/storybook-doc-generator.js` including class overview, method descriptions, parameter types, return values, examples, and regex pattern explanations | 🟡 Updated | NA | NA | NA |
+
+---
+
 ## 6th Jan 2025
 
 | Change | Type | JIRA | Figma | Storybook |
