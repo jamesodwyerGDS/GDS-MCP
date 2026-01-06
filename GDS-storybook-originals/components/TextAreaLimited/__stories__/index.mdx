@@ -1,0 +1,51 @@
+import {
+  Meta,
+  Primary,
+  Story,
+  Canvas,
+  ArgTypes,
+} from "@storybook/addon-docs/blocks";
+import * as stories from "./index.stories";
+import TextAreaLimited from "..";
+
+<Meta title="Components/TextAreaLimited" of={stories} />
+
+# TextAreaLimited
+
+`import { TextAreaLimited } from '@ticketmaster/global-design-system';`
+
+<Primary />
+
+<ArgTypes of={TextAreaLimited} />
+
+## Usage
+
+The **TextAreaLimited** component is made for forms where you want to limit multi-line input to a certain number of characters.
+It does not restrict a user from entering more than the provided `characterLimit`, but instead displays a message with the number of characters remaining or over the limit.
+Validation to restrict form submission needs to be handled by the consuming app.
+
+<Canvas of={stories.Basic} />
+
+## CharacterLimit hint text
+
+As GDS does not deal with translation of text, the functionality to render the hint text must be provided by the consuming app.
+The `renderCharacterLimit` prop allows flexible display of the character limit.
+You can use a function which returns anything from a string to a fully styled component.
+
+<Canvas of={stories.TranslatedCharacterLimit} />
+
+<Canvas of={stories.StyledCharacterLimit} />
+
+If the `renderCharacterLimit` prop is not supplied, only the `characterLimit` number will be displayed by default.
+
+<Canvas of={stories.NoRenderCharacterLimit} />
+
+Passing the `disabled` prop to the component will make the textarea unusable and un-clickable. The textarea will also be ignored by most screen readers.
+
+N.B. If the textarea is disabled, the CharacterCounter will not be displayed.
+
+<Canvas of={stories.Disabled} />
+
+The component can be passed the `readOnly` prop that is visually identical to the `disabled` prop except it can be read out by a screen reader as just text. Useful in cases where you would need to disable the textarea but still want the value to be read out.
+
+<Canvas of={stories.ReadOnly} />

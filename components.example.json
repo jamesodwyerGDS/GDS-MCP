@@ -1,0 +1,11 @@
+{
+  "components": [
+    {
+      "url": "https://www.figma.com/file/YOUR_FILE_KEY?node-id=1:234"
+    },
+    {
+      "file": "YOUR_FILE_KEY",
+      "node": "5:678"
+    }
+  ]
+}

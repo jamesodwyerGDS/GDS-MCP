@@ -1,0 +1,66 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import Themes from "./Themes.tsx";
+import Modifiers from "./Modifiers.tsx";
+
+<Meta title="Docs/Themes" />
+
+# Theming
+
+## Overview
+
+- Themes leverage [styled components's ThemeProvider](https://styled-components.com/docs/advanced#theming) to provide colour variables to the full application. When set up at the top level of the app, all styled components will have access to the provided theme, even when they are multiple levels deep.
+
+### Setup
+
+```tsx
+import { ThemeProvider } from 'styled-components'
+import { TM } from '@ticketmaster/global-design-system'
+
+export default function CoreApp({ children }) {
+
+return (
+    <ThemeProvider theme={TM}>
+      <>{children}</>
+    </ThemeProvider>
+  )
+
+```
+
+- As the theme is passed down to all the GDS components, we can get maintainable, consistent styling if we don't hardcode colours when building new components:
+
+### Example
+
+```js
+export const Input = styled.input`
+  padding: 0;
+  color: ${(props) => props.theme.text.primary}; // YES
+  background-color: ${(props) => props.theme.base.bg}; // YES
+  border: 1px solid ${(props) => props.theme.base.borderDark}; // YES
+
+  color: #000; // NO
+  background-color: #fff; // NO
+  border: 1px solid #919191; // NO
+`;
+```
+
+## Theme palettes
+
+<Themes />
+
+## Modifiers
+
+- Designers and developers should try their best to use theme colours for a consistent and unified UI. Although for the inevitable times when there is a need to use a darker/lighter shade of a colour (eg for focus/hover states), then GDS exports a number of modifier utils:
+
+### Playground
+
+<Modifiers />
+
+### Usage
+
+```jsx
+import { dark } from "@ticketmaster/global-design-system";
+
+const Box = styled.div`
+  background-color: ${(props) => dark(props.theme.base.primary)};
+`;
+```

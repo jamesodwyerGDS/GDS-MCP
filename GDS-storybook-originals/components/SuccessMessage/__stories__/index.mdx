@@ -1,0 +1,26 @@
+import {
+  Meta,
+  Primary,
+  Story,
+  Canvas,
+  ArgTypes,
+} from "@storybook/addon-docs/blocks";
+import * as stories from "./index.stories";
+import SuccessMessage from "..";
+
+<Meta title="Components/SuccessMessage" of={stories} />
+
+# SuccessMessage
+
+`import { SuccessMessage } from '@ticketmaster/global-design-system';`
+
+<Primary />
+
+<ArgTypes of={SuccessMessage} />
+
+## Usage
+
+This component is primarily used for input validation. It is already used in the `InputField` component and therefore most input components by default when the `SuccessMessage` prop is used.
+However, for example, in cases where more than one is needed, it can be added manually:
+
+<Canvas of={stories.MultipleMessages} />

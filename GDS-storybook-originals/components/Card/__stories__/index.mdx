@@ -1,0 +1,23 @@
+import { Meta, Canvas } from "@storybook/addon-docs/blocks";
+import Card from "..";
+import * as stories from "./index.stories";
+
+<Meta title="Components/Card" component={Card} />
+
+# Card
+
+`import { Card } from '@ticketmaster/global-design-system';`
+
+{/* Can't get argTypes because it's a compound component :/ */}
+
+## Usage
+
+`Card` is a compound component for putting things in a box with a shadow.
+
+<Canvas of={stories.TitleOnly} />
+
+<Canvas of={stories.Basic} />
+
+You can build more complex components by composing layouts yourself:
+
+<Canvas of={stories.Complex} sourceState="shown" />

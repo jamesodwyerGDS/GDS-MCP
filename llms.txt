@@ -1,0 +1,72 @@
+# GDS (Global Design System) - MCP Documentation
+
+> Multi-audience documentation for the Global Design System, optimized for LLM retrieval.
+
+## Documentation Sets
+
+This repository contains three documentation sets for different audiences:
+
+### 1. Design Documentation (`/docs/`)
+**Audience:** Designers
+**Content:** Design specifications, use cases, design tokens, accessibility guidelines
+**Use when:** Asking about visual design, component variants, spacing, colors, typography
+
+### 2. Storybook Documentation (`/docs-storybook/`)
+**Audience:** Engineers
+**Content:** React component props, TypeScript types, code examples, Storybook URLs
+**Use when:** Asking about implementation, props, code usage, API
+
+### 3. Vibe Documentation (`/docs-vibe/`)
+**Audience:** LLMs, AI coding tools (Lovable, Figma Make)
+**Content:** ShadCN patterns, Tailwind snippets, copy-paste code
+**Use when:** Generating UI code, prototyping, vibe coding
+
+## Quick Reference
+
+### Design Tokens
+
+**Colors (Astronomical theme):**
+- Primary: Neptune (#024DDF), Cosmos (#121212)
+- Secondary: Earth (#01A469), Mars (#EB0000)
+- Neutral: Granite, Slate, Lunar, Spotlight
+
+**Spacing (Venue theme):**
+- lounge: 4px
+- club: 8px
+- hall: 12px
+- auditorium: 16px
+- theatre: 20px
+- amphitheatre: 24px
+- arena: 32px
+- stadium: 48px
+- dome: 64px
+- field: 88px
+
+**Typography (Mountain theme):**
+- Display: Mauna, Everest, Kilimanjaro, Vinson, Blanc
+- Body: Rainier, Fiji, Etna
+- Heading: Matterhorn
+
+## Component Index
+
+### Atoms (25 components)
+accordion, alert, badge, button, circle-button, countdown-timer, date-picker,
+display-heading, double-range-input, dropdown, filterbar, image, input-field,
+loading-spinner, modal, pagination-button, pill-button, radio-button,
+side-panel, square-button, stepper, toast, toggle, toolbox, tooltip
+
+### Foundations (6 docs)
+color, color-themes, color-accessibility, typography, spacing, elevation
+
+### Patterns (5 docs)
+slot, tooltip-guidelines, pill-button-guidelines, stepper-guidelines, toast-guidelines
+
+## Themes
+
+- **TM (Ticketmaster):** Primary theme with Neptune blue
+- **LN (LiveNation):** Alternative theme
+
+## Access
+
+- **GitMCP:** https://gitmcp.io/jamesodwyerGDS/GDS-MCP
+- **GitHub:** https://github.com/jamesodwyerGDS/GDS-MCP

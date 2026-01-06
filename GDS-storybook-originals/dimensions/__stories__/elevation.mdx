@@ -1,0 +1,50 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import elevationLevels from "../../images/elevationLevels.png";
+import { Elevation } from "./Elevation.tsx";
+import { spacing } from "../spacing";
+
+<Meta title="Tokens/Elevation" />
+
+# Elevation
+
+`import { elevation } from '@ticketmaster/global-design-system';`
+
+Elevation represents the relative position of elements along the z-axis, helping users understand the structure and interactivity of the interface.
+
+The `elevation` levels are exported as CSS snippets which can contain `box-shadow`, `background-color`, or `border`, depending on the context.
+
+This flexibility allows for a cohesive look and feel while supporting accessibility and clarity.
+We have a limited set of elevation levels to reduce visual noise and maintain a clean, intuitive interface.
+
+<img
+  src={elevationLevels}
+  alt="diagram showing elevation levels"
+  style={{ marginBottom: spacing.auditorium }}
+/>
+
+## Variables
+
+<Elevation />
+
+## Guidelines
+
+- Avoid modifying the default elevation of components
+- Do not combine `elevation` snippets
+
+## Example
+
+```jsx
+import { elevation } from "@ticketmaster/global-design-system";
+
+const Component = () => {
+  return (
+    <Card>
+      <p>Content in elevated container</p>
+    </Card>
+  );
+};
+
+const Container = styled.div`
+  ${elevation.level1};
+`;
+```

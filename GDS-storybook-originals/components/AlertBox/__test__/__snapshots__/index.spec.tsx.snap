@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Component: AlertBox -> Should render correctly 1`] = `
+.c2 {
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  vertical-align: middle;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  fill: #024ddf;
+}
+
+.c0 {
+  --alert-border-color: #024ddf;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 4px 0px rgba(18,18,18,0.15);
+  border-top: 8px solid var(--alert-border-color);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.c3 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  max-width: 90ch;
+  font-size: var(--rainier-font-size,16px);
+  line-height: var(--rainier-line-height,22px);
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        aria-hidden="true"
+        class="c2"
+        focusable="false"
+        height="1.5em"
+        viewBox="0 0 24 25"
+        width="1.5em"
+      >
+        <path
+          d="M12 23.5a11 11 0 1 0 0-22 11 11 0 0 0 0 22 M11 6.5h2v2h-2zm.5 5h-1.25V10H13v8.5h-1.5z"
+        />
+      </svg>
+      <div
+        class="c3"
+      >
+        This is the title
+      </div>
+    </div>
+  </div>
+</div>
+`;

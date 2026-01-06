@@ -1,0 +1,101 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import { _spacing_, _spacingDeprecated_ } from "../spacing";
+import { addPx } from "../utils";
+
+<Meta title="Tokens/Spacing" />
+
+# Spacing
+
+`import { spacing } from '@ticketmaster/global-design-system';`
+
+GDS has the following sizing scale for margin/padding/positioning built in its core:
+
+<div
+  style={{
+    padding: "16px 0 0 0",
+    border: "1px solid #eee",
+  }}
+>
+  {Object.keys(_spacing_).map((spacingItem) => {
+    if (_spacingDeprecated_[spacingItem]) return null;
+    return (
+      <div
+        key={spacingItem}
+        style={{
+          padding: "20px 32px",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          borderBottom: "1px solid #eee",
+        }}
+      >
+        <div style={{ flex: "33.33%" }}>
+          <code>spacing.{spacingItem}</code>
+        </div>
+        <div style={{ flex: "33.33%" }}>{addPx(_spacing_)[spacingItem]}</div>
+        <div
+          style={{
+            flex: "33.33%",
+            height: addPx(_spacing_)[spacingItem],
+            backgroundColor: "#024ddf",
+            opacity: 0.25,
+          }}
+        />
+      </div>
+    );
+  })}
+</div>
+
+If you need to do some maths on the values, we have an escape hatch object called `_spacing_` which is the same object, just without the `px` unit. This will allow you to perform simple sums without needing to use the CSS `calc` function. For example:
+
+```tsx
+import { spacing, _spacing_ } from "@ticketmaster/global-design-system";
+
+export const SomeStyledComponent = styled.div`
+  margin-top: ${spacing.auditorium};
+  padding-inline-start: ${_spacing_.auditorium + _spacing_.hall}px;
+`;
+```
+
+Don't forget to add the unit in yourself though!
+
+## Deprecated Properties
+
+The following properties have been deprecated and will be removed in a future release:
+
+<div
+  style={{
+    padding: "16px 0 0 0",
+    border: "1px solid #eee",
+  }}
+>
+  {Object.keys(_spacingDeprecated_).map((spacingItem) => {
+    return (
+      <div
+        key={spacingItem}
+        style={{
+          padding: "20px 32px",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          borderBottom: "1px solid #eee",
+        }}
+      >
+        <div style={{ flex: "33.33%" }}>
+          <code>spacing.{spacingItem}</code>
+        </div>
+        <div style={{ flex: "33.33%" }}>
+          {addPx(_spacingDeprecated_)[spacingItem]}
+        </div>
+        <div
+          style={{
+            flex: "33.33%",
+            height: addPx(_spacingDeprecated_)[spacingItem],
+            backgroundColor: "#D93A3A",
+            opacity: 0.25,
+          }}
+        />
+      </div>
+    );
+  })}
+</div>

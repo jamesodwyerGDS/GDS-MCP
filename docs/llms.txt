@@ -1,0 +1,30 @@
+# GDS (Global Design System) Documentation
+
+This repository contains documentation for the Global Design System components, foundations, and patterns.
+
+## Structure
+
+- `/components/` - UI component documentation organized by atomic design principles
+  - `/atoms/` - Basic building blocks (buttons, icons, inputs)
+  - `/molecules/` - Combinations of atoms (search bars, form fields)
+  - `/organisms/` - Complex UI sections (navigation, headers)
+- `/foundations/` - Design tokens and fundamentals (colours, typography, spacing)
+- `/patterns/` - Reusable design patterns (forms, layouts)
+
+## Frontmatter Schema
+
+All component documentation uses YAML frontmatter with these fields:
+- name, description, category, status, version, updated
+- tags, keywords, dependencies, relatedComponents
+- tokens (colours, spacing, typography references)
+- accessibility (wcagLevel, keyboardNavigable, ariaRoles)
+- frameworks (React import paths)
+
+## Usage
+
+Documentation is optimized for LLM retrieval. Each section is self-contained (250-512 tokens) with key facts bolded for scanability.
+
+## Framework
+
+Primary cobe framework: React 
+Primary vibe code framework: ShadCN + tailwind (used in Loveable, Figma Make)

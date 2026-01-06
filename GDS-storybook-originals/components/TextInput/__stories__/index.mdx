@@ -1,0 +1,65 @@
+import {
+  Meta,
+  Primary,
+  Story,
+  Canvas,
+  ArgTypes,
+} from "@storybook/addon-docs/blocks";
+import * as stories from "./index.stories";
+import TextInput from "..";
+
+<Meta title="Components/TextInput" of={stories} />
+
+# TextInput
+
+`import { TextInput } from '@ticketmaster/global-design-system';`
+
+<Primary />
+
+<ArgTypes of={TextInput} />
+
+<Canvas of={stories.Basic} />
+
+## With Link in Error Message
+
+<Canvas of={stories.WithLinkInError} />
+
+`errorMessage` displays an inline validation message.
+`screenReaderErrorPrefix` is a visually hidden prefix announced to screen readers before the error message (e.g., "Error: "). So, the message is announced with explicit error context.
+
+### Form Validation
+
+For guidance on validation patterns, error messages (`screenReaderErrorPrefix`, `errorMessage`) , accessibility, and recommended ARIA usage when displaying validation errors, see [Form Validation](?path=/docs/patterns-form-validation--docs) under the **Patterns** section.
+
+## With Start and End Icons
+
+Icons can be added inside the input with `startIcon` or `endIcon`:
+
+<Canvas of={stories.WithStartIcon} />
+<Canvas of={stories.WithEndIcon} />
+
+## With Clear Button
+
+You can add a button for clearing the input if you provide a callback and an accessible label for it.
+
+The clear button only shows if the field has a value in it and is not disabled or read only.
+
+The clear button needs to have a label for accessibility, but also should not be keyboard focusable (see the guidelines [here](https://www.scottohara.me/blog/2022/02/19/custom-clear-buttons.html) for an explanation)
+
+<Canvas of={stories.WithClearButton} sourceState="shown" />
+
+## Disabled
+
+Passing the `disabled` prop to the component will make the input unusable and un-clickable. The input will also be ignored by most screen readers.
+
+<Canvas of={stories.Disabled} />
+
+## Read Only
+
+The component can be passed the `readOnly` prop that is visually identical to the `disabled` prop except it can be read out by a screen reader as just text. Useful in cases where you would need to disable the input but still want the value to be read out.
+
+<Canvas of={stories.ReadOnly} />
+
+## RTL
+
+<Canvas of={stories.RTL} />
