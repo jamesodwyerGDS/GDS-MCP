@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    # Run weekly on Monday at 9am
+    # Run weekly on Monday at 9am UTC
     - cron: '0 9 * * 1'
   workflow_dispatch:
 
@@ -28,50 +28,100 @@ jobs:
       - name: Check documentation coverage
         id: coverage
         run: |
-          echo "## Documentation Coverage Report" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
           # Count components in each doc set
           DESIGN_COUNT=$(find docs/components -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
           STORYBOOK_COUNT=$(find docs-storybook/components -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
           VIBE_COUNT=$(find docs-vibe/tailwind -name "*.html" 2>/dev/null | wc -l | tr -d ' ')
           UNIFIED_COUNT=$(find docs-unified/components -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
 
+          # Export for later steps
+          echo "design=$DESIGN_COUNT" >> $GITHUB_OUTPUT
+          echo "storybook=$STORYBOOK_COUNT" >> $GITHUB_OUTPUT
+          echo "vibe=$VIBE_COUNT" >> $GITHUB_OUTPUT
+          echo "unified=$UNIFIED_COUNT" >> $GITHUB_OUTPUT
+
+          # GitHub Summary
+          echo "## Documentation Coverage Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Doc Set | Components |" >> $GITHUB_STEP_SUMMARY
           echo "|---------|------------|" >> $GITHUB_STEP_SUMMARY
           echo "| Design | $DESIGN_COUNT |" >> $GITHUB_STEP_SUMMARY
           echo "| Storybook | $STORYBOOK_COUNT |" >> $GITHUB_STEP_SUMMARY
           echo "| Vibe | $VIBE_COUNT |" >> $GITHUB_STEP_SUMMARY
           echo "| Unified | $UNIFIED_COUNT |" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
 
       - name: Detect missing documentation
+        id: gaps
         run: |
-          echo "## Missing Documentation" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
+          MISSING_COUNT=0
+          MISSING_LIST=""
 
-          # Components in Storybook but not in Design docs
-          echo "### Storybook components missing Design docs:" >> $GITHUB_STEP_SUMMARY
           for f in docs-storybook/components/*.md; do
             name=$(basename "$f" .md)
             if ! find docs/components -name "*.md" | xargs grep -l "name: $name" > /dev/null 2>&1; then
-              echo "- $name" >> $GITHUB_STEP_SUMMARY
+              MISSING_COUNT=$((MISSING_COUNT + 1))
+              if [ $MISSING_COUNT -le 5 ]; then
+                MISSING_LIST="$MISSING_LIST$name, "
+              fi
             fi
           done
-          echo "" >> $GITHUB_STEP_SUMMARY
+
+          echo "missing_count=$MISSING_COUNT" >> $GITHUB_OUTPUT
+          echo "missing_list=${MISSING_LIST%, }" >> $GITHUB_OUTPUT
 
       - name: Check for stale unified docs
+        id: staleness
         run: |
-          echo "## Unified Docs Status" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          # Check if unified docs are older than source docs
           UNIFIED_TIME=$(stat -c %Y docs-unified/index.md 2>/dev/null || echo 0)
           DESIGN_TIME=$(stat -c %Y docs/llms.txt 2>/dev/null || echo 0)
           STORYBOOK_TIME=$(stat -c %Y docs-storybook/llms.txt 2>/dev/null || echo 0)
 
           if [ "$UNIFIED_TIME" -lt "$DESIGN_TIME" ] || [ "$UNIFIED_TIME" -lt "$STORYBOOK_TIME" ]; then
-            echo "⚠️ Unified docs may be stale - run \`npm run unified:generate\`" >> $GITHUB_STEP_SUMMARY
+            echo "stale=true" >> $GITHUB_OUTPUT
+            echo "status=⚠️ Stale" >> $GITHUB_OUTPUT
           else
-            echo "✅ Unified docs are up to date" >> $GITHUB_STEP_SUMMARY
+            echo "stale=false" >> $GITHUB_OUTPUT
+            echo "status=✅ Up to date" >> $GITHUB_OUTPUT
           fi
+
+      - name: Send Slack notification
+        if: ${{ vars.SLACK_WEBHOOK_URL != '' || secrets.SLACK_WEBHOOK_URL != '' }}
+        uses: slackapi/slack-github-action@v1.25.0
+        with:
+          payload: |
+            {
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "📊 GDS Documentation Report"
+                  }
+                },
+                {
+                  "type": "section",
+                  "fields": [
+                    { "type": "mrkdwn", "text": "*Design Docs:*\n${{ steps.coverage.outputs.design }} components" },
+                    { "type": "mrkdwn", "text": "*Storybook Docs:*\n${{ steps.coverage.outputs.storybook }} components" },
+                    { "type": "mrkdwn", "text": "*Vibe Docs:*\n${{ steps.coverage.outputs.vibe }} components" },
+                    { "type": "mrkdwn", "text": "*Unified Docs:*\n${{ steps.coverage.outputs.unified }} components" }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "fields": [
+                    { "type": "mrkdwn", "text": "*Missing Design Docs:*\n${{ steps.gaps.outputs.missing_count }} components" },
+                    { "type": "mrkdwn", "text": "*Unified Status:*\n${{ steps.staleness.outputs.status }}" }
+                  ]
+                },
+                {
+                  "type": "context",
+                  "elements": [
+                    { "type": "mrkdwn", "text": "🔗 <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View full report>" }
+                  ]
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
