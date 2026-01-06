@@ -46,6 +46,16 @@ Add a new entry when:
 
 ---
 
+## 6th Jan 2025
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| ADDED - README.md with setup instructions for new users | 🟢 Added | NA | NA | NA |
+| ADDED - mcp.json for remote MCP configuration via GitMCP | 🟢 Added | NA | NA | NA |
+| ADDED - Slack notifications for documentation generation events | 🟢 Added | NA | NA | NA |
+
+---
+
 ## 14th Nov 2024
 
 | Change | Type | JIRA | Figma | Storybook |

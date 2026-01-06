@@ -7,6 +7,7 @@
 
 import { FigmaClient } from './figma-client.js';
 import { MarkdownTransformer } from './markdown-transformer.js';
+import { SlackNotifier } from './slack-notifier.js';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -15,6 +16,8 @@ export class DocumentationGenerator {
     this.figma = new FigmaClient(figmaAccessToken);
     this.transformer = new MarkdownTransformer();
     this.outputDir = options.outputDir || './docs/components';
+    this.slack = new SlackNotifier(options.slackWebhookUrl);
+    this.notifySlack = options.notifySlack !== false;
   }
 
   /**
@@ -49,11 +52,18 @@ export class DocumentationGenerator {
 
     console.log(`Documentation generated: ${outputPath}`);
 
-    return {
+    const result = {
       name: componentData.name,
       path: outputPath,
       category
     };
+
+    // Send Slack notification
+    if (this.notifySlack && this.slack.isConfigured()) {
+      await this.slack.notifyDocGenerated(result);
+    }
+
+    return result;
   }
 
   /**
@@ -70,6 +80,11 @@ export class DocumentationGenerator {
       } catch (error) {
         results.push({ success: false, url, error: error.message });
       }
+    }
+
+    // Send batch completion notification
+    if (this.notifySlack && this.slack.isConfigured()) {
+      await this.slack.notifyBatchComplete(results);
     }
 
     return results;
