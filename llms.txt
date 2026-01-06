@@ -173,6 +173,94 @@ GDS provides **6 button variants**:
 
 ---
 
+## Component Quick Reference
+
+Quick lookup for all major components:
+
+### Button
+- **Variants:** `primary`, `secondary`, `tertiary`, `transaction`, `ghost`, `inverse`
+- **Code prop:** `colorVariant="primary"`
+- **Figma:** Node 34410:13185
+- **Tailwind:** `bg-[#024DDF] text-white font-semibold rounded-lg`
+
+### InputField
+- **States:** default, focus, error, disabled
+- **Code:** `<InputField label="..." error="..." />`
+- **Tailwind:** `border border-[#D6D6D6] rounded-lg focus:ring-[#024DDF]`
+
+### Checkbox
+- **States:** unchecked, checked, indeterminate, disabled
+- **Code:** `<Checkbox checked={true} onChange={...} />`
+
+### Modal
+- **Props:** `isOpen`, `onClose`, `title`, `size`
+- **Code:** `<Modal isOpen={open} onClose={handleClose}>...</Modal>`
+- **Tailwind:** `fixed inset-0 z-50 bg-black/50`
+
+### Toast
+- **Variants:** info, success, warning, error
+- **Code:** `<Toast variant="success" message="..." />`
+
+### AlertBox
+- **Variants:** info, success, warning, error
+- **Code:** `<AlertBox variant="error">Message</AlertBox>`
+- **Tailwind:** `bg-[#EB0000]/10 text-[#EB0000]` (error)
+
+### Badge
+- **Variants:** default, success, warning, error
+- **Tailwind:** `px-2 py-1 text-xs font-medium rounded-full`
+
+### LoadingSpinner
+- **Sizes:** small, medium, large
+- **Code:** `<LoadingSpinner size="medium" />`
+
+### Accordion
+- **Props:** `items`, `allowMultiple`, `defaultExpanded`
+- **Code:** `<Accordion items={[{title, content}]} />`
+
+### Stepper
+- **Props:** `steps`, `currentStep`, `orientation`
+- **Code:** `<Stepper steps={steps} currentStep={2} />`
+
+---
+
+## Additional FAQ
+
+### How do I create a form?
+Combine these components:
+```tsx
+<InputField label="Email" type="email" />
+<InputField label="Password" type="password" />
+<Checkbox label="Remember me" />
+<Button variant="primary">Submit</Button>
+```
+
+### How do I show loading state?
+Use `LoadingSpinner` for full-page loading, `Skeleton` for content placeholders, or Button's `isLoading` prop:
+```tsx
+<Button isLoading>Processing...</Button>
+<LoadingSpinner size="large" />
+<Skeleton width="100%" height="20px" />
+```
+
+### What's the difference between Modal and SidePanel?
+- **Modal:** Centered overlay, blocks interaction, for confirmations/forms
+- **SidePanel:** Slides from edge, for navigation/filters/details
+
+### How do I show feedback messages?
+- **Toast:** Temporary notifications (auto-dismiss)
+- **AlertBox:** Persistent inline messages
+- **ErrorMessage/SuccessMessage:** Form field feedback
+
+### How do I use icons with buttons?
+```tsx
+<Button icon={<PlusIcon />} iconPosition="left">Add Item</Button>
+<CircleButton icon={<CloseIcon />} /> // Icon-only
+<SquareButton icon={<MenuIcon />} /> // Icon-only square
+```
+
+---
+
 ## Documentation Sets
 
 ### 1. Design Documentation (`/docs/`)
