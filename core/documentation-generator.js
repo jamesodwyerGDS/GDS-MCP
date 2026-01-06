@@ -69,16 +69,39 @@ export class DocumentationGenerator {
   /**
    * Generate documentation for multiple components
    * @param {string[]} figmaUrls - Array of Figma URLs
+   * @param {object} options - Batch options
+   * @param {number} options.concurrency - Max parallel requests (default: 5)
+   *
+   * OPTIMIZED: Uses parallel processing with configurable concurrency.
+   * Default concurrency of 5 balances speed with Figma API rate limits.
    */
-  async generateBatch(figmaUrls) {
+  async generateBatch(figmaUrls, options = {}) {
+    const concurrency = options.concurrency || 5;
     const results = [];
 
-    for (const url of figmaUrls) {
-      try {
-        const result = await this.generate(url);
-        results.push({ success: true, ...result });
-      } catch (error) {
-        results.push({ success: false, url, error: error.message });
+    // Process URLs in parallel batches
+    for (let i = 0; i < figmaUrls.length; i += concurrency) {
+      const batch = figmaUrls.slice(i, i + concurrency);
+      const batchNum = Math.floor(i / concurrency) + 1;
+      const totalBatches = Math.ceil(figmaUrls.length / concurrency);
+
+      console.log(`Processing batch ${batchNum}/${totalBatches} (${batch.length} components)...`);
+
+      const batchPromises = batch.map(async (url) => {
+        try {
+          const result = await this.generate(url);
+          return { success: true, ...result };
+        } catch (error) {
+          return { success: false, url, error: error.message };
+        }
+      });
+
+      const batchResults = await Promise.all(batchPromises);
+      results.push(...batchResults);
+
+      // Small delay between batches to avoid rate limiting
+      if (i + concurrency < figmaUrls.length) {
+        await new Promise(resolve => setTimeout(resolve, 200));
       }
     }
 

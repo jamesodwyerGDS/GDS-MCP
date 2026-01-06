@@ -3,14 +3,11 @@
  *
  * Retrieves unified documentation for a GDS component.
  * Can return full doc or filter by audience section.
+ *
+ * OPTIMIZED: Uses cache module for fast lookups instead of file I/O on every call.
  */
 
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const UNIFIED_DIR = path.join(__dirname, '../../docs-unified/components');
+import { getComponent, getAllComponents } from '../cache.js';
 
 /**
  * Get component documentation
@@ -19,27 +16,29 @@ const UNIFIED_DIR = path.join(__dirname, '../../docs-unified/components');
  * @returns {object} MCP tool response
  */
 export async function getComponentDocs(componentName, audience = 'all') {
-  const normalizedName = normalizeComponentName(componentName);
+  // Use cache for fast lookup
+  const doc = await getComponent(componentName);
 
-  // Try to find the component file
-  const filePath = await findComponentFile(normalizedName);
+  if (!doc) {
+    // Provide helpful suggestions from cache
+    const available = getAllComponents()
+      .slice(0, 10)
+      .map(c => c.name.toLowerCase())
+      .join(', ');
 
-  if (!filePath) {
     return {
       content: [{
         type: 'text',
-        text: `Component "${componentName}" not found. Try: button, input-field, modal, checkbox, toast, badge, accordion, stepper, card, alert`
+        text: `Component "${componentName}" not found. Try: ${available || 'button, input-field, modal, checkbox, toast, badge, accordion, stepper, card, alert'}`
       }],
       isError: true
     };
   }
 
   try {
-    const content = await fs.readFile(filePath, 'utf-8');
-
     // If specific audience requested, extract that section
     if (audience !== 'all') {
-      const section = extractSection(content, audience);
+      const section = extractSection(doc.raw, audience);
       return {
         content: [{
           type: 'text',
@@ -48,11 +47,11 @@ export async function getComponentDocs(componentName, audience = 'all') {
       };
     }
 
-    // Return full unified doc
+    // Return full unified doc (from cache)
     return {
       content: [{
         type: 'text',
-        text: content
+        text: doc.raw
       }]
     };
   } catch (error) {
@@ -64,44 +63,6 @@ export async function getComponentDocs(componentName, audience = 'all') {
       isError: true
     };
   }
-}
-
-/**
- * Find component file with fuzzy matching
- */
-async function findComponentFile(normalizedName) {
-  const possibleNames = [
-    normalizedName,
-    normalizedName.replace(/-/g, ''),
-    normalizedName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
-  ];
-
-  try {
-    const files = await fs.readdir(UNIFIED_DIR);
-
-    for (const name of possibleNames) {
-      const match = files.find(f =>
-        f.replace('.md', '').toLowerCase() === name.toLowerCase()
-      );
-      if (match) {
-        return path.join(UNIFIED_DIR, match);
-      }
-    }
-
-    // Partial match fallback
-    for (const name of possibleNames) {
-      const match = files.find(f =>
-        f.toLowerCase().includes(name.toLowerCase())
-      );
-      if (match) {
-        return path.join(UNIFIED_DIR, match);
-      }
-    }
-  } catch {
-    // Directory doesn't exist
-  }
-
-  return null;
 }
 
 /**

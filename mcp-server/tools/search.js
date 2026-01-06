@@ -2,16 +2,12 @@
  * Search GDS Documentation Tool
  *
  * Smart search across all GDS documentation with relevance ranking.
+ *
+ * OPTIMIZED: Uses pre-built search index from cache module.
+ * Search complexity reduced from O(n * files) to O(n) where n = indexed docs.
  */
 
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import matter from 'gray-matter';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const UNIFIED_DIR = path.join(__dirname, '../../docs-unified/components');
-const LLMS_FILE = path.join(__dirname, '../../llms.txt');
+import { searchIndex_query, searchFaq_cached } from '../cache.js';
 
 // Search aliases for common queries
 const SEARCH_ALIASES = {
@@ -38,11 +34,11 @@ export async function searchGds(query, audience = 'all', limit = 5) {
   // Expand query with aliases
   const searchTerms = expandQuery(normalizedQuery);
 
-  // Search components
-  const results = await searchComponents(searchTerms, audience);
+  // Search components using cached index (FAST!)
+  const results = searchIndex_query(searchTerms, audience);
 
-  // Also check llms.txt for FAQ matches
-  const faqResults = await searchFaq(normalizedQuery);
+  // Also check cached FAQ
+  const faqResults = searchFaq_cached(normalizedQuery);
 
   // Combine and rank results
   const combined = [...results, ...faqResults]
@@ -93,167 +89,4 @@ function expandQuery(query) {
   terms.push(...words);
 
   return [...new Set(terms)];
-}
-
-/**
- * Search component files
- */
-async function searchComponents(searchTerms, audience) {
-  const results = [];
-
-  try {
-    const files = await fs.readdir(UNIFIED_DIR);
-
-    for (const file of files) {
-      if (!file.endsWith('.md')) continue;
-
-      const filePath = path.join(UNIFIED_DIR, file);
-      const content = await fs.readFile(filePath, 'utf-8');
-      const parsed = matter(content);
-
-      // Calculate relevance score
-      const score = calculateScore(searchTerms, {
-        name: parsed.data.name || file.replace('.md', ''),
-        description: parsed.data.description || '',
-        content: filterContentByAudience(parsed.content, audience)
-      });
-
-      if (score > 0.1) {
-        results.push({
-          title: parsed.data.name || file.replace('.md', ''),
-          type: 'component',
-          path: `docs-unified/components/${file}`,
-          score,
-          snippet: extractSnippet(parsed.content, searchTerms, audience)
-        });
-      }
-    }
-  } catch (error) {
-    console.error('Error searching components:', error);
-  }
-
-  return results;
-}
-
-/**
- * Search FAQ in llms.txt
- */
-async function searchFaq(query) {
-  const results = [];
-
-  try {
-    const content = await fs.readFile(LLMS_FILE, 'utf-8');
-
-    // Find FAQ sections
-    const faqMatch = content.match(/## FAQ[\s\S]*?(?=\n## |$)/g);
-    if (faqMatch) {
-      for (const section of faqMatch) {
-        // Find individual Q&A
-        const qaMatches = section.matchAll(/### ([^\n]+)\n([\s\S]*?)(?=\n### |\n## |$)/g);
-
-        for (const match of qaMatches) {
-          const question = match[1];
-          const answer = match[2].trim();
-
-          // Check relevance
-          const combined = `${question} ${answer}`.toLowerCase();
-          if (combined.includes(query) || query.split(' ').some(w => combined.includes(w))) {
-            results.push({
-              title: question,
-              type: 'FAQ',
-              score: query.split(' ').filter(w => combined.includes(w)).length / query.split(' ').length,
-              snippet: answer.substring(0, 300) + (answer.length > 300 ? '...' : '')
-            });
-          }
-        }
-      }
-    }
-  } catch (error) {
-    console.error('Error searching FAQ:', error);
-  }
-
-  return results;
-}
-
-/**
- * Calculate relevance score
- */
-function calculateScore(searchTerms, doc) {
-  let score = 0;
-  const name = doc.name.toLowerCase();
-  const description = doc.description.toLowerCase();
-  const content = doc.content.toLowerCase();
-
-  for (const term of searchTerms) {
-    const t = term.toLowerCase();
-
-    // Name matches (highest weight)
-    if (name === t) score += 1.0;
-    else if (name.includes(t)) score += 0.5;
-
-    // Description matches
-    if (description.includes(t)) score += 0.3;
-
-    // Content matches
-    const contentMatches = (content.match(new RegExp(t, 'gi')) || []).length;
-    score += Math.min(contentMatches * 0.05, 0.3);
-  }
-
-  return Math.min(score / searchTerms.length, 1.0);
-}
-
-/**
- * Filter content by audience section
- */
-function filterContentByAudience(content, audience) {
-  if (audience === 'all') return content;
-
-  const sectionMap = {
-    design: '## Design Documentation',
-    engineer: '## Engineer Documentation',
-    vibe: '## Vibe Documentation'
-  };
-
-  const marker = sectionMap[audience];
-  if (!marker) return content;
-
-  const startIndex = content.indexOf(marker);
-  if (startIndex === -1) return '';
-
-  const afterStart = content.substring(startIndex);
-  const nextSection = afterStart.indexOf('\n---\n\n##');
-
-  return nextSection > 0 ? afterStart.substring(0, nextSection) : afterStart;
-}
-
-/**
- * Extract relevant snippet from content
- */
-function extractSnippet(content, searchTerms, audience) {
-  const filteredContent = filterContentByAudience(content, audience);
-
-  // Find most relevant paragraph
-  const paragraphs = filteredContent.split('\n\n');
-
-  let bestParagraph = '';
-  let bestScore = 0;
-
-  for (const p of paragraphs) {
-    if (p.length < 20 || p.startsWith('---')) continue;
-
-    const pLower = p.toLowerCase();
-    const score = searchTerms.filter(t => pLower.includes(t.toLowerCase())).length;
-
-    if (score > bestScore) {
-      bestScore = score;
-      bestParagraph = p;
-    }
-  }
-
-  // Truncate if needed
-  if (bestParagraph.length > 300) {
-    bestParagraph = bestParagraph.substring(0, 300) + '...';
-  }
-
-  return bestParagraph || 'No preview available';
 }
