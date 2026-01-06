@@ -12,7 +12,8 @@
     "vibe:generate": "node scripts/generate-vibe-docs.js",
     "vibe:shadcn": "node scripts/generate-vibe-docs.js --format=shadcn",
     "vibe:tailwind": "node scripts/generate-vibe-docs.js --format=tailwind",
-    "build:all": "npm run storybook:generate && npm run vibe:generate"
+    "unified:generate": "node scripts/generate-unified-docs.js",
+    "build:all": "npm run storybook:generate && npm run vibe:generate && npm run unified:generate"
   },
   "keywords": [
     "mcp",
