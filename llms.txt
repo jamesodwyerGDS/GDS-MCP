@@ -2,71 +2,183 @@
 
 > Multi-audience documentation for the Global Design System, optimized for LLM retrieval.
 
-## Documentation Sets
+---
 
-This repository contains three documentation sets for different audiences:
+## FAQ - Common Questions
+
+### What button variants are available in GDS?
+
+GDS provides **6 button variants**:
+
+1. **Primary** - Main call-to-action, filled Neptune blue (#024DDF)
+2. **Secondary** - Alternative actions, outline style with Neptune border
+3. **Tertiary** - Low-emphasis actions, text-only with hover background
+4. **Ghost** - Minimal style, transparent with subtle hover
+5. **Transaction** - For purchase/payment actions, uses Earth green (#01A469)
+6. **Inverse** - For dark backgrounds, white text/border
+
+**Button sizes:** Small, Medium (default), Large
+
+**Tailwind for Primary Button:**
+```html
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#024DDF] text-white font-semibold rounded-lg hover:bg-[#0141B8] focus:ring-2 focus:ring-offset-2 disabled:bg-[#D6D6D6] disabled:cursor-not-allowed">
+  Button Label
+</button>
+```
+
+### What are the GDS colors?
+
+| Token | Hex | Usage |
+|-------|-----|-------|
+| Neptune | #024DDF | Primary actions, links |
+| Neptune Hover | #0141B8 | Hover state for primary |
+| Cosmos | #121212 | Dark text, dark backgrounds |
+| Earth | #01A469 | Success, confirmations |
+| Mars | #EB0000 | Errors, destructive actions |
+| Granite | #646464 | Secondary text |
+| Slate | #949494 | Disabled, placeholder |
+| Lunar | #D6D6D6 | Borders, dividers |
+| Spotlight | #FFFFFF | White backgrounds |
+
+### What is the GDS spacing scale?
+
+| Token | Value | Tailwind | Use Case |
+|-------|-------|----------|----------|
+| lounge | 4px | p-1 | Tight spacing, icons |
+| club | 8px | p-2 | Default gap |
+| hall | 12px | p-3 | Small padding |
+| auditorium | 16px | p-4 | Standard padding |
+| theatre | 20px | p-5 | Medium spacing |
+| amphitheatre | 24px | p-6 | Section gaps |
+| arena | 32px | p-8 | Large spacing |
+| stadium | 48px | p-12 | Section padding |
+| dome | 64px | p-16 | Page sections |
+| field | 88px | p-22 | Hero sections |
+
+### What typography tokens does GDS use?
+
+| Token | Size | Tailwind | Use |
+|-------|------|----------|-----|
+| mauna | 64px | text-7xl | Hero headlines |
+| everest | 48px | text-5xl | Page titles |
+| kilimanjaro | 40px | text-4xl | Section titles |
+| matterhorn | 32px | text-3xl | Subsection titles |
+| vinson | 24px | text-2xl | Card titles |
+| blanc | 20px | text-xl | Large body |
+| rainier | 18px | text-lg | Medium body |
+| fiji | 16px | text-base | Default body |
+| etna | 14px | text-sm | Small text |
+
+### What components are in GDS?
+
+**52 components** organized by category:
+
+**Buttons:** Button, CircleButton, SquareButton, PillButton, PaginationButton
+
+**Form Inputs:** InputField, TextInput, TextArea, PasswordInput, Checkbox, RadioButton, Toggle, ToggleSwitch, SelectInput, DoubleRangeInput, DateOfBirth, CountryPicker, PhoneNumber
+
+**Feedback:** AlertBox, Toast, Tooltip, ErrorMessage, SuccessMessage, LoadingSpinner, Skeleton
+
+**Layout:** Card, Modal, SidePanel, Accordion, Header, Footer
+
+**Typography:** DisplayHeading, SectionHeading, TitleHeading, TextStyle, Link
+
+**Specialized:** Badge, Stepper, Countdown, CountdownTimer, TicketCardv2, SeatInfo, ShareCard, BrandLogo
+
+---
+
+## Documentation Sets
 
 ### 1. Design Documentation (`/docs/`)
 **Audience:** Designers
-**Content:** Design specifications, use cases, design tokens, accessibility guidelines
-**Use when:** Asking about visual design, component variants, spacing, colors, typography
+**37 files:** 25 components, 6 foundations, 5 patterns
+**Content:** Design specs, use cases, tokens, accessibility
 
 ### 2. Storybook Documentation (`/docs-storybook/`)
 **Audience:** Engineers
-**Content:** React component props, TypeScript types, code examples, Storybook URLs
-**Use when:** Asking about implementation, props, code usage, API
+**52 components** with props, types, code examples
+**Content:** React imports, TypeScript, Storybook URLs
 
 ### 3. Vibe Documentation (`/docs-vibe/`)
-**Audience:** LLMs, AI coding tools (Lovable, Figma Make)
-**Content:** ShadCN patterns, Tailwind snippets, copy-paste code
-**Use when:** Generating UI code, prototyping, vibe coding
+**Audience:** AI coding tools (Lovable, Figma Make, v0.dev)
+**Content:** ShadCN specs, Tailwind HTML snippets
+**Key file:** `/docs-vibe/design-system.md` - single-file reference
 
-## Quick Reference
+---
 
-### Design Tokens
+## Quick Copy-Paste Code
 
-**Colors (Astronomical theme):**
-- Primary: Neptune (#024DDF), Cosmos (#121212)
-- Secondary: Earth (#01A469), Mars (#EB0000)
-- Neutral: Granite, Slate, Lunar, Spotlight
+### Primary Button
+```html
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#024DDF] text-white font-semibold rounded-lg hover:bg-[#0141B8] focus:ring-2 focus:ring-[#024DDF] focus:ring-offset-2 transition-colors">
+  Button
+</button>
+```
 
-**Spacing (Venue theme):**
-- lounge: 4px
-- club: 8px
-- hall: 12px
-- auditorium: 16px
-- theatre: 20px
-- amphitheatre: 24px
-- arena: 32px
-- stadium: 48px
-- dome: 64px
-- field: 88px
+### Secondary Button
+```html
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 border-2 border-[#024DDF] text-[#024DDF] font-semibold rounded-lg hover:bg-[#024DDF] hover:text-white transition-colors">
+  Secondary
+</button>
+```
 
-**Typography (Mountain theme):**
-- Display: Mauna, Everest, Kilimanjaro, Vinson, Blanc
-- Body: Rainier, Fiji, Etna
-- Heading: Matterhorn
+### Input Field
+```html
+<input type="text" class="w-full px-4 py-3 border border-[#D6D6D6] rounded-lg focus:ring-2 focus:ring-[#024DDF] focus:border-transparent placeholder:text-[#949494]" placeholder="Enter text..." />
+```
 
-## Component Index
+### Card
+```html
+<div class="p-6 bg-white rounded-xl shadow-md border border-[#D6D6D6]">
+  <h3 class="text-lg font-semibold text-[#121212]">Title</h3>
+  <p class="mt-2 text-[#646464]">Content</p>
+</div>
+```
 
-### Atoms (25 components)
-accordion, alert, badge, button, circle-button, countdown-timer, date-picker,
-display-heading, double-range-input, dropdown, filterbar, image, input-field,
-loading-spinner, modal, pagination-button, pill-button, radio-button,
-side-panel, square-button, stepper, toast, toggle, toolbox, tooltip
+### Badge
+```html
+<span class="inline-flex items-center px-2 py-1 text-xs font-medium rounded-full bg-[#024DDF] text-white">Badge</span>
+```
 
-### Foundations (6 docs)
-color, color-themes, color-accessibility, typography, spacing, elevation
+### Alert (Success)
+```html
+<div class="flex items-center gap-3 p-4 rounded-lg bg-[#01A469]/10 text-[#01A469]">
+  <span>✓</span><p>Success message</p>
+</div>
+```
 
-### Patterns (5 docs)
-slot, tooltip-guidelines, pill-button-guidelines, stepper-guidelines, toast-guidelines
+### Alert (Error)
+```html
+<div class="flex items-center gap-3 p-4 rounded-lg bg-[#EB0000]/10 text-[#EB0000]">
+  <span>⚠</span><p>Error message</p>
+</div>
+```
+
+### Modal
+```html
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+  <div class="w-full max-w-md p-6 bg-white rounded-xl shadow-xl">
+    <h2 class="text-xl font-semibold">Title</h2>
+    <p class="mt-4 text-[#646464]">Content</p>
+    <div class="flex justify-end gap-3 mt-6">
+      <button class="px-4 py-2 text-[#646464]">Cancel</button>
+      <button class="px-4 py-2 bg-[#024DDF] text-white rounded-lg">Confirm</button>
+    </div>
+  </div>
+</div>
+```
+
+---
 
 ## Themes
 
-- **TM (Ticketmaster):** Primary theme with Neptune blue
+- **TM (Ticketmaster):** Primary theme - Neptune blue (#024DDF)
 - **LN (LiveNation):** Alternative theme
+
+---
 
 ## Access
 
 - **GitMCP:** https://gitmcp.io/jamesodwyerGDS/GDS-MCP
 - **GitHub:** https://github.com/jamesodwyerGDS/GDS-MCP
+- **Raw llms.txt:** https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/llms.txt
