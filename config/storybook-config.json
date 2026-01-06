@@ -1,0 +1,15 @@
+{
+  "sourceDir": "./GDS-storybook-originals",
+  "outputDir": "./docs-storybook",
+  "baseUrl": "http://localhost:6006",
+  "package": "@gds/components",
+  "componentPaths": {
+    "components": "./GDS-storybook-originals/components",
+    "colors": "./GDS-storybook-originals/colors",
+    "dimensions": "./GDS-storybook-originals/dimensions",
+    "themes": "./GDS-storybook-originals/themes"
+  },
+  "storyPattern": "**/__stories__/*.stories.tsx",
+  "componentPattern": "**/index.tsx",
+  "excludeDirs": ["__test__", "__snapshots__", "NewComponentTemplate"]
+}

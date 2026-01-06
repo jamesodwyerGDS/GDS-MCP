@@ -1,0 +1,45 @@
+{
+  "sourceDir": "./docs",
+  "outputDir": "./docs-vibe",
+  "formats": {
+    "shadcn": {
+      "outputDir": "./docs-vibe/shadcn",
+      "template": "./templates/shadcn-component.md",
+      "importPath": "@/components/ui/",
+      "naming": "kebab-case"
+    },
+    "tailwind": {
+      "outputDir": "./docs-vibe/tailwind",
+      "template": "./templates/tailwind-snippet.html",
+      "includeVariants": true
+    },
+    "summary": {
+      "outputFile": "./docs-vibe/design-system.md",
+      "maxTokens": 50000
+    }
+  },
+  "tokens": {
+    "colors": {
+      "neptune": "#024DDF",
+      "cosmos": "#121212",
+      "earth": "#01A469",
+      "mars": "#EB0000",
+      "granite": "#646464",
+      "slate": "#949494",
+      "lunar": "#D6D6D6",
+      "spotlight": "#FFFFFF"
+    },
+    "spacing": {
+      "lounge": "4px",
+      "club": "8px",
+      "hall": "12px",
+      "auditorium": "16px",
+      "theatre": "20px",
+      "amphitheatre": "24px",
+      "arena": "32px",
+      "stadium": "48px",
+      "dome": "64px",
+      "field": "88px"
+    }
+  }
+}

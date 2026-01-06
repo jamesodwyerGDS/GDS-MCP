@@ -7,7 +7,12 @@
   "scripts": {
     "docs:generate": "node scripts/generate.js",
     "docs:generate-all": "node scripts/generate-all.js",
-    "docs:validate": "node scripts/validate.js"
+    "docs:validate": "node scripts/validate.js",
+    "storybook:generate": "node scripts/generate-storybook-docs.js",
+    "vibe:generate": "node scripts/generate-vibe-docs.js",
+    "vibe:shadcn": "node scripts/generate-vibe-docs.js --format=shadcn",
+    "vibe:tailwind": "node scripts/generate-vibe-docs.js --format=tailwind",
+    "build:all": "npm run storybook:generate && npm run vibe:generate"
   },
   "keywords": [
     "mcp",
