@@ -6,6 +6,11 @@
     "docs": {
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "./docs"]
+    },
+    "gds": {
+      "command": "node",
+      "args": ["./mcp-server/index.js"],
+      "description": "GDS custom MCP server with optimized tools for component lookup, token retrieval, and smart search"
     }
   }
 }

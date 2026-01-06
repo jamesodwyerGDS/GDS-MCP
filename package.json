@@ -24,6 +24,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
     "axios": "^1.6.0",
     "gray-matter": "^4.0.3"
   },
