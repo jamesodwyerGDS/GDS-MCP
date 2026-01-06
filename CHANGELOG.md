@@ -46,6 +46,14 @@ Add a new entry when:
 
 ---
 
+## 6th Jan 2026
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| UPDATED - Button border radius changed from 8px to 4px in unified docs | 🟡 Updated | NA | NA | NA |
+
+---
+
 ## 6th Jan 2025
 
 | Change | Type | JIRA | Figma | Storybook |

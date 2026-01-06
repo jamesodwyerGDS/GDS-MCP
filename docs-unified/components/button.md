@@ -46,7 +46,7 @@ tokens:
   typography:
     standard: 'Averta Semibold 16px/24px, letter-spacing 0.32px'
     transactional: 'Averta Semibold 18px/26px, letter-spacing 0.36px, capitalize'
-  borderRadius: 8px
+  borderRadius: 4px
 package: '@gds/components'
 storyUrl: 'http://localhost:6006/?path=/story/components-button--default'
 sourceFile: components/Button/index.tsx
@@ -210,7 +210,7 @@ Each variant supports five states:
 
 ### Border Radius
 
-All buttons use `8px` border radius.
+All buttons use `4px` border radius.
 
 ## Button Widths
 
@@ -310,7 +310,7 @@ All variants display a visible focus ring:
   --button-icon-gap: var(--space-club);
 
   /* Button Shape */
-  --button-radius: 8px;
+  --button-radius: 4px;
 }
 ```
 
@@ -391,7 +391,7 @@ import { Button } from '@gds/components';
 
 ```tsx
 // Base button styles
-const baseStyles = "inline-flex items-center justify-center gap-club px-auditorium rounded-lg font-averta-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neptune focus:ring-offset-2";
+const baseStyles = "inline-flex items-center justify-center gap-club px-auditorium rounded font-averta-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-neptune focus:ring-offset-2";
 
 // Variant styles
 const variantStyles = {
@@ -521,28 +521,28 @@ Copy-paste ready for Lovable, Figma Make, v0.dev:
 <!-- Copy-paste ready for Lovable, Figma Make, v0.dev -->
 
 <!-- Primary / Default -->
-<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#024DDF] text-white font-semibold rounded-lg hover:bg-[#0141B8] focus:outline-none focus:ring-2 focus:ring-[#024DDF] focus:ring-offset-2 transition-colors">
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#024DDF] text-white font-semibold rounded hover:bg-[#0141B8] focus:outline-none focus:ring-2 focus:ring-[#024DDF] focus:ring-offset-2 transition-colors">
   Button Content
 </button>
 
 <!-- Variants -->
 <!-- primary -->
-<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#024DDF] text-white font-semibold rounded-lg hover:bg-[#0141B8]">
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-[#024DDF] text-white font-semibold rounded hover:bg-[#0141B8]">
   primary
 </button>
 
 <!-- secondary -->
-<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-transparent text-[#024DDF] font-semibold rounded-lg border-2 border-[#024DDF] hover:bg-[#024DDF] hover:text-white">
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-transparent text-[#024DDF] font-semibold rounded border-2 border-[#024DDF] hover:bg-[#024DDF] hover:text-white">
   secondary
 </button>
 
 <!-- tertiary -->
-<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-transparent text-[#024DDF] font-semibold rounded-lg hover:bg-[#024DDF]/10">
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-transparent text-[#024DDF] font-semibold rounded hover:bg-[#024DDF]/10">
   tertiary
 </button>
 
 <!-- ghost -->
-<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-transparent text-[#646464] font-semibold rounded-lg hover:bg-[#D6D6D6]/20">
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-transparent text-[#646464] font-semibold rounded hover:bg-[#D6D6D6]/20">
   ghost
 </button>
 
