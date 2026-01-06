@@ -46,6 +46,14 @@ Add a new entry when:
 
 ---
 
+## 6th Jan 2026
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| ADDED - Comprehensive USER_GUIDE.md with installation, configuration, and usage instructions | 🟢 Added | NA | NA | NA |
+
+---
+
 ## 6th Jan 2025
 
 | Change | Type | JIRA | Figma | Storybook |
