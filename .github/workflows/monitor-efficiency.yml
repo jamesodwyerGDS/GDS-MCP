@@ -1,0 +1,77 @@
+name: Monitor Documentation Efficiency
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Run weekly on Monday at 9am
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check documentation coverage
+        id: coverage
+        run: |
+          echo "## Documentation Coverage Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Count components in each doc set
+          DESIGN_COUNT=$(find docs/components -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
+          STORYBOOK_COUNT=$(find docs-storybook/components -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
+          VIBE_COUNT=$(find docs-vibe/tailwind -name "*.html" 2>/dev/null | wc -l | tr -d ' ')
+          UNIFIED_COUNT=$(find docs-unified/components -name "*.md" 2>/dev/null | wc -l | tr -d ' ')
+
+          echo "| Doc Set | Components |" >> $GITHUB_STEP_SUMMARY
+          echo "|---------|------------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Design | $DESIGN_COUNT |" >> $GITHUB_STEP_SUMMARY
+          echo "| Storybook | $STORYBOOK_COUNT |" >> $GITHUB_STEP_SUMMARY
+          echo "| Vibe | $VIBE_COUNT |" >> $GITHUB_STEP_SUMMARY
+          echo "| Unified | $UNIFIED_COUNT |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+      - name: Detect missing documentation
+        run: |
+          echo "## Missing Documentation" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Components in Storybook but not in Design docs
+          echo "### Storybook components missing Design docs:" >> $GITHUB_STEP_SUMMARY
+          for f in docs-storybook/components/*.md; do
+            name=$(basename "$f" .md)
+            if ! find docs/components -name "*.md" | xargs grep -l "name: $name" > /dev/null 2>&1; then
+              echo "- $name" >> $GITHUB_STEP_SUMMARY
+            fi
+          done
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+      - name: Check for stale unified docs
+        run: |
+          echo "## Unified Docs Status" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Check if unified docs are older than source docs
+          UNIFIED_TIME=$(stat -c %Y docs-unified/index.md 2>/dev/null || echo 0)
+          DESIGN_TIME=$(stat -c %Y docs/llms.txt 2>/dev/null || echo 0)
+          STORYBOOK_TIME=$(stat -c %Y docs-storybook/llms.txt 2>/dev/null || echo 0)
+
+          if [ "$UNIFIED_TIME" -lt "$DESIGN_TIME" ] || [ "$UNIFIED_TIME" -lt "$STORYBOOK_TIME" ]; then
+            echo "⚠️ Unified docs may be stale - run \`npm run unified:generate\`" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "✅ Unified docs are up to date" >> $GITHUB_STEP_SUMMARY
+          fi

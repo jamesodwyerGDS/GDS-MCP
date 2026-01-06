@@ -1,0 +1,89 @@
+{
+  "coverage": {
+    "design": 25,
+    "storybook": 52,
+    "vibe": 25,
+    "unified": 67
+  },
+  "gaps": {
+    "missingDesign": [
+      "brand-logo",
+      "card",
+      "checkbox",
+      "country-picker",
+      "date-of-birth",
+      "error-message",
+      "footer",
+      "header",
+      "link",
+      "password-input",
+      "phone-number",
+      "seat-info",
+      "seat-infov2",
+      "section-heading",
+      "select-input",
+      "share-card",
+      "simple-seat-info",
+      "skeleton",
+      "success-message",
+      "text-area-limited",
+      "text-area",
+      "text-input",
+      "text-style",
+      "ticket-cardv2",
+      "ticket-description",
+      "ticket-info",
+      "ticket-quantity",
+      "ticket-top-section",
+      "title-heading"
+    ],
+    "missingVibe": [
+      "brand-logo",
+      "card",
+      "checkbox",
+      "country-picker",
+      "date-of-birth",
+      "error-message",
+      "footer",
+      "header",
+      "link",
+      "password-input",
+      "phone-number",
+      "seat-info",
+      "seat-infov2",
+      "section-heading",
+      "select-input",
+      "share-card",
+      "simple-seat-info",
+      "skeleton",
+      "success-message",
+      "text-area-limited",
+      "text-area",
+      "text-input",
+      "text-style",
+      "ticket-cardv2",
+      "ticket-description",
+      "ticket-info",
+      "ticket-quantity",
+      "ticket-top-section",
+      "title-heading"
+    ],
+    "missingStorybook": [
+      "date-picker",
+      "dropdown",
+      "filterbar",
+      "image",
+      "toolbox"
+    ]
+  },
+  "staleness": {
+    "staleUnified": false,
+    "lastUnifiedUpdate": "2026-01-06T14:32:46.496Z",
+    "lastDesignUpdate": "2026-01-06T13:57:30.323Z",
+    "lastStorybookUpdate": "2026-01-06T14:03:05.878Z"
+  },
+  "suggestions": [
+    "29 Storybook components lack design docs - consider generating from Figma",
+    "29 components missing Tailwind snippets - run vibe:generate"
+  ]
+}
