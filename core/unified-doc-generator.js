@@ -585,13 +585,20 @@ Source: gitmcp.io/jamesodwyerGDS/GDS-MCP
 
   /**
    * Normalize component name for mapping
+   * Ensures consistent kebab-case naming to prevent duplicates
    */
   normalizeComponentName(name) {
     return name
-      .toLowerCase()
-      .replace(/[-_\s]+/g, '-')
+      // Convert camelCase/PascalCase to kebab-case
       .replace(/([a-z])([A-Z])/g, '$1-$2')
-      .toLowerCase();
+      // Replace spaces and underscores with hyphens
+      .replace(/[\s_]+/g, '-')
+      // Remove any duplicate hyphens
+      .replace(/--+/g, '-')
+      // Lowercase everything
+      .toLowerCase()
+      // Trim hyphens from start/end
+      .replace(/^-+|-+$/g, '');
   }
 
   /**
