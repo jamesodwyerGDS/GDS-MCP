@@ -51,6 +51,7 @@ Add a new entry when:
 | Change | Type | JIRA | Figma | Storybook |
 |--------|------|------|-------|-----------|
 | ADDED - Comprehensive Cursor IDE setup guide (`docs/CURSOR_SETUP_GUIDE.md`) with step-by-step instructions for local MCP server installation | 🟢 Added | NA | NA | NA |
+| ADDED - Beginner-friendly setup guide (`docs/CURSOR_SETUP_GUIDE_SIMPLE.md`) for non-technical users with detailed screenshots descriptions and troubleshooting | 🟢 Added | NA | NA | NA |
 
 ---
 
