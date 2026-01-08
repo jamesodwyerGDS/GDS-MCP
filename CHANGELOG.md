@@ -46,6 +46,14 @@ Add a new entry when:
 
 ---
 
+## 8th Jan 2026
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| ADDED - Comprehensive Cursor IDE setup guide (`docs/CURSOR_SETUP_GUIDE.md`) with step-by-step instructions for local MCP server installation | 🟢 Added | NA | NA | NA |
+
+---
+
 ## 6th Jan 2026
 
 | Change | Type | JIRA | Figma | Storybook |
