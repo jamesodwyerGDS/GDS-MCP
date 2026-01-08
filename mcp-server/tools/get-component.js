@@ -3,6 +3,10 @@
  *
  * Retrieves unified documentation for a GDS component.
  * Can return full doc or filter by audience section.
+ *
+ * Security:
+ * - Path traversal prevention via base directory validation
+ * - Input already sanitized by security.js before reaching this module
  */
 
 import fs from 'fs/promises';
@@ -10,7 +14,19 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const UNIFIED_DIR = path.join(__dirname, '../../docs-unified/components');
+const UNIFIED_DIR = path.resolve(__dirname, '../../docs-unified/components');
+
+/**
+ * Validate that a resolved path is within the allowed base directory
+ * @param {string} resolvedPath - Fully resolved path
+ * @param {string} baseDir - Allowed base directory
+ * @returns {boolean}
+ */
+function isPathWithinBase(resolvedPath, baseDir) {
+  const normalizedBase = path.resolve(baseDir) + path.sep;
+  const normalizedPath = path.resolve(resolvedPath);
+  return normalizedPath.startsWith(normalizedBase) || normalizedPath === path.resolve(baseDir);
+}
 
 /**
  * Get component documentation
@@ -68,8 +84,14 @@ export async function getComponentDocs(componentName, audience = 'all') {
 
 /**
  * Find component file with fuzzy matching
+ * Includes path traversal protection
  */
 async function findComponentFile(normalizedName) {
+  // Additional safety: ensure name doesn't contain path separators
+  if (normalizedName.includes('/') || normalizedName.includes('\\') || normalizedName.includes('..')) {
+    return null;
+  }
+
   const possibleNames = [
     normalizedName,
     normalizedName.replace(/-/g, ''),
@@ -84,7 +106,11 @@ async function findComponentFile(normalizedName) {
         f.replace('.md', '').toLowerCase() === name.toLowerCase()
       );
       if (match) {
-        return path.join(UNIFIED_DIR, match);
+        const fullPath = path.join(UNIFIED_DIR, match);
+        // Validate path is within allowed directory
+        if (isPathWithinBase(fullPath, UNIFIED_DIR)) {
+          return fullPath;
+        }
       }
     }
 
@@ -94,7 +120,11 @@ async function findComponentFile(normalizedName) {
         f.toLowerCase().includes(name.toLowerCase())
       );
       if (match) {
-        return path.join(UNIFIED_DIR, match);
+        const fullPath = path.join(UNIFIED_DIR, match);
+        // Validate path is within allowed directory
+        if (isPathWithinBase(fullPath, UNIFIED_DIR)) {
+          return fullPath;
+        }
       }
     }
   } catch {

@@ -2,6 +2,11 @@
  * Search GDS Documentation Tool
  *
  * Smart search across all GDS documentation with relevance ranking.
+ *
+ * Security:
+ * - Path traversal prevention
+ * - Input sanitization (performed by security.js before reaching this module)
+ * - Bounded result limits
  */
 
 import fs from 'fs/promises';
@@ -10,8 +15,23 @@ import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const UNIFIED_DIR = path.join(__dirname, '../../docs-unified/components');
-const LLMS_FILE = path.join(__dirname, '../../llms.txt');
+const UNIFIED_DIR = path.resolve(__dirname, '../../docs-unified/components');
+const LLMS_FILE = path.resolve(__dirname, '../../llms.txt');
+
+// Maximum content length to process per file (prevent DoS via large files)
+const MAX_CONTENT_LENGTH = 100000;
+
+/**
+ * Validate that a resolved path is within the allowed base directory
+ * @param {string} resolvedPath - Fully resolved path
+ * @param {string} baseDir - Allowed base directory
+ * @returns {boolean}
+ */
+function isPathWithinBase(resolvedPath, baseDir) {
+  const normalizedBase = path.resolve(baseDir) + path.sep;
+  const normalizedPath = path.resolve(resolvedPath);
+  return normalizedPath.startsWith(normalizedBase) || normalizedPath === path.resolve(baseDir);
+}
 
 // Search aliases for common queries
 const SEARCH_ALIASES = {
@@ -97,6 +117,7 @@ function expandQuery(query) {
 
 /**
  * Search component files
+ * Includes path traversal protection and content length limits
  */
 async function searchComponents(searchTerms, audience) {
   const results = [];
@@ -105,10 +126,24 @@ async function searchComponents(searchTerms, audience) {
     const files = await fs.readdir(UNIFIED_DIR);
 
     for (const file of files) {
+      // Only process .md files
       if (!file.endsWith('.md')) continue;
 
+      // Validate filename doesn't contain path traversal attempts
+      if (file.includes('..') || file.includes('/') || file.includes('\\')) continue;
+
       const filePath = path.join(UNIFIED_DIR, file);
-      const content = await fs.readFile(filePath, 'utf-8');
+
+      // Validate path is within allowed directory
+      if (!isPathWithinBase(filePath, UNIFIED_DIR)) continue;
+
+      let content = await fs.readFile(filePath, 'utf-8');
+
+      // Limit content length to prevent DoS
+      if (content.length > MAX_CONTENT_LENGTH) {
+        content = content.substring(0, MAX_CONTENT_LENGTH);
+      }
+
       const parsed = matter(content);
 
       // Calculate relevance score
@@ -129,7 +164,8 @@ async function searchComponents(searchTerms, audience) {
       }
     }
   } catch (error) {
-    console.error('Error searching components:', error);
+    // Log error but don't expose details
+    console.error('Error searching components');
   }
 
   return results;
@@ -137,12 +173,24 @@ async function searchComponents(searchTerms, audience) {
 
 /**
  * Search FAQ in llms.txt
+ * Includes path validation and content length limits
  */
 async function searchFaq(query) {
   const results = [];
 
   try {
-    const content = await fs.readFile(LLMS_FILE, 'utf-8');
+    // Validate LLMS_FILE path is within project
+    const projectRoot = path.resolve(__dirname, '../..');
+    if (!isPathWithinBase(LLMS_FILE, projectRoot)) {
+      return results;
+    }
+
+    let content = await fs.readFile(LLMS_FILE, 'utf-8');
+
+    // Limit content length
+    if (content.length > MAX_CONTENT_LENGTH) {
+      content = content.substring(0, MAX_CONTENT_LENGTH);
+    }
 
     // Find FAQ sections
     const faqMatch = content.match(/## FAQ[\s\S]*?(?=\n## |$)/g);
@@ -169,7 +217,8 @@ async function searchFaq(query) {
       }
     }
   } catch (error) {
-    console.error('Error searching FAQ:', error);
+    // Log error but don't expose details
+    console.error('Error searching FAQ');
   }
 
   return results;

@@ -1,10 +1,29 @@
 # Dependencies
 node_modules/
 
-# Environment
+# Environment and Secrets
 .env
 .env.local
 .env.*.local
+.env.production
+.env.development
+
+# Credentials and Keys (CRITICAL: Never commit these)
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+credentials.json
+secrets.json
+*.credentials
+service-account*.json
+oauth-*.json
+
+# API Keys and Tokens
+.figma-token
+.api-keys
+tokens.json
 
 # Build outputs
 dist/
@@ -20,9 +39,11 @@ Thumbs.db
 *.swp
 *.swo
 
-# Logs
+# Logs (may contain sensitive data)
 *.log
 npm-debug.log*
+audit-*.log
+security-*.log
 
 # Cache
 .cache/
@@ -34,3 +55,8 @@ coverage/
 # Temporary files
 *.tmp
 *.temp
+
+# Security scan results (may contain vulnerability details)
+.snyk
+security-report.json
+npm-audit.json
