@@ -41,6 +41,37 @@ const SECURITY_CONFIG = {
 // Rate limiting state
 const rateLimitState = new Map();
 
+// Maximum entries in rate limit state (prevent memory bloat)
+const MAX_RATE_LIMIT_ENTRIES = 1000;
+
+// Cleanup interval for rate limit state (every 2 minutes)
+const RATE_LIMIT_CLEANUP_INTERVAL = 2 * 60 * 1000;
+
+/**
+ * Clean up expired rate limit entries to prevent memory leaks
+ */
+function cleanupRateLimitState() {
+  const now = Date.now();
+  const windowMs = 60000;
+
+  for (const [key, state] of rateLimitState.entries()) {
+    if (now - state.windowStart > windowMs) {
+      rateLimitState.delete(key);
+    }
+  }
+
+  // If still too many entries, remove oldest
+  if (rateLimitState.size > MAX_RATE_LIMIT_ENTRIES) {
+    const entries = [...rateLimitState.entries()]
+      .sort((a, b) => a[1].windowStart - b[1].windowStart);
+    const toRemove = entries.slice(0, entries.length - MAX_RATE_LIMIT_ENTRIES);
+    toRemove.forEach(([key]) => rateLimitState.delete(key));
+  }
+}
+
+// Start cleanup interval (unref to not block process exit)
+setInterval(cleanupRateLimitState, RATE_LIMIT_CLEANUP_INTERVAL).unref();
+
 // =============================================================================
 // Input Validation
 // =============================================================================

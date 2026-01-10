@@ -7,11 +7,15 @@
  * Security:
  * - Path traversal prevention via base directory validation
  * - Input already sanitized by security.js before reaching this module
+ *
+ * Performance:
+ * - Uses component index for O(1) lookups
+ * - Caches file content to avoid repeated disk reads
  */
 
-import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { findComponentByIndex, cachedReadFile } from '../cache.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const UNIFIED_DIR = path.resolve(__dirname, '../../docs-unified/components');
@@ -37,8 +41,16 @@ function isPathWithinBase(resolvedPath, baseDir) {
 export async function getComponentDocs(componentName, audience = 'all') {
   const normalizedName = normalizeComponentName(componentName);
 
-  // Try to find the component file
-  const filePath = await findComponentFile(normalizedName);
+  // Additional safety: ensure name doesn't contain path separators
+  if (normalizedName.includes('/') || normalizedName.includes('\\') || normalizedName.includes('..')) {
+    return {
+      content: [{ type: 'text', text: 'Invalid component name' }],
+      isError: true
+    };
+  }
+
+  // Use cached component index for fast lookup
+  const filePath = await findComponentByIndex(normalizedName, UNIFIED_DIR);
 
   if (!filePath) {
     return {
@@ -50,8 +62,17 @@ export async function getComponentDocs(componentName, audience = 'all') {
     };
   }
 
+  // Validate path is within allowed directory
+  if (!isPathWithinBase(filePath, UNIFIED_DIR)) {
+    return {
+      content: [{ type: 'text', text: 'Access denied' }],
+      isError: true
+    };
+  }
+
   try {
-    const content = await fs.readFile(filePath, 'utf-8');
+    // Use cached file read
+    const content = await cachedReadFile(filePath);
 
     // If specific audience requested, extract that section
     if (audience !== 'all') {
@@ -75,63 +96,11 @@ export async function getComponentDocs(componentName, audience = 'all') {
     return {
       content: [{
         type: 'text',
-        text: `Error reading component docs: ${error.message}`
+        text: `Error reading component documentation`
       }],
       isError: true
     };
   }
-}
-
-/**
- * Find component file with fuzzy matching
- * Includes path traversal protection
- */
-async function findComponentFile(normalizedName) {
-  // Additional safety: ensure name doesn't contain path separators
-  if (normalizedName.includes('/') || normalizedName.includes('\\') || normalizedName.includes('..')) {
-    return null;
-  }
-
-  const possibleNames = [
-    normalizedName,
-    normalizedName.replace(/-/g, ''),
-    normalizedName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
-  ];
-
-  try {
-    const files = await fs.readdir(UNIFIED_DIR);
-
-    for (const name of possibleNames) {
-      const match = files.find(f =>
-        f.replace('.md', '').toLowerCase() === name.toLowerCase()
-      );
-      if (match) {
-        const fullPath = path.join(UNIFIED_DIR, match);
-        // Validate path is within allowed directory
-        if (isPathWithinBase(fullPath, UNIFIED_DIR)) {
-          return fullPath;
-        }
-      }
-    }
-
-    // Partial match fallback
-    for (const name of possibleNames) {
-      const match = files.find(f =>
-        f.toLowerCase().includes(name.toLowerCase())
-      );
-      if (match) {
-        const fullPath = path.join(UNIFIED_DIR, match);
-        // Validate path is within allowed directory
-        if (isPathWithinBase(fullPath, UNIFIED_DIR)) {
-          return fullPath;
-        }
-      }
-    }
-  } catch {
-    // Directory doesn't exist
-  }
-
-  return null;
 }
 
 /**

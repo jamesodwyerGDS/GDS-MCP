@@ -7,12 +7,23 @@
  * - Path traversal prevention
  * - Input sanitization (performed by security.js before reaching this module)
  * - Bounded result limits
+ *
+ * Performance:
+ * - Cached file reads and parsed content
+ * - Parallel file processing
+ * - Pre-compiled regex patterns
+ * - Optimized string operations
  */
 
-import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import matter from 'gray-matter';
+import {
+  cachedReadDir,
+  cachedParsedFile,
+  cachedReadFile,
+  getCachedRegex,
+  escapeRegex,
+} from '../cache.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const UNIFIED_DIR = path.resolve(__dirname, '../../docs-unified/components');
@@ -20,6 +31,12 @@ const LLMS_FILE = path.resolve(__dirname, '../../llms.txt');
 
 // Maximum content length to process per file (prevent DoS via large files)
 const MAX_CONTENT_LENGTH = 100000;
+
+// Minimum score threshold for results
+const MIN_SCORE_THRESHOLD = 0.1;
+
+// Maximum snippet length
+const MAX_SNIPPET_LENGTH = 300;
 
 /**
  * Validate that a resolved path is within the allowed base directory
@@ -58,14 +75,17 @@ export async function searchGds(query, audience = 'all', limit = 5) {
   // Expand query with aliases
   const searchTerms = expandQuery(normalizedQuery);
 
-  // Search components
-  const results = await searchComponents(searchTerms, audience);
+  // Pre-normalize search terms once (avoid repeated toLowerCase)
+  const normalizedTerms = searchTerms.map(t => t.toLowerCase());
 
-  // Also check llms.txt for FAQ matches
-  const faqResults = await searchFaq(normalizedQuery);
+  // Search components and FAQ in parallel
+  const [componentResults, faqResults] = await Promise.all([
+    searchComponents(normalizedTerms, audience),
+    searchFaq(normalizedQuery)
+  ]);
 
   // Combine and rank results
-  const combined = [...results, ...faqResults]
+  const combined = [...componentResults, ...faqResults]
     .sort((a, b) => b.score - a.score)
     .slice(0, limit);
 
@@ -117,58 +137,68 @@ function expandQuery(query) {
 
 /**
  * Search component files
- * Includes path traversal protection and content length limits
+ * Uses parallel processing and caching for performance
  */
-async function searchComponents(searchTerms, audience) {
-  const results = [];
-
+async function searchComponents(normalizedTerms, audience) {
   try {
-    const files = await fs.readdir(UNIFIED_DIR);
+    // Use cached directory read
+    const files = await cachedReadDir(UNIFIED_DIR);
 
-    for (const file of files) {
-      // Only process .md files
-      if (!file.endsWith('.md')) continue;
+    // Filter valid files first
+    const validFiles = files.filter(file => {
+      if (!file.endsWith('.md')) return false;
+      if (file.includes('..') || file.includes('/') || file.includes('\\')) return false;
+      const filePath = path.join(UNIFIED_DIR, file);
+      return isPathWithinBase(filePath, UNIFIED_DIR);
+    });
 
-      // Validate filename doesn't contain path traversal attempts
-      if (file.includes('..') || file.includes('/') || file.includes('\\')) continue;
-
+    // Process all files in parallel
+    const resultPromises = validFiles.map(async (file) => {
       const filePath = path.join(UNIFIED_DIR, file);
 
-      // Validate path is within allowed directory
-      if (!isPathWithinBase(filePath, UNIFIED_DIR)) continue;
+      try {
+        // Use cached parsed file
+        const { data, content } = await cachedParsedFile(filePath);
 
-      let content = await fs.readFile(filePath, 'utf-8');
+        // Truncate content if too long
+        const safeContent = content.length > MAX_CONTENT_LENGTH
+          ? content.substring(0, MAX_CONTENT_LENGTH)
+          : content;
 
-      // Limit content length to prevent DoS
-      if (content.length > MAX_CONTENT_LENGTH) {
-        content = content.substring(0, MAX_CONTENT_LENGTH);
-      }
+        const name = data.name || file.replace('.md', '');
+        const description = data.description || '';
 
-      const parsed = matter(content);
-
-      // Calculate relevance score
-      const score = calculateScore(searchTerms, {
-        name: parsed.data.name || file.replace('.md', ''),
-        description: parsed.data.description || '',
-        content: filterContentByAudience(parsed.content, audience)
-      });
-
-      if (score > 0.1) {
-        results.push({
-          title: parsed.data.name || file.replace('.md', ''),
-          type: 'component',
-          path: `docs-unified/components/${file}`,
-          score,
-          snippet: extractSnippet(parsed.content, searchTerms, audience)
+        // Calculate relevance score
+        const score = calculateScore(normalizedTerms, {
+          name,
+          description,
+          content: filterContentByAudience(safeContent, audience)
         });
-      }
-    }
-  } catch (error) {
-    // Log error but don't expose details
-    console.error('Error searching components');
-  }
 
-  return results;
+        if (score > MIN_SCORE_THRESHOLD) {
+          return {
+            title: name,
+            type: 'component',
+            path: `docs-unified/components/${file}`,
+            score,
+            snippet: extractSnippet(safeContent, normalizedTerms, audience)
+          };
+        }
+      } catch {
+        // Skip files that fail to parse
+      }
+
+      return null;
+    });
+
+    // Wait for all and filter out nulls
+    const results = await Promise.all(resultPromises);
+    return results.filter(Boolean);
+
+  } catch (error) {
+    console.error('Error searching components');
+    return [];
+  }
 }
 
 /**
@@ -185,19 +215,20 @@ async function searchFaq(query) {
       return results;
     }
 
-    let content = await fs.readFile(LLMS_FILE, 'utf-8');
+    // Use cached file read with length limit
+    const content = await cachedReadFile(LLMS_FILE, MAX_CONTENT_LENGTH);
 
-    // Limit content length
-    if (content.length > MAX_CONTENT_LENGTH) {
-      content = content.substring(0, MAX_CONTENT_LENGTH);
-    }
+    // Find FAQ sections using cached regex
+    const faqRegex = getCachedRegex('## FAQ[\\s\\S]*?(?=\\n## |$)', 'g');
+    const faqMatch = content.match(faqRegex);
 
-    // Find FAQ sections
-    const faqMatch = content.match(/## FAQ[\s\S]*?(?=\n## |$)/g);
     if (faqMatch) {
+      const queryWords = query.split(' ');
+
       for (const section of faqMatch) {
-        // Find individual Q&A
-        const qaMatches = section.matchAll(/### ([^\n]+)\n([\s\S]*?)(?=\n### |\n## |$)/g);
+        // Find individual Q&A using cached regex
+        const qaRegex = getCachedRegex('### ([^\\n]+)\\n([\\s\\S]*?)(?=\\n### |\\n## |$)', 'g');
+        const qaMatches = section.matchAll(qaRegex);
 
         for (const match of qaMatches) {
           const question = match[1];
@@ -205,19 +236,22 @@ async function searchFaq(query) {
 
           // Check relevance
           const combined = `${question} ${answer}`.toLowerCase();
-          if (combined.includes(query) || query.split(' ').some(w => combined.includes(w))) {
+          const matchingWords = queryWords.filter(w => combined.includes(w));
+
+          if (combined.includes(query) || matchingWords.length > 0) {
             results.push({
               title: question,
               type: 'FAQ',
-              score: query.split(' ').filter(w => combined.includes(w)).length / query.split(' ').length,
-              snippet: answer.substring(0, 300) + (answer.length > 300 ? '...' : '')
+              score: matchingWords.length / queryWords.length,
+              snippet: answer.length > MAX_SNIPPET_LENGTH
+                ? answer.substring(0, MAX_SNIPPET_LENGTH) + '...'
+                : answer
             });
           }
         }
       }
     }
   } catch (error) {
-    // Log error but don't expose details
     console.error('Error searching FAQ');
   }
 
@@ -226,29 +260,37 @@ async function searchFaq(query) {
 
 /**
  * Calculate relevance score
+ * Optimized to avoid repeated string operations
  */
-function calculateScore(searchTerms, doc) {
+function calculateScore(normalizedTerms, doc) {
   let score = 0;
-  const name = doc.name.toLowerCase();
-  const description = doc.description.toLowerCase();
-  const content = doc.content.toLowerCase();
 
-  for (const term of searchTerms) {
-    const t = term.toLowerCase();
+  // Normalize document fields once
+  const nameLower = doc.name.toLowerCase();
+  const descLower = doc.description.toLowerCase();
+  const contentLower = doc.content.toLowerCase();
 
+  for (const term of normalizedTerms) {
     // Name matches (highest weight)
-    if (name === t) score += 1.0;
-    else if (name.includes(t)) score += 0.5;
+    if (nameLower === term) {
+      score += 1.0;
+    } else if (nameLower.includes(term)) {
+      score += 0.5;
+    }
 
     // Description matches
-    if (description.includes(t)) score += 0.3;
+    if (descLower.includes(term)) {
+      score += 0.3;
+    }
 
-    // Content matches
-    const contentMatches = (content.match(new RegExp(t, 'gi')) || []).length;
+    // Content matches - use cached regex
+    const escapedTerm = escapeRegex(term);
+    const termRegex = getCachedRegex(escapedTerm, 'gi');
+    const contentMatches = (contentLower.match(termRegex) || []).length;
     score += Math.min(contentMatches * 0.05, 0.3);
   }
 
-  return Math.min(score / searchTerms.length, 1.0);
+  return Math.min(score / normalizedTerms.length, 1.0);
 }
 
 /**
@@ -278,7 +320,7 @@ function filterContentByAudience(content, audience) {
 /**
  * Extract relevant snippet from content
  */
-function extractSnippet(content, searchTerms, audience) {
+function extractSnippet(content, normalizedTerms, audience) {
   const filteredContent = filterContentByAudience(content, audience);
 
   // Find most relevant paragraph
@@ -291,7 +333,7 @@ function extractSnippet(content, searchTerms, audience) {
     if (p.length < 20 || p.startsWith('---')) continue;
 
     const pLower = p.toLowerCase();
-    const score = searchTerms.filter(t => pLower.includes(t.toLowerCase())).length;
+    const score = normalizedTerms.filter(t => pLower.includes(t)).length;
 
     if (score > bestScore) {
       bestScore = score;
@@ -300,8 +342,8 @@ function extractSnippet(content, searchTerms, audience) {
   }
 
   // Truncate if needed
-  if (bestParagraph.length > 300) {
-    bestParagraph = bestParagraph.substring(0, 300) + '...';
+  if (bestParagraph.length > MAX_SNIPPET_LENGTH) {
+    bestParagraph = bestParagraph.substring(0, MAX_SNIPPET_LENGTH) + '...';
   }
 
   return bestParagraph || 'No preview available';
