@@ -67,9 +67,10 @@ const SEARCH_ALIASES = {
  * @param {string} query - Search query
  * @param {string} audience - "all", "design", "engineer", or "vibe"
  * @param {number} limit - Max results
+ * @param {boolean} showFull - Show full content instead of truncated snippets
  * @returns {object} MCP tool response
  */
-export async function searchGds(query, audience = 'all', limit = 5) {
+export async function searchGds(query, audience = 'all', limit = 5, showFull = false) {
   const normalizedQuery = query.toLowerCase().trim();
 
   // Expand query with aliases
@@ -80,8 +81,8 @@ export async function searchGds(query, audience = 'all', limit = 5) {
 
   // Search components and FAQ in parallel
   const [componentResults, faqResults] = await Promise.all([
-    searchComponents(normalizedTerms, audience),
-    searchFaq(normalizedQuery)
+    searchComponents(normalizedTerms, audience, showFull),
+    searchFaq(normalizedQuery, showFull)
   ]);
 
   // Combine and rank results
@@ -103,7 +104,19 @@ export async function searchGds(query, audience = 'all', limit = 5) {
     let output = `### ${i + 1}. ${r.title}\n`;
     output += `**Type:** ${r.type} | **Relevance:** ${Math.round(r.score * 100)}%\n`;
     if (r.path) output += `**Path:** ${r.path}\n`;
+    if (r.truncated) output += `*(truncated - use showFull: true to see complete content)*\n`;
     output += `\n${r.snippet}\n`;
+
+    // Always include design tokens for components
+    if (r.tokens && Object.keys(r.tokens).length > 0) {
+      output += `\n**Design Tokens:**\n`;
+      for (const [category, values] of Object.entries(r.tokens)) {
+        if (values && (Array.isArray(values) ? values.length > 0 : Object.keys(values).length > 0)) {
+          output += `- **${category}:** ${Array.isArray(values) ? values.join(', ') : JSON.stringify(values)}\n`;
+        }
+      }
+    }
+
     return output;
   }).join('\n---\n\n');
 
@@ -139,7 +152,7 @@ function expandQuery(query) {
  * Search component files
  * Uses parallel processing and caching for performance
  */
-async function searchComponents(normalizedTerms, audience) {
+async function searchComponents(normalizedTerms, audience, showFull = false) {
   try {
     // Use cached directory read
     const files = await cachedReadDir(UNIFIED_DIR);
@@ -176,12 +189,17 @@ async function searchComponents(normalizedTerms, audience) {
         });
 
         if (score > MIN_SCORE_THRESHOLD) {
+          const { snippet, truncated } = extractSnippet(safeContent, normalizedTerms, audience, showFull);
+          // Always extract design tokens from frontmatter
+          const tokens = data.tokens || {};
           return {
             title: name,
             type: 'component',
             path: `docs-unified/components/${file}`,
             score,
-            snippet: extractSnippet(safeContent, normalizedTerms, audience)
+            snippet,
+            truncated,
+            tokens
           };
         }
       } catch {
@@ -205,7 +223,7 @@ async function searchComponents(normalizedTerms, audience) {
  * Search FAQ in llms.txt
  * Includes path validation and content length limits
  */
-async function searchFaq(query) {
+async function searchFaq(query, showFull = false) {
   const results = [];
 
   try {
@@ -239,13 +257,15 @@ async function searchFaq(query) {
           const matchingWords = queryWords.filter(w => combined.includes(w));
 
           if (combined.includes(query) || matchingWords.length > 0) {
+            const needsTruncation = !showFull && answer.length > MAX_SNIPPET_LENGTH;
             results.push({
               title: question,
               type: 'FAQ',
               score: matchingWords.length / queryWords.length,
-              snippet: answer.length > MAX_SNIPPET_LENGTH
+              snippet: needsTruncation
                 ? answer.substring(0, MAX_SNIPPET_LENGTH) + '...'
-                : answer
+                : answer,
+              truncated: needsTruncation
             });
           }
         }
@@ -319,8 +339,9 @@ function filterContentByAudience(content, audience) {
 
 /**
  * Extract relevant snippet from content
+ * @returns {{ snippet: string, truncated: boolean }}
  */
-function extractSnippet(content, normalizedTerms, audience) {
+function extractSnippet(content, normalizedTerms, audience, showFull = false) {
   const filteredContent = filterContentByAudience(content, audience);
 
   // Find most relevant paragraph
@@ -341,10 +362,17 @@ function extractSnippet(content, normalizedTerms, audience) {
     }
   }
 
-  // Truncate if needed
-  if (bestParagraph.length > MAX_SNIPPET_LENGTH) {
-    bestParagraph = bestParagraph.substring(0, MAX_SNIPPET_LENGTH) + '...';
+  if (!bestParagraph) {
+    return { snippet: 'No preview available', truncated: false };
   }
 
-  return bestParagraph || 'No preview available';
+  // Truncate if needed (unless showFull is true)
+  const needsTruncation = !showFull && bestParagraph.length > MAX_SNIPPET_LENGTH;
+
+  return {
+    snippet: needsTruncation
+      ? bestParagraph.substring(0, MAX_SNIPPET_LENGTH) + '...'
+      : bestParagraph,
+    truncated: needsTruncation
+  };
 }

@@ -127,6 +127,11 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
               maximum: 50,
               default: 5,
               description: 'Maximum number of results (default: 5, max: 50)'
+            },
+            showFull: {
+              type: 'boolean',
+              default: false,
+              description: 'Show full content instead of truncated snippets. Use when results appear cut off.'
             }
           },
           required: ['query'],
@@ -195,7 +200,8 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         }
         const audience = validateAudience(args.audience);
         const limit = validateLimit(args.limit, 5);
-        return await searchGds(queryValidation.sanitized, audience, limit);
+        const showFull = args.showFull === true;
+        return await searchGds(queryValidation.sanitized, audience, limit, showFull);
       }
 
       default:
