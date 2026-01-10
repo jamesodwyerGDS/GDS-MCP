@@ -2,44 +2,130 @@
 name: SeatInfov2
 description: SeatInfov2 component from the Global Design System
 package: '@gds/components'
-storyUrl: 'http://localhost:6006/?path=/story/components-seat-infov2--default'
-storyId: components-seat-infov2--default
+status: stable
+version: 1.0.0
+updated: '2026-01-10'
 sourceFile: components/SeatInfov2/SeatInfov2.tsx
+stylesFile: null
+storiesFile: components/SeatInfov2/__stories__/SeatInfov2.stories.tsx
+storyUrl: 'http://localhost:6006/?path=/story/components-seatinfov2--basic'
+storyId: components-seatinfov2--basic
+tags: []
+keywords:
+  - seat-infov2
 ---
 # SeatInfov2
+
+## Overview
+
+SeatInfov2 component from the Global Design System Storybook library.
+
+### When to use
+
+- Use this component for its intended interactive purpose
+- Follow the design system guidelines for consistent usage
+
+### When not to use
+
+- Do not use outside of its intended context
+- Consider alternatives when a different pattern is more appropriate
 
 ## Import
 
 ```tsx
+import SeatInfov2 from '@gds/components/SeatInfov2';
+// or
 import { SeatInfov2 } from '@gds/components';
 ```
 
-## Basic Usage
+## Props
+
+| - | - | - | - | See source file |
+
+## Variants
+
+
+### Available Story Variants
+
+`Default`, `LongValues`, `Disabled`, `Transfer`, `Resale`, `WithWayfindingLight`, `WithWayfindingDark`, `TransferShouldNotShowWayfinding`, `RTL`
+
+## Code Examples
+
+### Basic Usage
 
 ```tsx
 <SeatInfov2>Content</SeatInfov2>
 ```
 
-## Props
-
-| Prop | Type | Required | Description |
-|------|------|----------|-------------|
-| `row` | `SeatLocation` | No | - |
-| `seat` | `SeatLocation` | No | - |
-| `section` | `SeatLocation` | No | - |
-| `type` | `TicketType` | Yes | - |
-| `wayfindingColors` | `BrandColors` | No | - |
 
 
-## Variants
+## Styling
 
-Available variants: `Default`, `LongValues`, `Disabled`, `Transfer`, `Resale`, `WithWayfindingLight`, `WithWayfindingDark`, `TransferShouldNotShowWayfinding`, `RTL`
+### Spacing Tokens
 
+| Property | Token | Value |
+|----------|-------|-------|
+| - | See styles file | - |
+
+### Typography
+
+| Property | Token/Value |
+|----------|-------------|
+| - | See styles file |
+
+### Colors
+
+| Property | Token |
+|----------|-------|
+| - | See styles file |
+
+
+
+## States
+
+| State | Description |
+|-------|-------------|
+| Default | Resting state |
+| Hover | Mouse over (`:hover`) |
+| Focus | Keyboard focus (`:focus`) with visible outline |
+| Active | Pressed state (`:active`) |
+| Disabled | Non-interactive (`disabled` prop or `aria-disabled`) |
+
+## Accessibility
+
+- **Keyboard navigation**: Component follows WAI-ARIA patterns where applicable
+- **Focus indicators**: Visible focus states with `outline-offset: 4px`
+- **Screen readers**: Semantic HTML with ARIA attributes where needed
+- **High contrast**: Supports `forced-colors` mode
+
+## Do's and Don'ts
+
+### Do's
+
+- Use consistent variants within the same context
+- Follow spacing guidelines from the design system
+- Provide accessible labels where needed
+
+### Don'ts
+
+- Don't override the component's built-in accessibility features
+- Don't use deprecated props without planning migration
+- Don't mix incompatible variant combinations
 
 ## Storybook
 
-[View in Storybook](http://localhost:6006/?path=/story/components-seat-infov2--default)
+[View in Storybook](http://localhost:6006/?path=/story/components-seatinfov2--basic)
 
-## Source
+## Source Files
 
-`components/SeatInfov2/SeatInfov2.tsx`
+| File | Path |
+|------|------|
+| Component | `components/SeatInfov2/SeatInfov2.tsx` |
+
+| Stories | `components/SeatInfov2/__stories__/SeatInfov2.stories.tsx` |
+
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-01-10 | Initial documentation |

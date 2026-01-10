@@ -11,22 +11,19 @@ Use mode prefixes for audience-specific answers:
 | Mode | Audience | Source | Response Style |
 |------|----------|--------|----------------|
 | `@design` | Designers | `/docs/` | Design specs, use cases, Figma variables |
-| `@engineer` | Engineers | `/docs-storybook/` | React props, TypeScript, code examples |
-| `@vibe` | AI coders | `/docs-vibe/` | Tailwind HTML, ShadCN, copy-paste snippets |
+| `@engineer` | Engineers | `/docs-storybook/` | React props, TypeScript, styled-components, code examples |
 
 ### Examples
 ```
 @design button variants    → Design specs with Figma tokens
-@engineer button variants  → React props and imports
-@vibe button variants      → Copy-paste Tailwind HTML
+@engineer button variants  → React props, styling tokens, code examples
 ```
 
 ### Auto-Detection
 No prefix? Keywords trigger automatic routing:
 - **Figma, design spec, use case, when to use** → `@design`
-- **React, props, TypeScript, import, onClick** → `@engineer`
-- **Tailwind, HTML, ShadCN, Lovable, copy-paste** → `@vibe`
-- **No keywords detected** → Summary from all sources
+- **React, props, TypeScript, import, styled-components** → `@engineer`
+- **No keywords detected** → Summary from both sources
 
 ---
 
@@ -34,10 +31,10 @@ No prefix? Keywords trigger automatic routing:
 
 | Doc Set | Styling Approach |
 |---------|------------------|
-| Engineer (`/docs-storybook/`) | **styled-components** (CSS-in-JS) |
-| Vibe (`/docs-vibe/`) | **Tailwind CSS** (utility classes) |
+| Design (`/docs/`) | **Tailwind CSS** mappings for design tokens |
+| Engineer (`/docs-storybook/`) | **styled-components** tokens extracted from source |
 
-The source React components use styled-components. Vibe docs translate these to Tailwind for AI coding tools.
+The source React components use styled-components. Design docs include Tailwind utility mappings for implementation reference.
 
 ---
 
@@ -265,18 +262,15 @@ Use `LoadingSpinner` for full-page loading, `Skeleton` for content placeholders,
 
 ### 1. Design Documentation (`/docs/`)
 **Audience:** Designers
-**37 files:** 25 components, 6 foundations, 5 patterns
-**Content:** Design specs, use cases, tokens, accessibility
+**Content:** Design specs, use cases, tokens, accessibility, Tailwind mappings
 
 ### 2. Storybook Documentation (`/docs-storybook/`)
 **Audience:** Engineers
-**52 components** with props, types, code examples
-**Content:** React imports, TypeScript, Storybook URLs
-
-### 3. Vibe Documentation (`/docs-vibe/`)
-**Audience:** AI coding tools (Lovable, Figma Make, v0.dev)
-**Content:** ShadCN specs, Tailwind HTML snippets
-**Key file:** `/docs-vibe/design-system.md` - single-file reference
+**52 components** with comprehensive documentation:
+- TypeScript props with types and defaults
+- Styled-components styling tokens
+- Code examples from stories
+- States and accessibility info
 
 ---
 
@@ -353,21 +347,20 @@ Use `LoadingSpinner` for full-page loading, `Skeleton` for content placeholders,
 
 ## Component Index
 
-Quick links to documentation across all three doc sets:
+Quick links to documentation across both doc sets:
 
-| Component | Design | Engineer | Vibe |
-|-----------|--------|----------|------|
-| Button | [specs](/docs/components/atoms/button.md) | [code](/docs-storybook/components/button.md) | [html](/docs-vibe/tailwind/button.html) |
-| InputField | [specs](/docs/components/atoms/input-field.md) | [code](/docs-storybook/components/inputfield.md) | [html](/docs-vibe/tailwind/inputfield.html) |
-| Checkbox | [specs](/docs/components/atoms/checkbox.md) | [code](/docs-storybook/components/checkbox.md) | [html](/docs-vibe/tailwind/checkbox.html) |
-| Modal | [specs](/docs/components/molecules/modal.md) | [code](/docs-storybook/components/modal.md) | [html](/docs-vibe/tailwind/modal.html) |
-| Card | — | [code](/docs-storybook/components/card.md) | [html](/docs-vibe/tailwind/card.html) |
-| AlertBox | [specs](/docs/components/atoms/alert-box.md) | [code](/docs-storybook/components/alertbox.md) | [html](/docs-vibe/tailwind/alertbox.html) |
+| Component | Design | Engineer |
+|-----------|--------|----------|
+| Button | [specs](/docs/components/atoms/button.md) | [code](/docs-storybook/components/button.md) |
+| InputField | [specs](/docs/components/atoms/input-field.md) | [code](/docs-storybook/components/input-field.md) |
+| Checkbox | [specs](/docs/components/atoms/checkbox.md) | [code](/docs-storybook/components/checkbox.md) |
+| Modal | [specs](/docs/components/molecules/modal.md) | [code](/docs-storybook/components/modal.md) |
+| Card | — | [code](/docs-storybook/components/card.md) |
+| AlertBox | [specs](/docs/components/atoms/alert-box.md) | [code](/docs-storybook/components/alert-box.md) |
 
 **Full component lists:**
-- Design (25): `/docs/components/`
+- Design: `/docs/components/`
 - Engineer (52): `/docs-storybook/components/`
-- Vibe (25): `/docs-vibe/tailwind/`
 
 ---
 
@@ -380,7 +373,6 @@ Quick links to documentation across all three doc sets:
 | Root llms.txt | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/llms.txt` |
 | Design llms.txt | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs/llms.txt` |
 | Engineer llms.txt | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs-storybook/llms.txt` |
-| Vibe llms.txt | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs-vibe/llms.txt` |
 | Button (design) | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs/components/atoms/button.md` |
 | Button (engineer) | `https://raw.githubusercontent.com/jamesodwyerGDS/GDS-MCP/main/docs-storybook/components/button.md` |
 

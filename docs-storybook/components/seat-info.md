@@ -2,45 +2,146 @@
 name: SeatInfo
 description: SeatInfo component from the Global Design System
 package: '@gds/components'
-storyUrl: 'http://localhost:6006/?path=/story/components-seat-info--default'
-storyId: components-seat-info--default
+status: stable
+version: 1.0.0
+updated: '2026-01-10'
 sourceFile: components/SeatInfo/index.tsx
+stylesFile: components/SeatInfo/index.styles.ts
+storiesFile: components/SeatInfo/__stories__/index.stories.tsx
+storyUrl: 'http://localhost:6006/?path=/story/components-seatinfo--basic'
+storyId: components-seatinfo--basic
+tags: []
+keywords:
+  - seat-info
 ---
 # SeatInfo
+
+## Overview
+
+SeatInfo component from the Global Design System Storybook library.
+
+### When to use
+
+- Use this component for its intended interactive purpose
+- Follow the design system guidelines for consistent usage
+
+### When not to use
+
+- Do not use outside of its intended context
+- Consider alternatives when a different pattern is more appropriate
 
 ## Import
 
 ```tsx
+import SeatInfo from '@gds/components/SeatInfo';
+// or
 import { SeatInfo } from '@gds/components';
 ```
 
-## Basic Usage
+## Props
+
+| Prop | Type | Default | Required | Description |
+|------|------|---------|----------|-------------|
+| `timedEntryDetails` | `string` | `-` | No | - |
+| `level` | `SeatData` | `defaultSeatData` | No | - |
+| `section` | `SeatData` | `defaultSeatData` | No | - |
+| `row` | `SeatData` | `defaultSeatData` | No | - |
+| `seat` | `SeatData` | `defaultSeatData` | No | - |
+| `isDisplayInline` | `boolean` | `false` | No | - |
+| `description` | `string` | `-` | No | - |
+| `className` | `string` | `{className` | No | - |
+| `styleVariant` | `"default" | "noDivider"` | `'default'` | No | - |
+
+## Variants
+
+
+### Available Story Variants
+
+See Storybook
+
+## Code Examples
+
+### Basic Usage
 
 ```tsx
 <SeatInfo>Content</SeatInfo>
 ```
 
-## Props
-
-| Prop | Type | Required | Description |
-|------|------|----------|-------------|
-| `timedEntryDetails` | `string` | No | - |
-| `level` | `SeatData` | No | - |
-| `section` | `SeatData` | No | - |
-| `row` | `SeatData` | No | - |
-| `seat` | `SeatData` | No | - |
-| `isDisplayInline` | `boolean` | No | - |
-| `description` | `string` | No | - |
-| `className` | `string` | No | - |
-| `styleVariant` | `"default" | "noDivider"` | No | - |
 
 
+## Styling
 
+### Spacing Tokens
+
+| Property | Token | Value |
+|----------|-------|-------|
+| margin-bottom instead of doing margin-top 
+  on the other el | `spacing.hall` | 12px |
+| padding-bottom | `spacing.club` | 8px |
+| margin-inline-start | `spacing.auditorium` | 16px |
+
+### Typography
+
+| Property | Token/Value |
+|----------|-------------|
+| font-weight | `400` |
+| font-weight | `bold` |
+
+### Colors
+
+| Property | Token |
+|----------|-------|
+| color | `(props) => props.theme.base.primary` |
+| color | `(props) => props.theme.text.secondary` |
+| color | `(props) => props.theme.text.primary` |
+
+
+
+## States
+
+| State | Description |
+|-------|-------------|
+| Default | Resting state |
+| Hover | Mouse over (`:hover`) |
+| Focus | Keyboard focus (`:focus`) with visible outline |
+| Active | Pressed state (`:active`) |
+| Disabled | Non-interactive (`disabled` prop or `aria-disabled`) |
+
+## Accessibility
+
+- **Keyboard navigation**: Component follows WAI-ARIA patterns where applicable
+- **Focus indicators**: Visible focus states with `outline-offset: 4px`
+- **Screen readers**: Semantic HTML with ARIA attributes where needed
+- **High contrast**: Supports `forced-colors` mode
+
+## Do's and Don'ts
+
+### Do's
+
+- Use consistent variants within the same context
+- Follow spacing guidelines from the design system
+- Provide accessible labels where needed
+
+### Don'ts
+
+- Don't override the component's built-in accessibility features
+- Don't use deprecated props without planning migration
+- Don't mix incompatible variant combinations
 
 ## Storybook
 
-[View in Storybook](http://localhost:6006/?path=/story/components-seat-info--default)
+[View in Storybook](http://localhost:6006/?path=/story/components-seatinfo--basic)
 
-## Source
+## Source Files
 
-`components/SeatInfo/index.tsx`
+| File | Path |
+|------|------|
+| Component | `components/SeatInfo/index.tsx` |
+| Styles | `components/SeatInfo/index.styles.ts` |
+| Stories | `components/SeatInfo/__stories__/index.stories.tsx` |
+
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-01-10 | Initial documentation |

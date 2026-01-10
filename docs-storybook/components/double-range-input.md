@@ -2,49 +2,130 @@
 name: DoubleRangeInput
 description: DoubleRangeInput component from the Global Design System
 package: '@gds/components'
-storyUrl: 'http://localhost:6006/?path=/story/components-double-range-input--default'
-storyId: components-double-range-input--default
+status: stable
+version: 1.0.0
+updated: '2026-01-10'
 sourceFile: components/DoubleRangeInput/index.tsx
+stylesFile: null
+storiesFile: components/DoubleRangeInput/__stories__/index.stories.tsx
+storyUrl: 'http://localhost:6006/?path=/story/components-doublerangeinput--basic'
+storyId: components-doublerangeinput--basic
+tags: []
+keywords:
+  - double-range-input
 ---
 # DoubleRangeInput
+
+## Overview
+
+DoubleRangeInput component from the Global Design System Storybook library.
+
+### When to use
+
+- Use this component for its intended interactive purpose
+- Follow the design system guidelines for consistent usage
+
+### When not to use
+
+- Do not use outside of its intended context
+- Consider alternatives when a different pattern is more appropriate
 
 ## Import
 
 ```tsx
+import DoubleRangeInput from '@gds/components/DoubleRangeInput';
+// or
 import { DoubleRangeInput } from '@gds/components';
 ```
 
-## Basic Usage
+## Props
+
+| - | - | - | - | See source file |
+
+## Variants
+
+
+### Available Story Variants
+
+`Price`, `Disabled`, `VariableInputValues`, `ErrorOnMinInput`, `ErrorOnMaxInput`, `Controlled`, `RTL`
+
+## Code Examples
+
+### Basic Usage
 
 ```tsx
 <DoubleRangeInput>Content</DoubleRangeInput>
 ```
 
-## Props
-
-| Prop | Type | Required | Description |
-|------|------|----------|-------------|
-| `disabled` | `boolean` | No | - |
-| `errorMax` | `boolean` | No | - |
-| `errorMin` | `boolean` | No | - |
-| `errorMaxMessage` | `string | JSX.Element` | No | - |
-| `errorMinMessage` | `string | JSX.Element` | No | - |
-| `formatValue` | `(value: number, type: "min" | "max") => void` | No | - |
-| `screenReaderErrorPrefix` | `string` | Yes | - |
-| `id` | `string` | Yes | - |
-| `inputSize` | `number` | No | - |
-| `max` | `number` | No | - |
 
 
-## Variants
+## Styling
 
-Available variants: `Price`, `Disabled`, `VariableInputValues`, `ErrorOnMinInput`, `ErrorOnMaxInput`, `Controlled`, `RTL`
+### Spacing Tokens
 
+| Property | Token | Value |
+|----------|-------|-------|
+| - | See styles file | - |
+
+### Typography
+
+| Property | Token/Value |
+|----------|-------------|
+| - | See styles file |
+
+### Colors
+
+| Property | Token |
+|----------|-------|
+| - | See styles file |
+
+
+
+## States
+
+| State | Description |
+|-------|-------------|
+| Default | Resting state |
+| Hover | Mouse over (`:hover`) |
+| Focus | Keyboard focus (`:focus`) with visible outline |
+| Active | Pressed state (`:active`) |
+| Disabled | Non-interactive (`disabled` prop or `aria-disabled`) |
+
+## Accessibility
+
+- **Keyboard navigation**: Component follows WAI-ARIA patterns where applicable
+- **Focus indicators**: Visible focus states with `outline-offset: 4px`
+- **Screen readers**: Semantic HTML with ARIA attributes where needed
+- **High contrast**: Supports `forced-colors` mode
+
+## Do's and Don'ts
+
+### Do's
+
+- Use consistent variants within the same context
+- Follow spacing guidelines from the design system
+- Provide accessible labels where needed
+
+### Don'ts
+
+- Don't override the component's built-in accessibility features
+- Don't use deprecated props without planning migration
+- Don't mix incompatible variant combinations
 
 ## Storybook
 
-[View in Storybook](http://localhost:6006/?path=/story/components-double-range-input--default)
+[View in Storybook](http://localhost:6006/?path=/story/components-doublerangeinput--basic)
 
-## Source
+## Source Files
 
-`components/DoubleRangeInput/index.tsx`
+| File | Path |
+|------|------|
+| Component | `components/DoubleRangeInput/index.tsx` |
+
+| Stories | `components/DoubleRangeInput/__stories__/index.stories.tsx` |
+
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-01-10 | Initial documentation |

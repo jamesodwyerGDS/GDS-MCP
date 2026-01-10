@@ -48,14 +48,31 @@ Ask your AI assistant about GDS components, patterns, and foundations. The MCP s
 ## Documentation Structure
 
 ```
-/docs
+/docs                 # Figma design documentation
   /components
-    /atoms          # Buttons, inputs, icons
-    /molecules      # Search bars, cards, form groups
-    /organisms      # Headers, footers, navigation
-  /foundations      # Colours, typography, spacing tokens
-  /patterns         # Common UI patterns
+    /atoms            # Buttons, inputs, icons
+    /molecules        # Search bars, cards, form groups
+    /organisms        # Headers, footers, navigation
+  /foundations        # Colours, typography, spacing tokens
+  /patterns           # Common UI patterns
+
+/docs-storybook       # Storybook implementation documentation
+  /components         # All 52 components with:
+                      #   - Props (types, defaults)
+                      #   - Styling tokens (from styled-components)
+                      #   - Code examples (from stories)
+  /tokens             # spacing, typography, colors
+  index.md            # Component index
 ```
+
+### Two Documentation Perspectives
+
+| Figma Docs (`/docs`) | Storybook Docs (`/docs-storybook`) |
+|---------------------|-----------------------------------|
+| Design specs | Implementation details |
+| Visual variants | TypeScript props |
+| Design tokens | Styled-components tokens |
+| Usage guidelines | Code examples |
 
 ## Local Development (Optional)
 
@@ -70,8 +87,11 @@ npm install
 # Set your Figma token
 export FIGMA_TOKEN=your_token_here
 
-# Generate docs for a component
+# Generate Figma docs for a component
 npm run docs:generate -- --url="https://figma.com/file/..."
+
+# Generate Storybook docs (all 52 components)
+npm run storybook:generate
 
 # Validate documentation
 npm run docs:validate

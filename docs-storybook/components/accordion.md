@@ -2,43 +2,130 @@
 name: Accordion
 description: Accordion component from the Global Design System
 package: '@gds/components'
-storyUrl: 'http://localhost:6006/?path=/story/components-accordion--default'
-storyId: components-accordion--default
+status: stable
+version: 1.0.0
+updated: '2026-01-10'
 sourceFile: components/Accordion/Accordion.tsx
+stylesFile: null
+storiesFile: components/Accordion/__stories__/accordion.stories.tsx
+storyUrl: 'http://localhost:6006/?path=/story/components-accordion--basic'
+storyId: components-accordion--basic
+tags: []
+keywords:
+  - accordion
 ---
 # Accordion
+
+## Overview
+
+Accordion component from the Global Design System Storybook library.
+
+### When to use
+
+- Use this component for its intended interactive purpose
+- Follow the design system guidelines for consistent usage
+
+### When not to use
+
+- Do not use outside of its intended context
+- Consider alternatives when a different pattern is more appropriate
 
 ## Import
 
 ```tsx
+import Accordion from '@gds/components/Accordion';
+// or
 import { Accordion } from '@gds/components';
 ```
 
-## Basic Usage
+## Props
+
+| - | - | - | - | See source file |
+
+## Variants
+
+
+### Available Story Variants
+
+`Single`, `Multi`, `DefaultOpen`, `WithMaxWidthOveridden`, `LeadingIcon`, `WithoutTopAndBottomBorders`, `RTL`
+
+## Code Examples
+
+### Basic Usage
 
 ```tsx
 <Accordion>Content</Accordion>
 ```
 
-## Props
-
-| Prop | Type | Required | Description |
-|------|------|----------|-------------|
-| `children` | `React.ReactElement | React.ReactElement[]` | Yes | - |
-| `type` | `AccordionType` | No | - |
-| `showTopBorder` | `boolean` | No | - |
-| `showBottomBorder` | `boolean` | No | - |
 
 
-## Variants
+## Styling
 
-Available variants: `Single`, `Multi`, `DefaultOpen`, `WithMaxWidthOveridden`, `LeadingIcon`, `WithoutTopAndBottomBorders`, `RTL`
+### Spacing Tokens
 
+| Property | Token | Value |
+|----------|-------|-------|
+| - | See styles file | - |
+
+### Typography
+
+| Property | Token/Value |
+|----------|-------------|
+| - | See styles file |
+
+### Colors
+
+| Property | Token |
+|----------|-------|
+| - | See styles file |
+
+
+
+## States
+
+| State | Description |
+|-------|-------------|
+| Default | Resting state |
+| Hover | Mouse over (`:hover`) |
+| Focus | Keyboard focus (`:focus`) with visible outline |
+| Active | Pressed state (`:active`) |
+| Disabled | Non-interactive (`disabled` prop or `aria-disabled`) |
+
+## Accessibility
+
+- **Keyboard navigation**: Component follows WAI-ARIA patterns where applicable
+- **Focus indicators**: Visible focus states with `outline-offset: 4px`
+- **Screen readers**: Semantic HTML with ARIA attributes where needed
+- **High contrast**: Supports `forced-colors` mode
+
+## Do's and Don'ts
+
+### Do's
+
+- Use consistent variants within the same context
+- Follow spacing guidelines from the design system
+- Provide accessible labels where needed
+
+### Don'ts
+
+- Don't override the component's built-in accessibility features
+- Don't use deprecated props without planning migration
+- Don't mix incompatible variant combinations
 
 ## Storybook
 
-[View in Storybook](http://localhost:6006/?path=/story/components-accordion--default)
+[View in Storybook](http://localhost:6006/?path=/story/components-accordion--basic)
 
-## Source
+## Source Files
 
-`components/Accordion/Accordion.tsx`
+| File | Path |
+|------|------|
+| Component | `components/Accordion/Accordion.tsx` |
+
+| Stories | `components/Accordion/__stories__/accordion.stories.tsx` |
+
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-01-10 | Initial documentation |

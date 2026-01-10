@@ -2,40 +2,132 @@
 name: TicketDescription
 description: TicketDescription component from the Global Design System
 package: '@gds/components'
-storyUrl: 'http://localhost:6006/?path=/story/components-ticket-description--default'
-storyId: components-ticket-description--default
+status: stable
+version: 1.0.0
+updated: '2026-01-10'
 sourceFile: components/TicketDescription/TicketDescription.tsx
+stylesFile: null
+storiesFile: components/TicketDescription/__stories__/TicketDescription.stories.tsx
+storyUrl: 'http://localhost:6006/?path=/story/components-ticketdescription--basic'
+storyId: components-ticketdescription--basic
+tags: []
+keywords:
+  - ticket-description
 ---
 # TicketDescription
+
+## Overview
+
+TicketDescription component from the Global Design System Storybook library.
+
+### When to use
+
+- Use this component for its intended interactive purpose
+- Follow the design system guidelines for consistent usage
+
+### When not to use
+
+- Do not use outside of its intended context
+- Consider alternatives when a different pattern is more appropriate
 
 ## Import
 
 ```tsx
+import TicketDescription from '@gds/components/TicketDescription';
+// or
 import { TicketDescription } from '@gds/components';
 ```
 
-## Basic Usage
+## Props
+
+| Prop | Type | Default | Required | Description |
+|------|------|---------|----------|-------------|
+| `children` | `React.ReactNode` | `-` | Yes | - |
+
+## Variants
+
+
+### Available Story Variants
+
+`Postal`, `WillCall`, `Print`, `TransferComplete`, `Cancelled`, `AppOnly`, `ResaleSold`, `TransferPending`, `ResaleWithShareListing`, `TicketError`, `TicketInfo`, `ResaleWarning`, `AppOnlyWithAppleWallet`, `AppOnlyWithGoogleWallet`, `ResaleListing`, `WithCustomIcon`
+
+## Code Examples
+
+### Basic Usage
 
 ```tsx
 <TicketDescription>Content</TicketDescription>
 ```
 
-## Props
-
-| Prop | Type | Required | Description |
-|------|------|----------|-------------|
-| `children` | `React.ReactNode` | Yes | - |
 
 
-## Variants
+## Styling
 
-Available variants: `Postal`, `WillCall`, `Print`, `TransferComplete`, `Cancelled`, `AppOnly`, `ResaleSold`, `TransferPending`, `ResaleWithShareListing`, `TicketError`, `TicketInfo`, `ResaleWarning`, `AppOnlyWithAppleWallet`, `AppOnlyWithGoogleWallet`, `ResaleListing`, `WithCustomIcon`
+### Spacing Tokens
 
+| Property | Token | Value |
+|----------|-------|-------|
+| - | See styles file | - |
+
+### Typography
+
+| Property | Token/Value |
+|----------|-------------|
+| - | See styles file |
+
+### Colors
+
+| Property | Token |
+|----------|-------|
+| - | See styles file |
+
+
+
+## States
+
+| State | Description |
+|-------|-------------|
+| Default | Resting state |
+| Hover | Mouse over (`:hover`) |
+| Focus | Keyboard focus (`:focus`) with visible outline |
+| Active | Pressed state (`:active`) |
+| Disabled | Non-interactive (`disabled` prop or `aria-disabled`) |
+
+## Accessibility
+
+- **Keyboard navigation**: Component follows WAI-ARIA patterns where applicable
+- **Focus indicators**: Visible focus states with `outline-offset: 4px`
+- **Screen readers**: Semantic HTML with ARIA attributes where needed
+- **High contrast**: Supports `forced-colors` mode
+
+## Do's and Don'ts
+
+### Do's
+
+- Use consistent variants within the same context
+- Follow spacing guidelines from the design system
+- Provide accessible labels where needed
+
+### Don'ts
+
+- Don't override the component's built-in accessibility features
+- Don't use deprecated props without planning migration
+- Don't mix incompatible variant combinations
 
 ## Storybook
 
-[View in Storybook](http://localhost:6006/?path=/story/components-ticket-description--default)
+[View in Storybook](http://localhost:6006/?path=/story/components-ticketdescription--basic)
 
-## Source
+## Source Files
 
-`components/TicketDescription/TicketDescription.tsx`
+| File | Path |
+|------|------|
+| Component | `components/TicketDescription/TicketDescription.tsx` |
+
+| Stories | `components/TicketDescription/__stories__/TicketDescription.stories.tsx` |
+
+## Changelog
+
+| Version | Date | Changes |
+|---------|------|---------|
+| 1.0.0 | 2026-01-10 | Initial documentation |

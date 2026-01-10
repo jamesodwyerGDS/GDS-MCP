@@ -9,12 +9,8 @@
     "docs:generate-all": "node scripts/generate-all.js",
     "docs:validate": "node scripts/validate.js",
     "storybook:generate": "node scripts/generate-storybook-docs.js",
-    "vibe:generate": "node scripts/generate-vibe-docs.js",
-    "vibe:shadcn": "node scripts/generate-vibe-docs.js --format=shadcn",
-    "vibe:tailwind": "node scripts/generate-vibe-docs.js --format=tailwind",
-    "unified:generate": "node scripts/generate-unified-docs.js",
     "analyze": "node scripts/analyze-efficiency.js",
-    "build:all": "npm run storybook:generate && npm run vibe:generate && npm run unified:generate"
+    "build:all": "npm run docs:generate-all && npm run storybook:generate"
   },
   "keywords": [
     "mcp",

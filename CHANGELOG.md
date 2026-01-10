@@ -46,6 +46,19 @@ Add a new entry when:
 
 ---
 
+## 10th Jan 2025
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| UPDATED - Restructured documentation to separate Figma and Storybook docs | 🟡 Updated | NA | NA | NA |
+| REMOVED - Unified docs (`docs-unified/`) - now using separate doc sets | 🔴 Deprecated | NA | NA | NA |
+| REMOVED - Vibe docs (`docs-vibe/`) - Tailwind snippets now in design docs | 🔴 Deprecated | NA | NA | NA |
+| UPDATED - Enhanced Storybook doc generator with comprehensive props, styling tokens, and code examples | 🟡 Updated | NA | NA | NA |
+| ADDED - New Storybook template (`templates/storybook-component.md`) | 🟢 Added | NA | NA | NA |
+| UPDATED - Regenerated all 52 Storybook component docs with enhanced content | 🟡 Updated | NA | NA | [Index](/docs-storybook/index.md) |
+
+---
+
 ## 6th Jan 2025
 
 | Change | Type | JIRA | Figma | Storybook |

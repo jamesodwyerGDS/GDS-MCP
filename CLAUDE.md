@@ -30,14 +30,17 @@ npm install
 npm run docs:generate -- --url="https://figma.com/file/..."
 npm run docs:generate -- --file=ABC123 --node=1:234
 
-# Generate docs for multiple components (requires components.json)
+# Generate docs for multiple Figma components (requires components.json)
 npm run docs:generate-all
+
+# Generate Storybook documentation (extracts props, styling, code examples)
+npm run storybook:generate
 
 # Validate frontmatter schema
 npm run docs:validate
 ```
 
-**Environment:** Set `FIGMA_TOKEN` before running generation scripts.
+**Environment:** Set `FIGMA_TOKEN` before running Figma generation scripts.
 
 ## Architecture
 
@@ -46,22 +49,35 @@ npm run docs:validate
   figma-client.js         # Figma API/MCP wrapper
   markdown-transformer.js # Transforms Figma data -> markdown
   documentation-generator.js # Main orchestrator
+  storybook-doc-generator.js # Storybook docs generator
 
 /scripts                  # CLI entry points
-  generate.js             # Single component generation
-  generate-all.js         # Batch generation
+  generate.js             # Single Figma component generation
+  generate-all.js         # Batch Figma generation
+  generate-storybook-docs.js # Storybook docs generation
   validate.js             # Frontmatter validation
 
-/docs                     # Generated documentation
+/docs                     # Figma design documentation
   /components/{atoms,molecules,organisms}
   /foundations            # Design tokens (colours, typography, spacing)
   /patterns               # Reusable patterns
-  llms.txt                # AI context file for GitMCP
+
+/docs-storybook           # Storybook implementation documentation
+  /components             # All components with props, styling, code examples
+  /tokens                 # spacing, typography, colors
+  index.md                # Component index
+
+/GDS-storybook-originals  # Source Storybook components
+  /components             # React components with styled-components
+  /themes                 # Theme definitions
+  /dimensions             # Spacing, typography tokens
+  /colors                 # Color utilities
 
 CHANGELOG.md              # Design system changelog (MUST be updated with any changes)
 
 /templates
-  component.md            # Component documentation template
+  component.md            # Figma component documentation template
+  storybook-component.md  # Storybook component documentation template
 
 /.claude
   /skills
@@ -72,6 +88,22 @@ CHANGELOG.md              # Design system changelog (MUST be updated with any ch
   plugin.json
   marketplace.json
 ```
+
+## Documentation Types
+
+### Figma Docs (`/docs`)
+Design-focused documentation extracted from Figma:
+- Visual design specs
+- Design tokens and Tailwind mappings
+- Usage guidelines (do's/don'ts)
+- Accessibility requirements
+
+### Storybook Docs (`/docs-storybook`)
+Implementation-focused documentation extracted from source code:
+- TypeScript props with types and defaults
+- Styled-components styling tokens
+- Code examples from stories
+- All variant combinations
 
 ## Documentation Structure
 
