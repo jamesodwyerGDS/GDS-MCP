@@ -16,6 +16,7 @@
  */
 
 import path from 'path';
+import fs from 'fs/promises';
 import { fileURLToPath } from 'url';
 import {
   cachedReadDir,
@@ -26,8 +27,19 @@ import {
 } from '../cache.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+// All documentation directories to search
+const DOCS_ROOT = path.resolve(__dirname, '../../docs');
 const UNIFIED_DIR = path.resolve(__dirname, '../../docs-unified/components');
 const LLMS_FILE = path.resolve(__dirname, '../../llms.txt');
+
+// Documentation directories with their types
+const DOC_DIRECTORIES = [
+  { path: UNIFIED_DIR, type: 'component', recursive: false },
+  { path: path.join(DOCS_ROOT, 'foundations'), type: 'foundation', recursive: false },
+  { path: path.join(DOCS_ROOT, 'components'), type: 'component', recursive: true },
+  { path: path.join(DOCS_ROOT, 'patterns'), type: 'pattern', recursive: false },
+];
 
 // Maximum content length to process per file (prevent DoS via large files)
 const MAX_CONTENT_LENGTH = 100000;
@@ -149,74 +161,123 @@ function expandQuery(query) {
 }
 
 /**
- * Search component files
+ * Recursively get all markdown files from a directory
+ */
+async function getMarkdownFiles(dirPath, recursive = false) {
+  const files = [];
+
+  try {
+    const entries = await fs.readdir(dirPath, { withFileTypes: true });
+
+    for (const entry of entries) {
+      const fullPath = path.join(dirPath, entry.name);
+
+      if (entry.isDirectory() && recursive) {
+        const subFiles = await getMarkdownFiles(fullPath, true);
+        files.push(...subFiles);
+      } else if (entry.isFile() && entry.name.endsWith('.md')) {
+        // Skip security docs
+        if (!entry.name.includes('SECURITY')) {
+          files.push(fullPath);
+        }
+      }
+    }
+  } catch {
+    // Directory doesn't exist
+  }
+
+  return files;
+}
+
+/**
+ * Search all documentation directories
  * Uses parallel processing and caching for performance
  */
 async function searchComponents(normalizedTerms, audience, showFull = false) {
-  try {
-    // Use cached directory read
-    const files = await cachedReadDir(UNIFIED_DIR);
+  const allResults = [];
 
-    // Filter valid files first
-    const validFiles = files.filter(file => {
-      if (!file.endsWith('.md')) return false;
-      if (file.includes('..') || file.includes('/') || file.includes('\\')) return false;
-      const filePath = path.join(UNIFIED_DIR, file);
-      return isPathWithinBase(filePath, UNIFIED_DIR);
-    });
+  // Search all documentation directories in parallel
+  const dirSearchPromises = DOC_DIRECTORIES.map(async (dir) => {
+    try {
+      const files = await getMarkdownFiles(dir.path, dir.recursive);
 
-    // Process all files in parallel
-    const resultPromises = validFiles.map(async (file) => {
-      const filePath = path.join(UNIFIED_DIR, file);
-
-      try {
-        // Use cached parsed file
-        const { data, content } = await cachedParsedFile(filePath);
-
-        // Truncate content if too long
-        const safeContent = content.length > MAX_CONTENT_LENGTH
-          ? content.substring(0, MAX_CONTENT_LENGTH)
-          : content;
-
-        const name = data.name || file.replace('.md', '');
-        const description = data.description || '';
-
-        // Calculate relevance score
-        const score = calculateScore(normalizedTerms, {
-          name,
-          description,
-          content: filterContentByAudience(safeContent, audience)
-        });
-
-        if (score > MIN_SCORE_THRESHOLD) {
-          const { snippet, truncated } = extractSnippet(safeContent, normalizedTerms, audience, showFull);
-          // Always extract design tokens from frontmatter
-          const tokens = data.tokens || {};
-          return {
-            title: name,
-            type: 'component',
-            path: `docs-unified/components/${file}`,
-            score,
-            snippet,
-            truncated,
-            tokens
-          };
+      // Process files in parallel
+      const filePromises = files.map(async (filePath) => {
+        // Validate path
+        if (!isPathWithinBase(filePath, DOCS_ROOT) && !isPathWithinBase(filePath, UNIFIED_DIR)) {
+          return null;
         }
-      } catch {
-        // Skip files that fail to parse
+
+        try {
+          // Use cached parsed file
+          const { data, content } = await cachedParsedFile(filePath);
+
+          // Truncate content if too long
+          const safeContent = content.length > MAX_CONTENT_LENGTH
+            ? content.substring(0, MAX_CONTENT_LENGTH)
+            : content;
+
+          const fileName = path.basename(filePath, '.md');
+          const name = data.name || fileName;
+          const description = data.description || '';
+
+          // Calculate relevance score - search full content for foundations
+          const searchContent = dir.type === 'foundation'
+            ? safeContent
+            : filterContentByAudience(safeContent, audience);
+
+          const score = calculateScore(normalizedTerms, {
+            name,
+            description,
+            content: searchContent
+          });
+
+          if (score > MIN_SCORE_THRESHOLD) {
+            const { snippet, truncated } = extractSnippet(safeContent, normalizedTerms, audience, showFull);
+            // Extract design tokens from frontmatter
+            const tokens = data.tokens || {};
+            // Get relative path for display
+            const relativePath = path.relative(path.resolve(__dirname, '../..'), filePath);
+
+            return {
+              title: name,
+              type: dir.type,
+              path: relativePath,
+              score,
+              snippet,
+              truncated,
+              tokens
+            };
+          }
+        } catch {
+          // Skip files that fail to parse
+        }
+
+        return null;
+      });
+
+      const results = await Promise.all(filePromises);
+      return results.filter(Boolean);
+
+    } catch {
+      return [];
+    }
+  });
+
+  const allDirResults = await Promise.all(dirSearchPromises);
+
+  // Flatten and deduplicate by title (prefer unified docs)
+  const seen = new Map();
+  for (const results of allDirResults) {
+    for (const result of results) {
+      const key = result.title.toLowerCase();
+      if (!seen.has(key) || result.path.includes('unified')) {
+        seen.set(key, result);
       }
-
-      return null;
-    });
-
-    // Wait for all and filter out nulls
-    const results = await Promise.all(resultPromises);
-    return results.filter(Boolean);
-
-  } catch (error) {
-    console.error('Error searching components');
-    return [];
+    }
   }
+
+  return Array.from(seen.values());
 }
 
 /**
