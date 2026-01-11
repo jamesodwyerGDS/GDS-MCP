@@ -46,6 +46,16 @@ Add a new entry when:
 
 ---
 
+## 11th Jan 2025
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| Added `/project-summary` skill for updating PROJECT-SUMMARY.md | 🟢 Added | NA | NA | NA |
+| Added skills/resources folder with project-summary-template.md | 🟢 Added | NA | NA | NA |
+| Created PROJECT-SUMMARY.md with features, learnings, and Claude tools used | 🟢 Added | NA | NA | NA |
+
+---
+
 ## 6th Jan 2025
 
 | Change | Type | JIRA | Figma | Storybook |

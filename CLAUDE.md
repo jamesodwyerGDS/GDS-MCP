@@ -67,6 +67,12 @@ CHANGELOG.md              # Design system changelog (MUST be updated with any ch
   /skills
     /figma-doc            # /figma-doc skill
       SKILL.md
+    /project-summary      # /project-summary skill
+      SKILL.md
+    /resources            # Shared templates for skills
+      project-summary-template.md
+
+PROJECT-SUMMARY.md        # High-level project summary for team sharing
 
 /.claude-plugin           # Plugin marketplace configuration
   plugin.json
@@ -142,6 +148,25 @@ Generate design system documentation (markdown only, no code) from a Figma compo
 5. Updates `CHANGELOG.md` with the new/updated documentation entry
 
 **Output:** One markdown file only. No React, Vue, or any framework code is generated.
+
+### /project-summary
+
+Update the PROJECT-SUMMARY.md with current features, learnings, and Claude tools used.
+
+**Usage:**
+```
+/project-summary
+```
+
+**What it does:**
+1. Explores the current codebase state
+2. Calculates documentation coverage metrics
+3. Updates PROJECT-SUMMARY.md with latest information
+4. Records the update in CHANGELOG.md
+
+**Output:** Updated PROJECT-SUMMARY.md suitable for sharing with the wider team.
+
+**Template:** Uses `.claude/skills/resources/project-summary-template.md` for consistent structure.
 
 ## Changelog Maintenance
 
