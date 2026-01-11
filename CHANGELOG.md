@@ -46,6 +46,14 @@ Add a new entry when:
 
 ---
 
+## 11th Jan 2025
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| REMOVED - unified-docs and vibe-docs generators, scripts, and output directories | 🔴 Deprecated | NA | NA | NA |
+
+---
+
 ## 6th Jan 2025
 
 | Change | Type | JIRA | Figma | Storybook |
