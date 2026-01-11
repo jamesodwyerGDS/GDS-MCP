@@ -21,6 +21,7 @@ This document tracks the features that have been built and what's planned for fu
 |---------|--------|-------------|
 | Figma Documentation Generator | :white_check_mark: | Extract component data from Figma and generate structured markdown |
 | Figma MCP Client | :white_check_mark: | Wrapper for Figma MCP server with methods for metadata, design context, variables, styles |
+| **Figma Design Specs Extractor** | :white_check_mark: | **Token-efficient Figma API extraction for detailed design specs (~75% fewer tokens vs MCP)** |
 | Markdown Transformer | :white_check_mark: | Converts Figma data to structured markdown with YAML frontmatter |
 | Component Categorization | :white_check_mark: | Auto-categorizes components as atoms, molecules, or organisms |
 | Design Token Extraction | :white_check_mark: | Extracts colours, spacing, typography, elevation tokens from Figma |
@@ -127,10 +128,40 @@ This document tracks the features that have been built and what's planned for fu
 
 | Feature | Completed | PR/Commit |
 |---------|-----------|-----------|
+| Figma Design Specs Extractor | Jan 2026 | - |
 | Slack Notifications | Oct 2024 | `49eee4d` |
 | Efficiency Monitoring Tools | Oct 2024 | `22a60d4` |
 | Remote MCP Configuration | Oct 2024 | `4e4554c` |
 | README Documentation | Oct 2024 | `4e4554c` |
+
+### Figma Design Specs Extractor Details
+
+The new **Figma Design Specs Extractor** provides a token-efficient alternative to using Figma MCP for extracting detailed design specifications.
+
+**What it extracts:**
+- Dimensions (width, height)
+- Layout (auto-layout direction, alignment, sizing)
+- Spacing (padding, gap, row gap)
+- Fills (solid colors, gradients, images)
+- Strokes (border width, color, style, position)
+- Effects (drop shadows, inner shadows, blurs)
+- Typography (font family, weight, size, line height, letter spacing)
+- Corner radius (uniform or per-corner)
+- Child element summaries
+
+**Token efficiency:**
+- Direct Figma API: ~500-2000 tokens per component
+- Figma MCP: ~2000-5000+ tokens (conversational responses)
+- **Savings: ~75% fewer tokens**
+
+**Usage:**
+```bash
+# Design specs are included by default
+npm run docs:generate -- --url="https://figma.com/file/..."
+
+# Skip design specs if not needed
+npm run docs:generate -- --url="..." --no-design-specs
+```
 
 ---
 

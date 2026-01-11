@@ -26,9 +26,12 @@ Use the `/figma-doc` skill to generate documentation from a Figma URL:
 # Install dependencies
 npm install
 
-# Generate docs for a single Figma component
+# Generate docs for a single Figma component (includes detailed design specs)
 npm run docs:generate -- --url="https://figma.com/file/..."
 npm run docs:generate -- --file=ABC123 --node=1:234
+
+# Generate without design specs (faster, fewer API calls)
+npm run docs:generate -- --url="..." --no-design-specs
 
 # Generate docs for multiple components (requires components.json)
 npm run docs:generate-all
@@ -44,6 +47,7 @@ npm run docs:validate
 ```
 /core                     # Documentation generation engine
   figma-client.js         # Figma API/MCP wrapper
+  figma-design-specs.js   # Token-efficient Figma API design specs extraction
   markdown-transformer.js # Transforms Figma data -> markdown
   documentation-generator.js # Main orchestrator
 
@@ -59,6 +63,8 @@ npm run docs:validate
   llms.txt                # AI context file for GitMCP
 
 CHANGELOG.md              # Design system changelog (MUST be updated with any changes)
+FEATURES.md               # Complete feature list (completed and planned)
+ROADMAP.md                # Development roadmap and priorities
 
 /templates
   component.md            # Component documentation template
@@ -78,17 +84,18 @@ CHANGELOG.md              # Design system changelog (MUST be updated with any ch
 Generated docs include ONLY:
 
 1. **Overview** - Component purpose, when to use/not use
-2. **Variants** - Visual variants table
-3. **States** - Component states (default, hover, pressed, disabled, focus)
-4. **Properties** - Design properties and values (NOT React props)
-5. **Styling** - Typography, spacing, colours, elevation tokens
-6. **Accessibility** - WCAG compliance, keyboard navigation
-7. **Do's and Don'ts** - Usage guidelines
-8. **CSS Custom Properties** - CSS variable definitions
-9. **Tailwind Configuration** - Tailwind utility mappings
-10. **Figma Variables** - Token references from Figma
-11. **Related Components** - Links to related docs
-12. **Changelog** - Version history
+2. **Design Specs** - Detailed Figma specs (dimensions, layout, spacing, fills, strokes, effects, typography)
+3. **Variants** - Visual variants table
+4. **States** - Component states (default, hover, pressed, disabled, focus)
+5. **Properties** - Design properties and values (NOT React props)
+6. **Styling** - Typography, spacing, colours, elevation tokens
+7. **Accessibility** - WCAG compliance, keyboard navigation
+8. **Do's and Don'ts** - Usage guidelines
+9. **CSS Custom Properties** - CSS variable definitions
+10. **Tailwind Configuration** - Tailwind utility mappings
+11. **Figma Variables** - Token references from Figma
+12. **Related Components** - Links to related docs
+13. **Changelog** - Version history
 
 **Excluded:** React imports, JSX code, framework-specific props (ReactNode, onClick handlers)
 

@@ -6,6 +6,7 @@
  */
 
 import { FigmaClient } from './figma-client.js';
+import { FigmaDesignSpecs } from './figma-design-specs.js';
 import { MarkdownTransformer } from './markdown-transformer.js';
 import { SlackNotifier } from './slack-notifier.js';
 import fs from 'fs/promises';
@@ -14,10 +15,12 @@ import path from 'path';
 export class DocumentationGenerator {
   constructor(figmaAccessToken, options = {}) {
     this.figma = new FigmaClient(figmaAccessToken);
+    this.figmaSpecs = new FigmaDesignSpecs(figmaAccessToken);
     this.transformer = new MarkdownTransformer();
     this.outputDir = options.outputDir || './docs/components';
     this.slack = new SlackNotifier(options.slackWebhookUrl);
     this.notifySlack = options.notifySlack !== false;
+    this.includeDesignSpecs = options.includeDesignSpecs !== false; // Default: true
   }
 
   /**
@@ -134,6 +137,21 @@ export class DocumentationGenerator {
       const componentSet = await this.figma.getComponentSet(fileKey, nodeId);
       if (componentSet) {
         data.variants = componentSet.variants;
+      }
+
+      // Extract detailed design specs (token-efficient Figma API approach)
+      if (this.includeDesignSpecs) {
+        try {
+          console.log('Extracting detailed design specs...');
+          const designSpecs = await this.figmaSpecs.extractSpecs(fileKey, nodeId);
+          data.designSpecs = designSpecs;
+
+          // Log token usage comparison
+          const tokenUsage = this.figmaSpecs.estimateTokenUsage(designSpecs);
+          console.log(`Design specs extracted (~${tokenUsage.directApi} tokens, ${tokenUsage.savings} savings vs MCP)`);
+        } catch (error) {
+          console.warn('Could not extract design specs:', error.message);
+        }
       }
     }
 

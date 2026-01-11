@@ -6,6 +6,7 @@
  * Usage:
  *   npm run docs:generate -- --url="https://figma.com/file/..."
  *   npm run docs:generate -- --file=ABC123 --node=1:234
+ *   npm run docs:generate -- --url="..." --no-design-specs  (skip detailed specs)
  */
 
 import { DocumentationGenerator } from '../core/documentation-generator.js';
@@ -35,11 +36,16 @@ async function main() {
     console.log('Usage:');
     console.log('  npm run docs:generate -- --url="https://figma.com/file/..."');
     console.log('  npm run docs:generate -- --file=ABC123 --node=1:234');
+    console.log('  npm run docs:generate -- --url="..." --no-design-specs');
     process.exit(1);
   }
 
+  // Check for --no-design-specs flag
+  const includeDesignSpecs = !process.argv.includes('--no-design-specs');
+
   const generator = new DocumentationGenerator(accessToken, {
-    outputDir: args.output || './docs/components'
+    outputDir: args.output || './docs/components',
+    includeDesignSpecs
   });
 
   try {

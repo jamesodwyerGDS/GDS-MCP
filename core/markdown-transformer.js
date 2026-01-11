@@ -66,6 +66,11 @@ export class MarkdownTransformer {
     // Overview
     sections.push(this.generateOverview(data));
 
+    // Design Specs (from Figma API extraction)
+    if (data.designSpecs) {
+      sections.push(this.generateDesignSpecs(data.designSpecs));
+    }
+
     // Variants
     if (data.variants?.length > 0) {
       sections.push(this.generateVariants(data.variants));
@@ -135,6 +140,181 @@ ${data.description || `The ${data.name} component provides...`}
 | Variant | Properties |
 |---------|------------|
 ${rows.join('\n')}`;
+  }
+
+  /**
+   * Generate Design Specs section from Figma API data
+   * This provides detailed, structured design specifications
+   */
+  generateDesignSpecs(specs) {
+    const sections = ['## Design Specs\n'];
+
+    // Dimensions
+    if (specs.dimensions) {
+      sections.push(`### Dimensions\n`);
+      sections.push(`| Property | Value |`);
+      sections.push(`|----------|-------|`);
+      sections.push(`| Width | ${specs.dimensions.width}px |`);
+      sections.push(`| Height | ${specs.dimensions.height}px |`);
+      sections.push('');
+    }
+
+    // Layout
+    if (specs.layout) {
+      sections.push(`### Layout\n`);
+      sections.push(`| Property | Value |`);
+      sections.push(`|----------|-------|`);
+      sections.push(`| Direction | ${specs.layout.mode?.toLowerCase() || 'none'} |`);
+      sections.push(`| Align Items | ${specs.layout.counterAxisAlign?.toLowerCase() || 'start'} |`);
+      sections.push(`| Justify Content | ${specs.layout.primaryAxisAlign?.toLowerCase() || 'start'} |`);
+      if (specs.layout.wrap && specs.layout.wrap !== 'NO_WRAP') {
+        sections.push(`| Wrap | ${specs.layout.wrap.toLowerCase()} |`);
+      }
+      sections.push('');
+    }
+
+    // Spacing
+    if (specs.spacing) {
+      sections.push(`### Spacing\n`);
+      sections.push(`| Property | Value |`);
+      sections.push(`|----------|-------|`);
+
+      if (typeof specs.spacing.padding === 'number') {
+        sections.push(`| Padding | ${specs.spacing.padding}px |`);
+      } else if (specs.spacing.paddingX !== undefined) {
+        sections.push(`| Padding X | ${specs.spacing.paddingX}px |`);
+        sections.push(`| Padding Y | ${specs.spacing.paddingY}px |`);
+      } else if (specs.spacing.padding) {
+        sections.push(`| Padding Top | ${specs.spacing.padding.top}px |`);
+        sections.push(`| Padding Right | ${specs.spacing.padding.right}px |`);
+        sections.push(`| Padding Bottom | ${specs.spacing.padding.bottom}px |`);
+        sections.push(`| Padding Left | ${specs.spacing.padding.left}px |`);
+      }
+
+      if (specs.spacing.gap !== undefined) {
+        sections.push(`| Gap | ${specs.spacing.gap}px |`);
+      }
+      if (specs.spacing.rowGap !== undefined) {
+        sections.push(`| Row Gap | ${specs.spacing.rowGap}px |`);
+      }
+      sections.push('');
+    }
+
+    // Fills (Background)
+    if (specs.fills && specs.fills.length > 0) {
+      sections.push(`### Background\n`);
+      sections.push(`| Type | Value |`);
+      sections.push(`|------|-------|`);
+
+      for (const fill of specs.fills) {
+        if (fill.type === 'SOLID') {
+          const opacity = fill.opacity !== undefined ? ` (${Math.round(fill.opacity * 100)}%)` : '';
+          sections.push(`| Solid | ${fill.color}${opacity} |`);
+        } else if (fill.type?.includes('GRADIENT')) {
+          const stops = fill.gradientStops?.map(s => `${s.color} ${Math.round(s.position * 100)}%`).join(' → ') || '';
+          sections.push(`| ${fill.type.replace('GRADIENT_', '').toLowerCase()} gradient | ${stops} |`);
+        } else if (fill.type === 'IMAGE') {
+          sections.push(`| Image | ${fill.scaleMode?.toLowerCase() || 'fill'} |`);
+        }
+      }
+      sections.push('');
+    }
+
+    // Strokes (Border)
+    if (specs.strokes) {
+      sections.push(`### Border\n`);
+      sections.push(`| Property | Value |`);
+      sections.push(`|----------|-------|`);
+      sections.push(`| Width | ${specs.strokes.weight}px |`);
+      sections.push(`| Position | ${specs.strokes.align?.toLowerCase() || 'center'} |`);
+
+      for (const stroke of specs.strokes.colors || []) {
+        if (stroke.type === 'SOLID') {
+          sections.push(`| Color | ${stroke.color} |`);
+        }
+      }
+
+      if (specs.strokes.dash) {
+        sections.push(`| Style | dashed (${specs.strokes.dash.join(', ')}) |`);
+      }
+      sections.push('');
+    }
+
+    // Corner Radius
+    if (specs.cornerRadius !== undefined) {
+      sections.push(`### Border Radius\n`);
+      if (typeof specs.cornerRadius === 'number') {
+        sections.push(`All corners: **${specs.cornerRadius}px**\n`);
+      } else {
+        sections.push(`| Corner | Value |`);
+        sections.push(`|--------|-------|`);
+        sections.push(`| Top Left | ${specs.cornerRadius.topLeft}px |`);
+        sections.push(`| Top Right | ${specs.cornerRadius.topRight}px |`);
+        sections.push(`| Bottom Right | ${specs.cornerRadius.bottomRight}px |`);
+        sections.push(`| Bottom Left | ${specs.cornerRadius.bottomLeft}px |`);
+      }
+      sections.push('');
+    }
+
+    // Effects (Shadows)
+    if (specs.effects && specs.effects.length > 0) {
+      sections.push(`### Effects\n`);
+      sections.push(`| Type | X | Y | Blur | Spread | Color |`);
+      sections.push(`|------|---|---|------|--------|-------|`);
+
+      for (const effect of specs.effects) {
+        if (effect.type === 'DROP_SHADOW' || effect.type === 'INNER_SHADOW') {
+          const type = effect.type === 'DROP_SHADOW' ? 'Drop Shadow' : 'Inner Shadow';
+          sections.push(`| ${type} | ${effect.offset.x}px | ${effect.offset.y}px | ${effect.blur}px | ${effect.spread}px | ${effect.color} |`);
+        } else if (effect.type === 'LAYER_BLUR') {
+          sections.push(`| Layer Blur | - | - | ${effect.blur}px | - | - |`);
+        } else if (effect.type === 'BACKGROUND_BLUR') {
+          sections.push(`| Background Blur | - | - | ${effect.blur}px | - | - |`);
+        }
+      }
+      sections.push('');
+    }
+
+    // Typography (for text components)
+    if (specs.typography) {
+      sections.push(`### Typography\n`);
+      sections.push(`| Property | Value |`);
+      sections.push(`|----------|-------|`);
+      if (specs.typography.fontFamily) sections.push(`| Font Family | ${specs.typography.fontFamily} |`);
+      if (specs.typography.fontWeight) sections.push(`| Font Weight | ${specs.typography.fontWeight} |`);
+      if (specs.typography.fontSize) sections.push(`| Font Size | ${specs.typography.fontSize}px |`);
+      if (specs.typography.lineHeight) sections.push(`| Line Height | ${specs.typography.lineHeight} |`);
+      if (specs.typography.letterSpacing) sections.push(`| Letter Spacing | ${specs.typography.letterSpacing} |`);
+      if (specs.typography.textAlign) sections.push(`| Text Align | ${specs.typography.textAlign.toLowerCase()} |`);
+      if (specs.typography.textDecoration) sections.push(`| Text Decoration | ${specs.typography.textDecoration.toLowerCase()} |`);
+      if (specs.typography.textCase) sections.push(`| Text Transform | ${specs.typography.textCase.toLowerCase()} |`);
+      sections.push('');
+    }
+
+    // Child elements summary
+    if (specs.children && specs.children.length > 0) {
+      sections.push(`### Child Elements\n`);
+      sections.push(`| Element | Type | Dimensions |`);
+      sections.push(`|---------|------|------------|`);
+
+      for (const child of specs.children) {
+        const dims = child.dimensions ? `${child.dimensions.width} × ${child.dimensions.height}px` : '-';
+        sections.push(`| ${child.name} | ${child.type} | ${dims} |`);
+      }
+      sections.push('');
+    }
+
+    // Opacity and Blend Mode
+    if (specs.opacity !== undefined && specs.opacity !== 1) {
+      sections.push(`### Opacity\n`);
+      sections.push(`**Opacity:** ${Math.round(specs.opacity * 100)}%\n`);
+    }
+
+    if (specs.blendMode && specs.blendMode !== 'NORMAL') {
+      sections.push(`**Blend Mode:** ${specs.blendMode.toLowerCase().replace('_', ' ')}\n`);
+    }
+
+    return sections.join('\n');
   }
 
   generateStates(data) {
