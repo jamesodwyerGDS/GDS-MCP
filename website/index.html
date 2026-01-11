@@ -13,17 +13,37 @@
   <div id="app">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
-        <h1 class="logo">GDS</h1>
-        <span class="logo-subtitle">Global Design System</span>
+        <div>
+          <h1 class="logo">GDS</h1>
+          <span class="logo-subtitle">Global Design System</span>
+        </div>
+        <button id="theme-toggle" title="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
       </div>
 
       <div class="search-container">
-        <input type="text" id="search" placeholder="Search components..." class="search-input">
+        <input type="text" id="search" placeholder="Search... (press /)" class="search-input">
+      </div>
+
+      <div id="status-filter">
+        <!-- Status filter will be populated by JavaScript -->
       </div>
 
       <nav class="nav" id="nav">
         <!-- Navigation will be populated by JavaScript -->
       </nav>
+
+      <div class="keyboard-hints">
+        <div class="keyboard-hint">
+          <kbd>/</kbd> <span>Search</span>
+        </div>
+        <div class="keyboard-hint">
+          <kbd>←</kbd> <kbd>→</kbd> <span>Navigate docs</span>
+        </div>
+      </div>
     </aside>
 
     <main class="main-content" id="main-content">

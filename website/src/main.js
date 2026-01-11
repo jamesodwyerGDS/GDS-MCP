@@ -11,16 +11,23 @@ class DocsApp {
   constructor() {
     this.manifest = null;
     this.currentDoc = null;
+    this.currentPath = null;
     this.docsCache = new Map();
+    this.allDocs = [];
+    this.statusFilter = 'all';
     this.init();
   }
 
   async init() {
     await this.loadManifest();
+    this.buildDocsIndex();
     this.renderNavigation();
     this.renderStats();
     this.setupSearch();
+    this.setupStatusFilter();
     this.setupRouting();
+    this.setupTheme();
+    this.setupKeyboardNav();
   }
 
   async loadManifest() {
@@ -35,6 +42,147 @@ class DocsApp {
         patterns: []
       };
     }
+  }
+
+  buildDocsIndex() {
+    this.allDocs = [];
+
+    // Add all components
+    ['atoms', 'molecules', 'organisms'].forEach(category => {
+      this.manifest.components[category].forEach(item => {
+        this.allDocs.push({
+          ...item,
+          path: `components/${category}/${item.slug}`,
+          type: 'component'
+        });
+      });
+    });
+
+    // Add foundations
+    this.manifest.foundations.forEach(item => {
+      this.allDocs.push({
+        ...item,
+        path: `foundations/${item.slug}`,
+        type: 'foundation'
+      });
+    });
+
+    // Add patterns
+    this.manifest.patterns.forEach(item => {
+      this.allDocs.push({
+        ...item,
+        path: `patterns/${item.slug}`,
+        type: 'pattern'
+      });
+    });
+  }
+
+  // Theme Management
+  setupTheme() {
+    const savedTheme = localStorage.getItem('gds-theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    this.updateThemeToggle(savedTheme);
+
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => this.toggleTheme());
+    }
+  }
+
+  toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('gds-theme', newTheme);
+    this.updateThemeToggle(newTheme);
+  }
+
+  updateThemeToggle(theme) {
+    const themeToggle = document.getElementById('theme-toggle');
+    if (themeToggle) {
+      themeToggle.innerHTML = theme === 'dark'
+        ? `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>`
+        : `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
+      themeToggle.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+    }
+  }
+
+  // Keyboard Navigation
+  setupKeyboardNav() {
+    document.addEventListener('keydown', (e) => {
+      // Only handle if not in an input
+      if (e.target.tagName === 'INPUT') return;
+
+      if (e.key === 'ArrowLeft' || e.key === 'j') {
+        e.preventDefault();
+        this.navigatePrev();
+      } else if (e.key === 'ArrowRight' || e.key === 'k') {
+        e.preventDefault();
+        this.navigateNext();
+      } else if (e.key === '/' && !e.metaKey && !e.ctrlKey) {
+        e.preventDefault();
+        document.getElementById('search')?.focus();
+      } else if (e.key === 'Escape') {
+        document.getElementById('search')?.blur();
+      }
+    });
+  }
+
+  navigatePrev() {
+    if (!this.currentPath) return;
+    const currentIndex = this.allDocs.findIndex(d => d.path === this.currentPath);
+    if (currentIndex > 0) {
+      this.navigateTo(this.allDocs[currentIndex - 1].path);
+    }
+  }
+
+  navigateNext() {
+    if (!this.currentPath) return;
+    const currentIndex = this.allDocs.findIndex(d => d.path === this.currentPath);
+    if (currentIndex < this.allDocs.length - 1) {
+      this.navigateTo(this.allDocs[currentIndex + 1].path);
+    }
+  }
+
+  // Status Filter
+  setupStatusFilter() {
+    const filterContainer = document.getElementById('status-filter');
+    if (!filterContainer) return;
+
+    filterContainer.innerHTML = `
+      <select id="status-select" class="status-select">
+        <option value="all">All statuses</option>
+        <option value="stable">Stable</option>
+        <option value="beta">Beta</option>
+        <option value="draft">Draft</option>
+        <option value="deprecated">Deprecated</option>
+      </select>
+    `;
+
+    document.getElementById('status-select').addEventListener('change', (e) => {
+      this.statusFilter = e.target.value;
+      this.applyFilters();
+    });
+  }
+
+  applyFilters() {
+    const query = document.getElementById('search')?.value.toLowerCase() || '';
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navSections = document.querySelectorAll('.nav-section');
+
+    navLinks.forEach(link => {
+      const text = link.textContent.toLowerCase();
+      const status = link.dataset.status || '';
+      const matchesQuery = !query || text.includes(query);
+      const matchesStatus = this.statusFilter === 'all' || status === this.statusFilter;
+      link.style.display = matchesQuery && matchesStatus ? '' : 'none';
+    });
+
+    // Hide empty sections
+    navSections.forEach(section => {
+      const visibleLinks = section.querySelectorAll('.nav-link:not([style*="display: none"])');
+      section.style.display = visibleLinks.length > 0 ? '' : 'none';
+    });
   }
 
   renderNavigation() {
@@ -115,7 +263,7 @@ class DocsApp {
     const statusBadge = item.status ? `<span class="${statusClass}">${item.status}</span>` : '';
 
     return `
-      <div class="nav-link" data-path="${basePath}/${item.slug}">
+      <div class="nav-link" data-path="${basePath}/${item.slug}" data-status="${item.status || ''}">
         <span>${this.formatName(item.name)}</span>
         ${statusBadge}
       </div>
@@ -164,34 +312,13 @@ class DocsApp {
     const searchInput = document.getElementById('search');
     if (!searchInput) return;
 
-    searchInput.addEventListener('input', (e) => {
-      const query = e.target.value.toLowerCase();
-      this.filterNavigation(query);
+    searchInput.addEventListener('input', () => {
+      this.applyFilters();
     });
   }
 
   filterNavigation(query) {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const navSections = document.querySelectorAll('.nav-section');
-    const navSubsections = document.querySelectorAll('.nav-subsection-title');
-
-    if (!query) {
-      navLinks.forEach(link => link.style.display = '');
-      navSections.forEach(section => section.style.display = '');
-      navSubsections.forEach(sub => sub.style.display = '');
-      return;
-    }
-
-    navLinks.forEach(link => {
-      const text = link.textContent.toLowerCase();
-      link.style.display = text.includes(query) ? '' : 'none';
-    });
-
-    // Hide empty sections
-    navSections.forEach(section => {
-      const visibleLinks = section.querySelectorAll('.nav-link:not([style*="display: none"])');
-      section.style.display = visibleLinks.length > 0 ? '' : 'none';
-    });
+    this.applyFilters();
   }
 
   setupRouting() {
@@ -216,9 +343,102 @@ class DocsApp {
     this.loadDocument(path);
   }
 
+  // Table of Contents generation
+  generateTableOfContents(htmlContent) {
+    const temp = document.createElement('div');
+    temp.innerHTML = htmlContent;
+    const headings = temp.querySelectorAll('h2, h3');
+
+    if (headings.length < 2) return '';
+
+    let tocHtml = '<nav class="table-of-contents"><h3>On this page</h3><ul>';
+    let currentLevel = 2;
+
+    headings.forEach((heading, index) => {
+      const level = parseInt(heading.tagName[1]);
+      const text = heading.textContent;
+      const id = `heading-${index}`;
+      heading.id = id;
+
+      if (level > currentLevel) {
+        tocHtml += '<ul>';
+      } else if (level < currentLevel) {
+        tocHtml += '</ul>';
+      }
+      currentLevel = level;
+
+      tocHtml += `<li class="toc-level-${level}"><a href="#${id}">${text}</a></li>`;
+    });
+
+    tocHtml += '</ul></nav>';
+
+    // Update the original content with IDs
+    const updatedContent = temp.innerHTML;
+    return { toc: tocHtml, content: updatedContent };
+  }
+
+  // Copy code button functionality
+  setupCopyButtons() {
+    document.querySelectorAll('.markdown-content pre').forEach(pre => {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'code-block-wrapper';
+      pre.parentNode.insertBefore(wrapper, pre);
+      wrapper.appendChild(pre);
+
+      const copyBtn = document.createElement('button');
+      copyBtn.className = 'copy-code-btn';
+      copyBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+      copyBtn.title = 'Copy code';
+
+      copyBtn.addEventListener('click', async () => {
+        const code = pre.querySelector('code')?.textContent || pre.textContent;
+        try {
+          await navigator.clipboard.writeText(code);
+          copyBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>`;
+          copyBtn.classList.add('copied');
+          setTimeout(() => {
+            copyBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>`;
+            copyBtn.classList.remove('copied');
+          }, 2000);
+        } catch (err) {
+          console.error('Failed to copy:', err);
+        }
+      });
+
+      wrapper.appendChild(copyBtn);
+    });
+  }
+
+  // Navigation hints
+  renderNavHints() {
+    const currentIndex = this.allDocs.findIndex(d => d.path === this.currentPath);
+    const prev = currentIndex > 0 ? this.allDocs[currentIndex - 1] : null;
+    const next = currentIndex < this.allDocs.length - 1 ? this.allDocs[currentIndex + 1] : null;
+
+    if (!prev && !next) return '';
+
+    return `
+      <nav class="doc-nav-hints">
+        ${prev ? `
+          <a href="#${prev.path}" class="nav-hint prev" onclick="event.preventDefault(); window.location.hash='${prev.path}';">
+            <span class="nav-hint-label">Previous</span>
+            <span class="nav-hint-title">${this.formatName(prev.name)}</span>
+          </a>
+        ` : '<div></div>'}
+        ${next ? `
+          <a href="#${next.path}" class="nav-hint next" onclick="event.preventDefault(); window.location.hash='${next.path}';">
+            <span class="nav-hint-label">Next</span>
+            <span class="nav-hint-title">${this.formatName(next.name)}</span>
+          </a>
+        ` : '<div></div>'}
+      </nav>
+    `;
+  }
+
   async loadDocument(path) {
     const content = document.getElementById('content');
     const header = document.getElementById('content-header');
+    this.currentPath = path;
 
     // Update active nav link
     document.querySelectorAll('.nav-link').forEach(link => {
@@ -301,15 +521,34 @@ class DocsApp {
         `;
       }
 
-      // Render markdown content
-      const htmlContent = marked(markdown);
+      // Render markdown content and generate TOC
+      let htmlContent = marked(markdown);
+      const tocResult = this.generateTableOfContents(htmlContent);
+      const tocHtml = tocResult.toc || '';
+      htmlContent = tocResult.content || htmlContent;
+
+      // Get navigation hints
+      const navHintsHtml = this.renderNavHints();
+
       content.innerHTML = `
         <div class="markdown-content">
           ${metaHtml}
           ${figmaEmbedHtml}
-          ${htmlContent}
+          <div class="content-with-toc">
+            <div class="content-main">
+              ${htmlContent}
+              ${navHintsHtml}
+            </div>
+            ${tocHtml ? `<aside class="toc-sidebar">${tocHtml}</aside>` : ''}
+          </div>
         </div>
       `;
+
+      // Setup copy buttons after content is rendered
+      this.setupCopyButtons();
+
+      // Scroll to top
+      content.scrollTop = 0;
 
     } catch (error) {
       console.error('Failed to load document:', error);
