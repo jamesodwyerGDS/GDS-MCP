@@ -1,6 +1,6 @@
 # GDS-MCP Project Summary
 
-> Last updated: 11th January 2025
+> Last updated: 11th January 2025 (refreshed)
 
 ## What It Is
 
@@ -27,11 +27,11 @@ An MCP-powered documentation workflow that extracts design system components fro
 
 | Metric | Count |
 |--------|-------|
-| Design docs | 25 |
-| Storybook specs | 52 |
-| Vibe snippets | 25 |
-| Unified docs | 67 |
-| Total documentation lines | 9,200+ |
+| Design docs | 37 |
+| Storybook specs | 56 |
+| Vibe snippets | 26 |
+| Unified docs | 59 |
+| Total documentation lines | 32,200+ |
 
 ---
 
