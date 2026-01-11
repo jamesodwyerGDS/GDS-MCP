@@ -386,6 +386,70 @@ body {
   color: var(--color-cosmos);
 }
 
+/* Figma Embed */
+.figma-embed-section {
+  margin-bottom: var(--space-neighbourhood);
+  background: var(--color-white);
+  border: 1px solid #E5E5E5;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.figma-embed-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-street);
+  background: var(--color-cloud);
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.figma-embed-header h2 {
+  margin: 0;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-cosmos);
+}
+
+.figma-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-room);
+  font-size: var(--font-size-sm);
+  color: var(--color-neptune);
+  text-decoration: none;
+  padding: var(--space-room) var(--space-house);
+  background: var(--color-white);
+  border-radius: var(--radius-sm);
+  border: 1px solid #E5E5E5;
+  transition: all 0.2s;
+}
+
+.figma-link:hover {
+  background: var(--color-neptune-light);
+  border-color: var(--color-neptune);
+}
+
+.figma-link svg {
+  flex-shrink: 0;
+}
+
+.figma-embed-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: #FAFAFA;
+}
+
+.figma-embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {

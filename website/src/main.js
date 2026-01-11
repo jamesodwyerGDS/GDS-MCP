@@ -270,11 +270,43 @@ class DocsApp {
         metaHtml += `</div>`;
       }
 
+      // Render Figma embed if available
+      let figmaEmbedHtml = '';
+      if (frontmatter.figmaFileKey && frontmatter.figmaNodeId) {
+        const nodeId = frontmatter.figmaNodeId.replace(':', '-');
+        const figmaUrl = `https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/file/${frontmatter.figmaFileKey}?node-id=${nodeId}`;
+        const figmaLink = `https://www.figma.com/file/${frontmatter.figmaFileKey}?node-id=${frontmatter.figmaNodeId}`;
+
+        figmaEmbedHtml = `
+          <div class="figma-embed-section">
+            <div class="figma-embed-header">
+              <h2>Figma Preview</h2>
+              <a href="${figmaLink}" target="_blank" rel="noopener noreferrer" class="figma-link">
+                Open in Figma
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+            <div class="figma-embed-container">
+              <iframe
+                src="${figmaUrl}"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        `;
+      }
+
       // Render markdown content
       const htmlContent = marked(markdown);
       content.innerHTML = `
         <div class="markdown-content">
           ${metaHtml}
+          ${figmaEmbedHtml}
           ${htmlContent}
         </div>
       `;
