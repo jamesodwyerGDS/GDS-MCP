@@ -1,0 +1,278 @@
+{
+  "components": {
+    "atoms": [
+      {
+        "slug": "accordion",
+        "name": "Accordion",
+        "description": "An accordion component that allows users to expand and collapse content sections, useful for organizing information in a compact, scannable format.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/accordion.md"
+      },
+      {
+        "slug": "alert",
+        "name": "Alert",
+        "description": "An alert component that displays important messages to users, providing contextual feedback for errors, warnings, informational messages, and success confirmations.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/alert.md"
+      },
+      {
+        "slug": "badge",
+        "name": "Badge",
+        "description": "A badge component used to provide information on item statuses and notifications, drawing attention to significant information that might otherwise be missed.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/badge.md"
+      },
+      {
+        "slug": "button",
+        "name": "Button",
+        "description": "A versatile button component for triggering actions, with multiple variants for different contexts and emphasis levels.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/button.md"
+      },
+      {
+        "slug": "circle-button",
+        "name": "CircleButton",
+        "description": "A circular icon button for navigation and actions, optimized for space-constrained areas like cards, carousels, and mobile interfaces.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/circle-button.md"
+      },
+      {
+        "slug": "countdown-timer",
+        "name": "CountdownTimer",
+        "description": "A countdown timer component displaying remaining time with an animated radial progress indicator, used for checkout flows and time-limited offers.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/countdown-timer.md"
+      },
+      {
+        "slug": "date-picker",
+        "name": "Date Picker",
+        "description": "A calendar-based date selection component supporting single date and date range selection modes.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/date-picker.md"
+      },
+      {
+        "slug": "display-heading",
+        "name": "Display Heading",
+        "description": "A high-impact typographic component for page headers, artist names, and attraction titles with distinctive stage underline styling",
+        "status": "beta",
+        "category": "atoms",
+        "path": "components/atoms/display-heading.md"
+      },
+      {
+        "slug": "double-range-input",
+        "name": "Double Range Input",
+        "description": "A dual-handle slider component with min/max input fields for selecting a value range, commonly used for price filtering.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/double-range-input.md"
+      },
+      {
+        "slug": "dropdown",
+        "name": "Dropdown",
+        "description": "A form control that allows users to select a single option from a collapsible list of choices.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/dropdown.md"
+      },
+      {
+        "slug": "filterbar",
+        "name": "Filterbar",
+        "description": "A segmented toggle control for switching between different view modes or filter options, typically used to alternate between list view, favorites, and calendar views.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/filterbar.md"
+      },
+      {
+        "slug": "image",
+        "name": "Image",
+        "description": "Guidelines for using images consistently across the Marketplace Design System, including aspect ratios, fill modes, gradients, and accessibility requirements.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/image.md"
+      },
+      {
+        "slug": "input-field",
+        "name": "Input Field",
+        "description": "A text input component for capturing user data, with support for labels, icons, validation states, and accessibility features.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/input-field.md"
+      },
+      {
+        "slug": "loading-spinner",
+        "name": "Loading Spinner",
+        "description": "A component with a looping animation that communicates a process or action is ongoing",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/loading-spinner.md"
+      },
+      {
+        "slug": "modal",
+        "name": "Modal",
+        "description": "A dialog overlay component that displays content requiring user attention or interaction, with multiple sizes and variants for different contexts.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/modal.md"
+      },
+      {
+        "slug": "pagination-button",
+        "name": "Pagination Button",
+        "description": "A load-more pagination component displaying progress of items loaded and a button to load additional content.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/pagination-button.md"
+      },
+      {
+        "slug": "pill-button",
+        "name": "Pill Button",
+        "description": "A rounded pill-shaped button used for search and filter functions, with optional chevron icons for navigation context.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/pill-button.md"
+      },
+      {
+        "slug": "radio-button",
+        "name": "Radio Button",
+        "description": "Radio buttons allow users to select one option from a group of mutually exclusive choices",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/radio-button.md"
+      },
+      {
+        "slug": "side-panel",
+        "name": "Side Panel",
+        "description": "An overlay that slides in from the left or right, showing extra details or actions related to an item on the page without leaving the current context.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/side-panel.md"
+      },
+      {
+        "slug": "square-button",
+        "name": "SquareButton",
+        "description": "A square icon button for navigation and actions, optimized for carousels and space-constrained areas requiring directional navigation.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/square-button.md"
+      },
+      {
+        "slug": "stepper",
+        "name": "Stepper",
+        "description": "A quantity stepper component used to increment or decrement numeric values within a given range. Steppers are easy-to-use tools that allow users to filter/refine their search or preferences by adjusting numerical selections.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/stepper.md"
+      },
+      {
+        "slug": "toast",
+        "name": "Toast",
+        "description": "A transient notification component that provides short, informative feedback confirming an action was successful. Toasts appear briefly and auto-dismiss without requiring user interaction.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/toast.md"
+      },
+      {
+        "slug": "toggle",
+        "name": "Toggle",
+        "description": "A switch control for toggling between two mutually exclusive options, such as on/off or enabled/disabled states.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/toggle.md"
+      },
+      {
+        "slug": "toolbox",
+        "name": "Toolbox",
+        "description": "A vertical zoom control component for the Interactive Seat Map (ISM) that allows users to zoom in, zoom out, and reset the view.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/toolbox.md"
+      },
+      {
+        "slug": "tooltip",
+        "name": "Tooltip",
+        "description": "A brief, informative message that appears when a user hovers over or focuses on an element. Tooltips provide contextual information without cluttering the interface.",
+        "status": "stable",
+        "category": "atoms",
+        "path": "components/atoms/tooltip.md"
+      }
+    ],
+    "molecules": [],
+    "organisms": []
+  },
+  "foundations": [
+    {
+      "slug": "color-accessibility",
+      "name": "Color Accessibility",
+      "description": "WCAG-compliant color pairings ensuring accessible color combinations across all design system components.",
+      "path": "foundations/color-accessibility.md"
+    },
+    {
+      "slug": "color-themes",
+      "name": "Color Themes",
+      "description": "Dark and light mode color themes ensure consistent visual experiences across different display preferences while maintaining AA contrast compliance.",
+      "path": "foundations/color-themes.md"
+    },
+    {
+      "slug": "color",
+      "name": "Color",
+      "description": "The color system defines the visual language of the Marketplace Global Design System, establishing consistent color usage across all digital touchpoints.",
+      "path": "foundations/color.md"
+    },
+    {
+      "slug": "elevation",
+      "name": "Elevation",
+      "description": "The elevation system establishes visual hierarchy through shadows, representing the relative position of elements along the z-axis to help users understand structure and interactivity.",
+      "path": "foundations/elevation.md"
+    },
+    {
+      "slug": "spacing",
+      "name": "Spacing",
+      "description": "The spacing system defines consistent spatial relationships using an 8px baseline grid and named spacing tokens for predictable, harmonious layouts.",
+      "path": "foundations/spacing.md"
+    },
+    {
+      "slug": "typography",
+      "name": "Typography",
+      "description": "The typography system defines the type scale, font families, and text styles used across the Marketplace Global Design System for consistent, readable content.",
+      "path": "foundations/typography.md"
+    }
+  ],
+  "patterns": [
+    {
+      "slug": "pill-button-guidelines",
+      "name": "Pill Button Guidelines",
+      "description": "Usage guidelines, applied examples, and best practices for implementing Pill Button components in search and filter interfaces.",
+      "path": "patterns/pill-button-guidelines.md"
+    },
+    {
+      "slug": "slot",
+      "name": "Slot",
+      "description": "A Figma-only component pattern that allows designers to nest and build custom content within components without detaching them.",
+      "path": "patterns/slot.md"
+    },
+    {
+      "slug": "stepper-guidelines",
+      "name": "Stepper Guidelines",
+      "description": "Usage guidelines and best practices for the Stepper component, including anatomy, placement rules, and examples of correct and incorrect usage.",
+      "path": "patterns/stepper-guidelines.md"
+    },
+    {
+      "slug": "toast-guidelines",
+      "name": "Toast Guidelines",
+      "description": "Comprehensive usage guidelines for implementing toast notifications in the Global Design System, including anatomy, variations, positioning, motion, and anti-patterns.",
+      "path": "patterns/toast-guidelines.md"
+    },
+    {
+      "slug": "tooltip-guidelines",
+      "name": "Tooltip Guidelines",
+      "description": "Comprehensive usage guidelines for implementing tooltips in the Global Design System, including anatomy, configurations, positioning, and anti-patterns.",
+      "path": "patterns/tooltip-guidelines.md"
+    }
+  ]
+}

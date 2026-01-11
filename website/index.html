@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Design System</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h1 class="logo">GDS</h1>
+        <span class="logo-subtitle">Global Design System</span>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search components..." class="search-input">
+      </div>
+
+      <nav class="nav" id="nav">
+        <!-- Navigation will be populated by JavaScript -->
+      </nav>
+    </aside>
+
+    <main class="main-content" id="main-content">
+      <div class="content-header" id="content-header">
+        <!-- Breadcrumb and metadata -->
+      </div>
+      <article class="content" id="content">
+        <!-- Main content area -->
+        <div class="welcome">
+          <h1>Welcome to the Global Design System</h1>
+          <p>Select a component, foundation, or pattern from the sidebar to view its documentation.</p>
+
+          <div class="stats" id="stats">
+            <!-- Stats will be populated by JavaScript -->
+          </div>
+        </div>
+      </article>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
