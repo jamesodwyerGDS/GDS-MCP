@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GDS Helper</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 12px;
+      background: #ffffff;
+      color: #333;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      padding: 12px 16px;
+      border-bottom: 1px solid #e5e5e5;
+      background: #f7f7f7;
+    }
+
+    .header h1 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .header p {
+      font-size: 11px;
+      color: #666;
+      margin-top: 2px;
+    }
+
+    .chat-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .message {
+      max-width: 85%;
+      padding: 10px 14px;
+      border-radius: 12px;
+      line-height: 1.5;
+      word-wrap: break-word;
+    }
+
+    .message.user {
+      align-self: flex-end;
+      background: #0d99ff;
+      color: white;
+      border-bottom-right-radius: 4px;
+    }
+
+    .message.assistant {
+      align-self: flex-start;
+      background: #f0f0f0;
+      color: #333;
+      border-bottom-left-radius: 4px;
+    }
+
+    .message.assistant pre {
+      background: #e0e0e0;
+      padding: 8px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 8px 0;
+      font-size: 11px;
+    }
+
+    .message.assistant code {
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 11px;
+    }
+
+    .message.system {
+      align-self: center;
+      background: #fff3cd;
+      color: #856404;
+      font-size: 11px;
+      padding: 8px 12px;
+    }
+
+    .context-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #e8f4ff;
+      color: #0066cc;
+      font-size: 10px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .context-badge svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    .typing-indicator {
+      display: flex;
+      gap: 4px;
+      padding: 10px 14px;
+      background: #f0f0f0;
+      border-radius: 12px;
+      align-self: flex-start;
+      border-bottom-left-radius: 4px;
+    }
+
+    .typing-indicator span {
+      width: 8px;
+      height: 8px;
+      background: #999;
+      border-radius: 50%;
+      animation: bounce 1.4s infinite ease-in-out;
+    }
+
+    .typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+    .typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: scale(0); }
+      40% { transform: scale(1); }
+    }
+
+    .input-container {
+      padding: 12px 16px;
+      border-top: 1px solid #e5e5e5;
+      background: #fff;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    .input-row textarea {
+      flex: 1;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 12px;
+      resize: none;
+      min-height: 40px;
+      max-height: 120px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .input-row textarea:focus {
+      border-color: #0d99ff;
+    }
+
+    .input-row button {
+      padding: 10px 16px;
+      background: #0d99ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .input-row button:hover {
+      background: #0b87e0;
+    }
+
+    .input-row button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    .quick-actions {
+      display: flex;
+      gap: 6px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .quick-action {
+      padding: 6px 10px;
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 16px;
+      font-size: 11px;
+      color: #666;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .quick-action:hover {
+      background: #e8f4ff;
+      border-color: #0d99ff;
+      color: #0d99ff;
+    }
+
+    .empty-state {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .empty-state svg {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 12px;
+      opacity: 0.5;
+    }
+
+    .empty-state h2 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #666;
+      margin-bottom: 4px;
+    }
+
+    .empty-state p {
+      font-size: 12px;
+    }
+
+    .selection-context {
+      padding: 8px 16px;
+      background: #f0f7ff;
+      border-bottom: 1px solid #d0e3ff;
+      font-size: 11px;
+      color: #0066cc;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .selection-context.empty {
+      background: #f9f9f9;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>GDS Helper</h1>
+    <p>Ask about components, tokens, and guidelines</p>
+  </div>
+
+  <div class="selection-context empty" id="selection-context">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+    </svg>
+    <span id="selection-text">No selection</span>
+  </div>
+
+  <div class="chat-container" id="chat-container">
+    <div class="empty-state" id="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <h2>Ask me anything about GDS</h2>
+      <p>Components, tokens, accessibility, usage guidelines</p>
+    </div>
+  </div>
+
+  <div class="input-container">
+    <div class="input-row">
+      <textarea
+        id="message-input"
+        placeholder="Ask about GDS components, tokens, guidelines..."
+        rows="1"
+      ></textarea>
+      <button id="send-button">Send</button>
+    </div>
+    <div class="quick-actions">
+      <button class="quick-action" data-query="What component is this?">What is this?</button>
+      <button class="quick-action" data-query="What are the spacing tokens?">Spacing tokens</button>
+      <button class="quick-action" data-query="Show button variants">Button variants</button>
+      <button class="quick-action" data-query="Color accessibility guidelines">Accessibility</button>
+    </div>
+  </div>
+
+  <script>
+    const chatContainer = document.getElementById('chat-container');
+    const messageInput = document.getElementById('message-input');
+    const sendButton = document.getElementById('send-button');
+    const emptyState = document.getElementById('empty-state');
+    const selectionContext = document.getElementById('selection-context');
+    const selectionText = document.getElementById('selection-text');
+    const quickActions = document.querySelectorAll('.quick-action');
+
+    let currentSelection = null;
+    let isLoading = false;
+    let conversationHistory = [];
+
+    // Auto-resize textarea
+    messageInput.addEventListener('input', function() {
+      this.style.height = 'auto';
+      this.style.height = Math.min(this.scrollHeight, 120) + 'px';
+    });
+
+    // Send on Enter (Shift+Enter for newline)
+    messageInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+
+    sendButton.addEventListener('click', sendMessage);
+
+    // Quick actions
+    quickActions.forEach(btn => {
+      btn.addEventListener('click', () => {
+        messageInput.value = btn.dataset.query;
+        sendMessage();
+      });
+    });
+
+    // Listen for messages from the plugin
+    window.onmessage = (event) => {
+      const msg = event.data.pluginMessage;
+
+      if (msg.type === 'selection-change') {
+        currentSelection = msg.selection;
+        updateSelectionUI(msg.selection);
+      } else if (msg.type === 'chat-response') {
+        hideTypingIndicator();
+        addMessage(msg.content, 'assistant');
+        conversationHistory.push({ role: 'assistant', content: msg.content });
+        isLoading = false;
+        sendButton.disabled = false;
+      } else if (msg.type === 'chat-error') {
+        hideTypingIndicator();
+        addMessage('Error: ' + msg.error, 'system');
+        isLoading = false;
+        sendButton.disabled = false;
+      }
+    };
+
+    function updateSelectionUI(selection) {
+      if (selection && selection.length > 0) {
+        selectionContext.classList.remove('empty');
+        const names = selection.map(n => n.name).join(', ');
+        const types = [...new Set(selection.map(n => n.type))].join(', ');
+        selectionText.textContent = `${selection.length} selected: ${names.substring(0, 50)}${names.length > 50 ? '...' : ''} (${types})`;
+      } else {
+        selectionContext.classList.add('empty');
+        selectionText.textContent = 'No selection';
+      }
+    }
+
+    function sendMessage() {
+      const text = messageInput.value.trim();
+      if (!text || isLoading) return;
+
+      // Hide empty state
+      if (emptyState) {
+        emptyState.style.display = 'none';
+      }
+
+      // Add user message
+      addMessage(text, 'user', currentSelection);
+      conversationHistory.push({ role: 'user', content: text });
+
+      // Clear input
+      messageInput.value = '';
+      messageInput.style.height = 'auto';
+
+      // Show typing indicator
+      showTypingIndicator();
+      isLoading = true;
+      sendButton.disabled = true;
+
+      // Send to plugin
+      parent.postMessage({
+        pluginMessage: {
+          type: 'chat-message',
+          message: text,
+          selection: currentSelection,
+          history: conversationHistory.slice(-10) // Last 10 messages for context
+        }
+      }, '*');
+    }
+
+    function addMessage(content, role, selection = null) {
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `message ${role}`;
+
+      if (role === 'user' && selection && selection.length > 0) {
+        const badge = document.createElement('div');
+        badge.className = 'context-badge';
+        badge.innerHTML = `
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          </svg>
+          ${selection.length} layer${selection.length > 1 ? 's' : ''} selected
+        `;
+        messageDiv.appendChild(badge);
+      }
+
+      const contentDiv = document.createElement('div');
+      contentDiv.innerHTML = formatMessage(content);
+      messageDiv.appendChild(contentDiv);
+
+      chatContainer.appendChild(messageDiv);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    function formatMessage(content) {
+      // Basic markdown-like formatting
+      return content
+        .replace(/```(\w*)\n([\s\S]*?)```/g, '<pre><code>$2</code></pre>')
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\n/g, '<br>');
+    }
+
+    function showTypingIndicator() {
+      const indicator = document.createElement('div');
+      indicator.className = 'typing-indicator';
+      indicator.id = 'typing-indicator';
+      indicator.innerHTML = '<span></span><span></span><span></span>';
+      chatContainer.appendChild(indicator);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    function hideTypingIndicator() {
+      const indicator = document.getElementById('typing-indicator');
+      if (indicator) {
+        indicator.remove();
+      }
+    }
+
+    // Request initial selection state
+    parent.postMessage({ pluginMessage: { type: 'get-selection' } }, '*');
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+
+# Build output
+dist/
+
+# Environment files
+.env
+backend/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
