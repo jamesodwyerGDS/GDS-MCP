@@ -2,6 +2,39 @@
 
 An AI-powered chat assistant that runs inside Figma, helping designers work with the Global Design System.
 
+## Quick Deploy (No Code Required)
+
+### 1. Deploy Backend to Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template)
+
+**Manual steps:**
+1. Go to [railway.app](https://railway.app) → Sign up with GitHub
+2. Click **"New Project"** → **"Deploy from GitHub repo"**
+3. Select this repo, set root directory to: `figma-plugin/backend`
+4. Go to **Variables** tab → Add `ANTHROPIC_API_KEY` (get from [console.anthropic.com](https://console.anthropic.com))
+5. Copy your Railway URL (e.g., `https://gds-helper-xxx.up.railway.app`)
+
+### 2. Update Plugin with Your URL
+
+Edit `figma-plugin/src/code.ts` line 4:
+```typescript
+const BACKEND_URL = 'https://YOUR-RAILWAY-URL.up.railway.app/api/chat';
+```
+
+### 3. Build & Install Plugin
+
+Ask an engineer to run these commands, or use GitHub Codespaces:
+```bash
+cd figma-plugin && npm install && npm run build
+```
+
+Then in Figma Desktop:
+1. **Plugins** → **Development** → **Import plugin from manifest...**
+2. Select `figma-plugin/manifest.json`
+
+---
+
 ## Features
 
 - **Chat Interface**: Ask questions about GDS components, tokens, and guidelines
