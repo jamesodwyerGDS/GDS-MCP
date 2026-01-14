@@ -26,6 +26,45 @@ const OUTPUT_DIR = path.join(__dirname, '../docs/figma-extract/components');
 const FILE_KEY = 'WU01oSRfSHpOxUn3ThcvC5';
 const API_BASE = 'https://api.figma.com/v1';
 
+// Token name mapping (hex -> token name)
+// This will be populated from styles or can be manually defined
+const TOKEN_MAP = {
+  // Primary
+  '#024DDF': 'Neptune',
+  '#0141B8': 'Neptune Dark',
+  '#033399': 'Neptune Darker',
+
+  // Secondary
+  '#121212': 'Cosmos',
+  '#646464': 'Granite',
+  '#949494': 'Slate',
+  '#FFFFFF': 'Spotlight',
+
+  // Borders & Fills
+  '#BFBFBF': 'Moonrock',
+  '#D6D6D6': 'Ammonite',
+  '#EBEBEB': 'Diatomite',
+  '#F6F6F6': 'Lunar',
+
+  // Semantic
+  '#048851': 'Earth',
+  '#EB0000': 'Mars',
+  '#FF3838': 'Mars Bright',
+  '#FFB939': 'Jupiter',
+  '#A733FF': 'Callisto',
+  '#3074FE': 'Neptune Bright',
+  '#21FFF2': 'Ganymede',
+  '#FBFF2C': 'Titan'
+};
+
+/**
+ * Look up token name from hex color
+ */
+function getTokenName(hex) {
+  if (!hex) return null;
+  return TOKEN_MAP[hex.toUpperCase()] || null;
+}
+
 /**
  * Convert Figma RGB (0-1) to Hex
  */
@@ -38,14 +77,30 @@ function rgbToHex(r, g, b) {
 }
 
 /**
- * Extract color from fills/strokes array
+ * Extract color from fills/strokes array with token name
  */
-function extractColor(colorArray) {
+function extractColor(colorArray, boundVariables = null) {
   if (!colorArray || colorArray.length === 0) return null;
   const solid = colorArray.find(c => c.type === 'SOLID' && c.visible !== false);
   if (!solid || !solid.color) return null;
+
+  const hex = rgbToHex(solid.color.r, solid.color.g, solid.color.b);
+  const token = getTokenName(hex);
+
+  // Check for bound variable ID
+  let variableId = null;
+  if (boundVariables?.fills?.[0]?.id) {
+    variableId = boundVariables.fills[0].id;
+  } else if (boundVariables?.strokes?.[0]?.id) {
+    variableId = boundVariables.strokes[0].id;
+  } else if (solid.boundVariables?.color?.id) {
+    variableId = solid.boundVariables.color.id;
+  }
+
   return {
-    hex: rgbToHex(solid.color.r, solid.color.g, solid.color.b),
+    hex,
+    token,
+    variableId,
     opacity: solid.opacity ?? solid.color.a ?? 1,
     rgb: {
       r: Math.round(solid.color.r * 255),
@@ -142,7 +197,7 @@ function extractAllStyles(node, depth = 0, results = {
 
   // Extract border/stroke
   if (node.strokes && node.strokes.length > 0) {
-    const stroke = extractColor(node.strokes);
+    const stroke = extractColor(node.strokes, node.boundVariables);
     if (stroke) {
       results.borders.push({
         elementName: node.name,
@@ -158,7 +213,7 @@ function extractAllStyles(node, depth = 0, results = {
 
   // Extract fill/background
   if (node.fills && node.fills.length > 0 && node.type !== 'TEXT') {
-    const fill = extractColor(node.fills);
+    const fill = extractColor(node.fills, node.boundVariables);
     if (fill) {
       results.fills.push({
         elementName: node.name,
@@ -171,7 +226,7 @@ function extractAllStyles(node, depth = 0, results = {
 
   // Extract text styles
   if (node.type === 'TEXT') {
-    const textFill = extractColor(node.fills);
+    const textFill = extractColor(node.fills, node.boundVariables);
     results.texts.push({
       elementName: node.name,
       content: node.characters,
@@ -353,17 +408,25 @@ function generateMarkdown(component) {
   let md = `# ${component.name}\n\n`;
   md += `**Component ID:** \`${component.id}\`\n\n`;
 
+  // Helper to format color with token
+  const formatColor = (colorObj) => {
+    if (!colorObj) return '-';
+    const hex = colorObj.hex;
+    const token = colorObj.token;
+    return token ? `\`${hex}\` (${token})` : `\`${hex}\``;
+  };
+
   // Quick reference table
   md += `## States Overview\n\n`;
-  md += `| State | Border | Background | Label | Input Text |\n`;
-  md += `|-------|--------|------------|-------|------------|\n`;
+  md += `| State | Border | Token | Background | Token |\n`;
+  md += `|-------|--------|-------|------------|-------|\n`;
 
   for (const v of component.variants) {
-    const border = v.border?.color?.hex || '-';
-    const bg = v.background?.hex || '-';
-    const label = v.text.label?.color?.hex || '-';
-    const input = v.text.input?.color?.hex || '-';
-    md += `| **${v.state}** | \`${border}\` | \`${bg}\` | \`${label}\` | \`${input}\` |\n`;
+    const borderHex = v.border?.color?.hex || '-';
+    const borderToken = v.border?.color?.token || '-';
+    const bgHex = v.background?.hex || '-';
+    const bgToken = v.background?.token || '-';
+    md += `| **${v.state}** | \`${borderHex}\` | ${borderToken} | \`${bgHex}\` | ${bgToken} |\n`;
   }
 
   // Detailed styles per state
@@ -375,7 +438,9 @@ function generateMarkdown(component) {
     // Border
     if (v.border) {
       md += `**Border:**\n`;
-      md += `- Color: \`${v.border.color.hex}\`\n`;
+      md += `- Color: \`${v.border.color.hex}\``;
+      if (v.border.color.token) md += ` → **${v.border.color.token}**`;
+      md += `\n`;
       md += `- Weight: ${v.border.weight}px\n`;
       if (v.border.align) md += `- Align: ${v.border.align}\n`;
       md += `\n`;
@@ -384,7 +449,9 @@ function generateMarkdown(component) {
     // Background
     if (v.background) {
       md += `**Background:**\n`;
-      md += `- Color: \`${v.background.hex}\`\n`;
+      md += `- Color: \`${v.background.hex}\``;
+      if (v.background.token) md += ` → **${v.background.token}**`;
+      md += `\n`;
       if (v.background.opacity !== 1) md += `- Opacity: ${v.background.opacity}\n`;
       md += `\n`;
     }
@@ -394,25 +461,41 @@ function generateMarkdown(component) {
     if (v.text.label?.typography) {
       const t = v.text.label.typography;
       md += `- Label: ${t.fontFamily} ${t.fontWeight} ${t.fontSize}px`;
-      if (v.text.label.color) md += ` (color: \`${v.text.label.color.hex}\`)`;
+      if (v.text.label.color) {
+        md += ` (color: \`${v.text.label.color.hex}\``;
+        if (v.text.label.color.token) md += ` → ${v.text.label.color.token}`;
+        md += `)`;
+      }
       md += `\n`;
     }
     if (v.text.input?.typography) {
       const t = v.text.input.typography;
       md += `- Input: ${t.fontFamily} ${t.fontWeight} ${t.fontSize}px`;
-      if (v.text.input.color) md += ` (color: \`${v.text.input.color.hex}\`)`;
+      if (v.text.input.color) {
+        md += ` (color: \`${v.text.input.color.hex}\``;
+        if (v.text.input.color.token) md += ` → ${v.text.input.color.token}`;
+        md += `)`;
+      }
       md += `\n`;
     }
     if (v.text.placeholder?.typography) {
       const t = v.text.placeholder.typography;
       md += `- Placeholder: ${t.fontFamily} ${t.fontWeight} ${t.fontSize}px`;
-      if (v.text.placeholder.color) md += ` (color: \`${v.text.placeholder.color.hex}\`)`;
+      if (v.text.placeholder.color) {
+        md += ` (color: \`${v.text.placeholder.color.hex}\``;
+        if (v.text.placeholder.color.token) md += ` → ${v.text.placeholder.color.token}`;
+        md += `)`;
+      }
       md += `\n`;
     }
     if (v.text.validation?.typography) {
       const t = v.text.validation.typography;
       md += `- Validation: ${t.fontFamily} ${t.fontWeight} ${t.fontSize}px`;
-      if (v.text.validation.color) md += ` (color: \`${v.text.validation.color.hex}\`)`;
+      if (v.text.validation.color) {
+        md += ` (color: \`${v.text.validation.color.hex}\``;
+        if (v.text.validation.color.token) md += ` → ${v.text.validation.color.token}`;
+        md += `)`;
+      }
       md += `\n`;
     }
     md += `\n`;
@@ -530,20 +613,20 @@ async function main() {
     console.log(`${'='.repeat(60)}\n`);
 
     // State summary table
-    console.log('State'.padEnd(15) + 'Border'.padEnd(12) + 'Background'.padEnd(12) + 'Label'.padEnd(12) + 'Input');
-    console.log('-'.repeat(60));
+    console.log('State'.padEnd(15) + 'Border'.padEnd(12) + 'Token'.padEnd(15) + 'Background'.padEnd(12) + 'Token');
+    console.log('-'.repeat(70));
 
     for (const v of component.variants) {
       const border = v.border?.color?.hex || '-';
+      const borderToken = v.border?.color?.token || '-';
       const bg = v.background?.hex || '-';
-      const label = v.text.label?.color?.hex || '-';
-      const input = v.text.input?.color?.hex || '-';
+      const bgToken = v.background?.token || '-';
       console.log(
         v.state.padEnd(15) +
         border.padEnd(12) +
+        borderToken.padEnd(15) +
         bg.padEnd(12) +
-        label.padEnd(12) +
-        input
+        bgToken
       );
     }
 
