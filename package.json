@@ -19,7 +19,9 @@
     "website:dev": "npm --prefix website run dev",
     "website:build": "npm --prefix website run build",
     "website:preview": "npm --prefix website run preview",
-    "website:install": "npm --prefix website install"
+    "website:install": "npm --prefix website install",
+    "mcp:start": "node mcp-server/http-server.js",
+    "mcp:stdio": "node mcp-server/index.js"
   },
   "keywords": [
     "mcp",
@@ -32,6 +34,8 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
