@@ -1,0 +1,2719 @@
+{
+  "name": "Sidepanel",
+  "id": "28112:3500",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Device=Desktop, Position=Right",
+      "id": "28112:3501",
+      "state": "Unknown",
+      "properties": {
+        "Device": "Desktop",
+        "Position": "Right"
+      },
+      "border": {
+        "color": {
+          "hex": "#D6D6D6",
+          "token": "Ammonite",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 214,
+            "g": 214,
+            "b": 214
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 0.6000000238418579,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "_Footer",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "overlay",
+          "elementType": "FRAME",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 0.6000000238418579,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "wrapper",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Leading icon",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Line 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Line 2 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "🟢 Button",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60312",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Header Title",
+          "content": "Header Title",
+          "depth": 7,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 18,
+            "lineHeight": 26,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.36
+          }
+        },
+        {
+          "elementName": "Subtitle",
+          "content": "Subtitle",
+          "depth": 7,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance \nBy your own images or illustrations  (Turn off prop if not required)",
+          "depth": 7,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance\nBy your own local component ",
+          "depth": 7,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance \nBy your own local component",
+          "depth": 6,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Button",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "color": {
+            "hex": "#000000",
+            "opacity": 0.3499999940395355
+          },
+          "offset": {
+            "x": 0,
+            "y": 8
+          },
+          "radius": 20
+        }
+      ],
+      "allEffects": [
+        {
+          "elementName": "root",
+          "elementType": "FRAME",
+          "depth": 1,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "color": {
+                "hex": "#000000",
+                "opacity": 0.3499999940395355
+              },
+              "offset": {
+                "x": 0,
+                "y": 8
+              },
+              "radius": 20
+            }
+          ]
+        }
+      ],
+      "icons": [
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "componentId": "28112:3490",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          }
+        },
+        {
+          "elementName": "_Leading icon",
+          "elementType": "INSTANCE",
+          "componentId": "25353:610",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 2 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 6,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 6,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "_Footer",
+          "elementType": "INSTANCE",
+          "componentId": "28112:3545",
+          "depth": 4,
+          "fill": null,
+          "stroke": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 5,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "🟢 Button",
+          "elementType": "INSTANCE",
+          "componentId": "8342:60109",
+          "depth": 5,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60312",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 1440,
+        "height": 1024,
+        "padding": null,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Device=Desktop, Position=Left",
+      "id": "28112:3514",
+      "state": "Unknown",
+      "properties": {
+        "Device": "Desktop",
+        "Position": "Left"
+      },
+      "border": {
+        "color": {
+          "hex": "#D6D6D6",
+          "token": "Ammonite",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 214,
+            "g": 214,
+            "b": 214
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 0.6000000238418579,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "_Footer",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "overlay",
+          "elementType": "FRAME",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 0.6000000238418579,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "wrapper",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Leading icon",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Line 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Line 2 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "🟢 Button",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60312",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Header Title",
+          "content": "Header Title",
+          "depth": 7,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 18,
+            "lineHeight": 26,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.36
+          }
+        },
+        {
+          "elementName": "Subtitle",
+          "content": "Subtitle",
+          "depth": 7,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance \nBy your own images or illustrations  (Turn off prop if not required)",
+          "depth": 7,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance\nBy your own local component ",
+          "depth": 6,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance \nBy your own local component",
+          "depth": 6,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Button",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "color": {
+            "hex": "#000000",
+            "opacity": 0.3499999940395355
+          },
+          "offset": {
+            "x": 0,
+            "y": 8
+          },
+          "radius": 20
+        }
+      ],
+      "allEffects": [
+        {
+          "elementName": "root",
+          "elementType": "FRAME",
+          "depth": 1,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "color": {
+                "hex": "#000000",
+                "opacity": 0.3499999940395355
+              },
+              "offset": {
+                "x": 0,
+                "y": 8
+              },
+              "radius": 20
+            }
+          ]
+        }
+      ],
+      "icons": [
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "componentId": "28112:3490",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          }
+        },
+        {
+          "elementName": "_Leading icon",
+          "elementType": "INSTANCE",
+          "componentId": "25353:610",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 2 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 6,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 5,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "_Footer",
+          "elementType": "INSTANCE",
+          "componentId": "28112:3545",
+          "depth": 4,
+          "fill": null,
+          "stroke": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 5,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "🟢 Button",
+          "elementType": "INSTANCE",
+          "componentId": "8342:60109",
+          "depth": 5,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60312",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 1440,
+        "height": 1024,
+        "padding": null,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Device=Mobile, Position=Right",
+      "id": "28112:3526",
+      "state": "Unknown",
+      "properties": {
+        "Device": "Mobile",
+        "Position": "Right"
+      },
+      "border": {
+        "color": {
+          "hex": "#D6D6D6",
+          "token": "Ammonite",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 214,
+            "g": 214,
+            "b": 214
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 0.6000000238418579,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "_Footer",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "overlay",
+          "elementType": "FRAME",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 0.6000000238418579,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "wrapper",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Leading icon",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Line 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Line 2 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "color": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 6,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "🟢 Button",
+          "elementType": "INSTANCE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60312",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Header Title",
+          "content": "Header Title",
+          "depth": 7,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 18,
+            "lineHeight": 26,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.36
+          }
+        },
+        {
+          "elementName": "Subtitle",
+          "content": "Subtitle",
+          "depth": 7,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance \nBy your own images or illustrations  (Turn off prop if not required)",
+          "depth": 7,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance\nBy your own local component ",
+          "depth": 7,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Replace this instance By your own local component",
+          "content": "Replace this instance \nBy your own local component",
+          "depth": 6,
+          "color": {
+            "hex": "#DB1EDB",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 219,
+              "g": 30,
+              "b": 219
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 12,
+            "lineHeight": 18,
+            "lineHeightUnit": "FONT_SIZE_%",
+            "letterSpacing": 0
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Button",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "color": {
+            "hex": "#121212",
+            "opacity": 0.18000000715255737
+          },
+          "offset": {
+            "x": 0,
+            "y": 3
+          },
+          "radius": 12
+        }
+      ],
+      "allEffects": [
+        {
+          "elementName": "root",
+          "elementType": "FRAME",
+          "depth": 2,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "color": {
+                "hex": "#121212",
+                "opacity": 0.18000000715255737
+              },
+              "offset": {
+                "x": 0,
+                "y": 3
+              },
+              "radius": 12
+            }
+          ]
+        }
+      ],
+      "icons": [
+        {
+          "elementName": "_Panel/Header",
+          "elementType": "INSTANCE",
+          "componentId": "28112:3490",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          }
+        },
+        {
+          "elementName": "_Leading icon",
+          "elementType": "INSTANCE",
+          "componentId": "25353:610",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 9,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 2 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 10,
+          "fill": {
+            "hex": "#01A469",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 1,
+              "g": 164,
+              "b": 105
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 6,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 6,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "_Footer",
+          "elementType": "INSTANCE",
+          "componentId": "28112:3545",
+          "depth": 4,
+          "fill": null,
+          "stroke": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          }
+        },
+        {
+          "elementName": "Slot",
+          "elementType": "INSTANCE",
+          "componentId": "25356:5186",
+          "depth": 5,
+          "fill": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 0.20000000298023224,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          },
+          "stroke": {
+            "hex": "#DFC0DF",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 223,
+              "g": 192,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "🟢 Button",
+          "elementType": "INSTANCE",
+          "componentId": "8342:60109",
+          "depth": 5,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60312",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 7,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 375,
+        "height": 812,
+        "padding": null,
+        "layoutMode": "VERTICAL"
+      }
+    }
+  ]
+}

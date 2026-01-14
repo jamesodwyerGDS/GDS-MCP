@@ -1,0 +1,315 @@
+{
+  "name": "_Base Loading spinner",
+  "id": "33145:3725",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Property 1=Variant 1",
+      "id": "33145:3726",
+      "state": "Unknown",
+      "properties": {
+        "Property 1": "Variant 1"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": {
+          "top": 1,
+          "right": 1,
+          "bottom": 1,
+          "left": 1
+        },
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Property 1=Variant2",
+      "id": "33145:3730",
+      "state": "Unknown",
+      "properties": {
+        "Property 1": "Variant2"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": {
+          "top": 1,
+          "right": 1,
+          "bottom": 1,
+          "left": 1
+        },
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Property 1=Variant3",
+      "id": "33145:3734",
+      "state": "Unknown",
+      "properties": {
+        "Property 1": "Variant3"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": {
+          "top": 1,
+          "right": 1,
+          "bottom": 1,
+          "left": 1
+        },
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Property 1=Variant4",
+      "id": "33145:3738",
+      "state": "Unknown",
+      "properties": {
+        "Property 1": "Variant4"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": {
+          "top": 1,
+          "right": 1,
+          "bottom": 1,
+          "left": 1
+        },
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    }
+  ]
+}

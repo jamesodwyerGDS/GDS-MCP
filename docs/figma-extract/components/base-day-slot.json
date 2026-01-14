@@ -1,0 +1,1148 @@
+{
+  "name": ".BASE/Day slot",
+  "id": "637:48099",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Day state=Default",
+      "id": "637:48098",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Default"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "padding": null
+      }
+    },
+    {
+      "name": "Day state=Day state11",
+      "id": "47465:2300",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Day state11"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "padding": null
+      }
+    },
+    {
+      "name": "Day state=Blank",
+      "id": "646:50995",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Blank"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "padding": null
+      }
+    },
+    {
+      "name": "Day state=Outside month",
+      "id": "646:50413",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Outside month"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "padding": null
+      }
+    },
+    {
+      "name": "Day state=Day selected",
+      "id": "637:48100",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Day selected"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Neptune100%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "00",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "cornerRadius": 44,
+        "padding": null
+      }
+    },
+    {
+      "name": "Day state=Hover",
+      "id": "637:48102",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Hover"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "componentId": "120:17135",
+          "depth": 1,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "padding": null
+      }
+    },
+    {
+      "name": "Day state=Mid range",
+      "id": "637:48127",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Mid range"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "componentId": "120:17135",
+          "depth": 1,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "padding": null,
+        "gap": 8,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Day state=Current mid range",
+      "id": "646:51506",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Current mid range"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Rectangle 8014",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "componentId": "120:17135",
+          "depth": 1,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "padding": null,
+        "gap": 4,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Day state=Range end",
+      "id": "637:48111",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Range end"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Neptune100%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "componentId": "120:17135",
+          "depth": 1,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "cornerRadii": [
+          0,
+          44,
+          44,
+          0
+        ],
+        "padding": null
+      }
+    },
+    {
+      "name": "Day state=Range start",
+      "id": "637:48122",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Range start"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Neptune100%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": ".Effects/Hover",
+          "elementType": "INSTANCE",
+          "componentId": "120:17135",
+          "depth": 1,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "cornerRadii": [
+          0,
+          44,
+          44,
+          0
+        ],
+        "padding": null
+      }
+    },
+    {
+      "name": "Day state=Current day",
+      "id": "637:48107",
+      "state": "Unknown",
+      "properties": {
+        "Day state": "Current day"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": "VariableID:7927:29897",
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Rectangle 8013",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:7927:29897",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "1",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 44,
+        "padding": null
+      }
+    }
+  ]
+}

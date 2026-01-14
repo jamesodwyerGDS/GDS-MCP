@@ -1,0 +1,860 @@
+{
+  "name": "Toolbar",
+  "id": "45:19068",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Buttons=Two",
+      "id": "45:19069",
+      "state": "Unknown",
+      "properties": {
+        "Buttons": "Two"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "color": {
+            "hex": "#121212",
+            "opacity": 0.15000000596046448
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "radius": 4
+        }
+      ],
+      "allEffects": [
+        {
+          "elementName": "Buttons=Two",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "color": {
+                "hex": "#121212",
+                "opacity": 0.15000000596046448
+              },
+              "offset": {
+                "x": 0,
+                "y": 1
+              },
+              "radius": 4
+            }
+          ]
+        }
+      ],
+      "icons": [
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "componentId": "45:19032",
+          "depth": 1,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "componentId": "45:19038",
+          "depth": 1,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 44,
+        "height": 88,
+        "padding": null,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Buttons=Three",
+      "id": "50:17205",
+      "state": "Unknown",
+      "properties": {
+        "Buttons": "Three"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 3,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "color": {
+            "hex": "#121212",
+            "opacity": 0.15000000596046448
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "radius": 4
+        }
+      ],
+      "allEffects": [
+        {
+          "elementName": "Buttons=Three",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "effects": [
+            {
+              "type": "DROP_SHADOW",
+              "visible": true,
+              "color": {
+                "hex": "#121212",
+                "opacity": 0.15000000596046448
+              },
+              "offset": {
+                "x": 0,
+                "y": 1
+              },
+              "radius": 4
+            }
+          ]
+        }
+      ],
+      "icons": [
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "componentId": "45:19032",
+          "depth": 1,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 3,
+          "fill": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "componentId": "45:19036",
+          "depth": 1,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Toolbar/Block",
+          "elementType": "INSTANCE",
+          "componentId": "45:19038",
+          "depth": 1,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 44,
+        "height": 132,
+        "padding": null,
+        "layoutMode": "VERTICAL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1977 @@
+{
+  "name": "Double range input",
+  "id": "40968:916",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "isDisabled=False, showMinError=False, showMaxError=False",
+      "id": "40968:917",
+      "state": "Unknown",
+      "properties": {
+        "isDisabled": "False",
+        "showMinError": "False",
+        "showMaxError": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#949494",
+          "token": "Slate",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 148,
+            "g": 148,
+            "b": 148
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Inactive track",
+          "elementType": "RECTANGLE",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        },
+        {
+          "elementName": "Active track",
+          "elementType": "RECTANGLE",
+          "depth": 4,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "PRICE (PER TICKET)",
+          "content": "PRICE (PER TICKET)",
+          "depth": 2,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.24
+          }
+        },
+        {
+          "elementName": "Placeholder text",
+          "content": "£60",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Label",
+          "content": "Minimum",
+          "depth": 4,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Placeholder text",
+          "content": "£300",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Label",
+          "content": "Maximum",
+          "depth": 4,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 343,
+        "height": 90,
+        "padding": null,
+        "gap": 4,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "isDisabled=True, showMinError=False, showMaxError=False",
+      "id": "40968:924",
+      "state": "Unknown",
+      "properties": {
+        "isDisabled": "True",
+        "showMinError": "False",
+        "showMaxError": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "Inactive track",
+          "elementType": "RECTANGLE",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        },
+        {
+          "elementName": "Active track",
+          "elementType": "RECTANGLE",
+          "depth": 4,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "input": {
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": {
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "PRICE (PER TICKET)",
+          "content": "PRICE (PER TICKET)",
+          "depth": 2,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.24
+          }
+        },
+        {
+          "elementName": "Placeholder text",
+          "content": "£60",
+          "depth": 5,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Label",
+          "content": "Minimum",
+          "depth": 4,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Placeholder text",
+          "content": "£300",
+          "depth": 5,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Label",
+          "content": "Maximum",
+          "depth": 4,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 343,
+        "height": 90,
+        "padding": null,
+        "gap": 4,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "isDisabled=False, showMinError=True, showMaxError=False",
+      "id": "40968:931",
+      "state": "Unknown",
+      "properties": {
+        "isDisabled": "False",
+        "showMinError": "True",
+        "showMaxError": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#EB0000",
+          "token": "Mars",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Inactive track",
+          "elementType": "RECTANGLE",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        },
+        {
+          "elementName": "Active track",
+          "elementType": "RECTANGLE",
+          "depth": 4,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 4,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 5,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Union",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Line 7 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Line 8 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "PRICE (PER TICKET)",
+          "content": "PRICE (PER TICKET)",
+          "depth": 2,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.24
+          }
+        },
+        {
+          "elementName": "Placeholder text",
+          "content": "£60",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Label",
+          "content": "Minimum",
+          "depth": 4,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Placeholder text",
+          "content": "£300",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Label",
+          "content": "Maximum",
+          "depth": 4,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Error message goes here",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 4,
+          "fill": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 5,
+          "fill": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 7 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 8 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 343,
+        "height": 114,
+        "padding": null,
+        "gap": 4,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "isDisabled=False, showMinError=False, showMaxError=True",
+      "id": "40968:938",
+      "state": "Unknown",
+      "properties": {
+        "isDisabled": "False",
+        "showMinError": "False",
+        "showMaxError": "True"
+      },
+      "border": {
+        "color": {
+          "hex": "#949494",
+          "token": "Slate",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 148,
+            "g": 148,
+            "b": 148
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Inactive track",
+          "elementType": "RECTANGLE",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        },
+        {
+          "elementName": "Active track",
+          "elementType": "RECTANGLE",
+          "depth": 4,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Dial",
+          "elementType": "RECTANGLE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "_Input field",
+          "elementType": "FRAME",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 4,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 5,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Union",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Line 7 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Line 8 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "PRICE (PER TICKET)",
+          "content": "PRICE (PER TICKET)",
+          "depth": 2,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.24
+          }
+        },
+        {
+          "elementName": "Placeholder text",
+          "content": "£60",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Label",
+          "content": "Minimum",
+          "depth": 4,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Placeholder text",
+          "content": "£300",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Label",
+          "content": "Maximum",
+          "depth": 4,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Error message goes here",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 4,
+          "fill": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 5,
+          "fill": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 7 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 8 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 343,
+        "height": 114,
+        "padding": null,
+        "gap": 4,
+        "layoutMode": "VERTICAL"
+      }
+    }
+  ]
+}

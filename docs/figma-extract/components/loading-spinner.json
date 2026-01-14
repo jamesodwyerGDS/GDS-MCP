@@ -1,0 +1,1069 @@
+{
+  "name": "Loading Spinner",
+  "id": "33145:3778",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Size=Large, Colour=Primary",
+      "id": "33145:3779",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Large",
+        "Colour": "Primary"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 72,
+        "height": 112,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Size=Medium, Colour=Primary",
+      "id": "33145:3785",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium",
+        "Colour": "Primary"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 72,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Size=Small, Colour=Primary",
+      "id": "33145:3791",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Small",
+        "Colour": "Primary"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 64,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Size=Large, Colour=Secondary",
+      "id": "33145:3797",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Large",
+        "Colour": "Secondary"
+      },
+      "border": null,
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 72,
+        "height": 112,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Size=Medium, Colour=Secondary",
+      "id": "33145:3803",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium",
+        "Colour": "Secondary"
+      },
+      "border": null,
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 72,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Size=Small, Colour=Secondary",
+      "id": "33145:3809",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Small",
+        "Colour": "Secondary"
+      },
+      "border": null,
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 64,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Size=Large, Colour=Inverse",
+      "id": "33145:3815",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Large",
+        "Colour": "Inverse"
+      },
+      "border": null,
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 72,
+        "height": 112,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Size=Medium, Colour=Inverse",
+      "id": "33145:3821",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium",
+        "Colour": "Inverse"
+      },
+      "border": null,
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 72,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Size=Small, Colour=Inverse",
+      "id": "33145:3827",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Small",
+        "Colour": "Inverse"
+      },
+      "border": null,
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Background",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Arc 1",
+          "elementType": "ELLIPSE",
+          "depth": 5,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "Label",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 44,
+        "height": 64,
+        "padding": null,
+        "gap": 10,
+        "layoutMode": "HORIZONTAL"
+      }
+    }
+  ]
+}

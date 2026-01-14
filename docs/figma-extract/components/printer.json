@@ -1,0 +1,3913 @@
+{
+  "name": "Printer",
+  "id": "10049:4739",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Inverted?=No",
+      "id": "6533:57192",
+      "state": "Unknown",
+      "properties": {
+        "Inverted?": "No"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 5,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 1,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 1,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 5,
+          "fill": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 700,
+        "height": 600,
+        "padding": null
+      }
+    },
+    {
+      "name": "Inverted?=Yes",
+      "id": "10049:4656",
+      "state": "Unknown",
+      "properties": {
+        "Inverted?": "Yes"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 5,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 1,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 1,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 5,
+          "fill": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 6,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 700,
+        "height": 600,
+        "padding": null
+      }
+    }
+  ]
+}

@@ -40,7 +40,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
     tools: [
       {
         name: 'get_component_docs',
-        description: 'Get all documentation for a GDS component. Returns unified documentation combining design specs, engineer code, and vibe/Tailwind snippets.',
+        description: 'Get component documentation with per-state styling. Returns border, background, text, icon colors with token names for each state.',
         inputSchema: {
           type: 'object',
           properties: {
@@ -48,10 +48,9 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
               type: 'string',
               description: 'Component name (e.g., "button", "input-field", "modal")'
             },
-            audience: {
+            state: {
               type: 'string',
-              enum: ['all', 'design', 'engineer', 'vibe'],
-              description: 'Target audience section. "all" returns complete unified doc.'
+              description: 'Optional state filter (e.g., "default", "hover", "error", "disabled"). Omit for all states.'
             }
           },
           required: ['componentName']
@@ -110,7 +109,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   try {
     switch (name) {
       case 'get_component_docs':
-        return await getComponentDocs(args.componentName, args.audience || 'all');
+        return await getComponentDocs(args.componentName, args.state || null);
 
       case 'get_design_token':
         return await getDesignToken(args.tokenName, args.tokenType || 'all');

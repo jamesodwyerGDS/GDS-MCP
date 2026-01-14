@@ -1,0 +1,703 @@
+{
+  "name": "_Modal Footer",
+  "id": "25356:4304",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Stacking=Horizontal",
+      "id": "25356:4305",
+      "state": "Unknown",
+      "properties": {
+        "Stacking": "Horizontal"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": "VariableID:8342:60327",
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "🟢 Secondary Button",
+          "elementType": "INSTANCE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60327",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Stacking=Horizontal",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "🟢 Primary Button",
+          "elementType": "INSTANCE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60324",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Secondary",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60324",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Primary",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "🟢 Secondary Button",
+          "elementType": "INSTANCE",
+          "componentId": "8342:60113",
+          "depth": 2,
+          "fill": null,
+          "stroke": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60327",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "🟢 Primary Button",
+          "elementType": "INSTANCE",
+          "componentId": "8342:60109",
+          "depth": 2,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 400,
+        "height": 92,
+        "padding": {
+          "top": 16,
+          "right": 32,
+          "bottom": 32,
+          "left": 32
+        },
+        "gap": 16,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Stacking=Vertical",
+      "id": "25356:4309",
+      "state": "Unknown",
+      "properties": {
+        "Stacking": "Vertical"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": "VariableID:8342:60327",
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "🟢 Secondary Button",
+          "elementType": "INSTANCE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60327",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Stacking=Vertical",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "🟢 Primary Button",
+          "elementType": "INSTANCE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60312",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Primary",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:8342:60325",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Secondary",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60324",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "🟢 Primary Button",
+          "elementType": "INSTANCE",
+          "componentId": "8342:60109",
+          "depth": 2,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60312",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "🟢 Secondary Button",
+          "elementType": "INSTANCE",
+          "componentId": "8342:60113",
+          "depth": 2,
+          "fill": null,
+          "stroke": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": "VariableID:8342:60327",
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233",
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 320,
+        "height": 140,
+        "padding": {
+          "top": 16,
+          "right": 24,
+          "bottom": 24,
+          "left": 24
+        },
+        "gap": 16,
+        "layoutMode": "HORIZONTAL"
+      }
+    }
+  ]
+}

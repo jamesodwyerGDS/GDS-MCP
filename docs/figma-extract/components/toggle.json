@@ -1,0 +1,1167 @@
+{
+  "name": "Toggle",
+  "id": "21:28235",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "On=No, State=Default, Resale?=No",
+      "id": "21:28236",
+      "state": "Default",
+      "properties": {
+        "On": "No",
+        "State": "Default",
+        "Resale?": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#949494",
+          "token": "Slate",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 148,
+            "g": 148,
+            "b": 148
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=No, State=Default, Resale?=Yes",
+      "id": "7063:57973",
+      "state": "Default",
+      "properties": {
+        "On": "No",
+        "State": "Default",
+        "Resale?": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#949494",
+          "token": "Slate",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 148,
+            "g": 148,
+            "b": 148
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=Yes, State=Hover, Resale?=No",
+      "id": "21:28239",
+      "state": "Hover",
+      "properties": {
+        "On": "Yes",
+        "State": "Hover",
+        "Resale?": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=No, State=Hover, Resale?=Yes",
+      "id": "7063:57976",
+      "state": "Hover",
+      "properties": {
+        "On": "No",
+        "State": "Hover",
+        "Resale?": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#D0006F",
+          "token": null,
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 208,
+            "g": 0,
+            "b": 111
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#D0006F",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 208,
+              "g": 0,
+              "b": 111
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=Yes, State=Default, Resale?=No",
+      "id": "21:28243",
+      "state": "Default",
+      "properties": {
+        "On": "Yes",
+        "State": "Default",
+        "Resale?": "No"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=Yes, State=Default, Resale?=Yes",
+      "id": "7063:57979",
+      "state": "Default",
+      "properties": {
+        "On": "Yes",
+        "State": "Default",
+        "Resale?": "Yes"
+      },
+      "border": null,
+      "background": {
+        "hex": "#D0006F",
+        "token": null,
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 208,
+          "g": 0,
+          "b": 111
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#D0006F",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 208,
+              "g": 0,
+              "b": 111
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=Yes, State=Hover, Resale?=No",
+      "id": "21:28246",
+      "state": "Hover",
+      "properties": {
+        "On": "Yes",
+        "State": "Hover",
+        "Resale?": "No"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=Yes, State=Hover, Resale?=Yes",
+      "id": "7063:57982",
+      "state": "Hover",
+      "properties": {
+        "On": "Yes",
+        "State": "Hover",
+        "Resale?": "Yes"
+      },
+      "border": null,
+      "background": {
+        "hex": "#D0006F",
+        "token": null,
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 208,
+          "g": 0,
+          "b": 111
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#D0006F",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 208,
+              "g": 0,
+              "b": 111
+            }
+          }
+        },
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=No, State=Disabled, Resale?=No",
+      "id": "21:28250",
+      "state": "Disabled",
+      "properties": {
+        "On": "No",
+        "State": "Disabled",
+        "Resale?": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=No, State=Disabled, Resale?=Yes",
+      "id": "7063:57986",
+      "state": "Disabled",
+      "properties": {
+        "On": "No",
+        "State": "Disabled",
+        "Resale?": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=Yes, State=Disabled, Resale?=No",
+      "id": "21:28253",
+      "state": "Disabled",
+      "properties": {
+        "On": "Yes",
+        "State": "Disabled",
+        "Resale?": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "On=Yes, State=Disabled, Resale?=Yes",
+      "id": "7063:57989",
+      "state": "Disabled",
+      "properties": {
+        "On": "Yes",
+        "State": "Disabled",
+        "Resale?": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "base",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "knob",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 40,
+        "height": 24,
+        "padding": null
+      }
+    }
+  ]
+}

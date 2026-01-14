@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "gds": {
+      "command": "node",
+      "args": ["mcp-server/index.js"],
+      "cwd": "/home/user/GDS-MCP"
+    }
+  }
+}

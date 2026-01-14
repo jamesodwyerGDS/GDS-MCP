@@ -1,0 +1,2327 @@
+{
+  "name": ".BASE/Stepper",
+  "id": "45:16171",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Type=Number, State=Default",
+      "id": "45:16131",
+      "state": "Default",
+      "properties": {
+        "Type": "Number",
+        "State": "Default"
+      },
+      "border": null,
+      "background": {
+        "hex": "#F6F6F6",
+        "token": "Lunar",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 246,
+          "g": 246,
+          "b": 246
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Number, State=Default",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#F6F6F6",
+            "token": "Lunar",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 246,
+              "g": 246,
+              "b": 246
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "0",
+          "content": "0",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 4,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Number, State=Hover",
+      "id": "45:16193",
+      "state": "Hover",
+      "properties": {
+        "Type": "Number",
+        "State": "Hover"
+      },
+      "border": null,
+      "background": {
+        "hex": "#F6F6F6",
+        "token": "Lunar",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 246,
+          "g": 246,
+          "b": 246
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Number, State=Hover",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#F6F6F6",
+            "token": "Lunar",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 246,
+              "g": 246,
+              "b": 246
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "0",
+          "content": "0",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 4,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Number, State=Pressed",
+      "id": "45:16204",
+      "state": "Pressed",
+      "properties": {
+        "Type": "Number",
+        "State": "Pressed"
+      },
+      "border": null,
+      "background": {
+        "hex": "#F6F6F6",
+        "token": "Lunar",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 246,
+          "g": 246,
+          "b": 246
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Number, State=Pressed",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#F6F6F6",
+            "token": "Lunar",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 246,
+              "g": 246,
+              "b": 246
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "0",
+          "content": "0",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 4,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Number, State=Disabled",
+      "id": "45:16214",
+      "state": "Disabled",
+      "properties": {
+        "Type": "Number",
+        "State": "Disabled"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "0",
+          "content": "0",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Add - Secondary, State=Default",
+      "id": "45:16172",
+      "state": "Default",
+      "properties": {
+        "Type": "Add - Secondary",
+        "State": "Default"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Add - Primary, State=Default",
+      "id": "45:16346",
+      "state": "Default",
+      "properties": {
+        "Type": "Add - Primary",
+        "State": "Default"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Add - Primary, State=Default",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 40,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Add - Secondary, State=Hover",
+      "id": "45:16195",
+      "state": "Hover",
+      "properties": {
+        "Type": "Add - Secondary",
+        "State": "Hover"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Add - Secondary, State=Hover",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Add - Primary, State=Hover",
+      "id": "45:16356",
+      "state": "Hover",
+      "properties": {
+        "Type": "Add - Primary",
+        "State": "Hover"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Add - Primary, State=Hover",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Add - Secondary, State=Pressed",
+      "id": "45:16206",
+      "state": "Pressed",
+      "properties": {
+        "Type": "Add - Secondary",
+        "State": "Pressed"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Add - Secondary, State=Pressed",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Add - Primary, State=Pressed",
+      "id": "45:16374",
+      "state": "Pressed",
+      "properties": {
+        "Type": "Add - Primary",
+        "State": "Pressed"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Add - Primary, State=Pressed",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Add - Secondary, State=Disabled",
+      "id": "45:16216",
+      "state": "Disabled",
+      "properties": {
+        "Type": "Add - Secondary",
+        "State": "Disabled"
+      },
+      "border": null,
+      "background": {
+        "hex": "#BFBFBF",
+        "token": "Moonrock",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 191,
+          "g": 191,
+          "b": 191
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Add - Primary, State=Disabled",
+      "id": "45:16376",
+      "state": "Disabled",
+      "properties": {
+        "Type": "Add - Primary",
+        "State": "Disabled"
+      },
+      "border": null,
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Add - Primary, State=Disabled",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 3 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Line 4 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Minus - Secondary, State=Default",
+      "id": "45:16178",
+      "state": "Default",
+      "properties": {
+        "Type": "Minus - Secondary",
+        "State": "Default"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Minus - Primary, State=Default",
+      "id": "45:16353",
+      "state": "Default",
+      "properties": {
+        "Type": "Minus - Primary",
+        "State": "Default"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Minus - Secondary, State=Hover",
+      "id": "45:16200",
+      "state": "Hover",
+      "properties": {
+        "Type": "Minus - Secondary",
+        "State": "Hover"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Minus - Secondary, State=Hover",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Minus - Primary, State=Hover",
+      "id": "45:16358",
+      "state": "Hover",
+      "properties": {
+        "Type": "Minus - Primary",
+        "State": "Hover"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Minus - Primary, State=Hover",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Minus - Secondary, State=Pressed",
+      "id": "45:16208",
+      "state": "Pressed",
+      "properties": {
+        "Type": "Minus - Secondary",
+        "State": "Pressed"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Minus - Secondary, State=Pressed",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Minus - Primary, State=Pressed",
+      "id": "45:16414",
+      "state": "Pressed",
+      "properties": {
+        "Type": "Minus - Primary",
+        "State": "Pressed"
+      },
+      "border": null,
+      "background": {
+        "hex": "#024DDF",
+        "token": "Neptune",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 2,
+          "g": 77,
+          "b": 223
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Type=Minus - Primary, State=Pressed",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Neptune100%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Cosmos40%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Minus - Secondary, State=Disabled",
+      "id": "45:16218",
+      "state": "Disabled",
+      "properties": {
+        "Type": "Minus - Secondary",
+        "State": "Disabled"
+      },
+      "border": null,
+      "background": {
+        "hex": "#BFBFBF",
+        "token": "Moonrock",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 191,
+          "g": 191,
+          "b": 191
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Type=Minus - Primary, State=Disabled",
+      "id": "45:16416",
+      "state": "Disabled",
+      "properties": {
+        "Type": "Minus - Primary",
+        "State": "Disabled"
+      },
+      "border": null,
+      "background": {
+        "hex": "#BFBFBF",
+        "token": "Moonrock",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 191,
+          "g": 191,
+          "b": 191
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 36,
+        "height": 36,
+        "cornerRadius": 32,
+        "padding": {
+          "top": 4,
+          "right": 14,
+          "bottom": 4,
+          "left": 14
+        },
+        "layoutMode": "VERTICAL"
+      }
+    }
+  ]
+}

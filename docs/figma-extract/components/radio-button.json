@@ -1,0 +1,1660 @@
+{
+  "name": "Radio Button",
+  "id": "21:28156",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "State=Default, With text=No",
+      "id": "21:28157",
+      "state": "Default",
+      "properties": {
+        "State": "Default",
+        "With text": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#949494",
+          "token": "Slate",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 148,
+            "g": 148,
+            "b": 148
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "State=Active Hover, With text=No",
+      "id": "21:28160",
+      "state": "Active Hover",
+      "properties": {
+        "State": "Active Hover",
+        "With text": "No"
+      },
+      "border": null,
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Neptune100%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Cosmos40%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "State=Active, With text=No",
+      "id": "21:28164",
+      "state": "Active",
+      "properties": {
+        "State": "Active",
+        "With text": "No"
+      },
+      "border": null,
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "State=Disabled, With text=No",
+      "id": "21:28167",
+      "state": "Disabled",
+      "properties": {
+        "State": "Disabled",
+        "With text": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "State=Disabled Selected, With text=No",
+      "id": "21:28169",
+      "state": "Disabled Selected",
+      "properties": {
+        "State": "Disabled Selected",
+        "With text": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#BFBFBF",
+        "token": "Moonrock",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 191,
+          "g": 191,
+          "b": 191
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "State=Default, With text=Yes",
+      "id": "21:28172",
+      "state": "Default",
+      "properties": {
+        "State": "Default",
+        "With text": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#949494",
+          "token": "Slate",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 148,
+            "g": 148,
+            "b": 148
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Label",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 79,
+        "height": 24,
+        "padding": null,
+        "gap": 12,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "State=Error, With text=Yes",
+      "id": "4120:61126",
+      "state": "Error",
+      "properties": {
+        "State": "Error",
+        "With text": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#EB0000",
+          "token": "Mars",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Label",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 79,
+        "height": 24,
+        "padding": null,
+        "gap": 12,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "State=Active, With text=Yes",
+      "id": "21:28177",
+      "state": "Active",
+      "properties": {
+        "State": "Active",
+        "With text": "Yes"
+      },
+      "border": null,
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Label",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 79,
+        "height": 24,
+        "padding": null,
+        "gap": 12,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "State=Active Hover, With text=Yes",
+      "id": "21:28182",
+      "state": "Active Hover",
+      "properties": {
+        "State": "Active Hover",
+        "With text": "Yes"
+      },
+      "border": null,
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Neptune100%",
+          "elementType": "RECTANGLE",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Cosmos40%",
+          "elementType": "RECTANGLE",
+          "depth": 3,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Label",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 79,
+        "height": 24,
+        "padding": null,
+        "gap": 12,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "State=Disabled, With text=Yes",
+      "id": "21:28188",
+      "state": "Disabled",
+      "properties": {
+        "State": "Disabled",
+        "With text": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Label",
+          "depth": 1,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 79,
+        "height": 24,
+        "padding": null,
+        "gap": 12,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "State=Disabled Selected, With text=Yes",
+      "id": "21:28192",
+      "state": "Disabled Selected",
+      "properties": {
+        "State": "Disabled Selected",
+        "With text": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#BFBFBF",
+        "token": "Moonrock",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 191,
+          "g": 191,
+          "b": 191
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Label",
+          "depth": 1,
+          "color": {
+            "hex": "#646464",
+            "token": "Granite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 100,
+              "g": 100,
+              "b": 100
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 79,
+        "height": 24,
+        "padding": null,
+        "gap": 12,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "State=Hover, With text=No",
+      "id": "21:28197",
+      "state": "Hover",
+      "properties": {
+        "State": "Hover",
+        "With text": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "State=Hover, With text=Yes",
+      "id": "21:28200",
+      "state": "Hover",
+      "properties": {
+        "State": "Hover",
+        "With text": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Label",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 79,
+        "height": 24,
+        "padding": null,
+        "gap": 12,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "State=Error, With text=No",
+      "id": "4120:61123",
+      "state": "Error",
+      "properties": {
+        "State": "Error",
+        "With text": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#EB0000",
+          "token": "Mars",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Rectangle 1",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1",
+          "elementType": "ELLIPSE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    }
+  ]
+}
