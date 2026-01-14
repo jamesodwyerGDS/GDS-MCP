@@ -1,6 +1,4 @@
-# GDS Design Documentation (`@design` mode)
-
-> For designers. Query with `@design` prefix for design-focused answers.
+# GDS Design Documentation
 
 **This documentation provides:**
 - Design specifications and use cases

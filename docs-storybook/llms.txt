@@ -1,6 +1,4 @@
-# GDS Engineer Documentation (`@engineer` mode)
-
-> For engineers. Query with `@engineer` prefix for code-focused answers.
+# GDS Engineer Documentation
 
 **This documentation provides:**
 - React component imports

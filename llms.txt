@@ -4,29 +4,6 @@
 
 ---
 
-## Query Modes
-
-Use mode prefixes for audience-specific answers:
-
-| Mode | Audience | Source | Response Style |
-|------|----------|--------|----------------|
-| `@design` | Designers | `/docs/` | Design specs, use cases, Figma variables |
-| `@engineer` | Engineers | `/docs-storybook/` | React props, TypeScript, code examples |
-
-### Examples
-```
-@design button variants    → Design specs with Figma tokens
-@engineer button variants  → React props and imports
-```
-
-### Auto-Detection
-No prefix? Keywords trigger automatic routing:
-- **Figma, design spec, use case, when to use** → `@design`
-- **React, props, TypeScript, import, onClick** → `@engineer`
-- **No keywords detected** → Summary from all sources
-
----
-
 ## Styling Libraries
 
 | Doc Set | Styling Approach |
@@ -74,12 +51,11 @@ Common search terms and their equivalents:
 - "What button variants are available?"
 - "What are the GDS colors?"
 - "Show me the spacing scale"
-- "@engineer Button props"
+- "Button props"
 - "GDS primary button"
 
 **If search fails, try:**
 - Add component name: "Button component variants"
-- Use mode prefix: "@design button use cases"
 - Be specific: "GDS button colorVariant values"
 - Try code term: "transaction button" (not "transactional")
 
