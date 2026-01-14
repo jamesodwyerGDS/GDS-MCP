@@ -151,6 +151,19 @@ export class DocumentationGenerator {
         };
         data.cornerRadius = context.cornerRadius;
         data.children = context.children;
+
+        // Analyze borders for the component
+        data.borders = this.figma.analyzeBorders(context);
+        data.borderDescription = this.figma.describeBorders(data.borders);
+
+        // Also analyze borders for children (to detect color strips, dividers, etc.)
+        if (context.children && context.children.length > 0) {
+          data.childBorders = context.children.map(child => ({
+            name: child.name,
+            borders: this.figma.analyzeBorders(child),
+            description: this.figma.describeBorders(this.figma.analyzeBorders(child))
+          })).filter(cb => cb.borders.hasBorder);
+        }
       }
 
       // Check if it's a component set (has variants)

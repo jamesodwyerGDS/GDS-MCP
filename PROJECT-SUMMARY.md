@@ -65,7 +65,7 @@ An MCP-powered documentation workflow that extracts design system components fro
 ```
 ┌─────────────┐     ┌─────────────────┐     ┌──────────────────┐
 │  Figma MCP  │────▶│  Documentation  │────▶│  docs/           │
-│             │     │  Generator      │     │  docs-storybook/ │
+│             │     │  Generator      │     │                  │
 └─────────────┘     │                 │     └──────────────────┘
                     │  • FigmaClient  │              │
                     │  • Transformer  │              │
@@ -138,7 +138,6 @@ npm run build:all
 /scripts               # CLI entry points
 /mcp-server            # Custom MCP server with 3 tools
 /docs                  # Generated design documentation
-/docs-storybook        # Storybook component specs
 /.claude/skills        # Claude Code skills
 /templates             # Documentation templates
 ```

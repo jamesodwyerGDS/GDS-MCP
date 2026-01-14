@@ -280,6 +280,39 @@ ${rows.join('\n')}`;
       }
     }
 
+    // Borders
+    if (data.borders && data.borders.hasBorder) {
+      content += `\n### Borders\n\n`;
+
+      // Main component border
+      content += `**Component Border:** ${data.borderDescription}\n\n`;
+
+      if (data.borders.colors && data.borders.colors.length > 0) {
+        content += `**Colors:** ${data.borders.colors.join(', ')}\n\n`;
+      }
+
+      // Individual border sides table if non-uniform
+      if (!data.borders.uniform && Object.keys(data.borders.sides).length > 0) {
+        content += `| Side | Weight |\n|------|--------|\n`;
+        Object.entries(data.borders.sides).forEach(([side, weight]) => {
+          content += `| ${side.charAt(0).toUpperCase() + side.slice(1)} | ${weight}px |\n`;
+        });
+        content += `\n`;
+      }
+
+      // Child borders (e.g., color strips, dividers)
+      if (data.childBorders && data.childBorders.length > 0) {
+        content += `**Special Elements:**\n\n`;
+        data.childBorders.forEach(cb => {
+          content += `- **${cb.name}**: ${cb.description}`;
+          if (cb.borders.colors && cb.borders.colors.length > 0) {
+            content += ` (${cb.borders.colors.join(', ')})`;
+          }
+          content += `\n`;
+        });
+      }
+    }
+
     return content;
   }
 

@@ -179,13 +179,29 @@ export class FigmaClient {
       paddingTop: document.paddingTop,
       paddingBottom: document.paddingBottom,
       itemSpacing: document.itemSpacing,
+      // Visual properties
       fills: document.fills,
       strokes: document.strokes,
+      strokeWeight: document.strokeWeight,
+      strokeAlign: document.strokeAlign,
+      // Individual stroke weights (for borders on specific sides)
+      strokeTopWeight: document.strokeTopWeight,
+      strokeBottomWeight: document.strokeBottomWeight,
+      strokeLeftWeight: document.strokeLeftWeight,
+      strokeRightWeight: document.strokeRightWeight,
       effects: document.effects,
       cornerRadius: document.cornerRadius,
+      // Children
       children: document.children?.map(child => ({
         name: child.name,
-        type: child.type
+        type: child.type,
+        // Include stroke info for children too
+        strokes: child.strokes,
+        strokeWeight: child.strokeWeight,
+        strokeTopWeight: child.strokeTopWeight,
+        strokeBottomWeight: child.strokeBottomWeight,
+        strokeLeftWeight: child.strokeLeftWeight,
+        strokeRightWeight: child.strokeRightWeight
       }))
     };
   }
@@ -543,6 +559,111 @@ export class FigmaClient {
     }
 
     return props;
+  }
+
+  /**
+   * Analyze border/stroke configuration
+   * Determines which sides have borders and their properties
+   * @param {object} node - Node with stroke properties
+   * @returns {object} Border information
+   */
+  analyzeBorders(node) {
+    const borders = {
+      hasBorder: false,
+      uniform: false,
+      sides: {},
+      weight: 0,
+      align: node.strokeAlign || 'INSIDE',
+      colors: []
+    };
+
+    // Check if there are strokes defined
+    if (!node.strokes || node.strokes.length === 0) {
+      return borders;
+    }
+
+    borders.hasBorder = true;
+
+    // Extract stroke colors
+    borders.colors = node.strokes
+      .filter(s => s.visible !== false)
+      .map(s => {
+        if (s.type === 'SOLID' && s.color) {
+          const { r, g, b, a = 1 } = s.color;
+          const r255 = Math.round(r * 255);
+          const g255 = Math.round(g * 255);
+          const b255 = Math.round(b * 255);
+          const toHex = (n) => n.toString(16).padStart(2, '0');
+          return a < 1
+            ? `rgba(${r255}, ${g255}, ${b255}, ${a})`
+            : `#${toHex(r255)}${toHex(g255)}${toHex(b255)}`;
+        }
+        return null;
+      })
+      .filter(Boolean);
+
+    // Check individual border weights
+    const top = node.strokeTopWeight || 0;
+    const bottom = node.strokeBottomWeight || 0;
+    const left = node.strokeLeftWeight || 0;
+    const right = node.strokeRightWeight || 0;
+
+    // If individual weights are set, use those
+    if (top || bottom || left || right) {
+      if (top > 0) borders.sides.top = top;
+      if (bottom > 0) borders.sides.bottom = bottom;
+      if (left > 0) borders.sides.left = left;
+      if (right > 0) borders.sides.right = right;
+
+      // Check if all sides are equal
+      const weights = [top, bottom, left, right].filter(w => w > 0);
+      borders.uniform = weights.length === 4 && weights.every(w => w === weights[0]);
+      borders.weight = weights[0] || 0;
+    } else if (node.strokeWeight) {
+      // Uniform border on all sides
+      borders.weight = node.strokeWeight;
+      borders.uniform = true;
+      borders.sides = {
+        top: node.strokeWeight,
+        bottom: node.strokeWeight,
+        left: node.strokeWeight,
+        right: node.strokeWeight
+      };
+    }
+
+    return borders;
+  }
+
+  /**
+   * Get border description for documentation
+   * @param {object} borders - Result from analyzeBorders()
+   * @returns {string} Human-readable border description
+   */
+  describeBorders(borders) {
+    if (!borders.hasBorder) {
+      return 'No border';
+    }
+
+    const sideKeys = Object.keys(borders.sides);
+
+    if (borders.uniform) {
+      return `${borders.weight}px border on all sides`;
+    }
+
+    if (sideKeys.length === 1) {
+      const side = sideKeys[0];
+      const weight = borders.sides[side];
+      return `${weight}px ${side} border`;
+    }
+
+    if (sideKeys.length > 0) {
+      const descriptions = sideKeys.map(side =>
+        `${side}: ${borders.sides[side]}px`
+      );
+      return `Border (${descriptions.join(', ')})`;
+    }
+
+    return `${borders.weight}px border`;
   }
 }
 

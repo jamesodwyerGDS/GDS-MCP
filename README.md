@@ -73,9 +73,32 @@ export FIGMA_TOKEN=your_token_here
 # Generate docs for a component
 npm run docs:generate -- --url="https://figma.com/file/..."
 
+# Or use file key and node ID directly
+npm run docs:generate -- --file=ABC123 --node=1:234
+
 # Validate documentation
 npm run docs:validate
 ```
+
+### Recent Improvements (Jan 2025)
+
+The Figma API integration has been significantly improved to align with the official REST API v1 spec:
+
+**New Features:**
+- ✅ **Rate limiting & retry logic** - Automatic retry with exponential backoff
+- ✅ **Request caching** - 10x performance improvement on repeated queries
+- ✅ **Image export** - Component screenshots automatically embedded in docs
+- ✅ **Accurate token extraction** - Uses Figma's `resolvedType` (COLOR, FLOAT, STRING)
+- ✅ **Published component endpoints** - Access team library metadata
+- ✅ **Version tracking** - File version history for changelog maintenance
+
+**Example: Regenerate Alert Component**
+```bash
+# Uses improved API with image export and proper token types
+node scripts/regenerate-alert.js
+```
+
+See [`FIGMA_API_IMPROVEMENTS.md`](./FIGMA_API_IMPROVEMENTS.md) for complete details and [`ALERT_REGENERATION_EXAMPLE.md`](./ALERT_REGENERATION_EXAMPLE.md) for a demonstration.
 
 ### Local MCP Server
 

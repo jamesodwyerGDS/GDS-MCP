@@ -26,7 +26,7 @@ Read the template at `.claude/skills/resources/project-summary-template.md` to u
 Gather information about:
 
 1. **Project Structure** - Run `find` or `ls` to understand the current file structure
-2. **Documentation Coverage** - Count files in `docs/`, `docs-storybook/`
+2. **Documentation Coverage** - Count files in `docs/`
 3. **Recent Changes** - Read `CHANGELOG.md` for latest updates
 4. **Package Info** - Read `package.json` for available scripts and dependencies
 5. **MCP Configuration** - Read `mcp-config.json` and `mcp.json` for tool configuration

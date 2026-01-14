@@ -39,14 +39,6 @@ Primary code framework: React
 
 ---
 
-## Cross-References
+## Terminology Note
 
-**Need code examples?** See engineer docs: `/docs-storybook/`
-
-| Topic | Engineer Docs |
-|-------|---------------|
-| Button code | `/docs-storybook/components/button.md` |
-| All components | `/docs-storybook/components/` |
-| Design system | `/docs-storybook/llms.txt` |
-
-**Terminology note:** Design docs use "transactional", code uses "transaction"
+Design docs use "transactional", code uses "transaction" for button variants.

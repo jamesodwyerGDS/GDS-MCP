@@ -50,7 +50,9 @@ Add a new entry when:
 
 | Change | Type | JIRA | Figma | Notes |
 |--------|------|------|-------|-------|
+| Removed Storybook documentation infrastructure (docs-storybook/) and all related generation scripts | 🔴 Deprecated | NA | NA | Consolidated to single documentation source in /docs |
 | Added comprehensive Figma API improvements to align with official REST API | 🟡 Updated | NA | NA | See details below |
+| Added border detection to correctly identify which sides have borders (e.g., Alert top border vs left) | 🟡 Updated | NA | [Figma](https://figma.com/design/WU01oSRfSHpOxUn3ThcvC5/File?node-id=10410-52040) | See BORDER_DETECTION.md |
 
 ### Technical Improvements
 
@@ -66,6 +68,9 @@ Add a new entry when:
 - Added `getFileVersions()` for changelog tracking
 - Fixed component set detection to handle both node IDs and component keys
 - Added `getRateLimitStatus()` and `clearCache()` utility methods
+- **Added `analyzeBorders()` to detect which sides have borders and their properties**
+- **Added `describeBorders()` for human-readable border descriptions**
+- **Enhanced stroke extraction with individual side weights (strokeTopWeight, strokeLeftWeight, etc.)**
 
 **Variable Extraction (`core/documentation-generator.js`):**
 - Fixed variable extraction to use `resolvedType` instead of name matching
@@ -79,12 +84,17 @@ Add a new entry when:
 - Updated CSS variables generation for new token structure
 - Updated Tailwind mappings to include fontSize alongside colors and spacing
 - Improved token display in documentation with type and value columns
+- **Added Borders section to Styling with side-by-side weight tables**
+- **Automatic detection of border colors with hex/rgba conversion**
+- **Special elements detection (color strips, dividers with borders)**
 
 **Documentation Generator:**
 - Added image export support (configurable via `exportImages` option)
 - Images now automatically embedded in generated markdown
 - Rate limit tracking and status available during batch operations
 - Added support for `figmaClientOptions` to configure caching and retries
+- **Border analysis integrated into component extraction**
+- **Child element border detection (color strips, dividers, etc.)**
 
 **Test Suite:**
 - Created comprehensive test file (`test/figma-client.test.js`) for all new functionality

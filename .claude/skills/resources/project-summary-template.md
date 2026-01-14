@@ -49,7 +49,6 @@ This template defines the structure for `PROJECT-SUMMARY.md`. Use this as a refe
 
 **How to calculate:**
 - Count files in `docs/components/**/*.md`
-- Count files in `docs-storybook/**/*.md`
 - Estimate lines with `wc -l docs/**/*.md`
 
 ### 4. Claude Tools Used

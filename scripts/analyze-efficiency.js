@@ -75,27 +75,14 @@ async function analyzeCoverage() {
   };
 
   return {
-    design: await count('./docs/components/atoms', '.md'),
-    storybook: await count('./docs-storybook/components', '.md')
+    design: await count('./docs/components/atoms', '.md')
   };
 }
 
 async function analyzeGaps() {
-  const getNames = async (dir, ext) => {
-    try {
-      const files = await fs.readdir(dir);
-      return files.filter(f => f.endsWith(ext)).map(f => f.replace(ext, '').toLowerCase());
-    } catch {
-      return [];
-    }
-  };
-
-  const designNames = await getNames('./docs/components/atoms', '.md');
-  const storybookNames = await getNames('./docs-storybook/components', '.md');
-
+  // No gaps to analyze with single documentation source
   return {
-    missingDesign: storybookNames.filter(n => !designNames.some(d => d.includes(n) || n.includes(d))),
-    missingStorybook: designNames.filter(n => !storybookNames.some(s => s.includes(n) || n.includes(s)))
+    totalComponents: 0
   };
 }
 
@@ -110,11 +97,9 @@ async function analyzeStaleness() {
   };
 
   const designTime = await getMtime('./docs/llms.txt');
-  const storybookTime = await getMtime('./docs-storybook/llms.txt');
 
   return {
-    lastDesignUpdate: new Date(designTime).toISOString(),
-    lastStorybookUpdate: new Date(storybookTime).toISOString()
+    lastUpdate: new Date(designTime).toISOString()
   };
 }
 
