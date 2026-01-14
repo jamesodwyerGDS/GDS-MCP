@@ -44,16 +44,12 @@ This template defines the structure for `PROJECT-SUMMARY.md`. Use this as a refe
 |--------|-------|
 | Design docs | {N} |
 | Storybook specs | {N} |
-| Vibe snippets | {N} |
-| Unified docs | {N} |
 | Total documentation lines | {N}+ |
 ```
 
 **How to calculate:**
 - Count files in `docs/components/**/*.md`
 - Count files in `docs-storybook/**/*.md`
-- Count files in `docs-vibe/**/*.md`
-- Count files in `docs-unified/**/*.md`
 - Estimate lines with `wc -l docs/**/*.md`
 
 ### 4. Claude Tools Used

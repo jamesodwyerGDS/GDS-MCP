@@ -5,7 +5,6 @@
  *
  * Identifies opportunities to improve documentation retrieval:
  * - Coverage gaps between doc sets
- * - Components missing from unified docs
  * - Stale documentation
  * - Search term opportunities
  *
@@ -33,20 +32,10 @@ async function analyze() {
     report.suggestions.push(`${report.gaps.missingDesign.length} Storybook components lack design docs - consider generating from Figma`);
   }
 
-  if (report.gaps.missingVibe.length > 10) {
-    report.suggestions.push(`${report.gaps.missingVibe.length} components missing Tailwind snippets - run vibe:generate`);
-  }
-
-  if (report.staleness.staleUnified) {
-    report.suggestions.push('Unified docs are stale - run unified:generate');
-  }
-
   // Print report
   console.log('## Coverage');
   console.log(`- Design docs: ${report.coverage.design}`);
   console.log(`- Storybook docs: ${report.coverage.storybook}`);
-  console.log(`- Vibe docs: ${report.coverage.vibe}`);
-  console.log(`- Unified docs: ${report.coverage.unified}`);
   console.log('');
 
   console.log('## Gaps');
@@ -87,9 +76,7 @@ async function analyzeCoverage() {
 
   return {
     design: await count('./docs/components/atoms', '.md'),
-    storybook: await count('./docs-storybook/components', '.md'),
-    vibe: await count('./docs-vibe/tailwind', '.html'),
-    unified: await count('./docs-unified/components', '.md')
+    storybook: await count('./docs-storybook/components', '.md')
   };
 }
 
@@ -105,11 +92,9 @@ async function analyzeGaps() {
 
   const designNames = await getNames('./docs/components/atoms', '.md');
   const storybookNames = await getNames('./docs-storybook/components', '.md');
-  const vibeNames = await getNames('./docs-vibe/tailwind', '.html');
 
   return {
     missingDesign: storybookNames.filter(n => !designNames.some(d => d.includes(n) || n.includes(d))),
-    missingVibe: storybookNames.filter(n => !vibeNames.some(v => v.includes(n) || n.includes(v))),
     missingStorybook: designNames.filter(n => !storybookNames.some(s => s.includes(n) || n.includes(s)))
   };
 }
@@ -124,13 +109,10 @@ async function analyzeStaleness() {
     }
   };
 
-  const unifiedTime = await getMtime('./docs-unified/index.md');
   const designTime = await getMtime('./docs/llms.txt');
   const storybookTime = await getMtime('./docs-storybook/llms.txt');
 
   return {
-    staleUnified: unifiedTime < Math.max(designTime, storybookTime),
-    lastUnifiedUpdate: new Date(unifiedTime).toISOString(),
     lastDesignUpdate: new Date(designTime).toISOString(),
     lastStorybookUpdate: new Date(storybookTime).toISOString()
   };

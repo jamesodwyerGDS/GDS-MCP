@@ -6,7 +6,7 @@
  * Custom MCP server providing efficient tools for GDS documentation retrieval.
  *
  * Tools:
- * - get_component_docs: Get unified component documentation
+ * - get_component_docs: Get component documentation
  * - get_design_token: Get design token values
  * - search_gds: Smart search across all documentation
  */
@@ -87,7 +87,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             },
             audience: {
               type: 'string',
-              enum: ['all', 'design', 'engineer', 'vibe'],
+              enum: ['all', 'design', 'engineer'],
               description: 'Filter results by audience'
             },
             limit: {

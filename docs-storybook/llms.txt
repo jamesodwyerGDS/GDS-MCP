@@ -12,7 +12,6 @@
 ```tsx
 import styled from "styled-components";
 ```
-For Tailwind CSS versions, see `/docs-vibe/`
 
 ## Overview
 
@@ -114,13 +113,12 @@ Run: `npm run storybook`
 ## Cross-References
 
 **Need design specs?** See design docs: `/docs/`
-**Need copy-paste HTML?** See vibe docs: `/docs-vibe/`
 
-| Topic | Design Docs | Vibe Docs |
-|-------|-------------|-----------|
-| Button specs | `/docs/components/atoms/button.md` | `/docs-vibe/tailwind/button.html` |
-| All components | `/docs/components/` | `/docs-vibe/tailwind/` |
-| Foundations | `/docs/foundations/` | `/docs-vibe/design-system.md` |
+| Topic | Design Docs |
+|-------|-------------|
+| Button specs | `/docs/components/atoms/button.md` |
+| All components | `/docs/components/` |
+| Foundations | `/docs/foundations/` |
 
 **Terminology note:** Design docs use "transactional", code uses `colorVariant="transaction"`
 
