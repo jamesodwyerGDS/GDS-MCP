@@ -1,13 +1,19 @@
 #!/usr/bin/env node
 
 /**
- * Extract Component Variants
+ * Extract Component Variants - Complete Styles
  *
- * Fetches a specific Figma component and extracts styling from each variant.
+ * Fetches a Figma component and extracts ALL styling from each variant:
+ * - Border: color, weight, style
+ * - Fill: background colors
+ * - Typography: font, size, weight, line-height, letter-spacing
+ * - Spacing: padding, gap, corner radius
+ * - Effects: shadows, elevation
+ * - Text colors: label, input, placeholder, validation
+ * - Dimensions: width, height
  *
  * Usage:
  *   FIGMA_TOKEN=xxx node scripts/extract-component-variants.js --node=355:37218
- *   FIGMA_TOKEN=xxx node scripts/extract-component-variants.js --node=355-37218
  */
 
 import fs from 'fs';
@@ -50,8 +56,65 @@ function extractColor(colorArray) {
 }
 
 /**
+ * Extract effect styles (shadows, blurs)
+ */
+function extractEffects(effects) {
+  if (!effects || effects.length === 0) return null;
+
+  return effects
+    .filter(e => e.visible !== false)
+    .map(effect => {
+      const base = {
+        type: effect.type,
+        visible: effect.visible ?? true
+      };
+
+      if (effect.type === 'DROP_SHADOW' || effect.type === 'INNER_SHADOW') {
+        return {
+          ...base,
+          color: effect.color ? {
+            hex: rgbToHex(effect.color.r, effect.color.g, effect.color.b),
+            opacity: effect.color.a
+          } : null,
+          offset: { x: effect.offset?.x, y: effect.offset?.y },
+          radius: effect.radius,
+          spread: effect.spread
+        };
+      }
+
+      if (effect.type === 'LAYER_BLUR' || effect.type === 'BACKGROUND_BLUR') {
+        return {
+          ...base,
+          radius: effect.radius
+        };
+      }
+
+      return base;
+    });
+}
+
+/**
+ * Extract typography styles from a text node
+ */
+function extractTypography(node) {
+  if (!node.style) return null;
+
+  return {
+    fontFamily: node.style.fontFamily,
+    fontWeight: node.style.fontWeight,
+    fontSize: node.style.fontSize,
+    lineHeight: node.style.lineHeightPx,
+    lineHeightUnit: node.style.lineHeightUnit,
+    letterSpacing: node.style.letterSpacing,
+    textCase: node.style.textCase,
+    textDecoration: node.style.textDecoration,
+    textAlignHorizontal: node.style.textAlignHorizontal,
+    textAlignVertical: node.style.textAlignVertical
+  };
+}
+
+/**
  * Parse variant name into state properties
- * e.g., "State=Default, Size=Medium" -> { State: "Default", Size: "Medium" }
  */
 function parseVariantProps(name) {
   const props = {};
@@ -66,46 +129,91 @@ function parseVariantProps(name) {
 }
 
 /**
- * Recursively find the element with strokes (the actual input border)
+ * Recursively extract all styled elements from a node
  */
-function findStyledElements(node, results = { strokes: null, fills: null, text: [] }) {
-  // Check this node for strokes
+function extractAllStyles(node, depth = 0, results = {
+  borders: [],
+  fills: [],
+  texts: [],
+  effects: [],
+  icons: []
+}) {
+  const nodeName = node.name?.toLowerCase() || '';
+
+  // Extract border/stroke
   if (node.strokes && node.strokes.length > 0) {
     const stroke = extractColor(node.strokes);
-    if (stroke && !results.strokes) {
-      results.strokes = {
+    if (stroke) {
+      results.borders.push({
+        elementName: node.name,
+        elementType: node.type,
+        depth,
         color: stroke,
         weight: node.strokeWeight,
-        elementName: node.name
-      };
+        strokeAlign: node.strokeAlign,
+        dashPattern: node.strokeDashes
+      });
     }
   }
 
-  // Check for fills (background)
-  if (node.fills && node.fills.length > 0) {
+  // Extract fill/background
+  if (node.fills && node.fills.length > 0 && node.type !== 'TEXT') {
     const fill = extractColor(node.fills);
-    if (fill && !results.fills) {
-      results.fills = {
-        color: fill,
-        elementName: node.name
-      };
+    if (fill) {
+      results.fills.push({
+        elementName: node.name,
+        elementType: node.type,
+        depth,
+        color: fill
+      });
     }
   }
 
-  // Check for text elements
+  // Extract text styles
   if (node.type === 'TEXT') {
     const textFill = extractColor(node.fills);
-    results.text.push({
-      name: node.name,
+    results.texts.push({
+      elementName: node.name,
+      content: node.characters,
+      depth,
       color: textFill,
-      content: node.characters
+      typography: extractTypography(node)
     });
+  }
+
+  // Extract effects
+  if (node.effects && node.effects.length > 0) {
+    const effects = extractEffects(node.effects);
+    if (effects && effects.length > 0) {
+      results.effects.push({
+        elementName: node.name,
+        elementType: node.type,
+        depth,
+        effects
+      });
+    }
+  }
+
+  // Check for icons (vectors or instances with icon-like names)
+  if (node.type === 'VECTOR' || node.type === 'INSTANCE' ||
+      nodeName.includes('icon') || nodeName.includes('svg')) {
+    const iconFill = extractColor(node.fills);
+    const iconStroke = extractColor(node.strokes);
+    if (iconFill || iconStroke) {
+      results.icons.push({
+        elementName: node.name,
+        elementType: node.type,
+        depth,
+        fill: iconFill,
+        stroke: iconStroke
+      });
+    }
   }
 
   // Recurse into children
   if (node.children) {
     for (const child of node.children) {
-      findStyledElements(child, results);
+      extractAllStyles(child, depth + 1, results);
     }
   }
 
@@ -113,42 +221,108 @@ function findStyledElements(node, results = { strokes: null, fills: null, text: 
 }
 
 /**
- * Extract styling from a single component variant
+ * Extract complete styling from a variant
  */
 function extractVariantStyles(variant) {
   const props = parseVariantProps(variant.name);
+  const allStyles = extractAllStyles(variant);
 
-  // Get direct styling on variant
-  const directFill = extractColor(variant.fills);
-  const directStroke = extractColor(variant.strokes);
+  // Get primary border (first one, usually the main container)
+  const primaryBorder = allStyles.borders[0];
 
-  // Search children for styled elements
-  const childStyles = findStyledElements(variant);
+  // Get primary fill (deepest non-text fill, usually the input background)
+  const primaryFill = allStyles.fills.length > 0
+    ? allStyles.fills.reduce((a, b) => b.depth > a.depth ? b : a)
+    : null;
+
+  // Categorize text elements
+  const textElements = {};
+  for (const text of allStyles.texts) {
+    const name = text.elementName.toLowerCase();
+    if (name.includes('label')) {
+      textElements.label = text;
+    } else if (name.includes('placeholder') || name.includes('hint')) {
+      textElements.placeholder = text;
+    } else if (name.includes('validation') || name.includes('error') || name.includes('helper') || name.includes('message')) {
+      textElements.validation = text;
+    } else if (name.includes('input') || name.includes('value') || name.includes('text')) {
+      textElements.input = text;
+    } else if (!textElements.input) {
+      textElements.input = text;
+    }
+  }
+
+  // Get primary effect
+  const primaryEffect = allStyles.effects[0];
 
   return {
     name: variant.name,
     id: variant.id,
     state: props.State || props.state || 'Unknown',
     properties: props,
-    styling: {
-      border: directStroke || childStyles.strokes?.color || null,
-      borderWeight: variant.strokeWeight || childStyles.strokes?.weight,
-      borderElement: childStyles.strokes?.elementName,
-      background: directFill || childStyles.fills?.color || null,
-      backgroundElement: childStyles.fills?.elementName,
-      text: childStyles.text
+
+    // Primary styles (quick reference)
+    border: primaryBorder ? {
+      color: primaryBorder.color,
+      weight: primaryBorder.weight,
+      align: primaryBorder.strokeAlign
+    } : null,
+
+    background: primaryFill?.color || null,
+
+    // All borders found
+    allBorders: allStyles.borders,
+
+    // All fills found
+    allFills: allStyles.fills,
+
+    // Text styles
+    text: {
+      label: textElements.label ? {
+        color: textElements.label.color,
+        typography: textElements.label.typography
+      } : null,
+      input: textElements.input ? {
+        color: textElements.input.color,
+        typography: textElements.input.typography
+      } : null,
+      placeholder: textElements.placeholder ? {
+        color: textElements.placeholder.color,
+        typography: textElements.placeholder.typography
+      } : null,
+      validation: textElements.validation ? {
+        color: textElements.validation.color,
+        typography: textElements.validation.typography
+      } : null
     },
-    dimensions: {
+
+    // All text elements
+    allTexts: allStyles.texts,
+
+    // Effects (shadows)
+    effects: primaryEffect?.effects || null,
+    allEffects: allStyles.effects,
+
+    // Icons
+    icons: allStyles.icons,
+
+    // Layout
+    layout: {
       width: variant.absoluteBoundingBox?.width,
-      height: variant.absoluteBoundingBox?.height
-    },
-    cornerRadius: variant.cornerRadius,
-    padding: variant.paddingTop !== undefined ? {
-      top: variant.paddingTop,
-      right: variant.paddingRight,
-      bottom: variant.paddingBottom,
-      left: variant.paddingLeft
-    } : null
+      height: variant.absoluteBoundingBox?.height,
+      cornerRadius: variant.cornerRadius,
+      cornerRadii: variant.rectangleCornerRadii,
+      padding: variant.paddingTop !== undefined ? {
+        top: variant.paddingTop,
+        right: variant.paddingRight,
+        bottom: variant.paddingBottom,
+        left: variant.paddingLeft
+      } : null,
+      gap: variant.itemSpacing,
+      layoutMode: variant.layoutMode,
+      primaryAxisAlign: variant.primaryAxisAlignItems,
+      counterAxisAlign: variant.counterAxisAlignItems
+    }
   };
 }
 
@@ -156,9 +330,7 @@ function extractVariantStyles(variant) {
  * Fetch node from Figma API
  */
 async function fetchNode(token, nodeId) {
-  // Normalize node ID (355-37218 -> 355:37218)
   const normalizedId = nodeId.replace('-', ':');
-
   const url = `${API_BASE}/files/${FILE_KEY}/nodes?ids=${encodeURIComponent(normalizedId)}&geometry=paths`;
   console.log(`Fetching node ${normalizedId}...`);
 
@@ -175,63 +347,111 @@ async function fetchNode(token, nodeId) {
 }
 
 /**
- * Generate markdown for component
+ * Generate comprehensive markdown
  */
 function generateMarkdown(component) {
   let md = `# ${component.name}\n\n`;
-  md += `*Component ID: \`${component.id}\`*\n\n`;
-  md += `## States\n\n`;
-  md += `| State | Border | Background | Border Weight |\n`;
-  md += `|-------|--------|------------|---------------|\n`;
+  md += `**Component ID:** \`${component.id}\`\n\n`;
 
-  for (const variant of component.variants) {
-    const border = variant.styling.border?.hex || '-';
-    const bg = variant.styling.background?.hex || '-';
-    const weight = variant.styling.borderWeight ? `${variant.styling.borderWeight}px` : '-';
-    md += `| **${variant.state}** | \`${border}\` | \`${bg}\` | ${weight} |\n`;
+  // Quick reference table
+  md += `## States Overview\n\n`;
+  md += `| State | Border | Background | Label | Input Text |\n`;
+  md += `|-------|--------|------------|-------|------------|\n`;
+
+  for (const v of component.variants) {
+    const border = v.border?.color?.hex || '-';
+    const bg = v.background?.hex || '-';
+    const label = v.text.label?.color?.hex || '-';
+    const input = v.text.input?.color?.hex || '-';
+    md += `| **${v.state}** | \`${border}\` | \`${bg}\` | \`${label}\` | \`${input}\` |\n`;
   }
 
-  md += `\n## Detailed Variant Styles\n\n`;
+  // Detailed styles per state
+  md += `\n## Detailed Styles\n\n`;
 
-  for (const variant of component.variants) {
-    md += `### ${variant.state}\n\n`;
-    md += `- **Variant Name:** ${variant.name}\n`;
-    md += `- **ID:** \`${variant.id}\`\n`;
+  for (const v of component.variants) {
+    md += `### ${v.state}\n\n`;
 
-    if (variant.styling.border) {
-      md += `- **Border:** \`${variant.styling.border.hex}\``;
-      if (variant.styling.borderElement) {
-        md += ` (from: ${variant.styling.borderElement})`;
+    // Border
+    if (v.border) {
+      md += `**Border:**\n`;
+      md += `- Color: \`${v.border.color.hex}\`\n`;
+      md += `- Weight: ${v.border.weight}px\n`;
+      if (v.border.align) md += `- Align: ${v.border.align}\n`;
+      md += `\n`;
+    }
+
+    // Background
+    if (v.background) {
+      md += `**Background:**\n`;
+      md += `- Color: \`${v.background.hex}\`\n`;
+      if (v.background.opacity !== 1) md += `- Opacity: ${v.background.opacity}\n`;
+      md += `\n`;
+    }
+
+    // Typography
+    md += `**Typography:**\n`;
+    if (v.text.label?.typography) {
+      const t = v.text.label.typography;
+      md += `- Label: ${t.fontFamily} ${t.fontWeight} ${t.fontSize}px`;
+      if (v.text.label.color) md += ` (color: \`${v.text.label.color.hex}\`)`;
+      md += `\n`;
+    }
+    if (v.text.input?.typography) {
+      const t = v.text.input.typography;
+      md += `- Input: ${t.fontFamily} ${t.fontWeight} ${t.fontSize}px`;
+      if (v.text.input.color) md += ` (color: \`${v.text.input.color.hex}\`)`;
+      md += `\n`;
+    }
+    if (v.text.placeholder?.typography) {
+      const t = v.text.placeholder.typography;
+      md += `- Placeholder: ${t.fontFamily} ${t.fontWeight} ${t.fontSize}px`;
+      if (v.text.placeholder.color) md += ` (color: \`${v.text.placeholder.color.hex}\`)`;
+      md += `\n`;
+    }
+    if (v.text.validation?.typography) {
+      const t = v.text.validation.typography;
+      md += `- Validation: ${t.fontFamily} ${t.fontWeight} ${t.fontSize}px`;
+      if (v.text.validation.color) md += ` (color: \`${v.text.validation.color.hex}\`)`;
+      md += `\n`;
+    }
+    md += `\n`;
+
+    // Layout
+    if (v.layout.cornerRadius || v.layout.padding || v.layout.gap) {
+      md += `**Layout:**\n`;
+      if (v.layout.cornerRadius) md += `- Corner Radius: ${v.layout.cornerRadius}px\n`;
+      if (v.layout.padding) {
+        md += `- Padding: ${v.layout.padding.top}px ${v.layout.padding.right}px ${v.layout.padding.bottom}px ${v.layout.padding.left}px\n`;
+      }
+      if (v.layout.gap) md += `- Gap: ${v.layout.gap}px\n`;
+      if (v.layout.width) md += `- Width: ${v.layout.width}px\n`;
+      if (v.layout.height) md += `- Height: ${v.layout.height}px\n`;
+      md += `\n`;
+    }
+
+    // Effects
+    if (v.effects && v.effects.length > 0) {
+      md += `**Effects:**\n`;
+      for (const effect of v.effects) {
+        if (effect.type === 'DROP_SHADOW' || effect.type === 'INNER_SHADOW') {
+          md += `- ${effect.type}: ${effect.color?.hex || 'unknown'} offset(${effect.offset?.x}, ${effect.offset?.y}) blur(${effect.radius})\n`;
+        }
       }
       md += `\n`;
     }
 
-    if (variant.styling.borderWeight) {
-      md += `- **Border Weight:** ${variant.styling.borderWeight}px\n`;
-    }
-
-    if (variant.styling.background) {
-      md += `- **Background:** \`${variant.styling.background.hex}\`\n`;
-    }
-
-    if (variant.cornerRadius) {
-      md += `- **Corner Radius:** ${variant.cornerRadius}px\n`;
-    }
-
-    if (variant.padding) {
-      md += `- **Padding:** ${variant.padding.top}px ${variant.padding.right}px ${variant.padding.bottom}px ${variant.padding.left}px\n`;
-    }
-
-    if (variant.styling.text.length > 0) {
-      md += `- **Text Elements:**\n`;
-      for (const text of variant.styling.text) {
-        if (text.color) {
-          md += `  - ${text.name}: \`${text.color.hex}\`\n`;
-        }
+    // Icons
+    if (v.icons && v.icons.length > 0) {
+      md += `**Icons:**\n`;
+      for (const icon of v.icons) {
+        const color = icon.fill?.hex || icon.stroke?.hex || '-';
+        md += `- ${icon.elementName}: \`${color}\`\n`;
       }
+      md += `\n`;
     }
 
-    md += `\n`;
+    md += `---\n\n`;
   }
 
   return md;
@@ -247,7 +467,6 @@ async function main() {
     process.exit(1);
   }
 
-  // Parse node ID from args
   const nodeArg = process.argv.find(arg => arg.startsWith('--node='));
   if (!nodeArg) {
     console.error('Error: --node=<node-id> argument required');
@@ -258,55 +477,46 @@ async function main() {
 
   try {
     const data = await fetchNode(token, nodeId);
-
-    // Get the node from response
     const normalizedId = nodeId.replace('-', ':');
     const nodeData = data.nodes[normalizedId];
 
     if (!nodeData || !nodeData.document) {
-      throw new Error(`Node ${nodeId} not found in response`);
+      throw new Error(`Node ${nodeId} not found`);
     }
 
     const componentSet = nodeData.document;
     console.log(`Found: ${componentSet.name} (${componentSet.type})`);
 
-    if (componentSet.type !== 'COMPONENT_SET') {
-      console.log('Note: This is not a COMPONENT_SET, extracting as single component');
-    }
-
-    // Extract component data
     const component = {
       name: componentSet.name.replace(/^🟢\s*|^🟡\s*|^🔴\s*|^🔷\s*/g, '').trim(),
       id: componentSet.id,
       type: componentSet.type,
+      description: componentSet.description,
       variants: []
     };
 
-    // Process variants (children of COMPONENT_SET)
     if (componentSet.children) {
-      console.log(`Processing ${componentSet.children.length} variants...`);
+      console.log(`Processing ${componentSet.children.length} variants...\n`);
 
       for (const child of componentSet.children) {
         if (child.type === 'COMPONENT') {
-          const variantStyles = extractVariantStyles(child);
-          component.variants.push(variantStyles);
-          console.log(`  - ${variantStyles.state}: border=${variantStyles.styling.border?.hex || 'none'}`);
+          const styles = extractVariantStyles(child);
+          component.variants.push(styles);
         }
       }
     }
 
-    // Ensure output directory exists
+    // Ensure output directory
     if (!fs.existsSync(OUTPUT_DIR)) {
       fs.mkdirSync(OUTPUT_DIR, { recursive: true });
     }
 
-    // Generate filename
     const safeName = component.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
     // Save JSON
     const jsonPath = path.join(OUTPUT_DIR, `${safeName}.json`);
     fs.writeFileSync(jsonPath, JSON.stringify(component, null, 2));
-    console.log(`\nSaved: ${jsonPath}`);
+    console.log(`Saved: ${jsonPath}`);
 
     // Save Markdown
     const mdPath = path.join(OUTPUT_DIR, `${safeName}.md`);
@@ -314,14 +524,27 @@ async function main() {
     console.log(`Saved: ${mdPath}`);
 
     // Print summary
-    console.log(`\n${'='.repeat(50)}`);
+    console.log(`\n${'='.repeat(60)}`);
     console.log(`Component: ${component.name}`);
     console.log(`Variants: ${component.variants.length}`);
-    console.log(`${'='.repeat(50)}\n`);
+    console.log(`${'='.repeat(60)}\n`);
 
-    console.log('State Summary:');
+    // State summary table
+    console.log('State'.padEnd(15) + 'Border'.padEnd(12) + 'Background'.padEnd(12) + 'Label'.padEnd(12) + 'Input');
+    console.log('-'.repeat(60));
+
     for (const v of component.variants) {
-      console.log(`  ${v.state.padEnd(15)} -> Border: ${v.styling.border?.hex || 'none'}`);
+      const border = v.border?.color?.hex || '-';
+      const bg = v.background?.hex || '-';
+      const label = v.text.label?.color?.hex || '-';
+      const input = v.text.input?.color?.hex || '-';
+      console.log(
+        v.state.padEnd(15) +
+        border.padEnd(12) +
+        bg.padEnd(12) +
+        label.padEnd(12) +
+        input
+      );
     }
 
   } catch (error) {
