@@ -3,9 +3,10 @@
     "figma": {
       "url": "https://mcp.figma.com/mcp"
     },
-    "gds": {
+    "gds-docs": {
       "command": "node",
-      "args": ["./mcp-server/index.js"],
+      "args": ["/Users/jamesodwyer/gds-mcp/mcp-server/index.js"],
+      "cwd": "/Users/jamesodwyer/gds-mcp",
       "description": "GDS documentation with optimized single-call tools"
     }
   }

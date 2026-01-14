@@ -4,7 +4,10 @@
       "url": "https://mcp.figma.com/mcp"
     },
     "gds-docs": {
-      "url": "https://gitmcp.io/jamesodwyerGDS/GDS-MCP"
+      "command": "node",
+      "args": ["/Users/jamesodwyer/gds-mcp/mcp-server/index.js"],
+      "cwd": "/Users/jamesodwyer/gds-mcp",
+      "description": "GDS documentation with optimized single-call tools"
     }
   }
 }
