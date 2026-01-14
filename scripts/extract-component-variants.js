@@ -627,21 +627,47 @@ async function main() {
     console.log(`${'='.repeat(60)}\n`);
 
     // State summary table
-    console.log('State'.padEnd(15) + 'Border'.padEnd(12) + 'Token'.padEnd(15) + 'Background'.padEnd(12) + 'Token');
-    console.log('-'.repeat(70));
+    console.log('State'.padEnd(12) + 'Border'.padEnd(10) + 'Token'.padEnd(12) + 'Fill'.padEnd(10) + 'Token'.padEnd(12) + 'Input Text'.padEnd(10) + 'Token');
+    console.log('-'.repeat(85));
 
     for (const v of component.variants) {
       const border = v.border?.color?.hex || '-';
       const borderToken = v.border?.color?.token || '-';
       const bg = v.background?.hex || '-';
       const bgToken = v.background?.token || '-';
+      const inputText = v.text.input?.color?.hex || '-';
+      const inputToken = v.text.input?.color?.token || '-';
       console.log(
-        v.state.padEnd(15) +
-        border.padEnd(12) +
-        borderToken.padEnd(15) +
-        bg.padEnd(12) +
-        bgToken
+        v.state.padEnd(12) +
+        border.padEnd(10) +
+        borderToken.padEnd(12) +
+        bg.padEnd(10) +
+        bgToken.padEnd(12) +
+        inputText.padEnd(10) +
+        inputToken
       );
+    }
+
+    // Additional text details
+    console.log('\nText Elements Found:');
+    console.log('-'.repeat(50));
+    for (const v of component.variants) {
+      console.log(`\n${v.state}:`);
+      if (v.text.label?.color) {
+        console.log(`  Label: ${v.text.label.color.hex} (${v.text.label.color.token || 'no token'})`);
+      }
+      if (v.text.input?.color) {
+        console.log(`  Input: ${v.text.input.color.hex} (${v.text.input.color.token || 'no token'})`);
+      }
+      if (v.text.placeholder?.color) {
+        console.log(`  Placeholder: ${v.text.placeholder.color.hex} (${v.text.placeholder.color.token || 'no token'})`);
+      }
+      if (v.text.validation?.color) {
+        console.log(`  Validation: ${v.text.validation.color.hex} (${v.text.validation.color.token || 'no token'})`);
+      }
+      if (v.allTexts?.length > 0) {
+        console.log(`  All text elements: ${v.allTexts.map(t => t.elementName).join(', ')}`);
+      }
     }
 
   } catch (error) {
