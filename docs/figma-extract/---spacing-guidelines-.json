@@ -1,0 +1,53 @@
+{
+  "page": {
+    "id": "25:15140",
+    "name": "🟢 Spacing Guidelines "
+  },
+  "extractedAt": "2026-01-14T10:25:11.159Z",
+  "documentation": [
+    {
+      "id": "25:15229",
+      "name": "spacing",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Spacing Guidelines  > [CURRENT] Spacing > Section > Frame 1 > spacing",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "strokes": "3:26",
+        "stroke": "3:26"
+      },
+      "componentPropertyDefinitions": {
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Lounge - 4",
+          "variantOptions": [
+            "Lounge - 4",
+            "Club - 8",
+            "Hall - 12",
+            "Auditorium - 16",
+            "Ampitheatre - 24",
+            "Stadium - 48",
+            "Dome - 64",
+            "Field - 88",
+            "Arena - 32",
+            "Theatre - 20"
+          ]
+        }
+      }
+    }
+  ]
+}

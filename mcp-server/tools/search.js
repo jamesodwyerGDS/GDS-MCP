@@ -11,6 +11,8 @@ import matter from 'gray-matter';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const UNIFIED_DIR = path.join(__dirname, '../../docs-unified/components');
+const FIGMA_DIR = path.join(__dirname, '../../docs/figma-extract');
+const FOUNDATIONS_DIR = path.join(__dirname, '../../docs/foundations');
 const LLMS_FILE = path.join(__dirname, '../../llms.txt');
 
 // Search aliases for common queries
@@ -101,35 +103,60 @@ function expandQuery(query) {
 async function searchComponents(searchTerms, audience) {
   const results = [];
 
-  try {
-    const files = await fs.readdir(UNIFIED_DIR);
+  // Search directories with their types
+  const searchDirs = [
+    { dir: UNIFIED_DIR, type: 'component', pathPrefix: 'docs-unified/components' },
+    { dir: FIGMA_DIR, type: 'figma', pathPrefix: 'docs/figma-extract' },
+    { dir: FOUNDATIONS_DIR, type: 'foundation', pathPrefix: 'docs/foundations' }
+  ];
 
-    for (const file of files) {
-      if (!file.endsWith('.md')) continue;
+  for (const { dir, type, pathPrefix } of searchDirs) {
+    try {
+      const files = await fs.readdir(dir);
 
-      const filePath = path.join(UNIFIED_DIR, file);
-      const content = await fs.readFile(filePath, 'utf-8');
-      const parsed = matter(content);
+      for (const file of files) {
+        if (!file.endsWith('.md')) continue;
 
-      // Calculate relevance score
-      const score = calculateScore(searchTerms, {
-        name: parsed.data.name || file.replace('.md', ''),
-        description: parsed.data.description || '',
-        content: filterContentByAudience(parsed.content, audience)
-      });
+        const filePath = path.join(dir, file);
+        const content = await fs.readFile(filePath, 'utf-8');
 
-      if (score > 0.1) {
-        results.push({
-          title: parsed.data.name || file.replace('.md', ''),
-          type: 'component',
-          path: `docs-unified/components/${file}`,
-          score,
-          snippet: extractSnippet(parsed.content, searchTerms, audience)
+        // Handle files with or without frontmatter
+        let parsed;
+        try {
+          parsed = matter(content);
+        } catch {
+          parsed = { data: {}, content };
+        }
+
+        // Extract name from file or frontmatter
+        const name = parsed.data.name ||
+          file.replace('.md', '')
+            .replace(/^---+/, '')
+            .replace(/-+$/, '')
+            .replace(/-/g, ' ')
+            .trim();
+
+        // Calculate relevance score
+        const score = calculateScore(searchTerms, {
+          name: name,
+          description: parsed.data.description || '',
+          content: filterContentByAudience(parsed.content, audience)
         });
+
+        if (score > 0.1) {
+          results.push({
+            title: name || file.replace('.md', ''),
+            type: type,
+            path: `${pathPrefix}/${file}`,
+            score,
+            snippet: extractSnippet(parsed.content, searchTerms, audience)
+          });
+        }
       }
+    } catch (error) {
+      // Directory may not exist, skip it
+      continue;
     }
-  } catch (error) {
-    console.error('Error searching components:', error);
   }
 
   return results;

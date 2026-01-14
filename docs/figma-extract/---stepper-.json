@@ -1,0 +1,98 @@
+{
+  "page": {
+    "id": "30:15302",
+    "name": "🟢 Stepper "
+  },
+  "extractedAt": "2026-01-14T10:25:11.204Z",
+  "documentation": [
+    {
+      "id": "45:16171",
+      "name": ".BASE/Stepper",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Stepper  > Stepper > Stepper > Stepper > .BASE/Stepper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Number",
+          "variantOptions": [
+            "Number",
+            "Add - Primary",
+            "Add - Secondary",
+            "Minus - Primary",
+            "Minus - Secondary"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Hover",
+            "Default",
+            "Pressed",
+            "Disabled"
+          ]
+        }
+      }
+    },
+    {
+      "id": "45:16243",
+      "name": "🟢 Stepper",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Stepper  > Stepper > Stepper > Stepper > 🟢 Stepper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Primary",
+          "variantOptions": [
+            "Primary",
+            "Secondary"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Lowest",
+            "Disabled",
+            "Maximum"
+          ]
+        }
+      }
+    }
+  ]
+}
