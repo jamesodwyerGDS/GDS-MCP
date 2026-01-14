@@ -1,0 +1,42 @@
+{
+  "page": {
+    "id": "38852:11802",
+    "name": "🟢 Toast "
+  },
+  "extractedAt": "2026-01-14T10:25:11.209Z",
+  "documentation": [
+    {
+      "id": "38852:13585",
+      "name": "🟢 Toast ",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Toast  > Toast > Toast > Toast > 🟢 Toast ",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.48235294222831726,
+            "g": 0.3803921639919281,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Icon": {
+          "type": "VARIANT",
+          "defaultValue": "No",
+          "variantOptions": [
+            "Yes",
+            "No"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1780 @@
+{
+  "page": {
+    "id": "30:15301",
+    "name": "🟢 Double Range Input "
+  },
+  "extractedAt": "2026-01-14T10:25:11.183Z",
+  "documentation": [
+    {
+      "id": "40968:855",
+      "name": "_Input field",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Double Range Input  > .Doublerangeinput/inputfield > Input field > _Input field",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "↪️ ✏️ Price <Text>#40467:0": {
+          "type": "TEXT",
+          "defaultValue": "£45"
+        },
+        "↪️ ✏️ ErrorLabel <Text>#40979:0": {
+          "type": "TEXT",
+          "defaultValue": "Error message goes here"
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Active / Focused",
+            "Disabled",
+            "Error"
+          ]
+        },
+        "isDisabled": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "Error": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        }
+      }
+    },
+    {
+      "id": "40968:893",
+      "name": "_Handle",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Double Range Input  > .Doublerangeinput/Handle+Track > Input field > Group 7345 > _Handle",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Disabled",
+            "Focused",
+            "Pressed"
+          ]
+        }
+      }
+    },
+    {
+      "id": "40968:916",
+      "name": "Double range input",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Double Range Input  > Double range input > Double Range Input > Double range input",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.48235294222831726,
+            "g": 0.3803921639919281,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "↪️ ✏️ ErrorLabel <Text>#41149:0": {
+          "type": "TEXT",
+          "defaultValue": "Error message goes here"
+        },
+        "isDisabled": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        },
+        "showMinError": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "True",
+            "False"
+          ]
+        },
+        "showMaxError": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        }
+      }
+    },
+    {
+      "id": "41143:3097",
+      "name": "Slider",
+      "type": "RECTANGLE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Subsection Container > Example Container > Container > container > main-content > Slider",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "strokes": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29912"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "opacity": 0.11999999731779099,
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8156862854957581,
+            "g": 0,
+            "b": 0.43529412150382996,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8156862854957581,
+            "g": 0,
+            "b": 0.43529412150382996,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29912"
+            }
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41143:3133",
+      "name": "Slider",
+      "type": "RECTANGLE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Subsection Container > Example Container > Container > container > main-content > Slider",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "strokes": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29912"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "opacity": 0.11999999731779099,
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8156862854957581,
+            "g": 0,
+            "b": 0.43529412150382996,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8156862854957581,
+            "g": 0,
+            "b": 0.43529412150382996,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29912"
+            }
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:7425",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:7446",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > Buttons > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60320"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9215686321258545,
+            "g": 0.9215686321258545,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60320"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:7446;8342:60186;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:7446;8342:60187",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > Buttons > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60321"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60321"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:7446;8342:60188;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:7447",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > Buttons > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60320"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9215686321258545,
+            "g": 0.9215686321258545,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60320"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:7447;8342:60182;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:7447;8342:60183",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > Buttons > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60321"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60321"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:7447;8342:60184;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Filtering - desktop > Page Content > Main Content > Sidepanel > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8530",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8551",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60320"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9215686321258545,
+            "g": 0.9215686321258545,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60320"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8551;8342:60186;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8551;8342:60187",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60321"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60321"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8551;8342:60188;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8552",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60320"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9215686321258545,
+            "g": 0.9215686321258545,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60320"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8552;8342:60182;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8552;8342:60183",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60321"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60321"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8552;8342:60184;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8640",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8661",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60320"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9215686321258545,
+            "g": 0.9215686321258545,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60320"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8661;8342:60186;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8661;8342:60187",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60321"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60321"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8661;8342:60188;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8662",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60320"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9215686321258545,
+            "g": 0.9215686321258545,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60320"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8662;8342:60182;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8662;8342:60183",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60321"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60321"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8662;8342:60184;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8782",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8803",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60320"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9215686321258545,
+            "g": 0.9215686321258545,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60320"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8803;8342:60186;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8803;8342:60187",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60321"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60321"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8803;8342:60188;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "41149:8804",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60320"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9215686321258545,
+            "g": 0.9215686321258545,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60320"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8804;8342:60182;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8804;8342:60183",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60321"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60321"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I41149:8804;8342:60184;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Double Range Input  > Double range input documentation > Content guidelines > Section Container > Example > Example Container > Filtering - mobile > root > root > Buttons > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    }
+  ]
+}

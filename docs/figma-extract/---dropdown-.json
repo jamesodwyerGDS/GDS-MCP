@@ -1,0 +1,58 @@
+{
+  "page": {
+    "id": "30:15300",
+    "name": "🔴 Dropdown "
+  },
+  "extractedAt": "2026-01-14T10:25:11.181Z",
+  "documentation": [
+    {
+      "id": "21:28284",
+      "name": "🔴 Dropdown",
+      "type": "COMPONENT_SET",
+      "path": "🔴 Dropdown  > Dropdown > Dropdown > Dropdown > 🔴 Dropdown",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6549019813537598,
+            "g": 0.20000000298023224,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "strokes": "21:1625",
+        "stroke": "21:1625"
+      },
+      "componentPropertyDefinitions": {
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Disabled",
+            "Open selected",
+            "Open",
+            "Open Hover",
+            "Error"
+          ]
+        },
+        "Open?": {
+          "type": "VARIANT",
+          "defaultValue": "No",
+          "variantOptions": [
+            "No",
+            "Yes"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "page": {
+    "id": "30:15284",
+    "name": "🟢 Title Heading "
+  },
+  "extractedAt": "2026-01-14T10:25:11.205Z",
+  "documentation": [
+    {
+      "id": "7999:16977",
+      "name": "🟢 Title Heading 🟢",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Title Heading  > Title Heading > Title Heading > 🟢 Title Heading 🟢",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "✏️ Title#8584:0": {
+          "type": "TEXT",
+          "defaultValue": "Lorem Ipsum"
+        },
+        "Device": {
+          "type": "VARIANT",
+          "defaultValue": "Desktop",
+          "variantOptions": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "xLarge",
+          "variantOptions": [
+            "xLarge",
+            "Large",
+            "Medium",
+            "Small",
+            "xSmall"
+          ]
+        }
+      }
+    }
+  ]
+}

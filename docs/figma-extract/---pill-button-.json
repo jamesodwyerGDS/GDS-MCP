@@ -1,0 +1,120 @@
+{
+  "page": {
+    "id": "33403:293",
+    "name": "🟢 Pill Button "
+  },
+  "extractedAt": "2026-01-14T10:25:11.199Z",
+  "documentation": [
+    {
+      "id": "21:12200",
+      "name": ".BASE / Pill",
+      "type": "COMPONENT",
+      "path": "🟢 Pill Button  > Pill button > Pill > Pill > .BASE / Pill",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6549019813537598,
+            "g": 0.20000000298023224,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "strokes": "21:1625",
+        "stroke": "21:1625"
+      },
+      "componentPropertyDefinitions": {
+        "Leading icon#30161:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Trailing icon#30161:1": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        }
+      }
+    },
+    {
+      "id": "21:12205",
+      "name": "🟢 Pill Button",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Pill Button  > Pill button > Pill > Pill > 🟢 Pill Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "strokes": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29903"
+          }
+        ]
+      },
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6549019813537598,
+            "g": 0.20000000298023224,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29903"
+            }
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Medium",
+          "variantOptions": [
+            "Small",
+            "Medium"
+          ]
+        },
+        "State": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Hover",
+            "Selected",
+            "Pressed",
+            "Selected Hover",
+            "Disabled"
+          ]
+        },
+        "Colour": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light",
+            "Inverse"
+          ]
+        },
+        "Icon": {
+          "type": "VARIANT",
+          "defaultValue": "Off",
+          "variantOptions": [
+            "Off",
+            "Right",
+            "Left"
+          ]
+        }
+      }
+    }
+  ]
+}
