@@ -126,7 +126,6 @@ Valid statuses: `draft`, `beta`, `stable`, `deprecated`
 - Component filenames use kebab-case (e.g., `button.md`, `date-picker.md`)
 - The `DocumentationGenerator` class is trigger-agnostic (CLI, GitHub Actions, webhooks)
 - Output is markdown documentation with Tailwind utility mappings - no framework-specific code
-- Single-file summaries can be generated for vibe coding tools like Figma Make or Lovable
 
 ## Skills
 

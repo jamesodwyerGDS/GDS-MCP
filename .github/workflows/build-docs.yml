@@ -30,9 +30,6 @@ jobs:
       - name: Generate Storybook documentation
         run: npm run storybook:generate
 
-      - name: Generate Vibe documentation
-        run: npm run vibe:generate
-
       - name: Check for changes
         id: git-check
         run: |
@@ -43,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs-storybook/ docs-vibe/
+          git add docs-storybook/
           git commit -m "Auto-generate documentation
 
           🤖 Generated with GitHub Actions"

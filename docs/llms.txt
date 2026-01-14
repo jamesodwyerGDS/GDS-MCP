@@ -38,19 +38,17 @@ Documentation is optimized for LLM retrieval. Each section is self-contained (25
 ## Framework
 
 Primary code framework: React
-Primary vibe code framework: ShadCN + tailwind (used in Loveable, Figma Make)
 
 ---
 
 ## Cross-References
 
 **Need code examples?** See engineer docs: `/docs-storybook/`
-**Need copy-paste HTML?** See vibe docs: `/docs-vibe/`
 
-| Topic | Engineer Docs | Vibe Docs |
-|-------|---------------|-----------|
-| Button code | `/docs-storybook/components/button.md` | `/docs-vibe/tailwind/button.html` |
-| All components | `/docs-storybook/components/` | `/docs-vibe/tailwind/` |
-| Design system | `/docs-storybook/llms.txt` | `/docs-vibe/design-system.md` |
+| Topic | Engineer Docs |
+|-------|---------------|
+| Button code | `/docs-storybook/components/button.md` |
+| All components | `/docs-storybook/components/` |
+| Design system | `/docs-storybook/llms.txt` |
 
 **Terminology note:** Design docs use "transactional", code uses "transaction"

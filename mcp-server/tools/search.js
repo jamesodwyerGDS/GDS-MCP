@@ -27,7 +27,7 @@ const SEARCH_ALIASES = {
 /**
  * Search GDS documentation
  * @param {string} query - Search query
- * @param {string} audience - "all", "design", "engineer", or "vibe"
+ * @param {string} audience - "all", "design", or "engineer"
  * @param {number} limit - Max results
  * @returns {object} MCP tool response
  */
@@ -189,8 +189,7 @@ function filterContentByAudience(content, audience) {
 
   const sectionMap = {
     design: '## Design Documentation',
-    engineer: '## Engineer Documentation',
-    vibe: '## Vibe Documentation'
+    engineer: '## Engineer Documentation'
   };
 
   const marker = sectionMap[audience];

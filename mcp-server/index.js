@@ -87,7 +87,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
             },
             audience: {
               type: 'string',
-              enum: ['all', 'design', 'engineer', 'vibe'],
+              enum: ['all', 'design', 'engineer'],
               description: 'Filter results by audience'
             },
             limit: {
