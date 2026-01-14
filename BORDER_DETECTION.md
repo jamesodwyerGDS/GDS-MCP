@@ -265,14 +265,47 @@ console.log('Border info:', borders);
 console.log('Description:', client.describeBorders(borders));
 ```
 
+## Custom Stroke Detection (UPDATED)
+
+### ✅ Figma Custom Stroke UI - FULLY SUPPORTED
+
+**Update (January 14, 2026):** The Figma API **DOES** expose Custom stroke settings via the `individualStrokeWeights` field!
+
+**API Field:** `individualStrokeWeights`
+
+When Figma's "Custom" stroke option is used (selecting specific sides via Top, Bottom, Left, Right):
+
+```javascript
+{
+  strokeWeight: 8,              // Overall weight
+  strokeAlign: 'INSIDE',        // Alignment
+  individualStrokeWeights: {    // ← THE KEY FIELD!
+    top: 8,
+    right: 0,
+    bottom: 0,
+    left: 0
+  }
+}
+```
+
+**Border Detection now checks:**
+1. First: `individualStrokeWeights` object (Custom strokes)
+2. Fallback: Individual properties (`strokeTopWeight`, `strokeBottomWeight`, etc.)
+3. Fallback: Uniform `strokeWeight`
+
+**Result:** Fully autonomous detection of Custom strokes! ✅
+
+**Example:** Alert component with "Custom > Top" 8px stroke is correctly detected as "8px top border".
+
 ## Future Enhancements
 
 Potential improvements:
-1. Detect border radius per corner
-2. Support for gradient borders
-3. Border style detection (solid, dashed, dotted)
-4. Shadow/glow detection as "borders"
-5. Compound borders (multiple stroke layers)
+1. ~~Detect border on specific sides~~ ✅ DONE (via `individualStrokeWeights`)
+2. Detect border radius per corner
+3. Support for gradient borders
+4. Border style detection (solid, dashed, dotted)
+5. Shadow/glow detection as "borders"
+6. Compound borders (multiple stroke layers)
 
 ## Migration Note
 

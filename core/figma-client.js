@@ -189,6 +189,8 @@ export class FigmaClient {
       strokeBottomWeight: document.strokeBottomWeight,
       strokeLeftWeight: document.strokeLeftWeight,
       strokeRightWeight: document.strokeRightWeight,
+      // Individual stroke weights object (used when Custom stroke is applied)
+      individualStrokeWeights: document.individualStrokeWeights,
       effects: document.effects,
       cornerRadius: document.cornerRadius,
       // Children
@@ -201,7 +203,8 @@ export class FigmaClient {
         strokeTopWeight: child.strokeTopWeight,
         strokeBottomWeight: child.strokeBottomWeight,
         strokeLeftWeight: child.strokeLeftWeight,
-        strokeRightWeight: child.strokeRightWeight
+        strokeRightWeight: child.strokeRightWeight,
+        individualStrokeWeights: child.individualStrokeWeights
       }))
     };
   }
@@ -603,10 +606,21 @@ export class FigmaClient {
       .filter(Boolean);
 
     // Check individual border weights
-    const top = node.strokeTopWeight || 0;
-    const bottom = node.strokeBottomWeight || 0;
-    const left = node.strokeLeftWeight || 0;
-    const right = node.strokeRightWeight || 0;
+    // First try individualStrokeWeights (used when Custom stroke is applied in Figma UI)
+    let top = 0, bottom = 0, left = 0, right = 0;
+
+    if (node.individualStrokeWeights) {
+      top = node.individualStrokeWeights.top || 0;
+      bottom = node.individualStrokeWeights.bottom || 0;
+      left = node.individualStrokeWeights.left || 0;
+      right = node.individualStrokeWeights.right || 0;
+    } else {
+      // Fall back to individual weight properties
+      top = node.strokeTopWeight || 0;
+      bottom = node.strokeBottomWeight || 0;
+      left = node.strokeLeftWeight || 0;
+      right = node.strokeRightWeight || 0;
+    }
 
     // If individual weights are set, use those
     if (top || bottom || left || right) {

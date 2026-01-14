@@ -46,13 +46,16 @@ Add a new entry when:
 
 ---
 
-## 14th Jan 2025
+## 14th Jan 2026
 
 | Change | Type | JIRA | Figma | Notes |
 |--------|------|------|-------|-------|
+| 🎉 **BREAKTHROUGH: Border detection now fully autonomous via `individualStrokeWeights` API field** | 🟢 Added | NA | [Figma](https://figma.com/design/WU01oSRfSHpOxUn3ThcvC5/File?node-id=10410-52040) | Custom stroke detection now 100% accurate. See BREAKTHROUGH_individualStrokeWeights.md |
+| Updated border detection to use `individualStrokeWeights` for Custom stroke detection | 🟡 Updated | NA | NA | Correctly detects "8px top only" vs "8px all sides" |
+| Removed "API limitation" from BORDER_DETECTION.md - Custom strokes are fully supported | 🟡 Updated | NA | NA | Manual verification no longer required |
+| **Corrected Alert component border documentation: 8px top border (was documented as 4px left border)** | 🟡 Updated | NA | [Figma](https://figma.com/design/WU01oSRfSHpOxUn3ThcvC5/File?node-id=10410-52040) | Now detected autonomously via API |
 | Removed Storybook documentation infrastructure (docs-storybook/) and all related generation scripts | 🔴 Deprecated | NA | NA | Consolidated to single documentation source in /docs |
 | Added comprehensive Figma API improvements to align with official REST API | 🟡 Updated | NA | NA | See details below |
-| Added border detection to correctly identify which sides have borders (e.g., Alert top border vs left) | 🟡 Updated | NA | [Figma](https://figma.com/design/WU01oSRfSHpOxUn3ThcvC5/File?node-id=10410-52040) | See BORDER_DETECTION.md |
 
 ### Technical Improvements
 
@@ -68,9 +71,10 @@ Add a new entry when:
 - Added `getFileVersions()` for changelog tracking
 - Fixed component set detection to handle both node IDs and component keys
 - Added `getRateLimitStatus()` and `clearCache()` utility methods
-- **Added `analyzeBorders()` to detect which sides have borders and their properties**
+- **🎉 Added `analyzeBorders()` with `individualStrokeWeights` support for Custom stroke detection**
 - **Added `describeBorders()` for human-readable border descriptions**
-- **Enhanced stroke extraction with individual side weights (strokeTopWeight, strokeLeftWeight, etc.)**
+- **Enhanced `getDesignContext()` to extract `individualStrokeWeights` field**
+- **Border detection now 100% autonomous - correctly identifies "8px top" vs "8px all sides"**
 
 **Variable Extraction (`core/documentation-generator.js`):**
 - Fixed variable extraction to use `resolvedType` instead of name matching

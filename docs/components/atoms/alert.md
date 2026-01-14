@@ -3,8 +3,8 @@ name: Alert
 description: An alert component that displays important messages to users, providing contextual feedback for errors, warnings, informational messages, and success confirmations.
 category: atoms
 status: stable
-version: 1.0.0
-updated: 2025-01-05
+version: 1.1.0
+updated: 2026-01-14
 tags:
   - alert
   - notification
@@ -94,12 +94,13 @@ A simplified inline alert used when surfacing feedback inside another UI element
 ### On-page Alert
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│ ┃  [Icon]  Title text (Semibold)                        │
-│ ┃          Body text (Regular)              [Btn] [Btn] │
-└─────────────────────────────────────────────────────────┘
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  [Icon]  Title text (Semibold)
+          Body text (Regular)              [Btn] [Btn]
+─────────────────────────────────────────────────────────
   ↑
-  Color strip (4px)
+  8px status border - TOP edge only (INSIDE alignment)
+  Status color: Error (#EB0000), Warning (#FFB932), Info (#024DDF), Success (#048851)
 ```
 
 ### Nested Alert
@@ -113,7 +114,7 @@ A simplified inline alert used when surfacing feedback inside another UI element
 | Part | Description |
 |------|-------------|
 | Container | White background with elevation shadow |
-| Color Strip | 4px left border indicating status |
+| Status Border | 8px top border (INSIDE alignment) indicating status |
 | Status Icon | 24px filled icon matching status color |
 | Title | Primary message text (Semibold) |
 | Body Text | Additional description (Regular, optional) |
@@ -239,6 +240,30 @@ box-shadow: 0px 1px 4px 0px rgba(18, 18, 18, 0.15);
 - Don't mix button layouts between device sizes
 - Don't use alerts for non-important information
 
+## Border & Styling Details
+
+### Status Border
+
+The Alert component uses a status-indicating top border:
+
+| Property | Value |
+|----------|-------|
+| **Width** | 8px |
+| **Position** | Top edge only |
+| **Alignment** | INSIDE (border renders inside component bounds) |
+| **Style** | Solid |
+
+**Colors by Status:**
+
+| Status | Token | Hex Value |
+|--------|-------|-----------|
+| Error | Mars | #EB0000 |
+| Warning | Jupiter | #FFB932 |
+| Information | Neptune | #024DDF |
+| Success | Earth | #048851 |
+
+**Implementation Note:** Figma uses "Custom" stroke settings with the 8px stroke applied only to the top edge. This creates the distinctive status indicator bar at the top of the alert.
+
 ## CSS Custom Properties
 
 ```css
@@ -253,6 +278,11 @@ box-shadow: 0px 1px 4px 0px rgba(18, 18, 18, 0.15);
   --alert-status-warning: var(--color-jupiter);
   --alert-status-information: var(--color-neptune);
   --alert-status-success: var(--color-earth);
+
+  /* Border */
+  --alert-border-width: 8px;
+  --alert-border-style: solid;
+  --alert-border-align: inside;
 
   /* Alert Spacing */
   --alert-padding: var(--space-auditorium);
