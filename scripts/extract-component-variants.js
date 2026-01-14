@@ -285,10 +285,24 @@ function extractVariantStyles(variant) {
   // Get primary border (first one, usually the main container)
   const primaryBorder = allStyles.borders[0];
 
-  // Get primary fill (deepest non-text fill, usually the input background)
-  const primaryFill = allStyles.fills.length > 0
-    ? allStyles.fills.reduce((a, b) => b.depth > a.depth ? b : a)
-    : null;
+  // Get primary fill - look for container/background elements first, then fall back to shallowest fill
+  let primaryFill = null;
+  if (allStyles.fills.length > 0) {
+    // Priority 1: Look for named container/background/input elements
+    const containerFill = allStyles.fills.find(f => {
+      const name = f.elementName.toLowerCase();
+      return name.includes('container') || name.includes('background') ||
+             name.includes('input') || name.includes('field') || name.includes('base');
+    });
+
+    if (containerFill) {
+      primaryFill = containerFill.color;
+    } else {
+      // Priority 2: Use the shallowest fill (closest to component root, likely the main background)
+      const shallowest = allStyles.fills.reduce((a, b) => a.depth < b.depth ? a : b);
+      primaryFill = shallowest.color;
+    }
+  }
 
   // Categorize text elements
   const textElements = {};
@@ -323,7 +337,7 @@ function extractVariantStyles(variant) {
       align: primaryBorder.strokeAlign
     } : null,
 
-    background: primaryFill?.color || null,
+    background: primaryFill || null,
 
     // All borders found
     allBorders: allStyles.borders,
