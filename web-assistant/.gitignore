@@ -1,0 +1,22 @@
+# Environment
+.env
+.env.local
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build
+frontend/dist/
+.vercel/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,368 @@
+/**
+ * Fast Chat API - Direct GPT-4 with relevant docs only
+ * Much faster than Assistant API
+ */
+
+import OpenAI from 'openai';
+import { readdirSync, statSync, readFileSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+import matter from 'gray-matter';
+import { DESIGN_DOC_SCHEMA } from './schemas/design-doc-schema.js';
+import { jsonToMarkdown } from './utils/json-to-markdown.js';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const DOCS_PATH = join(__dirname, '../../docs');
+
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+});
+
+// Improved search with better component matching
+function searchDocs(query) {
+  const results = [];
+  const searchLower = query.toLowerCase();
+
+  // Extract potential component names from query
+  const componentKeywords = ['component', 'button', 'input', 'field', 'badge', 'modal', 'dropdown',
+    'picker', 'date', 'alert', 'tooltip', 'toggle', 'checkbox', 'radio', 'stepper', 'accordion',
+    'card', 'pill', 'filter', 'pagination', 'toast', 'spinner', 'loading'];
+
+  const queryWords = searchLower.split(/\s+/);
+  const hasComponentKeyword = componentKeywords.some(kw => searchLower.includes(kw));
+
+  function scanDir(dir, depth = 0) {
+    const items = readdirSync(dir);
+    for (const item of items) {
+      const fullPath = join(dir, item);
+      const stat = statSync(fullPath);
+
+      if (stat.isDirectory() && depth < 3) { // Limit recursion depth
+        scanDir(fullPath, depth + 1);
+      } else if (item.endsWith('.md')) {
+        try {
+          const content = readFileSync(fullPath, 'utf-8');
+          const { data: frontmatter, content: markdown } = matter(content);
+
+          const name = (frontmatter.name || item.replace('.md', '')).toLowerCase();
+          const desc = (frontmatter.description || '').toLowerCase();
+          const filename = item.toLowerCase();
+
+          // Calculate relevance score
+          let relevance = 0;
+
+          // Exact name match
+          queryWords.forEach(word => {
+            if (name.includes(word)) relevance += 20;
+            if (filename.includes(word)) relevance += 15;
+            if (desc.includes(word)) relevance += 10;
+          });
+
+          // Component files in components directory get priority
+          if (fullPath.includes('/components/')) relevance += 5;
+
+          // If it's a component query, boost component docs
+          if (hasComponentKeyword && fullPath.includes('/components/atoms/')) relevance += 10;
+
+          // Content match (lower priority)
+          if (markdown.toLowerCase().includes(searchLower)) relevance += 3;
+
+          if (relevance > 0) {
+            results.push({
+              name: frontmatter.name || item.replace('.md', ''),
+              path: fullPath.replace(DOCS_PATH, '').replace(/^\//, ''),
+              content: markdown.substring(0, 4000), // Increased from 3000
+              relevance
+            });
+          }
+        } catch (e) {
+          // Skip files that can't be read
+        }
+      }
+    }
+  }
+
+  scanDir(DOCS_PATH);
+
+  // Return top 5 most relevant (increased from 3)
+  return results.sort((a, b) => b.relevance - a.relevance).slice(0, 5);
+}
+
+export default async function handler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  try {
+    const { message, history = [] } = req.body;
+
+    if (!message) {
+      return res.status(400).json({ error: 'Message is required' });
+    }
+
+    // Find relevant docs (fast local search)
+    const relevantDocs = searchDocs(message);
+
+    // Build context with relevant documentation
+    let context = `You are the GDS Design Assistant. Answer questions using ONLY the provided documentation.
+
+# Documentation:
+
+`;
+    const sources = [];
+
+    relevantDocs.forEach(doc => {
+      context += `## ${doc.name}\n${doc.content}\n\n---\n\n`;
+      sources.push({ filename: doc.path, name: doc.name });
+    });
+
+    // Build messages
+    const messages = [
+      {
+        role: 'system',
+        content: context + `
+
+# MANDATORY Response Formatting
+
+⚠️ CRITICAL INSTRUCTION: You are REQUIRED to format every response using markdown headings (##), bullet lists (-), and tables (|).
+
+DO NOT write plain paragraphs with bold labels. DO NOT use **Bold** for section titles.
+ONLY use ## for headings. This is NON-NEGOTIABLE.
+
+# Response Formatting Guidelines
+
+Every response MUST follow this exact structure:
+
+## For Component Questions:
+**MANDATORY FORMAT - Copy this structure exactly:**
+
+```markdown
+## Input Field Component
+
+Brief one-sentence description of the component.
+
+## When to Use
+
+- Bullet point 1 starting with a dash and space
+- Bullet point 2 starting with a dash and space
+- Bullet point 3 starting with a dash and space
+
+## When Not to Use
+
+- Bullet point 1 starting with a dash and space
+- Bullet point 2 starting with a dash and space
+```
+
+⚠️ **CRITICAL**: Use `## ` (two hashes and a space) for section headings, NOT bold text `**Section**`
+
+## Variants
+
+| Variant | Description |
+|---------|-------------|
+| Standard | Description |
+| With Icon | Description |
+
+## Anatomy
+- **Label**: Description with \`code\`
+- **Container**: Description
+- **Input Text**: Description
+
+## Design Tokens
+
+### Colors
+| Token | Value | Usage |
+|-------|-------|-------|
+| \`--color-text\` | \`#000000\` | Text color |
+| \`--color-border\` | \`#E5E7EB\` | Border color |
+
+### Spacing
+| Token | Value | Usage |
+|-------|-------|-------|
+| \`--spacing-sm\` | \`8px\` | Small spacing |
+| \`--spacing-md\` | \`16px\` | Medium spacing |
+
+### Typography
+| Property | Value |
+|----------|-------|
+| \`font-size\` | \`14px\` |
+| \`line-height\` | \`1.5\` |
+
+## Accessibility
+- WCAG Level AA compliant
+- Keyboard navigable with Tab key
+- Screen reader compatible
+
+---
+
+## For Design Token Questions:
+**ALWAYS use tables to display tokens:**
+
+### Color Tokens
+
+| Token Name | Value | Preview | Usage |
+|------------|-------|---------|-------|
+| \`--neptune\` | \`#0066CC\` | 🔵 | Primary brand color |
+| \`--cosmos\` | \`#1A1A1A\` | ⚫ | Text and headings |
+
+### Spacing Tokens
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| \`--spacing-xs\` | \`4px\` | Minimal spacing |
+| \`--spacing-sm\` | \`8px\` | Small spacing |
+| \`--spacing-md\` | \`16px\` | Medium spacing |
+
+**CSS Usage Example**:
+\`\`\`css
+.button {
+  background: var(--neptune);
+  padding: var(--spacing-md);
+}
+\`\`\`
+
+---
+
+## CRITICAL Formatting Rules:
+1. **ALWAYS use ## or ### headings** - Never use plain text for section titles
+2. **ALWAYS use bullet points** for lists - Never write comma-separated items
+3. **ALWAYS use tables** when showing variants, anatomy, or comparisons
+4. **ALWAYS use TABLES for colors and design tokens** - Never use code blocks or plain lists
+5. **ALWAYS use inline code** (\`) for: token names, component names, CSS properties, values in tables
+6. **ALWAYS use bold** (**text**) for labels like "Label:", "Container:", "Value:"
+7. **ALWAYS add horizontal rules** (---) between major sections
+8. **ALWAYS use blockquotes** (>) for important notes or warnings
+9. **For color tokens**: Include emoji indicators (🔵 🟢 🟡 🔴 ⚫ ⚪) in the "Preview" column
+10. **For spacing tokens**: Always show value with unit (px, rem, em)
+
+## ❌ WRONG - Plain Paragraph Format (DO NOT USE):
+"To use input fields, follow these guidelines based on the documentation: When to Use Use input fields for single-line text entry, such as names, emails, passwords, or search queries. They are suitable for collecting short-form user input..."
+
+## ✅ CORRECT - Structured Markdown Format (REQUIRED):
+
+### Input Field
+
+A text input component for single-line user entry in forms.
+
+## When to Use
+- For single-line text entry (names, emails, passwords)
+- For collecting short-form user input in forms
+- When you need validation feedback
+- With contextual icons for improved UX
+
+## When Not to Use
+- For multi-line text → use **Textarea**
+- For selections → use **Dropdown** or **Select**
+- For dates → use **Date Picker**
+
+## Variants
+
+| Variant | Description |
+|---------|-------------|
+| **Standard** | Default input with label |
+| **With Leading Icon** | Icon before input text |
+| **With Trailing Icon** | Icon after input text (e.g., show/hide password) |
+| **Optional** | Shows "(Optional)" in label |
+
+## Design Tokens
+
+### Colors
+| Token | Value | Preview | Usage |
+|-------|-------|---------|-------|
+| \`--color-border\` | \`#D1D5DB\` | ⚪ | Default border |
+| \`--color-border-focus\` | \`#0066CC\` | 🔵 | Focus state |
+
+---
+
+**THIS IS THE ONLY ACCEPTABLE FORMAT. Always use headings, bullets, and tables.**
+
+Answer based ONLY on the provided documentation. Be helpful, accurate, and well-formatted.`
+      },
+      ...history.map(h => ({ role: h.role, content: h.content }))
+    ];
+
+    // Add few-shot example for first message to enforce formatting
+    if (history.length === 0) {
+      messages.push({
+        role: 'user',
+        content: 'Tell me about the Badge component'
+      });
+      messages.push({
+        role: 'assistant',
+        content: `## Badge Component
+
+A visual label used to highlight important information or status.
+
+## When to Use
+
+- To draw attention to new or updated content
+- To display status indicators (active, pending, completed)
+- To show counts or numerical values
+- To categorize or tag items
+
+## When Not to Use
+
+- For primary navigation elements
+- As clickable buttons (use Button component instead)
+- For large amounts of text
+
+## Variants
+
+| Variant | Description |
+|---------|-------------|
+| **Solid** | Filled background with contrasting text |
+| **Outline** | Border only with transparent background |
+| **Subtle** | Light background with subtle contrast |
+
+## Design Tokens
+
+### Colors
+| Token | Value | Preview | Usage |
+|-------|-------|---------|-------|
+| \`--badge-bg\` | \`#0066CC\` | 🔵 | Background color |
+| \`--badge-text\` | \`#FFFFFF\` | ⚪ | Text color |
+
+---`
+      });
+      messages.push({
+        role: 'user',
+        content: message
+      });
+    } else {
+      messages.push({ role: 'user', content: message });
+    }
+
+    // Get response from GPT-4 (much faster than Assistant API)
+    const completion = await openai.chat.completions.create({
+      model: 'gpt-4o',
+      messages,
+      temperature: 0.1, // Lower temperature for more consistent formatting
+      max_tokens: 1500 // Increased for longer structured responses
+    });
+
+    const rawResponse = completion.choices[0].message.content;
+
+    // Format the response to ensure proper markdown structure
+    const response = formatResponse(rawResponse);
+
+    return res.status(200).json({
+      response,
+      sources,
+      timestamp: new Date().toISOString()
+    });
+
+  } catch (error) {
+    console.error('Chat error:', error);
+    return res.status(500).json({
+      error: 'Failed to process message',
+      details: error.message
+    });
+  }
+}

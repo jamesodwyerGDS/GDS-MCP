@@ -48,8 +48,63 @@ Add a new entry when:
 
 ## 14th Jan 2025
 
+| Change | Type | JIRA | Figma | Notes |
+|--------|------|------|-------|-------|
+| Added comprehensive Figma API improvements to align with official REST API | 🟡 Updated | NA | NA | See details below |
+
+### Technical Improvements
+
+**Figma API Client (`core/figma-client.js`):**
+- Added rate limiting and retry logic with exponential backoff
+- Implemented request caching (5-minute TTL) for improved performance
+- Added `getFileMeta()` for efficient file metadata queries
+- Added `exportImages()` for component screenshot generation
+- Added `getImageFills()` for extracting image assets
+- Added published component/style endpoints (`getTeamComponents`, `getFileComponents`, `getComponent`, etc.)
+- Added component set endpoints (`getTeamComponentSets`, `getFileComponentSets`)
+- Added style endpoints (`getTeamStyles`, `getFileStyles`, `getStyle`)
+- Added `getFileVersions()` for changelog tracking
+- Fixed component set detection to handle both node IDs and component keys
+- Added `getRateLimitStatus()` and `clearCache()` utility methods
+
+**Variable Extraction (`core/documentation-generator.js`):**
+- Fixed variable extraction to use `resolvedType` instead of name matching
+- Now correctly categorizes COLOR, FLOAT, STRING, and BOOLEAN variable types
+- Added `formatColorValue()` to convert Figma color objects to hex/rgba
+- Improved token structure with name, type, and value for each token
+
+**Markdown Transformer (`core/markdown-transformer.js`):**
+- Updated to support new token format with type information
+- Added automatic image embedding in documentation
+- Updated CSS variables generation for new token structure
+- Updated Tailwind mappings to include fontSize alongside colors and spacing
+- Improved token display in documentation with type and value columns
+
+**Documentation Generator:**
+- Added image export support (configurable via `exportImages` option)
+- Images now automatically embedded in generated markdown
+- Rate limit tracking and status available during batch operations
+- Added support for `figmaClientOptions` to configure caching and retries
+
+**Test Suite:**
+- Created comprehensive test file (`test/figma-client.test.js`) for all new functionality
+
+### Benefits
+
+These improvements ensure the GDS-MCP workflow correctly aligns with the official Figma REST API v1 specification:
+- Reduced API rate limit issues with intelligent retry logic and caching
+- More accurate token extraction using native Figma type information
+- Better component preview support with automatic image generation
+- Enhanced library management via published component/style endpoints
+- Version tracking capability for better changelog maintenance
+
+---
+
+## 14th Jan 2025 (earlier)
+
 | Change | Type | JIRA | Figma | Storybook |
 |--------|------|------|-------|-----------|
+| Enhanced spacing documentation with CSS shorthand usage examples (single, two, three, four value patterns) and visual spacing token demonstrations | 🟡 Updated | NA | [Figma Link](https://www.figma.com/design/WU01oSRfSHpOxUn3ThcvC5) | NA |
 | Added Web Assistant with OpenAI - AI-powered chat interface for 80+ designers with component browser and source citations | 🟢 Added | NA | NA | NA |
 | Added Slack bot for designers to query GDS documentation via natural language with local file access (no MCP server needed) | 🟢 Added | NA | NA | NA |
 | Processed figma-extract data into structured atom documentation - 27 components enhanced/created with design tokens and variants | 🟡 Updated | NA | NA | NA |

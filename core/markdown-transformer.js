@@ -27,6 +27,12 @@ export class MarkdownTransformer {
   generateFrontmatter(data) {
     const today = new Date().toISOString().split('T')[0];
 
+    // Convert new token format to simple arrays for frontmatter
+    const simplifyTokens = (tokens) => {
+      if (!tokens) return [];
+      return tokens.map(t => typeof t === 'object' && t.name ? t.name : t);
+    };
+
     return {
       name: data.name || 'Unnamed Component',
       description: data.description || `${data.name} component`,
@@ -39,10 +45,10 @@ export class MarkdownTransformer {
       dependencies: data.dependencies || [],
       relatedComponents: data.relatedComponents || [],
       tokens: {
-        colours: data.tokens?.colours || [],
-        spacing: data.tokens?.spacing || [],
-        typography: data.tokens?.typography || [],
-        elevation: data.tokens?.elevation || [],
+        colours: simplifyTokens(data.tokens?.colours),
+        spacing: simplifyTokens(data.tokens?.spacing),
+        typography: simplifyTokens(data.tokens?.typography),
+        elevation: simplifyTokens(data.tokens?.elevation),
         breakpoints: data.tokens?.breakpoints || []
       },
       tailwind: this.generateTailwindMappings(data),
@@ -53,7 +59,8 @@ export class MarkdownTransformer {
         ariaRoles: this.inferAriaRoles(data)
       },
       figmaNodeId: data.figmaNodeId || null,
-      figmaFileKey: data.figmaFileKey || null
+      figmaFileKey: data.figmaFileKey || null,
+      imageUrl: data.imageUrl || null
     };
   }
 
@@ -107,19 +114,21 @@ export class MarkdownTransformer {
   }
 
   generateOverview(data) {
-    return `# ${data.name}
+    let content = `# ${data.name}\n\n`;
 
-## Overview
+    // Add component image if available
+    if (data.imageUrl) {
+      content += `![${data.name}](${data.imageUrl})\n\n`;
+    }
 
-${data.description || `The ${data.name} component provides...`}
+    content += `## Overview\n\n`;
+    content += `${data.description || `The ${data.name} component provides...`}\n\n`;
+    content += `### When to use\n\n`;
+    content += `- Use ${data.name} when...\n\n`;
+    content += `### When not to use\n\n`;
+    content += `- Do not use ${data.name} for...`;
 
-### When to use
-
-- Use ${data.name} when...
-
-### When not to use
-
-- Do not use ${data.name} for...`;
+    return content;
   }
 
   generateVariants(variants) {
@@ -206,50 +215,50 @@ ${rows.join('\n')}`;
     let content = `## Styling\n`;
 
     // Typography
-    if (tokens.typography && (Array.isArray(tokens.typography) ? tokens.typography.length > 0 : Object.keys(tokens.typography).length > 0)) {
+    if (tokens.typography && tokens.typography.length > 0) {
       content += `\n### Typography\n\n`;
-      content += `| Property | Value |\n|----------|-------|\n`;
-      if (Array.isArray(tokens.typography)) {
-        tokens.typography.forEach(t => {
-          content += `| Token | ${t} |\n`;
-        });
-      } else {
-        Object.entries(tokens.typography).forEach(([key, value]) => {
-          content += `| ${key} | ${value} |\n`;
-        });
-      }
+      content += `| Token | Type | Value |\n|-------|------|-------|\n`;
+      tokens.typography.forEach(t => {
+        if (typeof t === 'object' && t.name) {
+          content += `| ${t.name} | ${t.type || '-'} | ${t.value || '-'} |\n`;
+        } else {
+          content += `| ${t} | - | - |\n`;
+        }
+      });
     }
 
     // Spacing
-    if (tokens.spacing && (Array.isArray(tokens.spacing) ? tokens.spacing.length > 0 : Object.keys(tokens.spacing).length > 0)) {
+    if (tokens.spacing && tokens.spacing.length > 0) {
       content += `\n### Spacing\n\n`;
-      content += `| Area | Token/Value |\n|------|-------------|\n`;
-      if (Array.isArray(tokens.spacing)) {
-        tokens.spacing.forEach(s => {
-          content += `| - | ${s} |\n`;
-        });
-      } else {
-        Object.entries(tokens.spacing).forEach(([key, value]) => {
-          const val = typeof value === 'object' ? `${value.token || ''} ${value.value || ''}`.trim() : value;
-          content += `| ${key} | ${val} |\n`;
-        });
-      }
+      content += `| Token | Type | Value |\n|-------|------|-------|\n`;
+      tokens.spacing.forEach(s => {
+        if (typeof s === 'object' && s.name) {
+          const displayValue = s.value !== undefined ? `${s.value}px` : '-';
+          content += `| ${s.name} | ${s.type || '-'} | ${displayValue} |\n`;
+        } else if (typeof s === 'object') {
+          const val = `${s.token || ''} ${s.value || ''}`.trim();
+          content += `| ${s.token || '-'} | - | ${val} |\n`;
+        } else {
+          content += `| ${s} | - | - |\n`;
+        }
+      });
     }
 
     // Colours
-    if (tokens.colours && (Array.isArray(tokens.colours) ? tokens.colours.length > 0 : Object.keys(tokens.colours).length > 0)) {
+    if (tokens.colours && tokens.colours.length > 0) {
       content += `\n### Colours\n\n`;
-      content += `| State/Use | Token/Value |\n|-----------|-------------|\n`;
-      if (Array.isArray(tokens.colours)) {
-        tokens.colours.forEach(c => {
-          content += `| - | ${c} |\n`;
-        });
-      } else {
-        Object.entries(tokens.colours).forEach(([key, value]) => {
-          const val = typeof value === 'object' ? `${value.token || key} ${value.hex || ''}`.trim() : value;
-          content += `| ${key} | ${val} |\n`;
-        });
-      }
+      content += `| Token | Type | Value |\n|-------|------|-------|\n`;
+      tokens.colours.forEach(c => {
+        if (typeof c === 'object' && c.name) {
+          const colorDisplay = c.value ? `<span style="background-color: ${c.value}; display: inline-block; width: 16px; height: 16px; border: 1px solid #ccc;"></span> ${c.value}` : '-';
+          content += `| ${c.name} | ${c.type || '-'} | ${colorDisplay} |\n`;
+        } else if (typeof c === 'object') {
+          const val = `${c.token || ''} ${c.hex || ''}`.trim();
+          content += `| ${c.token || '-'} | - | ${val} |\n`;
+        } else {
+          content += `| ${c} | - | - |\n`;
+        }
+      });
     }
 
     // Elevation
@@ -258,7 +267,11 @@ ${rows.join('\n')}`;
       content += `| Level | Value |\n|-------|-------|\n`;
       if (Array.isArray(tokens.elevation)) {
         tokens.elevation.forEach(e => {
-          content += `| - | ${e} |\n`;
+          if (typeof e === 'object' && e.name) {
+            content += `| ${e.name} | ${e.value || '-'} |\n`;
+          } else {
+            content += `| - | ${e} |\n`;
+          }
         });
       } else {
         Object.entries(tokens.elevation).forEach(([key, value]) => {
@@ -330,31 +343,39 @@ ${cssVars.map(v => `  ${v.name}: ${v.value};`).join('\n')}
     const name = this.kebabCase(data.name);
     const tokens = data.tokens || {};
 
-    if (tokens.colours) {
-      const colours = Array.isArray(tokens.colours) ? tokens.colours : Object.entries(tokens.colours);
-      if (Array.isArray(tokens.colours)) {
-        tokens.colours.forEach((c, i) => {
+    if (tokens.colours && Array.isArray(tokens.colours)) {
+      tokens.colours.forEach((c, i) => {
+        if (typeof c === 'object' && c.name) {
+          const varName = `--${name}-${this.kebabCase(c.name)}`;
+          vars.push({ name: varName, value: c.value || 'transparent' });
+        } else {
           vars.push({ name: `--${name}-color-${i + 1}`, value: c });
-        });
-      } else {
-        Object.entries(tokens.colours).forEach(([key, value]) => {
-          const hex = typeof value === 'object' ? value.hex || value.default : value;
-          vars.push({ name: `--${name}-${this.kebabCase(key)}`, value: hex });
-        });
-      }
+        }
+      });
     }
 
-    if (tokens.spacing) {
-      if (Array.isArray(tokens.spacing)) {
-        tokens.spacing.forEach((s, i) => {
+    if (tokens.spacing && Array.isArray(tokens.spacing)) {
+      tokens.spacing.forEach((s, i) => {
+        if (typeof s === 'object' && s.name) {
+          const varName = `--${name}-${this.kebabCase(s.name)}`;
+          const value = s.value !== undefined ? `${s.value}px` : '0';
+          vars.push({ name: varName, value });
+        } else if (typeof s === 'object' && s.value) {
+          const varName = `--${name}-${this.kebabCase(s.token || `spacing-${i + 1}`)}`;
+          vars.push({ name: varName, value: s.value });
+        } else {
           vars.push({ name: `--${name}-spacing-${i + 1}`, value: s });
-        });
-      } else {
-        Object.entries(tokens.spacing).forEach(([key, value]) => {
-          const val = typeof value === 'object' ? value.value : value;
-          vars.push({ name: `--${name}-${this.kebabCase(key)}`, value: val });
-        });
-      }
+        }
+      });
+    }
+
+    if (tokens.typography && Array.isArray(tokens.typography)) {
+      tokens.typography.forEach((t, i) => {
+        if (typeof t === 'object' && t.name) {
+          const varName = `--${name}-${this.kebabCase(t.name)}`;
+          vars.push({ name: varName, value: t.value || 'inherit' });
+        }
+      });
     }
 
     return vars;
@@ -376,34 +397,43 @@ module.exports = {
   }
 
   generateTailwindMappings(data) {
-    const mappings = { colors: {}, spacing: {} };
+    const mappings = { colors: {}, spacing: {}, fontSize: {} };
     const name = this.kebabCase(data.name);
     const tokens = data.tokens || {};
 
-    if (tokens.colours) {
-      if (Array.isArray(tokens.colours)) {
-        tokens.colours.forEach((c, i) => {
+    if (tokens.colours && Array.isArray(tokens.colours)) {
+      tokens.colours.forEach((c, i) => {
+        if (typeof c === 'object' && c.name) {
+          const key = `${name}-${this.kebabCase(c.name)}`;
+          mappings.colors[key] = c.value || 'transparent';
+        } else {
           mappings.colors[`${name}-${i + 1}`] = c;
-        });
-      } else {
-        Object.entries(tokens.colours).forEach(([key, value]) => {
-          const hex = typeof value === 'object' ? value.hex || value.default : value;
-          mappings.colors[`${name}-${this.kebabCase(key)}`] = hex;
-        });
-      }
+        }
+      });
     }
 
-    if (tokens.spacing) {
-      if (Array.isArray(tokens.spacing)) {
-        tokens.spacing.forEach((s, i) => {
+    if (tokens.spacing && Array.isArray(tokens.spacing)) {
+      tokens.spacing.forEach((s, i) => {
+        if (typeof s === 'object' && s.name) {
+          const key = `${name}-${this.kebabCase(s.name)}`;
+          const value = s.value !== undefined ? `${s.value}px` : '0';
+          mappings.spacing[key] = value;
+        } else if (typeof s === 'object' && s.value) {
+          const key = `${name}-${this.kebabCase(s.token || `spacing-${i + 1}`)}`;
+          mappings.spacing[key] = s.value;
+        } else {
           mappings.spacing[`${name}-${i + 1}`] = s;
-        });
-      } else {
-        Object.entries(tokens.spacing).forEach(([key, value]) => {
-          const val = typeof value === 'object' ? value.value : value;
-          mappings.spacing[`${name}-${this.kebabCase(key)}`] = val;
-        });
-      }
+        }
+      });
+    }
+
+    if (tokens.typography && Array.isArray(tokens.typography)) {
+      tokens.typography.forEach((t, i) => {
+        if (typeof t === 'object' && t.name && t.type === 'FLOAT') {
+          const key = `${name}-${this.kebabCase(t.name)}`;
+          mappings.fontSize[key] = `${t.value}px`;
+        }
+      });
     }
 
     return mappings;

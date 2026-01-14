@@ -65,18 +65,73 @@ The spacing scale uses descriptive names for easy reference across design and de
 
 The spacing scale uses venue names, reflecting the entertainment/ticketing domain.
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `Lounge` | 4px | Tight inline spacing, icon gaps |
-| `Club` | 8px | Small padding, tight component gaps |
-| `Hall` | 12px | Compact padding, form elements |
-| `Auditorium` | 16px | Standard component padding |
-| `Theatre` | 20px | Medium padding, card content |
-| `Amphitheatre` | 24px | Default spacing between elements |
-| `Arena` | 32px | Section gaps, card padding |
-| `Stadium` | 48px | Large section spacing |
-| `Dome` | 64px | Major section separation |
-| `Field` | 88px | Page section margins, hero spacing |
+<div class="spacing-tokens-table">
+
+| Token | Value | Visual | Usage |
+|-------|-------|--------|-------|
+| `Lounge` | 4px | <div data-spacing-token="lounge" data-spacing-value="4px"></div> | Tight inline spacing, icon gaps |
+| `Club` | 8px | <div data-spacing-token="club" data-spacing-value="8px"></div> | Small padding, tight component gaps |
+| `Hall` | 12px | <div data-spacing-token="hall" data-spacing-value="12px"></div> | Compact padding, form elements |
+| `Auditorium` | 16px | <div data-spacing-token="auditorium" data-spacing-value="16px"></div> | Standard component padding |
+| `Theatre` | 20px | <div data-spacing-token="theatre" data-spacing-value="20px"></div> | Medium padding, card content |
+| `Amphitheatre` | 24px | <div data-spacing-token="amphitheatre" data-spacing-value="24px"></div> | Default spacing between elements |
+| `Arena` | 32px | <div data-spacing-token="arena" data-spacing-value="32px"></div> | Section gaps, card padding |
+| `Stadium` | 48px | <div data-spacing-token="stadium" data-spacing-value="48px"></div> | Large section spacing |
+| `Dome` | 64px | <div data-spacing-token="dome" data-spacing-value="64px"></div> | Major section separation |
+| `Field` | 88px | <div data-spacing-token="field" data-spacing-value="88px"></div> | Page section margins, hero spacing |
+
+</div>
+
+### CSS Shorthand Usage
+
+Spacing tokens can be applied using CSS shorthand syntax for padding, margin, and gap properties:
+
+#### Single Value
+
+For example, `10px`
+
+- Applies the value to all four sides (or the `gap` property for flex/grid layouts)
+
+```css
+padding: var(--space-auditorium); /* 16px all sides */
+gap: var(--space-club); /* 8px gap */
+```
+
+#### Two Values
+
+For example, `8px 64px`
+
+- The first value is applied as padding/margin to the **top and bottom**
+- The second value is applied as padding/margin to the **right and left**
+
+```css
+padding: var(--space-club) var(--space-dome); /* 8px top/bottom, 64px left/right */
+margin: var(--space-auditorium) var(--space-arena); /* 16px top/bottom, 32px left/right */
+```
+
+#### Three Values
+
+For example, `16px 8px 32px`
+
+- First value: **top**
+- Second value: **right and left**
+- Third value: **bottom**
+
+```css
+padding: var(--space-auditorium) var(--space-club) var(--space-arena);
+/* 16px top, 8px left/right, 32px bottom */
+```
+
+#### Four Values
+
+For example, `16px 24px 32px 48px`
+
+- Values apply to **top**, **right**, **bottom**, **left** (clockwise from top)
+
+```css
+padding: var(--space-auditorium) var(--space-amphitheatre) var(--space-arena) var(--space-stadium);
+/* 16px top, 24px right, 32px bottom, 48px left */
+```
 
 ### Horizontal Spacing
 

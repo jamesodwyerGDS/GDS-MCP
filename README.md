@@ -109,6 +109,60 @@ Generated documentation includes:
 
 **No framework-specific code** - documentation only, suitable for any implementation.
 
+## For Designers
+
+### Web Assistant (Recommended for Teams)
+
+**Best for:** 80+ designers, public access, no installation
+
+A web interface powered by OpenAI that provides chat + component browsing:
+
+```bash
+cd web-assistant
+npm install
+npm run upload-docs      # Upload docs to OpenAI
+npm run setup-assistant  # Create AI assistant
+npm run frontend:install # Install frontend
+npm run dev             # Start development server
+```
+
+**Features:**
+- 🤖 AI-powered chat with GPT-4
+- 📚 Component browser sidebar
+- 📝 Source citations from docs
+- 🌐 Deploy to Vercel (FREE)
+- 💰 ~$10-30/month for unlimited users
+
+**Quick Deploy:**
+1. Get OpenAI API key
+2. Run setup scripts (5 min)
+3. Deploy to Vercel (FREE)
+4. Share URL with team
+
+[📖 Full Documentation](web-assistant/README.md)
+
+---
+
+### Slack Bot
+
+**Best for:** Slack-based teams, on-premise
+
+A Slack bot that lets designers query GDS using natural language:
+
+```bash
+npm run bot:install
+cp slack-bot/.env.example slack-bot/.env
+npm run bot:start
+```
+
+**Features:**
+- 💬 Natural language in Slack
+- 📁 Local file access (no MCP needed)
+- 🌐 Optional HTTP MCP support
+- 🆓 Free to host (Render, Railway, etc.)
+
+[📖 Full Documentation](slack-bot/README.md)
+
 ## Slack Notifications
 
 Get notified when documentation is generated. Set your webhook URL:

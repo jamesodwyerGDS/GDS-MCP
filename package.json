@@ -17,7 +17,14 @@
     "website:preview": "npm --prefix website run preview",
     "website:install": "npm --prefix website install",
     "mcp:start": "node mcp-server/http-server.js",
-    "mcp:stdio": "node mcp-server/index.js"
+    "mcp:stdio": "node mcp-server/index.js",
+    "bot:install": "npm --prefix slack-bot install",
+    "bot:start": "npm --prefix slack-bot start",
+    "bot:dev": "npm --prefix slack-bot run dev",
+    "web:install": "npm --prefix web-assistant install",
+    "web:setup": "cd web-assistant && npm run upload-docs && npm run setup-assistant",
+    "web:dev": "npm --prefix web-assistant run dev",
+    "web:frontend": "npm --prefix web-assistant run frontend:dev"
   },
   "keywords": [
     "mcp",

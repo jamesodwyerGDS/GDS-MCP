@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: gds-slack-bot
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: cd slack-bot && npm install
+    startCommand: cd slack-bot && npm start
+    envVars:
+      - key: SLACK_BOT_TOKEN
+        sync: false
+      - key: SLACK_SIGNING_SECRET
+        sync: false
+      - key: SLACK_APP_TOKEN
+        sync: false
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /health
+    autoDeploy: true

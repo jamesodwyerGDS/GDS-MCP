@@ -13,11 +13,14 @@ import path from 'path';
 
 export class DocumentationGenerator {
   constructor(figmaAccessToken, options = {}) {
-    this.figma = new FigmaClient(figmaAccessToken);
+    this.figma = new FigmaClient(figmaAccessToken, options.figmaClientOptions);
     this.transformer = new MarkdownTransformer();
     this.outputDir = options.outputDir || './docs/components';
     this.slack = new SlackNotifier(options.slackWebhookUrl);
     this.notifySlack = options.notifySlack !== false;
+    this.exportImages = options.exportImages !== false;
+    this.imageFormat = options.imageFormat || 'png';
+    this.imageScale = options.imageScale || 2;
   }
 
   /**
@@ -37,6 +40,25 @@ export class DocumentationGenerator {
     // Gather all component data
     const componentData = await this.extractComponentData(fileKey, nodeId);
 
+    // Export component image if enabled
+    if (this.exportImages && nodeId) {
+      console.log(`Exporting component image...`);
+      try {
+        const imageData = await this.figma.exportImages(fileKey, nodeId, {
+          format: this.imageFormat,
+          scale: this.imageScale
+        });
+
+        if (imageData.images && imageData.images[nodeId]) {
+          componentData.imageUrl = imageData.images[nodeId];
+          componentData.imageExported = true;
+        }
+      } catch (error) {
+        console.warn(`Failed to export image: ${error.message}`);
+        componentData.imageExported = false;
+      }
+    }
+
     console.log(`Transforming to markdown...`);
 
     // Transform to markdown
@@ -55,7 +77,8 @@ export class DocumentationGenerator {
     const result = {
       name: componentData.name,
       path: outputPath,
-      category
+      category,
+      imageUrl: componentData.imageUrl || null
     };
 
     // Send Slack notification
@@ -150,13 +173,14 @@ export class DocumentationGenerator {
   }
 
   /**
-   * Extract token references from Figma variables
+   * Extract token references from Figma variables using resolvedType
    */
   extractTokenReferences(variables) {
     const tokens = {
       colours: [],
       spacing: [],
-      typography: []
+      typography: [],
+      other: []
     };
 
     if (!variables?.meta?.variables) {
@@ -164,18 +188,99 @@ export class DocumentationGenerator {
     }
 
     for (const [id, variable] of Object.entries(variables.meta.variables)) {
-      const name = variable.name;
+      const { name, resolvedType, valuesByMode } = variable;
 
-      if (name.includes('color') || name.includes('colour')) {
-        tokens.colours.push(name);
-      } else if (name.includes('space') || name.includes('spacing')) {
-        tokens.spacing.push(name);
-      } else if (name.includes('font') || name.includes('type')) {
-        tokens.typography.push(name);
+      // Use resolvedType for accurate categorization
+      if (resolvedType === 'COLOR') {
+        // Extract color value from first mode
+        const modeId = Object.keys(valuesByMode || {})[0];
+        const colorValue = valuesByMode?.[modeId];
+
+        tokens.colours.push({
+          name,
+          type: 'COLOR',
+          value: colorValue ? this.formatColorValue(colorValue) : null
+        });
+      } else if (resolvedType === 'FLOAT') {
+        // FLOAT can be spacing, dimensions, or other numeric values
+        // Use name heuristics to categorize
+        const modeId = Object.keys(valuesByMode || {})[0];
+        const numValue = valuesByMode?.[modeId];
+
+        if (name.includes('space') || name.includes('spacing') || name.includes('gap') || name.includes('padding') || name.includes('margin')) {
+          tokens.spacing.push({
+            name,
+            type: 'FLOAT',
+            value: numValue
+          });
+        } else if (name.includes('font') || name.includes('size') || name.includes('weight') || name.includes('line')) {
+          tokens.typography.push({
+            name,
+            type: 'FLOAT',
+            value: numValue
+          });
+        } else {
+          tokens.other.push({
+            name,
+            type: 'FLOAT',
+            value: numValue
+          });
+        }
+      } else if (resolvedType === 'STRING') {
+        // STRING can be font families, text values, etc.
+        const modeId = Object.keys(valuesByMode || {})[0];
+        const strValue = valuesByMode?.[modeId];
+
+        if (name.includes('font') || name.includes('type') || name.includes('family')) {
+          tokens.typography.push({
+            name,
+            type: 'STRING',
+            value: strValue
+          });
+        } else {
+          tokens.other.push({
+            name,
+            type: 'STRING',
+            value: strValue
+          });
+        }
+      } else if (resolvedType === 'BOOLEAN') {
+        const modeId = Object.keys(valuesByMode || {})[0];
+        const boolValue = valuesByMode?.[modeId];
+
+        tokens.other.push({
+          name,
+          type: 'BOOLEAN',
+          value: boolValue
+        });
       }
     }
 
     return tokens;
+  }
+
+  /**
+   * Format color value from Figma API response
+   * @private
+   */
+  formatColorValue(colorObj) {
+    if (!colorObj || typeof colorObj !== 'object') return null;
+
+    // Figma returns colors as {r, g, b, a} with values 0-1
+    const { r = 0, g = 0, b = 0, a = 1 } = colorObj;
+
+    // Convert to 0-255 range
+    const r255 = Math.round(r * 255);
+    const g255 = Math.round(g * 255);
+    const b255 = Math.round(b * 255);
+
+    if (a < 1) {
+      return `rgba(${r255}, ${g255}, ${b255}, ${a})`;
+    }
+
+    // Return hex color
+    const toHex = (n) => n.toString(16).padStart(2, '0');
+    return `#${toHex(r255)}${toHex(g255)}${toHex(b255)}`;
   }
 
   /**

@@ -1,0 +1,202 @@
+🔍 Scanning documentation files...
+
+Found 182 markdown files
+
+📤 Uploading files to OpenAI...
+
+  [1/182] components/atoms/accordion.md
+  [2/182] components/atoms/alert.md
+  [3/182] components/atoms/badge.md
+  [4/182] components/atoms/button.md
+  [5/182] components/atoms/circle-button.md
+  [6/182] components/atoms/countdown-timer.md
+  [7/182] components/atoms/date-picker.md
+  [8/182] components/atoms/display-heading.md
+  [9/182] components/atoms/double-range-input.md
+  [10/182] components/atoms/dropdown.md
+  [11/182] components/atoms/filterbar.md
+  [12/182] components/atoms/image.md
+  [13/182] components/atoms/input-field.md
+  [14/182] components/atoms/loading-spinner.md
+  [15/182] components/atoms/modal.md
+  [16/182] components/atoms/pagination-button.md
+  [17/182] components/atoms/pill-button.md
+  [18/182] components/atoms/radio-button.md
+  [19/182] components/atoms/side-panel.md
+  [20/182] components/atoms/square-button.md
+  [21/182] components/atoms/stepper.md
+  [22/182] components/atoms/toast.md
+  [23/182] components/atoms/toggle.md
+  [24/182] components/atoms/toolbox.md
+  ⚠️  Failed: Connection error.
+  [25/182] components/atoms/tooltip.md
+  [26/182] figma-extract/--------------------.md
+  [27/182] figma-extract/-------------------.md
+  [28/182] figma-extract/----------------.md
+  [29/182] figma-extract/-------------.md
+  [30/182] figma-extract/----internals.md
+  [31/182] figma-extract/---accordion-.md
+  [32/182] figma-extract/---alert-box-.md
+  [33/182] figma-extract/---badge-.md
+  [34/182] figma-extract/---button-.md
+  [35/182] figma-extract/---checkbox-.md
+  [36/182] figma-extract/---circle-button-.md
+  [37/182] figma-extract/---color-guidelines-.md
+  [38/182] figma-extract/---countdown-timer-.md
+  [39/182] figma-extract/---countdown.md
+  [40/182] figma-extract/---date-picker-.md
+  [41/182] figma-extract/---display-heading.md
+  [42/182] figma-extract/---double-range-input-.md
+  [43/182] figma-extract/---dropdown-.md
+  [44/182] figma-extract/---elevation-guidelines--.md
+  [45/182] figma-extract/---filter-bar-.md
+  [46/182] figma-extract/---icons-.md
+  [47/182] figma-extract/---illustration-stickers.md
+  [48/182] figma-extract/---image-.md
+  [49/182] figma-extract/---input-field-.md
+  [50/182] figma-extract/---loading-indicator-.md
+  [51/182] figma-extract/---loading-spinner-.md
+  [52/182] figma-extract/---modal-.md
+  [53/182] figma-extract/---motion-guidelines-.md
+  [54/182] figma-extract/---pagination-button-.md
+  [55/182] figma-extract/---phone-number-field-.md
+  [56/182] figma-extract/---pill-button-.md
+  [57/182] figma-extract/---radio-button.md
+  [58/182] figma-extract/---shape-guidelines-.md
+  [59/182] figma-extract/---side-panel-.md
+  [60/182] figma-extract/---slot-.md
+  [61/182] figma-extract/---spacing-guidelines-.md
+  [62/182] figma-extract/---square-button-.md
+  [63/182] figma-extract/---stepper-.md
+  [64/182] figma-extract/---title-heading-.md
+  [65/182] figma-extract/---toast-.md
+  [66/182] figma-extract/---toggle-.md
+  [67/182] figma-extract/---toolbox-.md
+  [68/182] figma-extract/---tooltip.md
+  [69/182] figma-extract/---typography-guidelines-.md
+  [70/182] figma-extract/---ui-interaction-guidelines-.md
+  [71/182] figma-extract/-deprecation-ground.md
+  [72/182] figma-extract/-utilities.md
+  [73/182] figma-extract/additional-guidelines.md
+  [74/182] figma-extract/changelog.md
+  [75/182] figma-extract/color-guidelines-text.md
+  [76/182] figma-extract/color-guidelines.md
+  [77/182] figma-extract/components/2-tickets.md
+  [78/182] figma-extract/components/4-part-payment.md
+  [79/182] figma-extract/components/accordion-deprecated.md
+  [80/182] figma-extract/components/accordion-item.md
+  [81/182] figma-extract/components/accordion.md
+  [82/182] figma-extract/components/accordions-deprecated.md
+  [83/182] figma-extract/components/alert-box.md
+  [84/182] figma-extract/components/app.md
+  [85/182] figma-extract/components/arts-theater.md
+  [86/182] figma-extract/components/assistance.md
+  [87/182] figma-extract/components/badge.md
+  [88/182] figma-extract/components/base-date-picker-columns.md
+  [89/182] figma-extract/components/base-day-slot.md
+  [90/182] figma-extract/components/base-field.md
+  [91/182] figma-extract/components/base-loading-spinner.md
+  [92/182] figma-extract/components/base-stepper.md
+  [93/182] figma-extract/components/box-office.md
+  [94/182] figma-extract/components/button.md
+  [95/182] figma-extract/components/calendar.md
+  [96/182] figma-extract/components/checkbox.md
+  [97/182] figma-extract/components/checkboxcontrol.md
+  [98/182] figma-extract/components/circle-button.md
+  [99/182] figma-extract/components/close-button.md
+  [100/182] figma-extract/components/component-styles-index.md
+  [101/182] figma-extract/components/countdown-timer.md
+  [102/182] figma-extract/components/countdown-unit.md
+  [103/182] figma-extract/components/countdown.md
+  [104/182] figma-extract/components/date-picker.md
+  [105/182] figma-extract/components/deprecated-double-range-input.md
+  [106/182] figma-extract/components/deprecated-image-ratios.md
+  [107/182] figma-extract/components/deprecated-title-heading-beta.md
+  [108/182] figma-extract/components/digital-ticket.md
+  [109/182] figma-extract/components/displayheading.md
+  [110/182] figma-extract/components/divider.md
+  [111/182] figma-extract/components/double-range-input.md
+  [112/182] figma-extract/components/dropdown.md
+  [113/182] figma-extract/components/errorfilled.md
+  [114/182] figma-extract/components/family.md
+  [115/182] figma-extract/components/festival.md
+  [116/182] figma-extract/components/filterbar.md
+  [117/182] figma-extract/components/handle.md
+  [118/182] figma-extract/components/help.md
+  [119/182] figma-extract/components/identity.md
+  [120/182] figma-extract/components/image.md
+  [121/182] figma-extract/components/input-field.md
+  [122/182] figma-extract/components/insurance.md
+  [123/182] figma-extract/components/loading-indicator.md
+  [124/182] figma-extract/components/loading-spinner.md
+  [125/182] figma-extract/components/map.md
+  [126/182] figma-extract/components/messaging.md
+  [127/182] figma-extract/components/modal-content.md
+  [128/182] figma-extract/components/modal-footer.md
+  [129/182] figma-extract/components/modal-old-deprecated.md
+  [130/182] figma-extract/components/modal-title.md
+  [131/182] figma-extract/components/modal.md
+  [132/182] figma-extract/components/music.md
+  [133/182] figma-extract/components/news.md
+  [134/182] figma-extract/components/payment-icons.md
+  [135/182] figma-extract/components/payment.md
+  [136/182] figma-extract/components/people.md
+  [137/182] figma-extract/components/pill-button.md
+  [138/182] figma-extract/components/posted-tickets.md
+  [139/182] figma-extract/components/printer.md
+  [140/182] figma-extract/components/radio-button.md
+  [141/182] figma-extract/components/resale.md
+  [142/182] figma-extract/components/seats.md
+  [143/182] figma-extract/components/security.md
+  [144/182] figma-extract/components/sidepanel.md
+  [145/182] figma-extract/components/slot.md
+  [146/182] figma-extract/components/spacing.md
+  [147/182] figma-extract/components/sports.md
+  [148/182] figma-extract/components/square-button.md
+  [149/182] figma-extract/components/stadium.md
+  [150/182] figma-extract/components/stepper.md
+  [151/182] figma-extract/components/ticket.md
+  [152/182] figma-extract/components/time.md
+  [153/182] figma-extract/components/timer.md
+  [154/182] figma-extract/components/title-accent.md
+  [155/182] figma-extract/components/title-heading.md
+  [156/182] figma-extract/components/toast.md
+  [157/182] figma-extract/components/toggle.md
+  [158/182] figma-extract/components/toggler-bar-block.md
+  [159/182] figma-extract/components/toolbar-block.md
+  [160/182] figma-extract/components/toolbar.md
+  [161/182] figma-extract/components/tooltip.md
+  [162/182] figma-extract/components/transfer.md
+  [163/182] figma-extract/components/wallet.md
+  [164/182] figma-extract/components/warningfilled.md
+  [165/182] figma-extract/cover.md
+  [166/182] figma-extract/getting-started.md
+  [167/182] figma-extract/index.md
+  [168/182] figma-extract/master-tokens.md
+  [169/182] figma-extract/styles.md
+  [170/182] figma-extract/visual-assets-.md
+  [171/182] foundations/color-accessibility.md
+  [172/182] foundations/color-themes.md
+  [173/182] foundations/color.md
+  [174/182] foundations/elevation.md
+  [175/182] foundations/spacing.md
+  [176/182] foundations/typography.md
+  [177/182] index.md
+  [178/182] patterns/pill-button-guidelines.md
+  [179/182] patterns/slot.md
+  [180/182] patterns/stepper-guidelines.md
+  [181/182] patterns/toast-guidelines.md
+  [182/182] patterns/tooltip-guidelines.md
+
+✅ Uploaded 181 files
+
+📝 Saved file IDs to .env
+
+═══════════════════════════════════════
+✅ Documentation upload complete!
+═══════════════════════════════════════
+Files: 181
+
+Next step: npm run setup-assistant
+═══════════════════════════════════════
+
