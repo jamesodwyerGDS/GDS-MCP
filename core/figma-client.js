@@ -61,6 +61,10 @@ export class FigmaClient {
     return {
       name: document.name,
       type: document.type,
+      // Documentation fields from Figma
+      description: document.description || null,
+      documentationLinks: document.documentationLinks || [],
+      // Layout properties
       layoutMode: document.layoutMode,
       primaryAxisSizingMode: document.primaryAxisSizingMode,
       counterAxisSizingMode: document.counterAxisSizingMode,
@@ -78,6 +82,66 @@ export class FigmaClient {
         type: child.type
       }))
     };
+  }
+
+  /**
+   * Get component documentation (description and links)
+   * @param {string} fileKey - Figma file key
+   * @param {string} nodeId - Component node ID
+   * @returns {{ description: string|null, documentationLinks: Array<{uri: string}> }}
+   */
+  async getComponentDocumentation(fileKey, nodeId) {
+    const nodeData = await this.getMetadata(fileKey, nodeId);
+    const document = nodeData?.document;
+
+    return {
+      description: document?.description || null,
+      documentationLinks: document?.documentationLinks || []
+    };
+  }
+
+  /**
+   * Get all components with their documentation from a file
+   * @param {string} fileKey - Figma file key
+   * @returns {Promise<Array<{nodeId: string, name: string, description: string, documentationLinks: Array}>>}
+   */
+  async getFileComponentsWithDocs(fileKey) {
+    const response = await axios.get(
+      `${this.baseUrl}/files/${fileKey}`,
+      {
+        params: { depth: 1 },
+        headers: { 'X-Figma-Token': this.accessToken }
+      }
+    );
+
+    const components = [];
+
+    // Extract from components map
+    if (response.data.components) {
+      for (const [nodeId, comp] of Object.entries(response.data.components)) {
+        components.push({
+          nodeId,
+          name: comp.name,
+          description: comp.description || null,
+          documentationLinks: comp.documentationLinks || []
+        });
+      }
+    }
+
+    // Extract from componentSets map
+    if (response.data.componentSets) {
+      for (const [nodeId, set] of Object.entries(response.data.componentSets)) {
+        components.push({
+          nodeId,
+          name: set.name,
+          description: set.description || null,
+          documentationLinks: set.documentationLinks || [],
+          isComponentSet: true
+        });
+      }
+    }
+
+    return components;
   }
 
   /**

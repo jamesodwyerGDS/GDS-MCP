@@ -1,0 +1,265 @@
+{
+  "page": {
+    "id": "30:15282",
+    "name": "🟢 Badge "
+  },
+  "extractedAt": "2026-01-14T10:25:11.168Z",
+  "documentation": [
+    {
+      "id": "8280:20087",
+      "name": "🟢 Badge",
+      "type": "INSTANCE",
+      "path": "🟢 Badge  > Badge Guidelines > 🟢 Badge",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29898"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29898"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I8280:20087;8280:19614;8176:16401",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Badge  > Badge Guidelines > 🟢 Badge > Inventory VIP > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "21:25864",
+      "name": "🟢 Badge",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Badge  > Badge > Badges > 🟢 Badge",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6549019813537598,
+            "g": 0.20000000298023224,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "strokes": "21:1625",
+        "stroke": "21:1625"
+      },
+      "componentPropertyDefinitions": {
+        "Type": {
+          "type": "VARIANT",
+          "defaultValue": "Presale",
+          "variantOptions": [
+            "VIP Access",
+            "Resale",
+            "Sold Out",
+            "Limited Availability",
+            "Low Availability",
+            "On Sale",
+            "Package",
+            "Postponed",
+            "Presale",
+            "Health Check",
+            "Cancelled",
+            "Extras",
+            "On Partner Site",
+            "Livestream",
+            "Tax Exempt",
+            "New Date",
+            "Near You",
+            "Promoted",
+            "Required",
+            "Complete"
+          ]
+        },
+        "Filled": {
+          "type": "VARIANT",
+          "defaultValue": "Off",
+          "variantOptions": [
+            "On",
+            "Off"
+          ]
+        }
+      }
+    },
+    {
+      "id": "8280:19613",
+      "name": "Type=Promoted, Filled=On",
+      "type": "COMPONENT",
+      "path": "🟢 Badge  > Badge > Badges > 🟢 Badge > Type=Promoted, Filled=On",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29898"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29898"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I8280:19614;8176:16401",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Badge  > Badge > Badges > 🟢 Badge > Type=Promoted, Filled=On > Inventory VIP > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "8870:16494",
+      "name": ".Badge",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Badge  > Badge > Badges > .Badge",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Icon#8870:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Text#8870:3": {
+          "type": "TEXT",
+          "defaultValue": "Badge"
+        },
+        "↪️ Icon#8870:6": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "4041:71833",
+          "preferredValues": []
+        },
+        "Filled": {
+          "type": "VARIANT",
+          "defaultValue": "No",
+          "variantOptions": [
+            "Yes",
+            "No"
+          ]
+        }
+      }
+    }
+  ]
+}

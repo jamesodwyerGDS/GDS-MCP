@@ -8,6 +8,7 @@
     "docs:generate": "node scripts/generate.js",
     "docs:generate-all": "node scripts/generate-all.js",
     "docs:validate": "node scripts/validate.js",
+    "docs:explore": "node scripts/explore-figma-docs.js",
     "storybook:generate": "node scripts/generate-storybook-docs.js",
     "vibe:generate": "node scripts/generate-vibe-docs.js",
     "vibe:shadcn": "node scripts/generate-vibe-docs.js --format=shadcn",

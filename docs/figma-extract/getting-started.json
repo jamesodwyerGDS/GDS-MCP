@@ -1,0 +1,120 @@
+{
+  "page": {
+    "id": "28119:10379",
+    "name": "Getting started"
+  },
+  "extractedAt": "2026-01-14T10:25:11.149Z",
+  "documentation": [
+    {
+      "id": "28119:10386",
+      "name": "Ellipse 1",
+      "type": "ELLIPSE",
+      "path": "Getting started > Intro > File Cover > Group 1 > Ellipse 1",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29903"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6549019813537598,
+            "g": 0.20000000298023224,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29903"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "28119:10387",
+      "name": "Ellipse 2",
+      "type": "ELLIPSE",
+      "path": "Getting started > Intro > File Cover > Group 1 > Ellipse 2",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29903"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6549019813537598,
+            "g": 0.20000000298023224,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29903"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "28119:10388",
+      "name": "Ellipse 3",
+      "type": "ELLIPSE",
+      "path": "Getting started > Intro > File Cover > Group 1 > Ellipse 3",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29903"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.6549019813537598,
+            "g": 0.20000000298023224,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29903"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    }
+  ]
+}

@@ -1,0 +1,4090 @@
+{
+  "page": {
+    "id": "3879:71767",
+    "name": "🟢 Icons "
+  },
+  "extractedAt": "2026-01-14T10:25:11.214Z",
+  "documentation": [
+    {
+      "id": "44849:64",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Icons  > Controls > Grid > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29898"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29898"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "44846:59",
+      "name": "Kebab menu",
+      "type": "COMPONENT",
+      "path": "🟢 Icons  > Navigation > Kebab menu",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "size": {
+          "x": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:c388d54a123009b787fc63ca5ab7faae6ed1243b/4003:493"
+          }
+        }
+      },
+      "fills": [],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "8336:19280",
+      "name": "Icon",
+      "type": "BOOLEAN_OPERATION",
+      "path": "🟢 Icons  > Feedback > Warning > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29904"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 0.7254902124404907,
+            "b": 0.19607843458652496,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29904"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "20876:3308",
+      "name": "WarningFilled",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Icons  > Feedback > WarningFilled",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Xlarge",
+          "variantOptions": [
+            "Xlarge",
+            "Large",
+            "Medium",
+            "Small"
+          ]
+        }
+      }
+    },
+    {
+      "id": "22373:36",
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "🟢 Icons  > Feedback > WarningFilled > Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae3834bf90ebbfd93a4c1b9241e6f04ccc2a5c3f/323:681"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae3834bf90ebbfd93a4c1b9241e6f04ccc2a5c3f/323:681"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "22373:1643",
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "🟢 Icons  > Feedback > WarningFilled > Size=Xlarge > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae3834bf90ebbfd93a4c1b9241e6f04ccc2a5c3f/323:681"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae3834bf90ebbfd93a4c1b9241e6f04ccc2a5c3f/323:681"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "22373:1639",
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "🟢 Icons  > Feedback > WarningFilled > Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae3834bf90ebbfd93a4c1b9241e6f04ccc2a5c3f/323:681"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae3834bf90ebbfd93a4c1b9241e6f04ccc2a5c3f/323:681"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "31155:4198",
+      "name": "Vector",
+      "type": "VECTOR",
+      "path": "🟢 Icons  > Feedback > WarningFilled > Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae3834bf90ebbfd93a4c1b9241e6f04ccc2a5c3f/323:681"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae3834bf90ebbfd93a4c1b9241e6f04ccc2a5c3f/323:681"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "20876:3590",
+      "name": "ErrorFilled",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Icons  > Feedback > ErrorFilled",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "XLarge",
+          "variantOptions": [
+            "XLarge",
+            "Large",
+            "Medium",
+            "Small"
+          ]
+        }
+      }
+    },
+    {
+      "id": "16839:2777",
+      "name": "PAYMENT ICONS",
+      "type": "TEXT",
+      "path": "🟢 Icons  > Payment Method > PAYMENT ICONS",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29898"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29898"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5271"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "16899:5013",
+      "name": "Best practices",
+      "type": "TEXT",
+      "path": "🟢 Icons  > Payment Method > Best practices",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29898"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29898"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5271"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "16862:2973",
+      "name": "Payment icons",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Icons  > Payment Method > Payment icons",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Card": {
+          "type": "VARIANT",
+          "defaultValue": "Generic",
+          "variantOptions": [
+            "Generic",
+            "Amex",
+            "Apple pay",
+            "Bancontact",
+            "Discover",
+            "Eps",
+            "giropay",
+            "Gpay",
+            "iDeal",
+            "JCB",
+            "Klarna",
+            "Maestro",
+            "Mastercard",
+            "MobilePay",
+            "Paypal",
+            "Paytrail",
+            "P24",
+            "Payconiq",
+            "Sofort",
+            "Swish",
+            "Twint",
+            "Visa",
+            "Diners Club",
+            "Elo",
+            "Pix",
+            "Mastercard Click to Pay",
+            "Afterpay",
+            "Bank Account",
+            "Gift card",
+            "Vipps",
+            "Venmo"
+          ]
+        },
+        "Size": {
+          "type": "VARIANT",
+          "defaultValue": "Large",
+          "variantOptions": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        }
+      }
+    },
+    {
+      "id": "22161:276",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Pix, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "22161:234",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Pix, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "22161:192",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Pix, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "22156:114",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Elo, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        },
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "22156:72",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Elo, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        },
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "16852:2950",
+      "name": "Shape",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Generic, Size=Large > Shape",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "19919:36",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Diners Club, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "19919:134",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Diners Club, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "19919:272",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Diners Club, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "18166:374",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=MobilePay, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "18166:430",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=MobilePay, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "18166:398",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=MobilePay, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17425:17712",
+      "name": "Shape",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Generic, Size=Medium > Shape",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4710",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=iDeal, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5252",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=iDeal, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5551",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=iDeal, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4730",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Swish, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5260",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Swish, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5559",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Swish, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4865",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Apple pay, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5274",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Apple pay, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5573",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Apple pay, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4879",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Visa, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5285",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Visa, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5584",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Visa, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4893",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Mastercard, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5289",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Mastercard, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5588",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Mastercard, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4907",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Maestro, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5296",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Maestro, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5595",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Maestro, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4921",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Sofort, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "18166:306",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Gpay, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "18166:360",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Gpay, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "18166:346",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Gpay, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5303",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Sofort, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5602",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Sofort, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4974",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=P24, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5314",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=P24, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5613",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=P24, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4740",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=JCB, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5353",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=JCB, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5652",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=JCB, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4750",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=giropay, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5362",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=giropay, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5661",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=giropay, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:4760",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Paytrail, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5385",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Paytrail, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5684",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Paytrail, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17425:17724",
+      "name": "Shape",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Generic, Size=Small > Shape",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "16873:3457",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Bancontact, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "16892:3701",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Bancontact, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5781",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Bancontact, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "16871:3407",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Discover, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "16892:4194",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Discover, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:5749",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Discover, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17838:1198",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Payconiq, Size=Large > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17838:1210",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Payconiq, Size=Medium > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17838:1222",
+      "name": "Vector",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Payconiq, Size=Small > Vector",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "21:1633"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "37228:89569",
+      "name": "Shape",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Gift card, Size=Large > Shape",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9e5d78ddea6bb68dab04cb4e4bf6332cc833c100/9363:42"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9e5d78ddea6bb68dab04cb4e4bf6332cc833c100/9363:42"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "33145:3708"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "37228:89581",
+      "name": "Shape",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Gift card, Size=Medium > Shape",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9e5d78ddea6bb68dab04cb4e4bf6332cc833c100/9363:42"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9e5d78ddea6bb68dab04cb4e4bf6332cc833c100/9363:42"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "33145:3708"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "37228:89592",
+      "name": "Shape",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > Payment Method > Payment icons > Card=Gift card, Size=Small > Shape",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:9e5d78ddea6bb68dab04cb4e4bf6332cc833c100/9363:42"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:9e5d78ddea6bb68dab04cb4e4bf6332cc833c100/9363:42"
+            }
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5803921818733215,
+            "g": 0.5803921818733215,
+            "b": 0.5803921818733215,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "stroke": "33145:3708"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "16899:5014",
+      "name": "Maintain the interior appearance of the SVG. The branded portion of the payment icon as provided meets the brand guidelines of the payment provider. Maintain the border property of the payment icon. It is designed to adapt to merchant branding in Checkout and payments and ensures a consistent appearance across the customer experience. The icon size is designed to be displayed consistently across checkout.",
+      "type": "TEXT",
+      "path": "🟢 Icons  > Payment Method > Maintain the interior appearance of the SVG. The branded portion of the payment icon as provided meets the brand guidelines of the payment provider. Maintain the border property of the payment icon. It is designed to adapt to merchant branding in Checkout and payments and ensures a consistent appearance across the customer experience. The icon size is designed to be displayed consistently across checkout.",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29899"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.3921568691730499,
+            "b": 0.3921568691730499,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29899"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "19291:50207",
+      "name": "Logos for various payment methods.",
+      "type": "TEXT",
+      "path": "🟢 Icons  > Payment Method > Logos for various payment methods.",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29899"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.3921568691730499,
+            "g": 0.3921568691730499,
+            "b": 0.3921568691730499,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29899"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17389:28",
+      "name": "44 X 32",
+      "type": "TEXT",
+      "path": "🟢 Icons  > Payment Method > 44 X 32",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29898"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29898"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17395:102",
+      "name": "32 X 24",
+      "type": "TEXT",
+      "path": "🟢 Icons  > Payment Method > 32 X 24",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29898"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29898"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17425:17699",
+      "name": "28 X 20",
+      "type": "TEXT",
+      "path": "🟢 Icons  > Payment Method > 28 X 20",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29898"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.07058823853731155,
+            "g": 0.07058823853731155,
+            "b": 0.07058823853731155,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29898"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17410:17315",
+      "name": "Icon Sizing units",
+      "type": "FRAME",
+      "path": "🟢 Icons  > Icon Sizing units",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "itemSpacing": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:85e58ec7fae7a761fc6150cb15ba39f585044de0/323:713"
+        },
+        "paddingLeft": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:62d1d5683f035d2393c529733834aafb24230a6b/323:672"
+        },
+        "paddingTop": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:62d1d5683f035d2393c529733834aafb24230a6b/323:672"
+        },
+        "paddingRight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:62d1d5683f035d2393c529733834aafb24230a6b/323:672"
+        },
+        "paddingBottom": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:62d1d5683f035d2393c529733834aafb24230a6b/323:672"
+        }
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17437:6734",
+      "name": "Icon sizing guidance - for creating icon sizes and pairing with supporting text.",
+      "type": "TEXT",
+      "path": "🟢 Icons  > Icon sizing guidance - for creating icon sizes and pairing with supporting text.",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29900"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29900"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17419:17692",
+      "name": "52 x 52",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > 52 x 52",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29909"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8392156958580017,
+            "g": 0.8392156958580017,
+            "b": 0.8392156958580017,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29909"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17419:17693",
+      "name": "44 x 44",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > 44 x 44",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29909"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8392156958580017,
+            "g": 0.8392156958580017,
+            "b": 0.8392156958580017,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29909"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17419:17694",
+      "name": "32 x 32",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > 32 x 32",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29909"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8392156958580017,
+            "g": 0.8392156958580017,
+            "b": 0.8392156958580017,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29909"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17419:17696",
+      "name": "24 x 24",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > 24 x 24",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29909"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8392156958580017,
+            "g": 0.8392156958580017,
+            "b": 0.8392156958580017,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29909"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17425:17698",
+      "name": "20 x 20",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > 20 x 20",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29909"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8392156958580017,
+            "g": 0.8392156958580017,
+            "b": 0.8392156958580017,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29909"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "17419:17697",
+      "name": "16 x 16",
+      "type": "RECTANGLE",
+      "path": "🟢 Icons  > 16 x 16",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29909"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8392156958580017,
+            "g": 0.8392156958580017,
+            "b": 0.8392156958580017,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29909"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "4041:76155",
+      "name": "Ellipse 2 (Stroke)",
+      "type": "VECTOR",
+      "path": "🟢 Icons  > Tickets > TicketInfo > Icon > Ellipse 2 (Stroke)",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:7927:29897"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.007843137718737125,
+            "g": 0.3019607961177826,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:7927:29897"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    }
+  ]
+}

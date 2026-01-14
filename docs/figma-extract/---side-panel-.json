@@ -1,0 +1,4149 @@
+{
+  "page": {
+    "id": "28112:3853",
+    "name": "🟢 Side panel "
+  },
+  "extractedAt": "2026-01-14T10:25:11.202Z",
+  "documentation": [
+    {
+      "id": "I29386:6467;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Introduction > Documentation > Content > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6467;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Introduction > Documentation > Content > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6467;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Introduction > Documentation > Content > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6467;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Introduction > Documentation > Content > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6467;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Introduction > Documentation > Content > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5985;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5985;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5985;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5985;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5985;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5952;28112:3538;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5952;28112:3538;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5952;28112:3538;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:5952;28112:3538;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6018;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6018;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6018;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6018;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6018;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6051;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6051;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6051;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6051;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6051;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4130;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4130;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4130;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4130;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4130;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4097;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4097;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4097;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4097;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4097;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4163;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4163;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4163;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4163;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I31855:4163;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6367;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6367;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6367;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6367;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6367;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6871;2584:3502",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6871;2584:3510;2544:16621",
+      "name": "Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6871;2584:3510;2544:16621;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6871;2584:3510;2544:16621;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "10410:52010"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6871;2584:3510;2544:16621;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6400;28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6400;28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6400;28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6400;28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6400;28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6889;2584:3502",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6889;2584:3510;2544:16621",
+      "name": "Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6889;2584:3510;2544:16621;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6889;2584:3510;2544:16621;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "10410:52010"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6889;2584:3510;2544:16621;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6433;28112:3538;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6433;28112:3538;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6433;28112:3538;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I29386:6433;28112:3538;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > 🟢 Sidepanel > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6901;2584:3573;2544:16621",
+      "name": "Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Sidepanel > root > root > wrapper > _Footer > Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6901;2584:3573;2544:16621;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6901;2584:3573;2544:16621;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Sidepanel > root > root > wrapper > _Footer > Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "10410:52010"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:6901;2584:3573;2544:16621;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Variants > Documentation > Content > Frame 8360 > Example frame > Example frame > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:10270;2584:3502",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > Group 459677 > Sidepanel > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:10270;2584:3510;2544:16621",
+      "name": "Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:10270;2584:3510;2544:16621;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:10270;2584:3510;2544:16621;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "10410:52010"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:10270;2584:3510;2544:16621;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Group 459677 > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:11090;2584:3573;2544:16621",
+      "name": "Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > Sidepanel > root > root > wrapper > _Footer > Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:ae8758e37b89d1e1c9b8717feb4241d06d377643/12573:3"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:11090;2584:3573;2544:16621;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:11090;2584:3573;2544:16621;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > Sidepanel > root > root > wrapper > _Footer > Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8bb6cca30c9fe5cdc22f5a05f7a9677f3efed4a7/9363:41"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "10410:52010"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I37553:11090;2584:3573;2544:16621;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > Sidepanel > root > root > wrapper > _Footer > Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "28112:3490",
+      "name": "_Panel/Header",
+      "type": "COMPONENT",
+      "path": "🟢 Side panel  > .Sidepanel/Header > Content > _Panel/Header",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8392156958580017,
+            "g": 0.8392156958580017,
+            "b": 0.8392156958580017,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "fills": "21:1623",
+        "strokes": "21:1636",
+        "fill": "21:1623",
+        "stroke": "21:1636"
+      },
+      "componentPropertyDefinitions": {
+        "Show subtitle#2520:6": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        }
+      }
+    },
+    {
+      "id": "28112:3500",
+      "name": "🟢 Sidepanel",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.9725490212440491,
+            "g": 0.95686274766922,
+            "b": 0.9882352948188782,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        " Image slot#2143:17": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Show footer #2522:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Image slot#2533:0": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "25356:5186",
+          "preferredValues": []
+        },
+        "Content slot#2533:8": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "25356:5186",
+          "preferredValues": []
+        },
+        "Device": {
+          "type": "VARIANT",
+          "defaultValue": "Desktop",
+          "variantOptions": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "Position": {
+          "type": "VARIANT",
+          "defaultValue": "Right",
+          "variantOptions": [
+            "Right",
+            "Left"
+          ]
+        }
+      }
+    },
+    {
+      "id": "28112:3505",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Right > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3513;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Right > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3513;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Right > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3513;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Right > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3513;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Right > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "28112:3518",
+      "name": "wrapper",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Left > root > root > wrapper",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:2a0fc9ab9c70f309d7fe6e9baa5104990071f990/71790:1136"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "28112:3523",
+      "name": "_drawer-body",
+      "type": "FRAME",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Left > root > root > wrapper > _drawer-body",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "paddingLeft": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:fd8c2ee591080ac280fce5604f056e081fa0465b/72171:559"
+        },
+        "paddingTop": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:fd8c2ee591080ac280fce5604f056e081fa0465b/72171:559"
+        },
+        "paddingRight": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:fd8c2ee591080ac280fce5604f056e081fa0465b/72171:559"
+        },
+        "paddingBottom": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:fd8c2ee591080ac280fce5604f056e081fa0465b/72171:559"
+        }
+      },
+      "fills": [],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3525;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Left > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3525;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Left > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3525;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Left > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3525;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Desktop, Position=Left > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3538;28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Mobile, Position=Right > root > root > wrapper > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3538;28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Mobile, Position=Right > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3538;28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Mobile, Position=Right > root > root > wrapper > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3538;28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > .Sidepanel > Content > 🟢 Sidepanel > Device=Mobile, Position=Right > root > root > wrapper > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "28112:3545",
+      "name": "_Footer",
+      "type": "COMPONENT",
+      "path": "🟢 Side panel  > .Sidepanel/Footer > Content > _Footer",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.8392156958580017,
+            "g": 0.8392156958580017,
+            "b": 0.8392156958580017,
+            "a": 1
+          }
+        }
+      ],
+      "styles": {
+        "strokes": "21:1636",
+        "stroke": "21:1636"
+      },
+      "componentPropertyDefinitions": {
+        "Show  footer slot#2544:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "Footer slot#2544:1": {
+          "type": "INSTANCE_SWAP",
+          "defaultValue": "25356:5186",
+          "preferredValues": []
+        }
+      }
+    },
+    {
+      "id": "28112:3547",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Side panel  > .Sidepanel/Footer > Content > _Footer > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3547;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > .Sidepanel/Footer > Content > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3547;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Side panel  > .Sidepanel/Footer > Content > _Footer > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I28112:3547;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Side panel  > .Sidepanel/Footer > Content > _Footer > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    }
+  ]
+}

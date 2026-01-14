@@ -1,0 +1,243 @@
+{
+  "page": {
+    "id": "3:9",
+    "name": "🟢 Tooltip"
+  },
+  "extractedAt": "2026-01-14T10:25:11.211Z",
+  "documentation": [
+    {
+      "id": "10737:3603",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟢 Tooltip > Tooltip Guidelines > Main Content > Padded Content > Do’s and Dton’ts > Column > Example > Tooltip > Text > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "size": {
+          "x": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+          }
+        },
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I10737:3603;8342:60110;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Tooltip > Tooltip Guidelines > Main Content > Padded Content > Do’s and Dton’ts > Column > Example > Tooltip > Text > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I10737:3603;8342:60111",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟢 Tooltip > Tooltip Guidelines > Main Content > Padded Content > Do’s and Dton’ts > Column > Example > Tooltip > Text > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I10737:3603;8342:60112;4032:72936",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟢 Tooltip > Tooltip Guidelines > Main Content > Padded Content > Do’s and Dton’ts > Column > Example > Tooltip > Text > 🟢 Button > ChevronLeft > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:86513c0003f524a75eb0521447b6aa2a4b7c6aa4/330:233"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "555:51455",
+      "name": "🟢 Tooltip",
+      "type": "COMPONENT_SET",
+      "path": "🟢 Tooltip > Tooltip > 🟢 Tooltip",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.48235294222831726,
+            "g": 0.3803921639919281,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "Tooltip Text#10664:0": {
+          "type": "TEXT",
+          "defaultValue": "Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+        },
+        "Device": {
+          "type": "VARIANT",
+          "defaultValue": "Desktop",
+          "variantOptions": [
+            "Desktop",
+            "Mobile"
+          ]
+        },
+        "Tip Position": {
+          "type": "VARIANT",
+          "defaultValue": "Top Center",
+          "variantOptions": [
+            "Top Left",
+            "Top Center",
+            "Top Right",
+            "Bottom Center",
+            "Bottom Right",
+            "Bottom Left"
+          ]
+        },
+        "Background": {
+          "type": "VARIANT",
+          "defaultValue": "Light",
+          "variantOptions": [
+            "Light"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1495 @@
+{
+  "page": {
+    "id": "46060:1934",
+    "name": "🟡 Countdown"
+  },
+  "extractedAt": "2026-01-14T10:25:11.177Z",
+  "documentation": [
+    {
+      "id": "I46060:11739;42691:1624",
+      "name": "DISPLAY HEADING",
+      "type": "TEXT",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322114 > Frame 1321322059 > Examples > On-Sale card > Header > Background > Blur > On-sale event > Frame 1321321994 > Frame 1321321992 > 🟡 DisplayHeading > Heading frame > DISPLAY HEADING",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "lineHeight": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:feec177112711b06337e3427bde8152a8e372cef/1199:27"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "fill": "21:1623"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:11749",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322114 > Frame 1321322059 > Examples > On-Sale card > Header > Background > Blur > On-sale event > Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:11749;29422:3892",
+      "name": "Label",
+      "type": "TEXT",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322114 > Frame 1321322059 > Examples > On-Sale card > Header > Background > Blur > On-sale event > Content > 🟢 Button > Container > Label",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:11761",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322114 > Frame 1321322059 > Examples > Upcoming events > Frame 1321321938 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:11761;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322114 > Frame 1321322059 > Examples > Upcoming events > Frame 1321321938 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:11761;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322114 > Frame 1321322059 > Examples > Upcoming events > Frame 1321321938 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:11882",
+      "name": "🟢 Button",
+      "type": "FRAME",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322115 > Frame 1321322060 > Examples > Ghost > Frame 1321322112 > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "rectangleCornerRadii": {
+          "RECTANGLE_TOP_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_TOP_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_LEFT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          },
+          "RECTANGLE_BOTTOM_RIGHT_CORNER_RADIUS": {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:85f3cb2c9b3ecdd1423f44478fc00f5920e095b2/330:181"
+          }
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:11884",
+      "name": "Label",
+      "type": "TEXT",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322115 > Frame 1321322060 > Examples > Ghost > Frame 1321322112 > 🟢 Button > Container > Label",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:11886",
+      "name": "Icon",
+      "type": "BOOLEAN_OPERATION",
+      "path": "🟡 Countdown > _Countdown Documentation > Page content > Accordion customisation > Frame 1321322052 > Frame 1321322058 > Frame 1321322115 > Frame 1321322060 > Examples > Ghost > Frame 1321322112 > 🟢 Button > Container > ArrowRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:12499;42691:1624",
+      "name": "DISPLAY HEADING",
+      "type": "TEXT",
+      "path": "🟡 Countdown > 🟡 DisplayHeading > Heading frame > DISPLAY HEADING",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "lineHeight": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:72860c2570e6ad7cd8a988bfc4a2a5c38fd97006/42026:60"
+          }
+        ],
+        "fontSize": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:da2c69c94f2eb375f2dc558f5ef75a0a79e6d7bb/42026:37"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "fill": "21:1623"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:3969",
+      "name": "🟡 Countdown",
+      "type": "COMPONENT_SET",
+      "path": "🟡 Countdown > Countdown > Countdown > Content > 🟡 Countdown",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "showDays#2225:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "showSeconds#2225:12": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "showHours#2316:0": {
+          "type": "BOOLEAN",
+          "defaultValue": true
+        },
+        "variant": {
+          "type": "VARIANT",
+          "defaultValue": "Ghost",
+          "variantOptions": [
+            "Ghost",
+            "Outline",
+            "Filled"
+          ]
+        },
+        "size": {
+          "type": "VARIANT",
+          "defaultValue": "Small",
+          "variantOptions": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        "inverse": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        }
+      }
+    },
+    {
+      "id": "46060:4118",
+      "name": "_Countdown Unit",
+      "type": "COMPONENT_SET",
+      "path": "🟡 Countdown > Countdown > .Countdown / Countdown Unit > Content > _Countdown Unit",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": null,
+      "fills": [],
+      "strokes": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 1
+          }
+        }
+      ],
+      "styles": null,
+      "componentPropertyDefinitions": {
+        "✏️ Count#2113:0": {
+          "type": "TEXT",
+          "defaultValue": "00"
+        },
+        "variant": {
+          "type": "VARIANT",
+          "defaultValue": "Default",
+          "variantOptions": [
+            "Default",
+            "Outline",
+            "Filled"
+          ]
+        },
+        "state": {
+          "type": "VARIANT",
+          "defaultValue": "Active",
+          "variantOptions": [
+            "Active",
+            "In-Active"
+          ]
+        },
+        "size": {
+          "type": "VARIANT",
+          "defaultValue": "Small",
+          "variantOptions": [
+            "Small",
+            "Medium",
+            "Large"
+          ]
+        },
+        "unit": {
+          "type": "VARIANT",
+          "defaultValue": "Days",
+          "variantOptions": [
+            "Days",
+            "Hours",
+            "Minutes",
+            "Seconds"
+          ]
+        },
+        "Inverse": {
+          "type": "VARIANT",
+          "defaultValue": "False",
+          "variantOptions": [
+            "False",
+            "True"
+          ]
+        }
+      }
+    },
+    {
+      "id": "46060:15100",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > Example 01 > 375 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:15100;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > Example 01 > 375 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:15100;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > Example 01 > 375 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:15142",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > Example 01 > 744 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:15142;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > Example 01 > 744 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:15142;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > Example 01 > 744 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:15245",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > Example 01 > 1440 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:15245;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > Example 01 > 1440 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:15245;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > Example 01 > 1440 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46060:15334",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > Example 01 > 1728 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:15334;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > Example 01 > 1728 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46060:15334;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > Example 01 > 1728 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46064:3461",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > Example 02 > 375 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46064:3461;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > Example 02 > 375 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46064:3461;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > Example 02 > 375 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46064:3503",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > Example 02 > 744 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46064:3503;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > Example 02 > 744 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46064:3503;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > Example 02 > 744 > Frame 1321321916 > Next Event Card > Frame 1321321865 > Content > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46064:3564",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > Example 02 > 1440 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46064:3564;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > Example 02 > 1440 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46064:3564;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > Example 02 > 1440 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "46064:3653",
+      "name": "🟢 Button",
+      "type": "INSTANCE",
+      "path": "🟡 Countdown > Example 02 > 1728 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "minWidth": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:189967083a83b70a118532a0d45434cdfe8471b6/330:173"
+        },
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60312"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 0.00784313678741455,
+            "g": 0.30250972509384155,
+            "b": 0.8745098114013672,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60312"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46064:3653;8342:59966",
+      "name": "Text",
+      "type": "TEXT",
+      "path": "🟡 Countdown > Example 02 > 1728 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > Text",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": {
+        "text": "19:5279"
+      },
+      "componentPropertyDefinitions": null
+    },
+    {
+      "id": "I46064:3653;8342:59967;4032:72934",
+      "name": "Icon",
+      "type": "VECTOR",
+      "path": "🟡 Countdown > Example 02 > 1728 > Frame 1321321989 > Frame 1321321986 > Frame 1321321917 > Frame 1321321938 > Frame 1321321985 > Next Event Card > Cutaway > Cutaway Content > 🟢 Button > ChevronRight > Icon",
+      "description": null,
+      "documentationLinks": [],
+      "boundVariables": {
+        "fills": [
+          {
+            "type": "VARIABLE_ALIAS",
+            "id": "VariableID:8342:60325"
+          }
+        ]
+      },
+      "fills": [
+        {
+          "blendMode": "NORMAL",
+          "type": "SOLID",
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 1
+          },
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:8342:60325"
+            }
+          }
+        }
+      ],
+      "strokes": [],
+      "styles": null,
+      "componentPropertyDefinitions": null
+    }
+  ]
+}
