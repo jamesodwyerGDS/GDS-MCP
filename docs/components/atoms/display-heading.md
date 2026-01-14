@@ -1,66 +1,90 @@
 ---
-name: "Display Heading"
-description: "A high-impact typographic component for page headers, artist names, and attraction titles with distinctive stage underline styling"
-category: "atoms"
-status: "beta"
-version: "1.0.0"
-updated: "2025-12-04"
-
-tags: ["typography", "heading", "display", "hero"]
-keywords: ["title", "header", "artist name", "tour name", "page heading", "stage"]
-
+name: Display Heading
+description: >-
+  A high-impact typographic component for page headers, artist names, and
+  attraction titles with distinctive stage underline styling
+category: atoms
+status: beta
+version: 1.0.0
+updated: '2026-01-14'
+tags:
+  - typography
+  - heading
+  - display
+  - hero
+keywords:
+  - title
+  - header
+  - artist name
+  - tour name
+  - page heading
+  - stage
 dependencies: []
 relatedComponents: []
-
 tokens:
   colours:
-    text-inverse: { token: "color.secondary.spotlight", hex: "#FFFFFF" }
-    text-default: { token: "color.secondary.cosmos", hex: "#121212" }
-    stage: { token: "color.primary.neptune", hex: "#024DDF" }
+    text-inverse:
+      token: color.secondary.spotlight
+      hex: '#FFFFFF'
+    text-default:
+      token: color.secondary.cosmos
+      hex: '#121212'
+    stage:
+      token: color.primary.neptune
+      hex: '#024DDF'
   spacing:
-    underline-offset: { token: "typography.underline-offset", value: "20%" }
+    underline-offset:
+      token: typography.underline-offset
+      value: 20%
   typography:
     desktop:
-      font-family: "Averta Black"
-      font-size: { token: "typography.font-size.desktop-large", value: "54px" }
-      line-height: { token: "typography.line-height.700", value: "54px" }
-      letter-spacing: "-1.62px"
+      font-family: Averta Black
+      font-size:
+        token: typography.font-size.desktop-large
+        value: 54px
+      line-height:
+        token: typography.line-height.700
+        value: 54px
+      letter-spacing: '-1.62px'
     mobile:
-      font-family: "Averta Black"
-      font-size: { token: "typography.font-size.mobile-large", value: "32px" }
-      line-height: { token: "typography.line-height.350", value: "34px" }
-      letter-spacing: "-0.96px"
+      font-family: Averta Black
+      font-size:
+        token: typography.font-size.mobile-large
+        value: 32px
+      line-height:
+        token: typography.line-height.350
+        value: 34px
+      letter-spacing: '-0.96px'
   elevation: []
   breakpoints:
-    desktop: "Desktop variant"
-    mobile: "Mobile variant"
-
+    desktop: Desktop variant
+    mobile: Mobile variant
 tailwind:
   colors:
-    display-heading-text-inverse: "#FFFFFF"
-    display-heading-text-default: "#121212"
-    display-heading-stage: "#024DDF"
+    display-heading-text-inverse: '#FFFFFF'
+    display-heading-text-default: '#121212'
+    display-heading-stage: '#024DDF'
   spacing:
-    display-heading-underline-offset: "20%"
-
+    display-heading-underline-offset: 20%
 cssVariables:
-  - name: "--display-heading-text-inverse"
-    value: "var(--color-secondary-spotlight)"
-  - name: "--display-heading-text-default"
-    value: "var(--color-secondary-cosmos)"
-  - name: "--display-heading-stage"
-    value: "var(--color-primary-neptune)"
-  - name: "--display-heading-underline-offset"
-    value: "20%"
-
+  - name: '--display-heading-text-inverse'
+    value: var(--color-secondary-spotlight)
+  - name: '--display-heading-text-default'
+    value: var(--color-secondary-cosmos)
+  - name: '--display-heading-stage'
+    value: var(--color-primary-neptune)
+  - name: '--display-heading-underline-offset'
+    value: 20%
 accessibility:
-  wcagLevel: "AA"
+  wcagLevel: AA
   keyboardNavigable: false
-  ariaRoles: ["heading"]
-
-figmaNodeId: "42691:2822"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+  ariaRoles:
+    - heading
+figmaNodeId: '42691:1621'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Display Heading
 

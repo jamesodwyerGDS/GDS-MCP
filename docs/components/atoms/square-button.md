@@ -1,10 +1,12 @@
 ---
 name: SquareButton
-description: A square icon button for navigation and actions, optimized for carousels and space-constrained areas requiring directional navigation.
+description: >-
+  A square icon button for navigation and actions, optimized for carousels and
+  space-constrained areas requiring directional navigation.
 category: atoms
 status: stable
 version: 1.0.0
-updated: "2025-01-06"
+updated: '2026-01-14'
 tags:
   - button
   - icon-button
@@ -29,45 +31,46 @@ relatedComponents:
     relationship: alternative
 tokens:
   colours:
-    - name: primary-default
-      token: "Neptune"
-      hex: "#024DDF"
-    - name: primary-hover
-      token: "Neptune Dark"
-      hex: "#0141B8"
-    - name: primary-pressed
-      token: "Neptune Darker"
-      hex: "#033399"
-    - name: secondary-default
-      token: "Spotlight"
-      hex: "#FFFFFF"
-    - name: secondary-border
-      token: "Neptune"
-      hex: "#024DDF"
-    - name: tertiary-border
-      token: "Cosmos"
-      hex: "#121212"
-    - name: disabled-background
-      token: "Diatomite"
-      hex: "#EBEBEB"
-    - name: disabled-icon
-      token: "Slate"
-      hex: "#949494"
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - Default
+    - Hover
+    - Pressed
+    - Disabled
+    - Default-border
+    - Disabled-border
+    - Neptune
+    - Diatomite
+    - Spotlight
+    - Slate
+    - Cosmos
   spacing:
-    - name: container-size
-      value: "44px"
-    - name: icon-size
-      value: "24px"
-    - name: border-radius
-      value: "0px"
+    '0':
+      name: container-size
+      value: 44px
+    '1':
+      name: icon-size
+      value: 24px
+    '2':
+      name: border-radius
+      value: 0px
+  typography: {}
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
   ariaRoles:
     - button
-figmaNodeId: "38852:10066"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+figmaNodeId: '33:15197'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # SquareButton
 

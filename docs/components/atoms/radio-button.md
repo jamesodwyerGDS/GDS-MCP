@@ -1,93 +1,128 @@
 ---
-name: "Radio Button"
-description: "Radio buttons allow users to select one option from a group of mutually exclusive choices"
-category: "atoms"
-status: "stable"
-version: "1.0.0"
-updated: "2025-01-06"
-
-tags: ["form", "selection", "input"]
-keywords: ["select", "form", "box", "circle", "choice", "option", "mutually exclusive"]
-
+name: Radio Button
+description: >-
+  Radio buttons allow users to select one option from a group of mutually
+  exclusive choices
+category: atoms
+status: stable
+version: 1.0.0
+updated: '2026-01-14'
+tags:
+  - form
+  - selection
+  - input
+keywords:
+  - select
+  - form
+  - box
+  - circle
+  - choice
+  - option
+  - mutually exclusive
 dependencies: []
 relatedComponents:
-  - name: "Checkbox"
-    relationship: "alternative"
-  - name: "Dropdown"
-    relationship: "alternative"
-  - name: "Input Field"
-    relationship: "parent"
-
+  - name: Checkbox
+    relationship: alternative
+  - name: Dropdown
+    relationship: alternative
+  - name: Input Field
+    relationship: parent
 tokens:
   colours:
-    default-border: { token: "color.border.slate", hex: "#949494" }
-    default-bg: { token: "color.fill.spotlight", hex: "#FFFFFF" }
-    hover-border: { token: "color.action.neptune", hex: "#024DDF" }
-    active-fill: { token: "color.fill.cosmos", hex: "#121212" }
-    active-hover-base: { token: "color.action.neptune", hex: "#024DDF" }
-    active-hover-overlay: { token: "color.fill.cosmos", hex: "#121212" }
-    disabled-bg: { token: "color.fill.diatomite", hex: "#EBEBEB" }
-    disabled-border: { token: "color.border.moonrock", hex: "#BFBFBF" }
-    disabled-text: { token: "color.text.granite", hex: "#646464" }
-    error-border: { token: "color.feedback.mars", hex: "#EB0000" }
-    label-text: { token: "color.text.cosmos", hex: "#121212" }
-    inner-dot: { token: "color.fill.spotlight", hex: "#FFFFFF" }
+    - default-border
+    - default-bg
+    - hover-border
+    - active-fill
+    - active-hover-base
+    - active-hover-overlay
+    - disabled-bg
+    - disabled-border
+    - disabled-text
+    - error-border
+    - label-text
+    - inner-dot
+    - Default
+    - Default-border
+    - Active Hover
+    - Active
+    - Disabled
+    - Disabled-border
+    - Disabled Selected
+    - Disabled Selected-border
+    - Error
+    - Error-border
+    - Hover
+    - Hover-border
+    - Spotlight
+    - Slate
+    - Diatomite
+    - Moonrock
+    - Mars
+    - Neptune
   spacing:
-    radioSize: { token: "space.radio", value: "24px" }
-    innerDotActive: { token: "space.inner-dot-active", value: "12px" }
-    innerDotDefault: { token: "space.inner-dot-default", value: "6px" }
-    gap: { token: "space.club", value: "12px" }
+    radioSize:
+      token: space.radio
+      value: 24px
+    innerDotActive:
+      token: space.inner-dot-active
+      value: 12px
+    innerDotDefault:
+      token: space.inner-dot-default
+      value: 6px
+    gap:
+      token: space.club
+      value: 12px
   typography:
-    label: "font.body.rainier"
+    label: font.body.rainier
   elevation: []
   breakpoints: []
-
 tailwind:
   colors:
-    radio-border-default: "#949494"
-    radio-border-hover: "#024DDF"
-    radio-fill-active: "#121212"
-    radio-fill-disabled: "#EBEBEB"
-    radio-border-disabled: "#BFBFBF"
-    radio-border-error: "#EB0000"
-    radio-text: "#121212"
-    radio-text-disabled: "#646464"
+    radio-border-default: '#949494'
+    radio-border-hover: '#024DDF'
+    radio-fill-active: '#121212'
+    radio-fill-disabled: '#EBEBEB'
+    radio-border-disabled: '#BFBFBF'
+    radio-border-error: '#EB0000'
+    radio-text: '#121212'
+    radio-text-disabled: '#646464'
   spacing:
-    radio-size: "24px"
-    radio-dot-active: "12px"
-    radio-dot-default: "6px"
-    radio-gap: "12px"
-
+    radio-size: 24px
+    radio-dot-active: 12px
+    radio-dot-default: 6px
+    radio-gap: 12px
 cssVariables:
-  - name: "--radio-size"
-    value: "24px"
-  - name: "--radio-border-default"
-    value: "#949494"
-  - name: "--radio-border-hover"
-    value: "var(--color-neptune)"
-  - name: "--radio-fill-active"
-    value: "var(--color-cosmos)"
-  - name: "--radio-border-disabled"
-    value: "var(--color-moonrock)"
-  - name: "--radio-bg-disabled"
-    value: "var(--color-diatomite)"
-  - name: "--radio-border-error"
-    value: "var(--color-mars)"
-  - name: "--radio-gap"
-    value: "12px"
-  - name: "--radio-dot-size-active"
-    value: "12px"
-  - name: "--radio-dot-size-default"
-    value: "6px"
-
+  - name: '--radio-size'
+    value: 24px
+  - name: '--radio-border-default'
+    value: '#949494'
+  - name: '--radio-border-hover'
+    value: var(--color-neptune)
+  - name: '--radio-fill-active'
+    value: var(--color-cosmos)
+  - name: '--radio-border-disabled'
+    value: var(--color-moonrock)
+  - name: '--radio-bg-disabled'
+    value: var(--color-diatomite)
+  - name: '--radio-border-error'
+    value: var(--color-mars)
+  - name: '--radio-gap'
+    value: 12px
+  - name: '--radio-dot-size-active'
+    value: 12px
+  - name: '--radio-dot-size-default'
+    value: 6px
 accessibility:
-  wcagLevel: "AA"
+  wcagLevel: AA
   keyboardNavigable: true
-  ariaRoles: ["radio", "radiogroup"]
-
-figmaNodeId: "38852:4826"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+  ariaRoles:
+    - radio
+    - radiogroup
+figmaNodeId: '21:28156'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Radio Button
 

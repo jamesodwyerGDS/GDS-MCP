@@ -1,92 +1,95 @@
 ---
-name: "Loading Spinner"
-description: "A component with a looping animation that communicates a process or action is ongoing"
-category: "atoms"
-status: "stable"
-version: "1.0.0"
-updated: "2025-01-06"
-
-tags: ["loading", "spinner", "progress", "feedback"]
-keywords: ["loading", "spinner", "progress", "wait", "processing", "animation"]
-
+name: Loading Spinner
+description: >-
+  A component with a looping animation that communicates a process or action is
+  ongoing
+category: atoms
+status: stable
+version: 1.0.0
+updated: '2026-01-14'
+tags:
+  - loading
+  - spinner
+  - progress
+  - feedback
+keywords:
+  - loading
+  - spinner
+  - progress
+  - wait
+  - processing
+  - animation
 dependencies: []
 relatedComponents:
-  - name: "Skeleton"
-    relationship: "alternative"
-  - name: "Button"
-    relationship: "parent"
-  - name: "Input Field"
-    relationship: "parent"
-
+  - name: Skeleton
+    relationship: alternative
+  - name: Button
+    relationship: parent
+  - name: Input Field
+    relationship: parent
 tokens:
   colours:
-    primary:
-      token: "Primary/Neptune"
-      hex: "#024DDF"
-    secondary:
-      token: "Secondary/Granite"
-      hex: "#646464"
-    inverse:
-      token: "Secondary/Spotlight"
-      hex: "#FFFFFF"
-    labelPrimary:
-      token: "Secondary/Cosmos"
-      hex: "#121212"
-    labelInverse:
-      token: "Secondary/Spotlight"
-      hex: "#FFFFFF"
+    - primary
+    - secondary
+    - inverse
+    - labelPrimary
+    - labelInverse
+    - Unknown
+    - Neptune
+    - Cosmos
+    - Spotlight
   spacing:
     gap:
-      token: "space.auditorium"
-      value: "16px"
+      token: space.auditorium
+      value: 16px
   typography:
     label:
-      font: "Averta"
-      weight: "Semibold"
-      size: "16px"
-      lineHeight: "24px"
-      letterSpacing: "0.32px"
+      font: Averta
+      weight: Semibold
+      size: 16px
+      lineHeight: 24px
+      letterSpacing: 0.32px
   elevation: []
   breakpoints: []
-
 tailwind:
   colors:
-    spinner-primary: "#024DDF"
-    spinner-secondary: "#646464"
-    spinner-inverse: "#FFFFFF"
-    spinner-label: "#121212"
-    spinner-label-inverse: "#FFFFFF"
+    spinner-primary: '#024DDF'
+    spinner-secondary: '#646464'
+    spinner-inverse: '#FFFFFF'
+    spinner-label: '#121212'
+    spinner-label-inverse: '#FFFFFF'
   spacing:
-    spinner-gap: "16px"
+    spinner-gap: 16px
   sizing:
-    spinner-lg: "72px"
-    spinner-md: "32px"
-    spinner-sm: "24px"
-
+    spinner-lg: 72px
+    spinner-md: 32px
+    spinner-sm: 24px
 cssVariables:
-  - name: "--spinner-color-primary"
-    value: "var(--color-neptune)"
-  - name: "--spinner-color-secondary"
-    value: "var(--color-granite)"
-  - name: "--spinner-color-inverse"
-    value: "var(--color-spotlight)"
-  - name: "--spinner-size-lg"
-    value: "72px"
-  - name: "--spinner-size-md"
-    value: "32px"
-  - name: "--spinner-size-sm"
-    value: "24px"
-  - name: "--spinner-label-gap"
-    value: "16px"
-
+  - name: '--spinner-color-primary'
+    value: var(--color-neptune)
+  - name: '--spinner-color-secondary'
+    value: var(--color-granite)
+  - name: '--spinner-color-inverse'
+    value: var(--color-spotlight)
+  - name: '--spinner-size-lg'
+    value: 72px
+  - name: '--spinner-size-md'
+    value: 32px
+  - name: '--spinner-size-sm'
+    value: 24px
+  - name: '--spinner-label-gap'
+    value: 16px
 accessibility:
-  wcagLevel: "AA"
+  wcagLevel: AA
   keyboardNavigable: false
-  ariaRoles: ["status", "progressbar"]
-
-figmaNodeId: "33145:12086"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+  ariaRoles:
+    - status
+    - progressbar
+figmaNodeId: '33145:3778'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Loading Spinner
 

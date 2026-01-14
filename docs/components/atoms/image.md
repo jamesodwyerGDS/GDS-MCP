@@ -1,10 +1,13 @@
 ---
 name: Image
-description: Guidelines for using images consistently across the Marketplace Design System, including aspect ratios, fill modes, gradients, and accessibility requirements.
+description: >-
+  Guidelines for using images consistently across the Marketplace Design System,
+  including aspect ratios, fill modes, gradients, and accessibility
+  requirements.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2025-07-04
+updated: '2026-01-14'
 tags:
   - image
   - media
@@ -29,34 +32,41 @@ relatedComponents:
 tokens:
   colours:
     gradient:
-      from: { token: "transparent", hex: "rgba(18,18,18,0)" }
-      to: { token: "color.cosmos", hex: "#121212" }
-  spacing: []
-  typography: []
+      from:
+        token: transparent
+        hex: 'rgba(18,18,18,0)'
+      to:
+        token: color.cosmos
+        hex: '#121212'
+  spacing: {}
+  typography: {}
   elevation: []
   breakpoints: []
 tailwind:
   aspectRatio:
-    square: "1 / 1"
-    landscape-16-9: "16 / 9"
-    landscape-3-2: "3 / 2"
-    portrait-3-4: "3 / 4"
+    square: 1 / 1
+    landscape-16-9: 16 / 9
+    landscape-3-2: 3 / 2
+    portrait-3-4: 3 / 4
   backgroundImage:
-    hero-gradient: "linear-gradient(to bottom, rgba(18,18,18,0) 0%, #121212 86.358%)"
+    hero-gradient: 'linear-gradient(to bottom, rgba(18,18,18,0) 0%, #121212 86.358%)'
 cssVariables:
-  - name: "--aspect-ratio-square"
-    value: "1 / 1"
-  - name: "--aspect-ratio-16-9"
-    value: "16 / 9"
-  - name: "--hero-gradient"
-    value: "linear-gradient(to bottom, rgba(18,18,18,0) 0%, #121212 86.358%)"
+  - name: '--aspect-ratio-square'
+    value: 1 / 1
+  - name: '--aspect-ratio-16-9'
+    value: 16 / 9
+  - name: '--hero-gradient'
+    value: 'linear-gradient(to bottom, rgba(18,18,18,0) 0%, #121212 86.358%)'
 accessibility:
   wcagLevel: AA
   keyboardNavigable: false
-  ariaRoles: ["img"]
-figmaNodeId: "38863:5116"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+  ariaRoles:
+    - img
+figmaNodeId: '38863:5108'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Image
 

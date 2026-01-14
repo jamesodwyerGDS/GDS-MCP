@@ -46,6 +46,18 @@ Add a new entry when:
 
 ---
 
+## 14th Jan 2025
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| Added Web Assistant with OpenAI - AI-powered chat interface for 80+ designers with component browser and source citations | 🟢 Added | NA | NA | NA |
+| Added Slack bot for designers to query GDS documentation via natural language with local file access (no MCP server needed) | 🟢 Added | NA | NA | NA |
+| Processed figma-extract data into structured atom documentation - 27 components enhanced/created with design tokens and variants | 🟡 Updated | NA | NA | NA |
+| Created new atomic component documentation: Checkbox, CheckboxControl, Close Button, Loading Indicator, Title Heading, Divider, Payment Icons, Toggler BarBlock, Base Field, Base Loading Spinner, and deprecated components | 🟢 Added | NA | NA | NA |
+| Enhanced existing atom documentation with Figma data: Badge, Button, Circle Button, DisplayHeading, Double Range Input, Dropdown, Image, Input Field, Loading Spinner, Pill Button, Radio Button, Square Button, Toggle, Tooltip | 🟡 Updated | NA | NA | NA |
+
+---
+
 ## 6th Jan 2025
 
 | Change | Type | JIRA | Figma | Storybook |

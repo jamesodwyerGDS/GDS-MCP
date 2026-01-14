@@ -1,10 +1,12 @@
 ---
 name: Double Range Input
-description: A dual-handle slider component with min/max input fields for selecting a value range, commonly used for price filtering.
+description: >-
+  A dual-handle slider component with min/max input fields for selecting a value
+  range, commonly used for price filtering.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2026-01-06
+updated: '2026-01-14'
 tags:
   - range
   - slider
@@ -26,47 +28,45 @@ relatedComponents:
     relationship: child
 tokens:
   colours:
-    primary:
-      default: "Neptune #024DDF"
-    text:
-      primary: "Cosmos #121212"
-      secondary: "Granite #646464"
-      disabled: "Slate #949494"
-    background:
-      default: "Spotlight #FFFFFF"
-      disabled: "Ammonite #EBEBEB"
-    border:
-      default: "Slate #949494"
-      disabled: "Moonrock #BFBFBF"
-      error: "Error Red #D92D20"
-    track:
-      inactive: "Slate #949494"
-      active: "Cosmos #121212"
+    - primary
+    - text
+    - background
+    - border
+    - track
+    - Unknown
+    - Unknown-border
+    - Spotlight
+    - Slate
+    - Diatomite
+    - Moonrock
+    - Mars
   spacing:
-    inputWidth: "74px"
-    inputMaxWidth: "88px"
-    inputPaddingX: "16px"
-    inputHeight: "44px"
-    handleSize: "24px"
-    trackHeight: "4px"
-    gap: "8px"
+    inputWidth: 74px
+    inputMaxWidth: 88px
+    inputPaddingX: 16px
+    inputHeight: 44px
+    handleSize: 24px
+    trackHeight: 4px
+    gap: 8px
   typography:
-    label: "Averta Semibold 12px/20px, letter-spacing 0.24px, uppercase"
-    inputText: "Averta Regular 16px/24px, letter-spacing 0.32px"
-    helperText: "Averta Regular 14px/18px, letter-spacing 0.28px"
+    label: 'Averta Semibold 12px/20px, letter-spacing 0.24px, uppercase'
+    inputText: 'Averta Regular 16px/24px, letter-spacing 0.32px'
+    helperText: 'Averta Regular 14px/18px, letter-spacing 0.28px'
   borderRadius:
-    input: "2px"
-    track: "2px"
-    handle: "22px"
+    input: 2px
+    track: 2px
+    handle: 22px
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
   ariaRoles:
     - slider
     - spinbutton
-figmaNodeId: "40979:2532"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+figmaNodeId: '40968:916'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Double Range Input
 

@@ -1,10 +1,12 @@
 ---
 name: Dropdown
-description: A form control that allows users to select a single option from a collapsible list of choices.
+description: >-
+  A form control that allows users to select a single option from a collapsible
+  list of choices.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2026-01-06
+updated: '2026-01-14'
 tags:
   - dropdown
   - select
@@ -30,41 +32,47 @@ relatedComponents:
     relationship: alternative
 tokens:
   colours:
-    primary:
-      default: "Neptune #024DDF"
-    text:
-      primary: "Cosmos #121212"
-      label: "Granite #646464"
-      placeholder: "Cosmos #121212"
-      disabled: "Slate #949494"
-    background:
-      default: "Spotlight #FFFFFF"
-      disabled: "Diatomite #EBEBEB"
-      optionHover: "Lunar #F6F6F6"
-      optionSelected: "Neptune #024DDF"
-    border:
-      default: "Slate #949494"
-      hover: "Neptune #024DDF"
-      focus: "Neptune #024DDF"
-      disabled: "Moonrock #BFBFBF"
-      error: "Mars #EB0000"
+    - primary
+    - text
+    - background
+    - border
+    - Open selected
+    - Open selected-border
+    - Open
+    - Open-border
+    - Open Hover
+    - Open Hover-border
+    - Default
+    - Default-border
+    - Error
+    - Error-border
+    - Hover
+    - Hover-border
+    - Disabled
+    - Disabled-border
+    - Spotlight
+    - Slate
+    - Neptune
+    - Mars
+    - Diatomite
+    - Moonrock
   spacing:
-    inputHeight: "44px"
-    paddingLeft: "16px"
-    paddingY: "11px"
-    optionPaddingX: "16px"
-    optionGap: "4px"
-    dropdownPadding: "8px"
+    inputHeight: 44px
+    paddingLeft: 16px
+    paddingY: 11px
+    optionPaddingX: 16px
+    optionGap: 4px
+    dropdownPadding: 8px
   typography:
-    label: "Averta Regular 14px/20px, letter-spacing 0.28px"
-    value: "Averta Regular 16px/24px, letter-spacing 0.32px"
-    option: "Averta Regular 16px/24px, letter-spacing 0.32px"
-    validation: "Averta Semibold 12px/16px, letter-spacing 0.24px"
+    label: 'Averta Regular 14px/20px, letter-spacing 0.28px'
+    value: 'Averta Regular 16px/24px, letter-spacing 0.32px'
+    option: 'Averta Regular 16px/24px, letter-spacing 0.32px'
+    validation: 'Averta Semibold 12px/16px, letter-spacing 0.24px'
   borderRadius:
-    input: "2px"
-    option: "2px"
+    input: 2px
+    option: 2px
   elevation:
-    dropdown: "elevation-level-3 (0 3px 12px rgba(18, 18, 18, 0.18))"
+    dropdown: 'elevation-level-3 (0 3px 12px rgba(18, 18, 18, 0.18))'
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
@@ -72,9 +80,11 @@ accessibility:
     - listbox
     - option
     - combobox
-figmaNodeId: "38818:16711"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+figmaNodeId: '21:28284'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Dropdown
 

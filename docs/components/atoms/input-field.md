@@ -1,10 +1,12 @@
 ---
 name: Input Field
-description: A text input component for capturing user data, with support for labels, icons, validation states, and accessibility features.
+description: >-
+  A text input component for capturing user data, with support for labels,
+  icons, validation states, and accessibility features.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2025-01-06
+updated: '2026-01-14'
 tags:
   - input
   - form
@@ -25,46 +27,56 @@ relatedComponents:
     relationship: child
 tokens:
   colours:
-    label:
-      default: "Granite #646464"
-      disabled: "Slate #949494"
-    input:
-      text: "Cosmos #121212"
-      placeholder: "Granite #646464"
-      disabled: "Slate #949494"
-    background:
-      default: "Spotlight #FFFFFF"
-      disabled: "Diatomite #EBEBEB"
-      readOnly: "Diatomite #EBEBEB"
-    border:
-      default: "Slate #949494"
-      hover: "Neptune #024DDF"
-      active: "Neptune #024DDF"
-      focused: "Neptune #024DDF"
-      disabled: "Moonrock #BFBFBF"
-      error: "Mars #EB0000"
-    validation:
-      error: "Mars #EB0000"
-      success: "Earth #048851"
+    - label
+    - input
+    - background
+    - border
+    - validation
+    - Default
+    - Default-border
+    - Filled
+    - Filled-border
+    - Active
+    - Active-border
+    - Hover
+    - Hover-border
+    - Disabled
+    - Disabled-border
+    - Error
+    - Error-border
+    - Success
+    - Success-border
+    - Read Only
+    - Read Only-border
+    - Focused
+    - Focused-border
+    - Spotlight
+    - Slate
+    - Neptune
+    - Diatomite
+    - Moonrock
+    - Mars
   spacing:
-    paddingLeft: "Auditorium 16px"
-    paddingRight: "12px"
-    paddingY: "10px"
-    labelGap: "4px"
-    iconGap: "10px"
+    paddingLeft: Auditorium 16px
+    paddingRight: 12px
+    paddingY: 10px
+    labelGap: 4px
+    iconGap: 10px
   typography:
-    label: "Averta Regular 14px/20px, letter-spacing 0.28px"
-    input: "Averta Regular 16px/24px, letter-spacing 0.32px"
-    validation: "Averta Semibold 12px/16px, letter-spacing 0.24px"
-  borderRadius: "2px"
+    label: 'Averta Regular 14px/20px, letter-spacing 0.28px'
+    input: 'Averta Regular 16px/24px, letter-spacing 0.32px'
+    validation: 'Averta Semibold 12px/16px, letter-spacing 0.24px'
+  borderRadius: 2px
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
   ariaRoles:
     - textbox
-figmaNodeId: "21:27522"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+figmaNodeId: '355:37218'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Input Field
 

@@ -1,10 +1,12 @@
 ---
 name: Pill Button
-description: A rounded pill-shaped button used for search and filter functions, with optional chevron icons for navigation context.
+description: >-
+  A rounded pill-shaped button used for search and filter functions, with
+  optional chevron icons for navigation context.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2025-01-06
+updated: '2026-01-14'
 tags:
   - button
   - pill
@@ -25,39 +27,42 @@ relatedComponents:
     relationship: variant
 tokens:
   colours:
-    light:
-      default: "Neptune border #024DDF"
-      hover: "Neptune fill #024DDF"
-      selected: "Neptune fill #024DDF"
-      pressed: "Neptune Darker #024DDF + 20% overlay"
-      disabled: "Ammonite border #D6D6D6"
-    inverse:
-      default: "Spotlight border #FFFFFF"
-      hover: "Spotlight fill #FFFFFF"
-      selected: "Spotlight fill #FFFFFF"
-      pressed: "Neptune #024DDF + 20% Cosmos overlay"
-      disabled: "Slate border #646464"
-    text:
-      light: "Cosmos #121212"
-      lightHover: "Spotlight #FFFFFF"
-      inverse: "Spotlight #FFFFFF"
-      inverseHover: "Cosmos #121212"
-      disabled: "Slate #646464"
+    - light
+    - inverse
+    - text
+    - Default
+    - Default-border
+    - Hover
+    - Pressed
+    - Disabled
+    - Disabled-border
+    - Hover-border
+    - Selected
+    - Selected-border
+    - Selected Hover
+    - Cosmos
+    - Spotlight
+    - Neptune
+    - Granite
+    - Diatomite
+    - Ganymede
   spacing:
-    paddingHorizontal: "Auditorium 16px"
-    paddingVertical: "10px"
-    iconGap: "Club 8px"
+    paddingHorizontal: Auditorium 16px
+    paddingVertical: 10px
+    iconGap: Club 8px
   typography:
-    label: "Averta Semibold 16px/24px, letter-spacing 0.32px"
-  borderRadius: "24px (pill shape)"
+    label: 'Averta Semibold 16px/24px, letter-spacing 0.32px'
+  borderRadius: 24px (pill shape)
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
   ariaRoles:
     - button
-figmaNodeId: "38852:2652"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+figmaNodeId: '21:12205'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Pill Button
 

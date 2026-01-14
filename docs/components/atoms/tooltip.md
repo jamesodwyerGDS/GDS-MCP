@@ -1,10 +1,13 @@
 ---
 name: Tooltip
-description: A brief, informative message that appears when a user hovers over or focuses on an element. Tooltips provide contextual information without cluttering the interface.
+description: >-
+  A brief, informative message that appears when a user hovers over or focuses
+  on an element. Tooltips provide contextual information without cluttering the
+  interface.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2025-01-06
+updated: '2026-01-14'
 tags:
   - tooltip
   - overlay
@@ -23,24 +26,30 @@ relatedComponents:
     relationship: alternative
 tokens:
   colours:
-    background: "Spotlight #FFFFFF"
-    text: "Granite #646464"
-    border: "Slate #949494"
+    - background
+    - text
+    - border
+    - Unknown
+    - Unknown-border
+    - Spotlight
+    - Slate
   spacing:
-    paddingX: "Auditorium 16px"
-    paddingY: "Theatre 12px"
+    paddingX: Auditorium 16px
+    paddingY: Theatre 12px
   typography:
-    content: "Etna (Regular, 14px)"
+    content: 'Etna (Regular, 14px)'
   elevation:
-    - level-2: "0px 2px 8px 0px rgba(18,18,18,0.15)"
+    - level-2: '0px 2px 8px 0px rgba(18,18,18,0.15)'
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
   ariaRoles:
     - tooltip
-figmaNodeId: "10664:34176"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+figmaNodeId: '555:51455'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Tooltip
 

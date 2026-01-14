@@ -1,10 +1,12 @@
 ---
 name: Toggle
-description: A switch control for toggling between two mutually exclusive options, such as on/off or enabled/disabled states.
+description: >-
+  A switch control for toggling between two mutually exclusive options, such as
+  on/off or enabled/disabled states.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2025-01-06
+updated: '2026-01-14'
 tags:
   - toggle
   - switch
@@ -26,38 +28,41 @@ relatedComponents:
     relationship: alternative
 tokens:
   colours:
-    onDefault:
-      standard: "Neptune #024DDF"
-      resale: "Nebula #D0006F"
-    offDefault:
-      background: "Spotlight #FFFFFF"
-      border: "Slate #949494"
-    hover:
-      standard: "Neptune #024DDF with border"
-      resale: "Nebula #D0006F with border"
-    disabled:
-      background: "Diatomite #EBEBEB"
-      border: "Moonrock #BFBFBF"
-    knob:
-      default: "Slate #949494"
-      on: "Spotlight #FFFFFF"
-      disabled: "Moonrock #BFBFBF"
+    - onDefault
+    - offDefault
+    - hover
+    - disabled
+    - knob
+    - Default
+    - Default-border
+    - Hover
+    - Hover-border
+    - Disabled
+    - Disabled-border
+    - Spotlight
+    - Slate
+    - Neptune
+    - Diatomite
+    - Moonrock
   spacing:
-    width: "40px"
-    height: "24px"
-    knobSize: "16px"
-    knobOffset: "10%"
+    width: 40px
+    height: 24px
+    knobSize: 16px
+    knobOffset: 10%
   borderRadius:
-    track: "50px"
-    knob: "50%"
+    track: 50px
+    knob: 50%
+  typography: {}
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
   ariaRoles:
     - switch
-figmaNodeId: "38852:4937"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+figmaNodeId: '21:28235'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Toggle
 

@@ -1,10 +1,13 @@
 ---
 name: Badge
-description: A badge component used to provide information on item statuses and notifications, drawing attention to significant information that might otherwise be missed.
+description: >-
+  A badge component used to provide information on item statuses and
+  notifications, drawing attention to significant information that might
+  otherwise be missed.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2025-01-05
+updated: '2026-01-14'
 tags:
   - badge
   - label
@@ -22,39 +25,33 @@ relatedComponents:
   - button
 tokens:
   colours:
-    badge:
-      vipAccess: "Cosmos #121212"
-      resale: "Nebula #D0006F"
-      soldOut: "Cosmos #121212"
-      cancelled: "Mars #EB0000"
-      postponed: "Jupiter #FFB932"
-      onSale: "Earth #048851"
-      presale: "Neptune #024DDF"
-      promoted: "Callisto #A733FF"
-      healthCheck: "Earth #048851"
-      lowAvailability: "Jupiter #FFB932"
-      newDate: "Earth #048851"
-    text:
-      dark: "Cosmos #121212"
-      light: "Spotlight #FFFFFF"
-    border: "Ammonite #D6D6D6"
+    - badge
+    - text
+    - border
+    - Unknown
+    - Unknown-border
+    - Spotlight
+    - Ammonite
+    - Earth
   spacing:
-    paddingVertical: "Lounge 4px"
-    paddingHorizontal: "Club 8px"
-    iconGap: "Lounge 4px"
+    paddingVertical: Lounge 4px
+    paddingHorizontal: Club 8px
+    iconGap: Lounge 4px
   typography:
-    label: "Snowdon"
+    label: Snowdon
 accessibility:
   wcagLevel: AA
   keyboardNavigable: false
   ariaRoles: []
 frameworks:
   - framework: React
-    package: "@gds/components"
-    import: "import { Badge } from '@gds/components'"
-figmaNodeId: "612:40429"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+    package: '@gds/components'
+    import: 'import { Badge } from ''@gds/components'''
+figmaNodeId: '8870:16494'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Badge
 

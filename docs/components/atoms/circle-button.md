@@ -1,10 +1,12 @@
 ---
 name: CircleButton
-description: A circular icon button for navigation and actions, optimized for space-constrained areas like cards, carousels, and mobile interfaces.
+description: >-
+  A circular icon button for navigation and actions, optimized for
+  space-constrained areas like cards, carousels, and mobile interfaces.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2025-01-05
+updated: '2026-01-14'
 tags:
   - button
   - icon-button
@@ -27,32 +29,29 @@ relatedComponents:
     relationship: alternative
 tokens:
   colours:
-    primary:
-      default: "Neptune #024DDF"
-      hover: "Neptune Dark #0141B8"
-      pressed: "Neptune Darker #033399"
-    secondary:
-      default: "Spotlight #FFFFFF"
-      border: "Neptune #024DDF"
-      icon: "Neptune #024DDF"
-    tertiary:
-      default: "Spotlight #FFFFFF"
-      border: "Cosmos #121212"
-      icon: "Cosmos #121212"
-    ghost:
-      default: "transparent"
-      icon: "Neptune #024DDF"
-    inverse:
-      default: "Spotlight #FFFFFF"
-      icon: "Cosmos #121212"
-    disabled:
-      background: "Diatomite #EBEBEB"
-      icon: "Slate #949494"
-      border: "Slate #949494"
+    - primary
+    - secondary
+    - tertiary
+    - ghost
+    - inverse
+    - disabled
+    - Default
+    - Hover
+    - Pressed
+    - Disabled
+    - Default-border
+    - Hover-border
+    - Disabled-border
+    - Neptune
+    - Diatomite
+    - Cosmos
+    - Spotlight
+    - Granite
   spacing:
-    size: "44px"
-    iconSize: "24px"
-  borderRadius: "50% (full circle)"
+    size: 44px
+    iconSize: 24px
+  borderRadius: 50% (full circle)
+  typography: {}
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
@@ -60,11 +59,13 @@ accessibility:
     - button
 frameworks:
   - framework: React
-    package: "@gds/components"
-    import: "import { CircleButton } from '@gds/components'"
-figmaNodeId: "38801:6858"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+    package: '@gds/components'
+    import: 'import { CircleButton } from ''@gds/components'''
+figmaNodeId: '21:12289'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # CircleButton
 

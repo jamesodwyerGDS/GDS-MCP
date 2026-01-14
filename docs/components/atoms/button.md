@@ -1,10 +1,12 @@
 ---
 name: Button
-description: A versatile button component for triggering actions, with multiple variants for different contexts and emphasis levels.
+description: >-
+  A versatile button component for triggering actions, with multiple variants
+  for different contexts and emphasis levels.
 category: atoms
 status: stable
 version: 1.0.0
-updated: 2025-01-05
+updated: '2026-01-14'
 tags:
   - button
   - action
@@ -26,41 +28,35 @@ relatedComponents:
     relationship: variant
 tokens:
   colours:
-    primary:
-      default: "Neptune #024DDF"
-      hover: "Neptune Dark #0141B8"
-      pressed: "Neptune Darker #033399"
-    secondary:
-      default: "Spotlight #FFFFFF"
-      border: "Neptune #024DDF"
-      text: "Neptune #024DDF"
-    tertiary:
-      default: "Spotlight #FFFFFF"
-      border: "Cosmos #121212"
-      text: "Cosmos #121212"
-    ghost:
-      default: "transparent"
-      text: "Cosmos #121212"
-    inverse:
-      default: "Cosmos #121212"
-      hover: "Cosmos Light #2A2A2A"
-    transactional:
-      default: "Earth #01A469"
-      hover: "Earth Dark #018A57"
-    disabled:
-      background: "Ammonite #D6D6D6"
-      text: "Slate #949494"
-    content:
-      white: "Spotlight #FFFFFF"
+    - primary
+    - secondary
+    - tertiary
+    - ghost
+    - inverse
+    - transactional
+    - disabled
+    - content
+    - Default
+    - Hover
+    - Pressed
+    - Disabled
+    - Disabled-border
+    - Default-border
+    - Earth
+    - Diatomite
+    - Spotlight
+    - Slate
+    - Neptune
+    - Cosmos
   spacing:
-    paddingHorizontal: "Auditorium 16px"
-    paddingVertical: "10px"
-    paddingVerticalTransactional: "9px"
-    iconGap: "Club 8px"
+    paddingHorizontal: Auditorium 16px
+    paddingVertical: 10px
+    paddingVerticalTransactional: 9px
+    iconGap: Club 8px
   typography:
-    standard: "Averta Semibold 16px/24px, letter-spacing 0.32px"
-    transactional: "Averta Semibold 18px/26px, letter-spacing 0.36px, capitalize"
-  borderRadius: "8px"
+    standard: 'Averta Semibold 16px/24px, letter-spacing 0.32px'
+    transactional: 'Averta Semibold 18px/26px, letter-spacing 0.36px, capitalize'
+  borderRadius: 8px
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
@@ -68,11 +64,13 @@ accessibility:
     - button
 frameworks:
   - framework: React
-    package: "@gds/components"
-    import: "import { Button } from '@gds/components'"
-figmaNodeId: "34410:13185"
-figmaFileKey: "WU01oSRfSHpOxUn3ThcvC5"
+    package: '@gds/components'
+    import: 'import { Button } from ''@gds/components'''
+figmaNodeId: '29422:3597'
+figmaFileKey: WU01oSRfSHpOxUn3ThcvC5
 ---
+<!-- Last synced with Figma: 2026-01-14 -->
+
 
 # Button
 
