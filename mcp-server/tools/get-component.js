@@ -1,8 +1,7 @@
 /**
  * Get Component Documentation Tool
  *
- * Retrieves unified documentation for a GDS component.
- * Can return full doc or filter by audience section.
+ * Retrieves documentation for a GDS component from Figma-extracted docs.
  */
 
 import fs from 'fs/promises';
@@ -10,49 +9,76 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const UNIFIED_DIR = path.join(__dirname, '../../docs-unified/components');
+const FIGMA_DIR = path.join(__dirname, '../../docs/figma-extract');
 
 /**
  * Get component documentation
  * @param {string} componentName - Component name (e.g., "button")
- * @param {string} audience - "all", "design", "engineer", or "vibe"
+ * @param {string} audience - "all", "design", "engineer", or "vibe" (ignored for Figma docs)
  * @returns {object} MCP tool response
  */
 export async function getComponentDocs(componentName, audience = 'all') {
   const normalizedName = normalizeComponentName(componentName);
 
   // Try to find the component file
-  const filePath = await findComponentFile(normalizedName);
+  const result = await findComponentFile(normalizedName);
 
-  if (!filePath) {
+  if (!result) {
+    const availableComponents = await listAvailableComponents();
     return {
       content: [{
         type: 'text',
-        text: `Component "${componentName}" not found. Try: button, input-field, modal, checkbox, toast, badge, accordion, stepper, card, alert`
+        text: `Component "${componentName}" not found.\n\nAvailable components:\n${availableComponents}`
       }],
       isError: true
     };
   }
 
   try {
-    const content = await fs.readFile(filePath, 'utf-8');
+    const mdContent = await fs.readFile(result.mdPath, 'utf-8');
 
-    // If specific audience requested, extract that section
-    if (audience !== 'all') {
-      const section = extractSection(content, audience);
-      return {
-        content: [{
-          type: 'text',
-          text: section || `No ${audience} documentation found for ${componentName}`
-        }]
-      };
+    // Also try to load JSON for richer data
+    let jsonData = null;
+    if (result.jsonPath) {
+      try {
+        const jsonContent = await fs.readFile(result.jsonPath, 'utf-8');
+        jsonData = JSON.parse(jsonContent);
+      } catch {
+        // JSON not available, that's fine
+      }
     }
 
-    // Return full unified doc
+    // Format output
+    let output = mdContent;
+
+    // Add quick reference from JSON if available
+    if (jsonData && jsonData.documentation) {
+      const componentSets = jsonData.documentation.filter(d => d.type === 'COMPONENT_SET');
+      if (componentSets.length > 0) {
+        output += '\n\n## Component Properties\n\n';
+        for (const comp of componentSets) {
+          if (comp.componentPropertyDefinitions) {
+            output += `### ${comp.name}\n\n`;
+            for (const [key, def] of Object.entries(comp.componentPropertyDefinitions)) {
+              const propName = key.split('#')[0];
+              output += `- **${propName}**: ${def.type}`;
+              if (def.defaultValue !== undefined) {
+                output += ` (default: ${def.defaultValue})`;
+              }
+              if (def.variantOptions) {
+                output += ` [${def.variantOptions.join(', ')}]`;
+              }
+              output += '\n';
+            }
+          }
+        }
+      }
+    }
+
     return {
       content: [{
         type: 'text',
-        text: content
+        text: output
       }]
     };
   } catch (error) {
@@ -70,71 +96,65 @@ export async function getComponentDocs(componentName, audience = 'all') {
  * Find component file with fuzzy matching
  */
 async function findComponentFile(normalizedName) {
-  const possibleNames = [
-    normalizedName,
-    normalizedName.replace(/-/g, ''),
-    normalizedName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
-  ];
-
   try {
-    const files = await fs.readdir(UNIFIED_DIR);
+    const files = await fs.readdir(FIGMA_DIR);
+    const mdFiles = files.filter(f => f.endsWith('.md'));
 
-    for (const name of possibleNames) {
-      const match = files.find(f =>
-        f.replace('.md', '').toLowerCase() === name.toLowerCase()
-      );
+    // Clean up search term
+    const searchTerms = [
+      normalizedName,
+      normalizedName.replace(/-/g, ' '),
+      normalizedName.replace(/-/g, ''),
+    ];
+
+    // Try exact match first (component name in filename)
+    for (const term of searchTerms) {
+      const match = mdFiles.find(f => {
+        const cleanName = f.replace('.md', '')
+          .replace(/^---+/, '')
+          .replace(/-+$/, '')
+          .toLowerCase();
+        return cleanName.includes(term.toLowerCase());
+      });
+
       if (match) {
-        return path.join(UNIFIED_DIR, match);
+        const baseName = match.replace('.md', '');
+        return {
+          mdPath: path.join(FIGMA_DIR, match),
+          jsonPath: path.join(FIGMA_DIR, `${baseName}.json`)
+        };
       }
     }
 
-    // Partial match fallback
-    for (const name of possibleNames) {
-      const match = files.find(f =>
-        f.toLowerCase().includes(name.toLowerCase())
-      );
-      if (match) {
-        return path.join(UNIFIED_DIR, match);
-      }
-    }
+    return null;
   } catch {
-    // Directory doesn't exist
+    return null;
   }
-
-  return null;
 }
 
 /**
- * Extract a specific audience section from unified doc
+ * List available components for help message
  */
-function extractSection(content, audience) {
-  const sectionMap = {
-    design: '## Design Documentation',
-    engineer: '## Engineer Documentation',
-    vibe: '## Vibe Documentation'
-  };
+async function listAvailableComponents() {
+  try {
+    const files = await fs.readdir(FIGMA_DIR);
+    const components = files
+      .filter(f => f.endsWith('.md') && f.includes('---'))
+      .map(f => {
+        const name = f.replace('.md', '')
+          .replace(/^---+/, '')
+          .replace(/-+$/, '')
+          .replace(/-/g, ' ')
+          .trim();
+        return name;
+      })
+      .filter(n => n.length > 0 && !n.startsWith('_'))
+      .slice(0, 20);
 
-  const startMarker = sectionMap[audience];
-  if (!startMarker) return null;
-
-  const startIndex = content.indexOf(startMarker);
-  if (startIndex === -1) return null;
-
-  // Find the next major section (---) or end of file
-  const afterStart = content.substring(startIndex);
-  const nextSectionMatch = afterStart.match(/\n---\n\n## (?!Comparison)/);
-
-  if (nextSectionMatch) {
-    return afterStart.substring(0, nextSectionMatch.index);
+    return components.map(c => `- ${c}`).join('\n');
+  } catch {
+    return 'Unable to list components';
   }
-
-  // If no next section, return to end (but before Comparison section)
-  const comparisonIndex = afterStart.indexOf('## Comparison:');
-  if (comparisonIndex > 0) {
-    return afterStart.substring(0, comparisonIndex);
-  }
-
-  return afterStart;
 }
 
 /**

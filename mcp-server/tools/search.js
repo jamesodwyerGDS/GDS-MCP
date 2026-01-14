@@ -10,10 +10,7 @@ import { fileURLToPath } from 'url';
 import matter from 'gray-matter';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const UNIFIED_DIR = path.join(__dirname, '../../docs-unified/components');
 const FIGMA_DIR = path.join(__dirname, '../../docs/figma-extract');
-const FOUNDATIONS_DIR = path.join(__dirname, '../../docs/foundations');
-const LLMS_FILE = path.join(__dirname, '../../llms.txt');
 
 // Search aliases for common queries
 const SEARCH_ALIASES = {
@@ -40,14 +37,11 @@ export async function searchGds(query, audience = 'all', limit = 5) {
   // Expand query with aliases
   const searchTerms = expandQuery(normalizedQuery);
 
-  // Search components
+  // Search Figma-extracted docs
   const results = await searchComponents(searchTerms, audience);
 
-  // Also check llms.txt for FAQ matches
-  const faqResults = await searchFaq(normalizedQuery);
-
-  // Combine and rank results
-  const combined = [...results, ...faqResults]
+  // Rank and limit results
+  const combined = results
     .sort((a, b) => b.score - a.score)
     .slice(0, limit);
 
@@ -103,11 +97,9 @@ function expandQuery(query) {
 async function searchComponents(searchTerms, audience) {
   const results = [];
 
-  // Search directories with their types
+  // Search Figma-extracted docs only
   const searchDirs = [
-    { dir: UNIFIED_DIR, type: 'component', pathPrefix: 'docs-unified/components' },
-    { dir: FIGMA_DIR, type: 'figma', pathPrefix: 'docs/figma-extract' },
-    { dir: FOUNDATIONS_DIR, type: 'foundation', pathPrefix: 'docs/foundations' }
+    { dir: FIGMA_DIR, type: 'figma', pathPrefix: 'docs/figma-extract' }
   ];
 
   for (const { dir, type, pathPrefix } of searchDirs) {
@@ -157,46 +149,6 @@ async function searchComponents(searchTerms, audience) {
       // Directory may not exist, skip it
       continue;
     }
-  }
-
-  return results;
-}
-
-/**
- * Search FAQ in llms.txt
- */
-async function searchFaq(query) {
-  const results = [];
-
-  try {
-    const content = await fs.readFile(LLMS_FILE, 'utf-8');
-
-    // Find FAQ sections
-    const faqMatch = content.match(/## FAQ[\s\S]*?(?=\n## |$)/g);
-    if (faqMatch) {
-      for (const section of faqMatch) {
-        // Find individual Q&A
-        const qaMatches = section.matchAll(/### ([^\n]+)\n([\s\S]*?)(?=\n### |\n## |$)/g);
-
-        for (const match of qaMatches) {
-          const question = match[1];
-          const answer = match[2].trim();
-
-          // Check relevance
-          const combined = `${question} ${answer}`.toLowerCase();
-          if (combined.includes(query) || query.split(' ').some(w => combined.includes(w))) {
-            results.push({
-              title: question,
-              type: 'FAQ',
-              score: query.split(' ').filter(w => combined.includes(w)).length / query.split(' ').length,
-              snippet: answer.substring(0, 300) + (answer.length > 300 ? '...' : '')
-            });
-          }
-        }
-      }
-    }
-  } catch (error) {
-    console.error('Error searching FAQ:', error);
   }
 
   return results;
