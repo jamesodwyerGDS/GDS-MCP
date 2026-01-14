@@ -304,20 +304,29 @@ function extractVariantStyles(variant) {
     }
   }
 
-  // Categorize text elements
+  // Categorize text elements - prefer first match for each category
   const textElements = {};
   for (const text of allStyles.texts) {
     const name = text.elementName.toLowerCase();
-    if (name.includes('label')) {
+    if (name.includes('label') && !textElements.label) {
       textElements.label = text;
-    } else if (name.includes('placeholder') || name.includes('hint')) {
+    } else if ((name.includes('placeholder') || name.includes('hint')) && !textElements.placeholder) {
       textElements.placeholder = text;
-    } else if (name.includes('validation') || name.includes('error') || name.includes('helper') || name.includes('message')) {
+    } else if ((name.includes('validation') || name.includes('error') || name.includes('helper') || name.includes('message')) && !textElements.validation) {
       textElements.validation = text;
-    } else if (name.includes('input') || name.includes('value') || name.includes('text')) {
+    } else if ((name.includes('input') || name.includes('value')) && !textElements.input) {
+      // Prefer elements explicitly named 'input' or 'value' over generic 'text'
       textElements.input = text;
-    } else if (!textElements.input) {
-      textElements.input = text;
+    }
+  }
+  // Second pass: if no input found, look for generic 'text' elements
+  if (!textElements.input) {
+    for (const text of allStyles.texts) {
+      const name = text.elementName.toLowerCase();
+      if (name === 'text' || name.includes('text')) {
+        textElements.input = text;
+        break;
+      }
     }
   }
 
@@ -665,8 +674,14 @@ async function main() {
       if (v.text.validation?.color) {
         console.log(`  Validation: ${v.text.validation.color.hex} (${v.text.validation.color.token || 'no token'})`);
       }
+      // Show ALL text elements with their colors for debugging
       if (v.allTexts?.length > 0) {
-        console.log(`  All text elements: ${v.allTexts.map(t => t.elementName).join(', ')}`);
+        console.log(`  All text elements:`);
+        for (const t of v.allTexts) {
+          const color = t.color?.hex || 'no color';
+          const token = t.color?.token || '';
+          console.log(`    - "${t.elementName}": ${color}${token ? ` (${token})` : ''}`);
+        }
       }
     }
 
