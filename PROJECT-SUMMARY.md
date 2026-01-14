@@ -17,7 +17,6 @@ An MCP-powered documentation workflow that extracts design system components fro
 | **Custom MCP Server** | 3 tools for efficient doc retrieval: `get_component_docs`, `get_design_token`, `search_gds` |
 | **Smart Search** | Query expansion with aliases, FAQ matching, and relevance ranking |
 | **Slack Notifications** | Automated notifications on documentation generation (success/failure) |
-| **Unified Docs** | Combines all sources into single-file per-component documentation |
 | **/figma-doc Skill** | One-command documentation generation from any Figma URL |
 | **/project-summary Skill** | Keep this summary up-to-date with current project state |
 
@@ -29,7 +28,6 @@ An MCP-powered documentation workflow that extracts design system components fro
 |--------|-------|
 | Design docs | 37 |
 | Storybook specs | 56 |
-| Unified docs | 59 |
 | Total documentation lines | 32,200+ |
 
 ---
@@ -68,8 +66,8 @@ An MCP-powered documentation workflow that extracts design system components fro
 ┌─────────────┐     ┌─────────────────┐     ┌──────────────────┐
 │  Figma MCP  │────▶│  Documentation  │────▶│  docs/           │
 │             │     │  Generator      │     │  docs-storybook/ │
-└─────────────┘     │                 │     │  docs-unified/   │
-                    │  • FigmaClient  │     └──────────────────┘
+└─────────────┘     │                 │     └──────────────────┘
+                    │  • FigmaClient  │              │
                     │  • Transformer  │              │
                     │  • SlackNotify  │              │
                     └─────────────────┘              ▼
@@ -141,7 +139,6 @@ npm run build:all
 /mcp-server            # Custom MCP server with 3 tools
 /docs                  # Generated design documentation
 /docs-storybook        # Storybook component specs
-/docs-unified          # Combined multi-audience docs
 /.claude/skills        # Claude Code skills
 /templates             # Documentation templates
 ```

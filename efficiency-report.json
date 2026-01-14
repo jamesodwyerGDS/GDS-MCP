@@ -1,8 +1,7 @@
 {
   "coverage": {
     "design": 25,
-    "storybook": 52,
-    "unified": 67
+    "storybook": 52
   },
   "gaps": {
     "missingDesign": [
@@ -45,8 +44,6 @@
     ]
   },
   "staleness": {
-    "staleUnified": false,
-    "lastUnifiedUpdate": "2026-01-06T14:32:46.496Z",
     "lastDesignUpdate": "2026-01-06T13:57:30.323Z",
     "lastStorybookUpdate": "2026-01-06T14:03:05.878Z"
   },
