@@ -28,9 +28,10 @@ async function main() {
   const file = response.data;
   console.log(`File: ${file.name}\n`);
 
-  // Find the page
+  // Find the page (partial match, case-insensitive)
   const pages = file.document.children || [];
-  const page = pages.find(p => p.name === pageName);
+  const searchLower = pageName.toLowerCase();
+  const page = pages.find(p => p.name.toLowerCase().includes(searchLower));
 
   if (!page) {
     console.log(`Page "${pageName}" not found.\n`);
