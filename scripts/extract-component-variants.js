@@ -258,6 +258,7 @@ function extractAllStyles(node, depth = 0, results = {
       results.icons.push({
         elementName: node.name,
         elementType: node.type,
+        componentId: node.componentId, // For INSTANCE nodes - references the icon component
         depth,
         fill: iconFill,
         stroke: iconStroke
@@ -681,6 +682,20 @@ async function main() {
           const color = t.color?.hex || 'no color';
           const token = t.color?.token || '';
           console.log(`    - "${t.elementName}": ${color}${token ? ` (${token})` : ''}`);
+        }
+      }
+      // Show icons with their colors
+      if (v.icons?.length > 0) {
+        console.log(`  Icons:`);
+        for (const icon of v.icons) {
+          const fillColor = icon.fill?.hex || '-';
+          const fillToken = icon.fill?.token || '';
+          const strokeColor = icon.stroke?.hex || '-';
+          const strokeToken = icon.stroke?.token || '';
+          console.log(`    - "${icon.elementName}" (${icon.elementType}):`);
+          if (icon.fill) console.log(`        Fill: ${fillColor}${fillToken ? ` (${fillToken})` : ''}`);
+          if (icon.stroke) console.log(`        Stroke: ${strokeColor}${strokeToken ? ` (${strokeToken})` : ''}`);
+          if (icon.componentId) console.log(`        Component: ${icon.componentId}`);
         }
       }
     }
