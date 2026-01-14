@@ -216,6 +216,36 @@ function formatDetailedComponent(component, stateFilter = null) {
 }
 
 /**
+ * Score a component name match
+ * Higher score = better match
+ */
+function scoreMatch(baseName, query) {
+  const baseNameLower = baseName.toLowerCase();
+  const queryLower = query.toLowerCase();
+
+  // Exact match is best (score: 100)
+  if (baseNameLower === queryLower) return 100;
+
+  // Penalize deprecated components heavily (score: -50)
+  if (baseNameLower.includes('deprecated')) return -50;
+
+  // Good match: query matches start of component name (score: 50)
+  if (baseNameLower.startsWith(queryLower)) return 50;
+
+  // Good match: component name matches start of query (score: 40)
+  if (queryLower.startsWith(baseNameLower)) return 40;
+
+  // Partial match: query is contained in component name (score: 20)
+  if (baseNameLower.includes(queryLower)) return 20;
+
+  // Weak match: component name is contained in query (score: 10)
+  if (queryLower.includes(baseNameLower)) return 10;
+
+  // No match
+  return 0;
+}
+
+/**
  * Find component file with priority for detailed extracts
  */
 async function findComponentFile(normalizedName) {
@@ -224,15 +254,34 @@ async function findComponentFile(normalizedName) {
     const componentFiles = await fs.readdir(COMPONENTS_DIR);
     const jsonFiles = componentFiles.filter(f => f.endsWith('.json'));
 
+    // Collect all matches with scoring
+    const matches = [];
     for (const jsonFile of jsonFiles) {
       const baseName = jsonFile.replace('.json', '');
-      if (baseName.includes(normalizedName) || normalizedName.includes(baseName)) {
-        return {
-          jsonPath: path.join(COMPONENTS_DIR, jsonFile),
-          mdPath: path.join(COMPONENTS_DIR, `${baseName}.md`),
-          isDetailedExtract: true
-        };
+      const score = scoreMatch(baseName, normalizedName);
+      if (score > 0) {
+        matches.push({
+          file: jsonFile,
+          baseName,
+          score
+        });
       }
+    }
+
+    // Sort by score (higher is better), then by name length (shorter is better)
+    matches.sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return a.baseName.length - b.baseName.length;
+    });
+
+    // Return best match if found
+    if (matches.length > 0) {
+      const best = matches[0];
+      return {
+        jsonPath: path.join(COMPONENTS_DIR, best.file),
+        mdPath: path.join(COMPONENTS_DIR, `${best.baseName}.md`),
+        isDetailedExtract: true
+      };
     }
   } catch {
     // Components directory may not exist
