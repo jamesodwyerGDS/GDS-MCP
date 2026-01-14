@@ -1,0 +1,1569 @@
+{
+  "name": "_CheckboxControl",
+  "id": "41163:1815",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Checked=False, IsIndeterminate=True, State=Default, IsDisabled=True, Error=False",
+      "id": "41163:1803",
+      "state": "Default",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "True",
+        "State": "Default",
+        "IsDisabled": "True",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#949494",
+          "token": "Slate",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 148,
+            "g": 148,
+            "b": 148
+          }
+        },
+        "weight": 1,
+        "align": "CENTER"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Vector 1",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "CENTER"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 3,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 3,
+          "fill": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector 1",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": null,
+          "stroke": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        }
+      ],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=True, IsIndeterminate=False, State=Default, IsDisabled=True, Error=False",
+      "id": "41163:1811",
+      "state": "Default",
+      "properties": {
+        "Checked": "True",
+        "IsIndeterminate": "False",
+        "State": "Default",
+        "IsDisabled": "True",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "Tick",
+          "elementType": "INSTANCE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Tick",
+          "elementType": "INSTANCE",
+          "componentId": "4038:71844",
+          "depth": 1,
+          "fill": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=False, IsIndeterminate=False, State=Default, IsDisabled=True, Error=False",
+      "id": "41163:1814",
+      "state": "Default",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "False",
+        "State": "Default",
+        "IsDisabled": "True",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#BFBFBF",
+          "token": "Moonrock",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 191,
+            "g": 191,
+            "b": 191
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#EBEBEB",
+        "token": "Diatomite",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 235,
+          "g": 235,
+          "b": 235
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#BFBFBF",
+            "token": "Moonrock",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 191,
+              "g": 191,
+              "b": 191
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=False, IsIndeterminate=False, State=Focused, IsDisabled=False, Error=True",
+      "id": "41163:1813",
+      "state": "Focused",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "False",
+        "State": "Focused",
+        "IsDisabled": "False",
+        "Error": "True"
+      },
+      "border": {
+        "color": {
+          "hex": "#EB0000",
+          "token": "Mars",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Focus ring",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=False, IsIndeterminate=False, State=Default, IsDisabled=False, Error=True",
+      "id": "41163:1812",
+      "state": "Default",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "False",
+        "State": "Default",
+        "IsDisabled": "False",
+        "Error": "True"
+      },
+      "border": {
+        "color": {
+          "hex": "#EB0000",
+          "token": "Mars",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 0,
+            "b": 0
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#EB0000",
+            "token": "Mars",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=False, IsIndeterminate=False, State=Hover, IsDisabled=False, Error=False",
+      "id": "41163:1807",
+      "state": "Hover",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "False",
+        "State": "Hover",
+        "IsDisabled": "False",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=False, IsIndeterminate=True, State=Default, IsDisabled=False, Error=False",
+      "id": "41163:1808",
+      "state": "Default",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "True",
+        "State": "Default",
+        "IsDisabled": "False",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#FFFFFF",
+          "token": "Spotlight",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          }
+        },
+        "weight": 1,
+        "align": "CENTER"
+      },
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Indeterminate",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "CENTER"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Indeterminate",
+          "elementType": "VECTOR",
+          "depth": 2,
+          "fill": null,
+          "stroke": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=True, IsIndeterminate=False, State=Focused, IsDisabled=False, Error=False",
+      "id": "41163:1806",
+      "state": "Focused",
+      "properties": {
+        "Checked": "True",
+        "IsIndeterminate": "False",
+        "State": "Focused",
+        "IsDisabled": "False",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Focus ring",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Neptune100%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=True, IsIndeterminate=False, State=Hover, IsDisabled=False, Error=False",
+      "id": "41163:1804",
+      "state": "Hover",
+      "properties": {
+        "Checked": "True",
+        "IsIndeterminate": "False",
+        "State": "Hover",
+        "IsDisabled": "False",
+        "Error": "False"
+      },
+      "border": null,
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Neptune100%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Cosmos40%",
+          "elementType": "RECTANGLE",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=True, IsIndeterminate=False, State=Default, IsDisabled=False, Error=False",
+      "id": "41163:1802",
+      "state": "Default",
+      "properties": {
+        "Checked": "True",
+        "IsIndeterminate": "False",
+        "State": "Default",
+        "IsDisabled": "False",
+        "Error": "False"
+      },
+      "border": null,
+      "background": {
+        "hex": "#121212",
+        "token": "Cosmos",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 18,
+          "g": 18,
+          "b": 18
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=False, IsIndeterminate=False, State=Focused, IsDisabled=False, Error=False",
+      "id": "41163:1801",
+      "state": "Focused",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "False",
+        "State": "Focused",
+        "IsDisabled": "False",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Focus ring",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=False, IsIndeterminate=False, State=Default, IsDisabled=False, Error=False",
+      "id": "41163:1800",
+      "state": "Default",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "False",
+        "State": "Default",
+        "IsDisabled": "False",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#949494",
+          "token": "Slate",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 148,
+            "g": 148,
+            "b": 148
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    },
+    {
+      "name": "Checked=False, IsIndeterminate=False, State=Pressed, IsDisabled=False, Error=False",
+      "id": "41163:1799",
+      "state": "Pressed",
+      "properties": {
+        "Checked": "False",
+        "IsIndeterminate": "False",
+        "State": "Pressed",
+        "IsDisabled": "False",
+        "Error": "False"
+      },
+      "border": {
+        "color": {
+          "hex": "#024DDF",
+          "token": "Neptune",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 2,
+            "g": 77,
+            "b": 223
+          }
+        },
+        "weight": 2,
+        "align": "INSIDE"
+      },
+      "background": null,
+      "allBorders": [
+        {
+          "elementName": "CheckboxContainer",
+          "elementType": "RECTANGLE",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 2,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 24,
+        "height": 24,
+        "padding": null
+      }
+    }
+  ]
+}

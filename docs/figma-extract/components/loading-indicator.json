@@ -1,0 +1,455 @@
+{
+  "name": "Loading Indicator",
+  "id": "13747:13537",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Size=Large Color, Label=Yes",
+      "id": "13747:13536",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Large Color",
+        "Label": "Yes"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "The Page is Loading...",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 200,
+        "height": 124,
+        "padding": null,
+        "gap": 16,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Size=Medium Color, Label=Yes",
+      "id": "13747:13532",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium Color",
+        "Label": "Yes"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "The Page is Loading...",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 200,
+        "height": 82,
+        "padding": null,
+        "gap": 16,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Size=Medium Color, Label=No",
+      "id": "13747:13534",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium Color",
+        "Label": "No"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 48,
+        "height": 48,
+        "padding": null,
+        "gap": 16,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Size=Medium Dark, Label=Yes",
+      "id": "13747:13531",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium Dark",
+        "Label": "Yes"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "The Page is Loading...",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 200,
+        "height": 82,
+        "padding": null,
+        "gap": 16,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Size=Medium Dark, Label=No",
+      "id": "13747:13533",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium Dark",
+        "Label": "No"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 48,
+        "height": 48,
+        "padding": null,
+        "gap": 16,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Size=Medium White, Label=Yes",
+      "id": "13747:13530",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium White",
+        "Label": "Yes"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Label",
+          "content": "The Page is Loading...",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 14,
+            "lineHeight": 18,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 200,
+        "height": 82,
+        "padding": null,
+        "gap": 16,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Size=Medium White, Label=No",
+      "id": "13747:13529",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Medium White",
+        "Label": "No"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 48,
+        "height": 48,
+        "padding": null,
+        "gap": 16,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Size=Large Color, Label=No",
+      "id": "13747:13528",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Large Color",
+        "Label": "No"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 90,
+        "height": 90,
+        "padding": null,
+        "gap": 16,
+        "layoutMode": "VERTICAL"
+      }
+    },
+    {
+      "name": "Size=Tiny (In Button), Label=No",
+      "id": "13747:13535",
+      "state": "Unknown",
+      "properties": {
+        "Size": "Tiny (In Button)",
+        "Label": "No"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 48,
+        "height": 16.000003814697266,
+        "padding": null
+      }
+    }
+  ]
+}

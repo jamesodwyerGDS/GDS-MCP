@@ -1,0 +1,454 @@
+{
+  "name": ".Badge",
+  "id": "8870:16494",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Filled=No",
+      "id": "8870:16493",
+      "state": "Unknown",
+      "properties": {
+        "Filled": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#D6D6D6",
+          "token": "Ammonite",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 214,
+            "g": 214,
+            "b": 214
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Filled=No",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#D6D6D6",
+            "token": "Ammonite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 214,
+              "g": 214,
+              "b": 214
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Filled=No",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.24
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Badge",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.24
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Ellipse 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 75,
+        "height": 22,
+        "cornerRadius": 4,
+        "padding": {
+          "top": 4,
+          "right": 8,
+          "bottom": 4,
+          "left": 8
+        },
+        "gap": 4,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Filled=Yes",
+      "id": "8870:16492",
+      "state": "Unknown",
+      "properties": {
+        "Filled": "Yes"
+      },
+      "border": null,
+      "background": {
+        "hex": "#048851",
+        "token": "Earth",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 4,
+          "g": 136,
+          "b": 81
+        }
+      },
+      "allBorders": [],
+      "allFills": [
+        {
+          "elementName": "Filled=Yes",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Ellipse 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          }
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.24
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Text",
+          "content": "Badge",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.24
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "BOOLEAN_OPERATION",
+          "depth": 2,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Ellipse 1 (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#000000",
+            "token": null,
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 0,
+              "g": 0,
+              "b": 0
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Vector (Stroke)",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#048851",
+            "token": "Earth",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 4,
+              "g": 136,
+              "b": 81
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 75,
+        "height": 22,
+        "cornerRadius": 4,
+        "padding": {
+          "top": 4,
+          "right": 8,
+          "bottom": 4,
+          "left": 8
+        },
+        "gap": 4,
+        "layoutMode": "HORIZONTAL"
+      }
+    }
+  ]
+}

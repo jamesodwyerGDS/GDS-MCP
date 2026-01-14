@@ -1,0 +1,835 @@
+{
+  "name": "_ ❌ Accordions deprecated ❌",
+  "id": "2508:148081",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Active=Yes, Hover=No, Disabled=No, Open=No",
+      "id": "2508:148082",
+      "state": "Unknown",
+      "properties": {
+        "Active": "Yes",
+        "Hover": "No",
+        "Disabled": "No",
+        "Open": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#EBEBEB",
+          "token": "Diatomite",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 235,
+            "b": 235
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Active=Yes, Hover=No, Disabled=No, Open=No",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Active=Yes, Hover=No, Disabled=No, Open=No",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Accordion Title",
+          "content": "Accordion Title",
+          "depth": 1,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 400,
+        "height": 56,
+        "padding": null,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Active=Yes, Hover=Yes, Disabled=No, Open=No",
+      "id": "2508:148086",
+      "state": "Unknown",
+      "properties": {
+        "Active": "Yes",
+        "Hover": "Yes",
+        "Disabled": "No",
+        "Open": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#EBEBEB",
+          "token": "Diatomite",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 235,
+            "b": 235
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#F6F6F6",
+        "token": "Lunar",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 246,
+          "g": 246,
+          "b": 246
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Active=Yes, Hover=Yes, Disabled=No, Open=No",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Active=Yes, Hover=Yes, Disabled=No, Open=No",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#F6F6F6",
+            "token": "Lunar",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 246,
+              "g": 246,
+              "b": 246
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Accordion Title",
+          "content": "Accordion Title",
+          "depth": 1,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 400,
+        "height": 56,
+        "padding": null,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Active=No, Hover=No, Disabled=Yes, Open=No",
+      "id": "2508:148090",
+      "state": "Unknown",
+      "properties": {
+        "Active": "No",
+        "Hover": "No",
+        "Disabled": "Yes",
+        "Open": "No"
+      },
+      "border": {
+        "color": {
+          "hex": "#EBEBEB",
+          "token": "Diatomite",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 235,
+            "b": 235
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Active=No, Hover=No, Disabled=Yes, Open=No",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Active=No, Hover=No, Disabled=Yes, Open=No",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Accordion Title",
+          "content": "Accordion Title",
+          "depth": 1,
+          "color": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 3,
+          "fill": {
+            "hex": "#949494",
+            "token": "Slate",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 148,
+              "g": 148,
+              "b": 148
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 400,
+        "height": 56,
+        "padding": null,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Active=Yes, Hover=No, Disabled=No, Open=Yes",
+      "id": "2508:148094",
+      "state": "Unknown",
+      "properties": {
+        "Active": "Yes",
+        "Hover": "No",
+        "Disabled": "No",
+        "Open": "Yes"
+      },
+      "border": {
+        "color": {
+          "hex": "#EBEBEB",
+          "token": "Diatomite",
+          "variableId": null,
+          "opacity": 1,
+          "rgb": {
+            "r": 235,
+            "g": 235,
+            "b": 235
+          }
+        },
+        "weight": 1,
+        "align": "INSIDE"
+      },
+      "background": {
+        "hex": "#FFFFFF",
+        "token": "Spotlight",
+        "variableId": null,
+        "opacity": 1,
+        "rgb": {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      },
+      "allBorders": [
+        {
+          "elementName": "Frame 7286",
+          "elementType": "FRAME",
+          "depth": 1,
+          "color": {
+            "hex": "#EBEBEB",
+            "token": "Diatomite",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 235,
+              "g": 235,
+              "b": 235
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        },
+        {
+          "elementName": "Button",
+          "elementType": "INSTANCE",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "weight": 1,
+          "strokeAlign": "INSIDE"
+        }
+      ],
+      "allFills": [
+        {
+          "elementName": "Active=Yes, Hover=No, Disabled=No, Open=Yes",
+          "elementType": "COMPONENT",
+          "depth": 0,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Frame 7286",
+          "elementType": "FRAME",
+          "depth": 1,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Button",
+          "elementType": "INSTANCE",
+          "depth": 3,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          }
+        },
+        {
+          "elementName": "Button",
+          "elementType": "INSTANCE",
+          "depth": 3,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        }
+      ],
+      "text": {
+        "label": null,
+        "input": {
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "Accordion Title",
+          "content": "Accordion Title",
+          "depth": 2,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "How do I save tickets to Apple Wallet or Google Pay?",
+          "content": "How do I save tickets to Apple Wallet or Google Pay?",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Please keep in mind that Android users will need to have the Google Pay app installed on their phone before they can add tickets to their wallet. This can be found in the Google Play store. Fans with the latest version of iOS and Android can follow the steps below: In the Ticketmaster app, sign in to your account. Tap My Events to view your order. Tap on Add to Apple Wallet or Google Pay. Please Note: Adding tickets to a digital wallet is optional. It is not necessary to gain entry. You can access your tickets from the Ticketmaster App or by going to www.ticketmaster.co.uk on your mobile browser if you are experiencing issues adding tickets to a digital wallet.",
+          "content": "Please keep in mind that Android users will need to have the Google Pay app installed on their phone before they can add tickets to their wallet. This can be found in the Google Play store.\n\nFans with the latest version of iOS and Android can follow the steps below:\nIn the Ticketmaster app, sign in to your account.\nTap My Events to view your order.\nTap on Add to Apple Wallet or Google Pay.\n\nPlease Note: Adding tickets to a digital wallet is optional. It is not necessary to gain entry. You can access your tickets from the Ticketmaster App or by going to www.ticketmaster.co.uk on your mobile browser if you are experiencing issues adding tickets to a digital wallet.",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 400,
+            "fontSize": 14,
+            "lineHeight": 20,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.28
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Secondary",
+          "depth": 4,
+          "color": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        },
+        {
+          "elementName": "Text",
+          "content": "Primary",
+          "depth": 4,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 600,
+            "fontSize": 16,
+            "lineHeight": 24,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": 0.32
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [
+        {
+          "elementName": "Icon",
+          "elementType": "VECTOR",
+          "depth": 4,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        },
+        {
+          "elementName": "Button",
+          "elementType": "INSTANCE",
+          "componentId": "21:12018",
+          "depth": 3,
+          "fill": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "stroke": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          }
+        },
+        {
+          "elementName": "Button",
+          "elementType": "INSTANCE",
+          "componentId": "21:12016",
+          "depth": 3,
+          "fill": {
+            "hex": "#024DDF",
+            "token": "Neptune",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 2,
+              "g": 77,
+              "b": 223
+            }
+          },
+          "stroke": null
+        }
+      ],
+      "layout": {
+        "width": 400,
+        "height": 584,
+        "padding": null,
+        "layoutMode": "VERTICAL"
+      }
+    }
+  ]
+}

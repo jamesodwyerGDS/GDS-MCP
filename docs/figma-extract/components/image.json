@@ -1,0 +1,196 @@
+{
+  "name": "Image",
+  "id": "38863:5108",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "aspectRatio=3:2",
+      "id": "38863:5109",
+      "state": "Unknown",
+      "properties": {
+        "aspectRatio": "3:2"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 300,
+        "height": 200,
+        "padding": null
+      }
+    },
+    {
+      "name": "aspectRatio=5:3",
+      "id": "38863:5110",
+      "state": "Unknown",
+      "properties": {
+        "aspectRatio": "5:3"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 300,
+        "height": 180,
+        "padding": null
+      }
+    },
+    {
+      "name": "aspectRatio=5:4",
+      "id": "38863:5111",
+      "state": "Unknown",
+      "properties": {
+        "aspectRatio": "5:4"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 300,
+        "height": 240,
+        "padding": null
+      }
+    },
+    {
+      "name": "aspectRatio=16:9",
+      "id": "38863:5112",
+      "state": "Unknown",
+      "properties": {
+        "aspectRatio": "16:9"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 300.4444580078125,
+        "height": 169,
+        "padding": null
+      }
+    },
+    {
+      "name": "aspectRatio=3:4",
+      "id": "38863:5113",
+      "state": "Unknown",
+      "properties": {
+        "aspectRatio": "3:4"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 300,
+        "height": 400,
+        "padding": null
+      }
+    },
+    {
+      "name": "aspectRatio=9:16",
+      "id": "38863:5114",
+      "state": "Unknown",
+      "properties": {
+        "aspectRatio": "9:16"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 180,
+        "height": 320,
+        "padding": null
+      }
+    },
+    {
+      "name": "aspectRatio=1:1",
+      "id": "38863:5115",
+      "state": "Unknown",
+      "properties": {
+        "aspectRatio": "1:1"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 300,
+        "height": 300,
+        "padding": null
+      }
+    }
+  ]
+}

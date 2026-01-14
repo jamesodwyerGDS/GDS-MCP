@@ -1,0 +1,223 @@
+{
+  "name": "DisplayHeading",
+  "id": "42691:1621",
+  "type": "COMPONENT_SET",
+  "variants": [
+    {
+      "name": "Variant=Desktop, Inverse=True",
+      "id": "42691:1622",
+      "state": "Unknown",
+      "properties": {
+        "Variant": "Desktop",
+        "Inverse": "True"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "DISPLAY HEADING",
+          "content": "DISPLAY HEADING",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 900,
+            "fontSize": 54,
+            "lineHeight": 54,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": -1.6199999999999999
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 444,
+        "height": 38,
+        "padding": null,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Variant=Desktop, Inverse=False",
+      "id": "42691:1625",
+      "state": "Unknown",
+      "properties": {
+        "Variant": "Desktop",
+        "Inverse": "False"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "DISPLAY HEADING",
+          "content": "DISPLAY HEADING",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 900,
+            "fontSize": 54,
+            "lineHeight": 54,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": -1.6199999999999999
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 444,
+        "height": 38,
+        "padding": null,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Variant=Mobile, Inverse=True",
+      "id": "42691:1628",
+      "state": "Unknown",
+      "properties": {
+        "Variant": "Mobile",
+        "Inverse": "True"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "DISPLAY HEADING",
+          "content": "DISPLAY HEADING",
+          "depth": 2,
+          "color": {
+            "hex": "#FFFFFF",
+            "token": "Spotlight",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 255,
+              "g": 255,
+              "b": 255
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 900,
+            "fontSize": 32,
+            "lineHeight": 34,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": -0.96
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 263,
+        "height": 23,
+        "padding": null,
+        "layoutMode": "HORIZONTAL"
+      }
+    },
+    {
+      "name": "Variant=Mobile, Inverse=False",
+      "id": "42691:1631",
+      "state": "Unknown",
+      "properties": {
+        "Variant": "Mobile",
+        "Inverse": "False"
+      },
+      "border": null,
+      "background": null,
+      "allBorders": [],
+      "allFills": [],
+      "text": {
+        "label": null,
+        "input": null,
+        "placeholder": null,
+        "validation": null
+      },
+      "allTexts": [
+        {
+          "elementName": "DISPLAY HEADING",
+          "content": "DISPLAY HEADING",
+          "depth": 2,
+          "color": {
+            "hex": "#121212",
+            "token": "Cosmos",
+            "variableId": null,
+            "opacity": 1,
+            "rgb": {
+              "r": 18,
+              "g": 18,
+              "b": 18
+            }
+          },
+          "typography": {
+            "fontFamily": "Averta",
+            "fontWeight": 900,
+            "fontSize": 32,
+            "lineHeight": 34,
+            "lineHeightUnit": "PIXELS",
+            "letterSpacing": -0.96
+          }
+        }
+      ],
+      "effects": null,
+      "allEffects": [],
+      "icons": [],
+      "layout": {
+        "width": 263,
+        "height": 23,
+        "padding": null,
+        "layoutMode": "HORIZONTAL"
+      }
+    }
+  ]
+}
