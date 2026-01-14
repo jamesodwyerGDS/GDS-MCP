@@ -1,0 +1,51 @@
+import {
+  Meta,
+  Primary,
+  Story,
+  Canvas,
+  ArgTypes,
+} from "@storybook/addon-docs/blocks";
+import * as stories from "./phoneNumber.stories";
+import PhoneNumber from "..";
+
+<Meta title="Components/PhoneNumber" of={stories} />
+
+# PhoneNumber
+
+`import { PhoneNumber } from '@ticketmaster/global-design-system';`
+
+<Primary />
+
+<ArgTypes of={PhoneNumber} />
+
+<Canvas of={stories.Basic} />
+
+The `countries` prop should be an array of valid country objects, with this shape:
+
+```js
+{
+  name: string,
+  countryCode: string,
+  dialCode: string,
+  stateFieldRequired: boolean
+}
+```
+
+Any extra props are spread onto the phone number `type="tel"` input component.
+
+## With default
+
+Pass the Downshift prop `defaultSelectedCountry` to pre-fill the selected country.
+
+<Canvas of={stories.WithDefault} />
+
+## With Error
+
+<Canvas of={stories.WithError} />
+
+`errorMessage` displays an inline validation message.
+`screenReaderErrorPrefix` is a visually hidden prefix announced to screen readers before the error message (e.g., "Error: "). So, the message is announced with explicit error context.
+
+## Form Validation
+
+For guidance on validation patterns, error messages (`screenReaderErrorPrefix`, `errorMessage`) , accessibility, and recommended ARIA usage when displaying validation errors, see [Form Validation](?path=/docs/patterns-form-validation--docs) under the **Patterns** section.

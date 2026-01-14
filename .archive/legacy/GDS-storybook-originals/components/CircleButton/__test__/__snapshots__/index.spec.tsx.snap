@@ -1,0 +1,454 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Should accept React element as label 1`] = `
+.c2 {
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  vertical-align: middle;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  fill: currentColor;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.c3 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c0 {
+  margin: initial;
+  padding: initial;
+  border: 0;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  background-color: transparent;
+  color: #ffffff;
+  background-color: #024ddf;
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-width: 1px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c0:not(:disabled):hover {
+  background-color: #0139a7;
+}
+
+.c0:disabled {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c0:not(:disabled) {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline-offset: 4px;
+}
+
+.c0:not(:disabled):active {
+  border-color: #012e85;
+  color: #ffffff;
+  background-color: #012e85;
+}
+
+.c0[aria-disabled="true"] {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c0[aria-disabled="true"]:focus,
+.c0[aria-disabled="true"]:hover {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+<div>
+  <button
+    class="c0"
+    type="button"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        aria-hidden="true"
+        class="c2"
+        focusable="false"
+        height="2em"
+        rotate="-90"
+        viewBox="0 0 24 24"
+        width="2em"
+      >
+        <path
+          d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8z"
+        />
+      </svg>
+    </div>
+    <span
+      class="c3"
+    >
+      <span>
+        An accessible label
+      </span>
+       
+      <span>
+        across two components
+      </span>
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Should allow rendering as an anchor tag 1`] = `
+.c2 {
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  vertical-align: middle;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  fill: currentColor;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.c3 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c0 {
+  margin: initial;
+  padding: initial;
+  border: 0;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  background-color: transparent;
+  color: #ffffff;
+  background-color: #024ddf;
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-width: 1px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c0:not(:disabled):hover {
+  background-color: #0139a7;
+}
+
+.c0:disabled {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c0:not(:disabled) {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline-offset: 4px;
+}
+
+.c0:not(:disabled):active {
+  border-color: #012e85;
+  color: #ffffff;
+  background-color: #012e85;
+}
+
+.c0[aria-disabled="true"] {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c0[aria-disabled="true"]:focus,
+.c0[aria-disabled="true"]:hover {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+<div>
+  <a
+    class="c0"
+    href="/test"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        aria-hidden="true"
+        class="c2"
+        focusable="false"
+        height="2em"
+        rotate="-90"
+        viewBox="0 0 24 24"
+        width="2em"
+      >
+        <path
+          d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8z"
+        />
+      </svg>
+    </div>
+    <span
+      class="c3"
+    >
+      Accessible label
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Should render CircleButton with accessible name 1`] = `
+.c2 {
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  vertical-align: middle;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  fill: currentColor;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.c3 {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.c0 {
+  margin: initial;
+  padding: initial;
+  border: 0;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  background-color: transparent;
+  color: #ffffff;
+  background-color: #024ddf;
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-width: 1px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.c0:not(:disabled):hover {
+  background-color: #0139a7;
+}
+
+.c0:disabled {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c0:not(:disabled) {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline-offset: 4px;
+}
+
+.c0:not(:disabled):active {
+  border-color: #012e85;
+  color: #ffffff;
+  background-color: #012e85;
+}
+
+.c0[aria-disabled="true"] {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c0[aria-disabled="true"]:focus,
+.c0[aria-disabled="true"]:hover {
+  border-color: #ebebeb;
+  color: #949494;
+  background-color: #ebebeb;
+  cursor: not-allowed;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+<div>
+  <button
+    class="c0"
+    type="button"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        aria-hidden="true"
+        class="c2"
+        focusable="false"
+        height="2em"
+        rotate="-90"
+        viewBox="0 0 24 24"
+        width="2em"
+      >
+        <path
+          d="M3.47 8.26 4.53 7.2 12 14.67l7.47-7.47 1.06 1.06L12 16.8z"
+        />
+      </svg>
+    </div>
+    <span
+      class="c3"
+    >
+      Accessible label
+    </span>
+  </button>
+</div>
+`;

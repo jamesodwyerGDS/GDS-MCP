@@ -1,0 +1,80 @@
+import {
+  Primary,
+  Meta,
+  Story,
+  Canvas,
+  ArgTypes,
+} from "@storybook/addon-docs/blocks";
+import { DarkCanvas } from "../../../docs/DarkCanvas";
+import * as stories from "./index.stories";
+import LoadingSpinner, { innerCircleSizes } from "..";
+
+<Meta title="LoadingSpinner" component={LoadingSpinner} of={stories} />
+
+# LoadingSpinner
+
+`import { LoadingSpinner } from '@ticketmaster/global-design-system';`
+
+<Primary />
+
+<ArgTypes of={LoadingSpinner} />
+
+## Usage
+
+The loading spinner is used to inform users they need to wait for something to happen. For example, when new events or tickets are loading.
+It's ideal for when we don't know the structure of the data that is loading. If we do, we might want to use the [Skeleton](?path=/docs/components-skeleton--docs) component instead.
+
+## Sizes
+
+`small` (default) - 24x24px
+
+<Canvas of={stories.Small} />
+
+`medium` - 32x32px
+
+<Canvas of={stories.Medium} />
+
+`large` - 72x72px
+
+<Canvas of={stories.Large} />
+
+## colorVariants
+
+`primary` (default) - for use directly on default backgrounds
+
+<Canvas of={stories.Small} />
+
+`secondary` - for use on lighter filled backgrounds
+
+<Canvas of={stories.Secondary} />
+
+`inverse` - for use on filled backgrounds, eg filled buttons or inverse backgrounds
+
+<DarkCanvas centered>
+  <Story of={stories.Inverse} />
+</DarkCanvas>
+
+## With a message
+
+The loading spinner accepts an optional `message` prop which will display underneath the spinner.
+
+<Canvas of={stories.Message} />
+
+## Accessibility considerations
+
+### Add a message
+
+Different uses of the loading spinner have different messaging requirements.
+But in general, when using a spinner for a full-page loading view or modal, be sure to use the `message` prop to provide a visible label to describe the process taking place.
+Make sure the label accurately but succinctly describes the type of process that's occurring. For example, "loading events", "submitting form", or "processing".
+
+Other times, it is more suitable to provide a visually hidden status with `aria-live='polite'` and `role='status'`. A non-exhaustive list of examples:
+
+- Inside small components like buttons
+- Loading additional items in a list
+- Multiple spinners in a card/section based layout
+  - **NOTE:** when using multiple LoadingSpinners on one page, there should only be **one** status which is announced
+
+### Exception to reduced motion
+
+We intentionally do not remove the animation of the spinner when a user prefers reduced motion. A stopped spinner fundamentally changes the information that is conveyed, because it looks like the process has stopped. See [WCAG Success Criterion 2.3.3](https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html#dfn-essential)

@@ -1,0 +1,60 @@
+import { Meta, Story, Canvas, ArgTypes } from "@storybook/addon-docs/blocks";
+import AlertBoxLegacy from "..";
+import AlertBox from "../../AlertBox";
+import Badge from "../../Badge";
+import * as stories from "./index.stories";
+
+<Meta
+  title="Components/AlertBoxLegacy"
+  component={AlertBoxLegacy}
+  tags={["deprecated"]}
+/>
+
+# AlertBoxLegacy
+
+<AlertBox
+  variant="error"
+  title="This component has been deprecated in favour of `AlertBox`."
+/>
+
+`import { AlertBoxLegacy } from '@ticketmaster/global-design-system';`
+
+<Story of={stories.Basic} />
+
+<ArgTypes of={AlertBoxLegacy} />
+
+## Standard
+
+<Canvas of={stories.Basic} />
+
+<Canvas of={stories.WithChildren} />
+
+<Canvas of={stories.WithCustomChildren} />
+
+## Variants
+
+The `variant` prop sets the colour/icon variant of the alert box. You can choose from `info` (default), `warning`, `success` and `danger`. This has no real semantic value - it just sets the colour and changes the icon. Make sure your messages have appropriate text to convey the severity.
+
+<Canvas of={stories.WithChildren} />
+
+<Canvas of={stories.Warning} />
+
+<Canvas of={stories.Success} />
+
+<Canvas of={stories.Danger} />
+
+## Sizes
+
+The `size` prop allows you to set the AlertBox to be a bit smaller and take up less vertical space. All it does is reduce the vertical padding on the two containers. There are currently only two options: `moderate` and `normal`, which reflect the sizes in the [`spacing` object](/spacing):
+
+<Canvas of={stories.ModerateTitleOnly} />
+
+<Canvas of={stories.Moderate} />
+
+## Dismissable
+
+In some cases, you might want the user to be able to dismiss the alert after seeing it. This can be achieved with the `dismissable` prop. Don't forget to add the `onDismiss` function and the `dismissLabel` for accessibility (otherwise just the cross icon renders without any helpful text for a screenreader).
+
+<Canvas of={stories.DismissableWarning} />
+
+<Canvas of={stories.DismissableDanger} />

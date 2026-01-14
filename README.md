@@ -78,39 +78,27 @@ npm run docs:generate -- --file=ABC123 --node=1:234
 
 # Validate documentation
 npm run docs:validate
+
+# Analyze documentation coverage
+npm run analyze
 ```
 
-### Recent Improvements (Jan 2025)
-
-The Figma API integration has been significantly improved to align with the official REST API v1 spec:
-
-**New Features:**
-- ✅ **Rate limiting & retry logic** - Automatic retry with exponential backoff
-- ✅ **Request caching** - 10x performance improvement on repeated queries
-- ✅ **Image export** - Component screenshots automatically embedded in docs
-- ✅ **Accurate token extraction** - Uses Figma's `resolvedType` (COLOR, FLOAT, STRING)
-- ✅ **Published component endpoints** - Access team library metadata
-- ✅ **Version tracking** - File version history for changelog maintenance
-
-**Example: Regenerate Alert Component**
-```bash
-# Uses improved API with image export and proper token types
-node scripts/regenerate-alert.js
-```
-
-See [`FIGMA_API_IMPROVEMENTS.md`](./FIGMA_API_IMPROVEMENTS.md) for complete details and [`ALERT_REGENERATION_EXAMPLE.md`](./ALERT_REGENERATION_EXAMPLE.md) for a demonstration.
+**Documentation:** See `/scripts/README.md` for comprehensive script documentation with examples and troubleshooting.
 
 ### Local MCP Server
 
-The repo includes a custom MCP server with optimised tools. To use it locally:
+The repo includes a custom MCP server with optimised tools. To use it locally, copy the configuration from `.config/mcp/mcp-config.json` to your AI tool's MCP settings.
 
+**Setup:** See `.config/mcp/README.md` for detailed installation instructions and troubleshooting.
+
+Example configuration:
 ```json
 {
   "mcpServers": {
     "figma": {
       "url": "https://mcp.figma.com/mcp"
     },
-    "gds": {
+    "gds-docs": {
       "command": "node",
       "args": ["./mcp-server/index.js"],
       "cwd": "/path/to/GDS-MCP"

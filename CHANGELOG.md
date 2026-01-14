@@ -50,6 +50,40 @@ Add a new entry when:
 
 | Change | Type | JIRA | Figma | Notes |
 |--------|------|------|-------|-------|
+| **Repository reorganization: Archived discovery docs, removed exploratory scripts, organized configs** | 🟡 Updated | NA | NA | See details below |
+
+### Repository Reorganization
+
+**Archived Discovery Documentation:**
+- Moved ALERT_BORDER_FINDINGS.md, ALERT_TEST_RESULTS.md, ALERT_UPDATE_SUMMARY.md to `.archive/discoveries/`
+- Moved BORDER_DETECTION.md, BREAKTHROUGH_individualStrokeWeights.md to `.archive/discoveries/`
+- Moved FIGMA_API_IMPROVEMENTS.md, RUN_ALERT_REGENERATION.md to `.archive/discoveries/`
+- Moved efficiency-report.json to `.archive/metrics/`
+- Moved GDS-storybook-originals/ to `.archive/legacy/`
+- Added `.archive/README.md` documenting archived content
+
+**Cleaned Up Scripts:**
+- Removed 13 exploratory scripts (extract-*.js, fetch-*.js, process-figma-extract.js, etc.)
+- Kept core scripts: generate.js, generate-all.js, validate.js, analyze-efficiency.js
+- Added comprehensive `scripts/README.md` with usage examples, parameters, and troubleshooting
+
+**Reorganized Configuration:**
+- Moved mcp-config.json and mcp.json to `.config/mcp/`
+- Added `.config/mcp/README.md` with setup instructions and troubleshooting
+- Moved components.example.json to `.example-configs/`
+- Added `.example-configs/README.md` with configuration guide
+
+**Updated Documentation:**
+- Updated CLAUDE.md with new directory structure and paths
+- Updated README.md with references to new documentation locations
+- Added cross-references between README files for easy navigation
+
+**Result:** Clean root directory with well-organized subdirectories and comprehensive documentation for all scripts and configurations.
+
+---
+
+| Change | Type | JIRA | Figma | Notes |
+|--------|------|------|-------|-------|
 | 🎉 **BREAKTHROUGH: Border detection now fully autonomous via `individualStrokeWeights` API field** | 🟢 Added | NA | [Figma](https://figma.com/design/WU01oSRfSHpOxUn3ThcvC5/File?node-id=10410-52040) | Custom stroke detection now 100% accurate. See BREAKTHROUGH_individualStrokeWeights.md |
 | Updated border detection to use `individualStrokeWeights` for Custom stroke detection | 🟡 Updated | NA | NA | Correctly detects "8px top only" vs "8px all sides" |
 | Removed "API limitation" from BORDER_DETECTION.md - Custom strokes are fully supported | 🟡 Updated | NA | NA | Manual verification no longer required |

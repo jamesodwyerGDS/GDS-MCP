@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`renders Skeleton component 1`] = `
+.c0 {
+  width: 10px;
+  height: 30ch;
+  background-color: #f6f6f6;
+  -webkit-animation: 2s 900ms ease-in-out infinite iAFpuF;
+  animation: 2s 900ms ease-in-out infinite iAFpuF;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`renders Skeleton component with default props 1`] = `
+.c0 {
+  width: 100%;
+  height: 25px;
+  background-color: #f6f6f6;
+  -webkit-animation: 2s 900ms ease-in-out infinite iAFpuF;
+  animation: 2s 900ms ease-in-out infinite iAFpuF;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;

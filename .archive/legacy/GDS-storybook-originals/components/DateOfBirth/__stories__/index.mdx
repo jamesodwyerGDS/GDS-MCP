@@ -1,0 +1,55 @@
+import {
+  Meta,
+  Primary,
+  Story,
+  Canvas,
+  ArgTypes,
+} from "@storybook/addon-docs/blocks";
+import * as stories from "./index.stories";
+import DateOfBirth from "..";
+
+<Meta title="Components/DateOfBirth" of={stories} />
+
+# DateOfBirth
+
+Importing the DateOfBirth component in your project:
+
+`import { DateOfBirth } from '@ticketmaster/global-design-system';`
+
+<Primary />
+
+<ArgTypes of={DateOfBirth} />
+
+## Reading data
+
+You can provide an `onChange` prop to be updated with the value of the input as the user types. The API has been designed to mirror the native HTML5 date input. The format of the date string will mirror that of the [native date input](https://developer.mozilla.org/en-US/docs/Web/HTML/Date_and_time_formats#Format_of_a_valid_date_string): `"yyyy-mm-dd`. If the user has not entered enough information to create a valid date (e.g. at least one digit into day, month and year), `onChange` will be called with an empty string.
+
+## Child input props
+
+This component renders a fieldset with three child inputs. The `label` prop provides the text for the fieldset's legend, which labels the overall group.
+
+We should still provide `aria-labels` for the underlying inputs so screen-reader users know what to enter (as the placeholders may not be read out). The day, month, and year inputs get their aria-labels from the `dayAriaLabel`, `monthAriaLabel`, `yearAriaLabel` props respectively.
+
+To pass any further props to the child inputs (and overriding props like `name` if you need more control over the inputs) you should pass prop objects for each input. These objects will be spread onto the input elements, overriding only props that are not essential for the internal workings of the overall component.
+
+## `initialDate` prop
+
+Sometimes you may need to render the date of birth component with its value already set (for example, a user edit profile view). You can set the initial state of the inputs by passing an `initialDate` prop (in the same string format as described above)
+
+## RTL
+
+<Canvas of={stories.RTL} />
+
+## With Error
+
+<Canvas of={stories.WithError} />
+
+`errorMessage` displays an inline validation message.
+`screenReaderErrorPrefix` is a visually hidden prefix announced to screen readers before the error message (e.g., "Error: "). So, the message is announced with explicit error context.
+
+## Validation
+
+The component will keep track of the month and year and update the maximum day automatically. This is implemented with standard HTML5 validation attributes, so they'll be triggered on submission of a form. Try entering invalid dates into the example above and submitting.
+In the case of an optional date of birth, although none of the fields are required by default, once the user has filled in a day, month or year, the rest of the fields are marked as required. This prevents a form from being submitted with an incomplete date.
+
+For guidance on validation patterns, error messages (`screenReaderErrorPrefix`, `errorMessage`) , accessibility, and recommended ARIA usage when displaying validation errors, see [Form Validation](?path=/docs/patterns-form-validation--docs) under the **Patterns** section.

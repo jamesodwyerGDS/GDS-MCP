@@ -1,0 +1,61 @@
+import {
+  Meta,
+  Primary,
+  Story,
+  Canvas,
+  ArgTypes,
+} from "@storybook/addon-docs/blocks";
+import * as stories from "./index.stories";
+import CountryPicker from "..";
+
+<Meta title="Components/CountryPicker" of={stories} />
+
+# CountryPicker
+
+`import { CountryPicker } from '@ticketmaster/global-design-system';`
+
+<Primary />
+
+<ArgTypes of={CountryPicker} />
+
+The `countries` prop should be an array of valid country objects, with this shape:
+
+```js
+{
+  name: string,
+  countryCode: string,
+  dialCode: string,
+  stateFieldRequired: boolean
+}
+```
+
+Any extra props are spread onto the `Downshift` component. See the [Downshift docs](https://www.npmjs.com/package/downshift) for more details.
+
+<Canvas of={stories.Basic} />
+
+## Pre-filling
+
+Pass the Downshift prop `initialSelectedItem` to pre-fill the selected country.
+
+<Canvas of={stories.Prefilled} />
+
+## Dial Code
+
+The same component can be used to select the dial code of a country by passing `visibleField="dialCode"`.
+
+<Canvas of={stories.Dialcode} />
+
+## With Error
+
+<Canvas of={stories.WithError} />
+
+`errorMessage` displays an inline validation message.
+`screenReaderErrorPrefix` is a visually hidden prefix announced to screen readers before the error message (e.g., "Error: "). So, the message is announced with explicit error context.
+
+### Form Validation
+
+For guidance on validation patterns, error messages (`screenReaderErrorPrefix`, `errorMessage`) , accessibility, and recommended ARIA usage when displaying validation errors, see [Form Validation](?path=/docs/patterns-form-validation--docs) under the **Patterns** section.
+
+## RTL
+
+<Canvas of={stories.RTL} />

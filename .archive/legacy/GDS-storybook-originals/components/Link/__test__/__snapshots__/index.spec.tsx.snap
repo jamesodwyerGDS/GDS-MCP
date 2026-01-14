@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Component: Link -> Should render correctly 1`] = `
+.c0 {
+  margin: initial;
+  padding: initial;
+  border: 0;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  -webkit-letter-spacing: inherit;
+  -moz-letter-spacing: inherit;
+  -ms-letter-spacing: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  background-color: transparent;
+  color: #024ddf;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #0139a7;
+}
+
+<div>
+  <a
+    class="c0"
+  >
+    Click me
+  </a>
+</div>
+`;

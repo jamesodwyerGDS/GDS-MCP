@@ -1,0 +1,79 @@
+import { Meta, Canvas, ArgTypes } from "@storybook/addon-docs/blocks";
+import AlertBox from "../../AlertBox";
+import InputField from "..";
+import * as stories from "./index.stories";
+
+<Meta title="Components/InputField" component={InputField} />
+
+# InputField
+
+`import { InputField } from '@ticketmaster/global-design-system';`
+
+<AlertBox title={"`InputField` is a generic compound component for building more complex inputs using the GDS styles."}>
+
+In most cases you want a more specific component like [TextInput](?path=/docs/components-textinput--docs) or [PasswordInput](?path=/docs/components-passwordinput--docs) instead.
+
+</AlertBox>
+
+<Canvas of={stories.Basic} sourceState="shown" />
+
+The `Row` component accepts a `marginTop` prop (any valid `spacing` value eg `"lounge"`) to add some space above it.
+
+## Start and End Icons
+
+Icons can be added inside the input using the `Row` component with `InputField.StartIcon` or `InputField.EndIcon`:
+
+<Canvas of={stories.WithStartIcon} sourceState="shown" />
+<Canvas of={stories.WithEndIcon} sourceState="shown" />
+
+## Error with Validation
+
+Error messages with the `Validation` component:
+
+<Canvas of={stories.WithValidation} sourceState="shown" />
+
+## Multiple Error Messages
+
+<Canvas of={stories.WithErrorMessages} sourceState="shown" />
+
+`errorMessage` displays an inline validation message.
+`screenReaderErrorPrefix` is a visually hidden prefix announced to screen readers before the error message (e.g., "Error: "). So, the message is announced with explicit error context.
+Currently optional, but will become required in an upcoming major release.
+
+### Form Validation
+
+For guidance on validation patterns, error messages (`screenReaderErrorPrefix`, `errorMessage`) , accessibility, and recommended ARIA usage when displaying validation errors, see [Form Validation](?path=/docs/patterns-form-validation--docs) under the **Patterns** section.
+
+## Text Area
+
+We also expose an `InputField.Textarea` if you need a multiline input:
+
+<Canvas of={stories.TextArea} sourceState="shown" />
+
+## Select and Pill Select
+
+And an `InputField.Select` for `<select>` elements (use `isPillVariant` prop for a pill shaped select):
+
+<Canvas of={stories.Select} sourceState="shown" />
+<Canvas of={stories.PillSelect} sourceState="shown" />
+
+Note, `InputField.Checkbox`/`InputField.Radio` are exposed for Checkbox/Radio elements, but **should not be used directly**. Use the `RadioButton` and `Checkbox` components instead that are set up with the correct labeling/accessibility enhancements.
+
+As per the general guidance, these exposed input variants aren't intended to be used very widely. We have ready-to-go composed versions of these for the most common use cases (see the `TextArea`, `SelectInput`, `Checkbox`, `RadioButton` components), and these are here to allow you to build more customised versions should this be necessary. If it can be avoided, please do so, in the name of consistency at least!
+
+## `id` attribute on the root `InputField` component
+
+You'll notice in the examples (and the Flow types) that `id` is a mandatory prop when using the `InputField` component. This is used to automatically generate a `for` attribute for the label and an `id` attribute for the input, as well as adding an `aria-describedby` attribute to the input which links to the validation message component.
+
+In some rare cases, you might need to disable this, for example, if you're building a more custom version of an InputField like the [DoubleRangeInput](/DoubleRangeInput) where you want the visual styles of the `InputField.Label` but having it as a `<label>` element doesn't make sense. We have provided an escape hatch here, where you have to explicitly set the `id` prop to `false` (JavaScript boolean, as opposed to the string `"false"`). This will stop the ID being generated and passed around. Use with caution!
+
+In this case, if you still want to use the `InputField.Validation` component, you will need to manually link the error message to the correct element by passing them an appropriate `id` and `aria-describedby` attribute respectively.
+
+## Hint text
+
+The `aria-describedby` prop can be passed to the `InputField.Input` component either directly or via any component using the `InputField` under the hood.
+It allows an id or space-separated list of ids to be passed to the input. This string will be joined with the `InputField.Validation` id and applied to the input as an `aria-describedby` attribute.
+
+This is useful in cases where you want to link some hint text to the input for assistive tech:
+
+<Canvas of={stories.WithDescribedBy} sourceState="shown" />

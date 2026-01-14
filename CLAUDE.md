@@ -35,9 +35,14 @@ npm run docs:generate-all
 
 # Validate frontmatter schema
 npm run docs:validate
+
+# Analyze documentation coverage
+npm run analyze
 ```
 
 **Environment:** Set `FIGMA_TOKEN` before running generation scripts.
+
+**Documentation:** See `/scripts/README.md` for comprehensive script documentation with examples and troubleshooting.
 
 ## Architecture
 
@@ -47,10 +52,12 @@ npm run docs:validate
   markdown-transformer.js # Transforms Figma data -> markdown
   documentation-generator.js # Main orchestrator
 
-/scripts                  # CLI entry points
+/scripts                  # CLI entry points (see scripts/README.md)
   generate.js             # Single component generation
   generate-all.js         # Batch generation
   validate.js             # Frontmatter validation
+  analyze-efficiency.js   # Documentation coverage analysis
+  README.md               # Comprehensive script documentation
 
 /docs                     # Generated documentation
   /components/{atoms,molecules,organisms}
@@ -77,6 +84,22 @@ PROJECT-SUMMARY.md        # High-level project summary for team sharing
 /.claude-plugin           # Plugin marketplace configuration
   plugin.json
   marketplace.json
+
+/.config                  # Project configuration
+  /mcp                    # MCP server configurations (see .config/mcp/README.md)
+    mcp-config.json       # Primary MCP config (figma, gds-docs servers)
+    mcp.json              # Cursor-compatible MCP config
+    README.md             # MCP setup and troubleshooting
+
+/.example-configs         # Example configuration files (see .example-configs/README.md)
+  components.example.json # Batch generation config example
+  README.md               # Configuration guide
+
+/.archive                 # Archived documentation and legacy files (see .archive/README.md)
+  /discoveries            # Investigation and discovery documents
+  /metrics                # Generated reports and analysis snapshots
+  /legacy                 # Previous implementations and deprecated content
+  README.md               # Archive guide
 ```
 
 ## Documentation Structure
@@ -100,11 +123,13 @@ Generated docs include ONLY:
 
 ## MCP Configuration
 
-The `mcp-config.json` configures two MCP servers:
+The `.config/mcp/mcp-config.json` configures two MCP servers:
 - **figma**: Official Figma MCP at `https://mcp.figma.com/mcp`
-- **docs**: Filesystem MCP for reading generated documentation
+- **gds-docs**: Local filesystem MCP for reading generated documentation
 
 Add to Claude Desktop or Cursor settings to enable MCP access.
+
+**Setup:** See `.config/mcp/README.md` for detailed installation and troubleshooting.
 
 ## Frontmatter Schema
 

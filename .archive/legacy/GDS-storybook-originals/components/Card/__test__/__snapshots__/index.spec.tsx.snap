@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Component: Card -> Should render correctly 1`] = `
+.c0 {
+  box-shadow: 0px 1px 4px 0px rgba(18,18,18,0.15);
+  padding: 32px 24px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.c1 {
+  font-weight: 600;
+  font-size: var(--fiji-font-size,18px);
+  line-height: var(--fiji-line-height,26px);
+  -webkit-letter-spacing: 0.02em;
+  -moz-letter-spacing: 0.02em;
+  -ms-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1;
+}
+
+.c2 {
+  margin-top: 32px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h2
+      class="c1"
+    >
+      Title
+    </h2>
+    <div
+      class="c2"
+    >
+      Lorem ipsum
+    </div>
+  </div>
+</div>
+`;

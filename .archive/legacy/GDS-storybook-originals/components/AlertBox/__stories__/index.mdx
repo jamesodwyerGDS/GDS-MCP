@@ -1,0 +1,85 @@
+import {
+  Primary,
+  Meta,
+  Story,
+  Canvas,
+  ArgTypes,
+} from "@storybook/addon-docs/blocks";
+import AlertBox from "..";
+import * as stories from "./index.stories";
+
+<Meta title="Components/AlertBox" of={stories} />
+
+# AlertBox
+
+`import { AlertBox } from '@ticketmaster/global-design-system';`
+
+<Primary />
+
+<ArgTypes of={AlertBox} />
+
+The AlertBox component can be used to communicate key information to users, and is colour coded depending on its context and the type of information it contains.
+
+## Children
+
+Styling is applied to the children of this component to remove any `margin-top` from the first child and `margin-bottom` from the last child, which means issues with spacing are avoided if an element with some default styles is used. A classic example is a `<p>` element with some `margin-bottom` which would collide with the `padding-bottom` of the box's body area and result in too much spacing.
+
+The AlertBox can be used without children:
+
+<Canvas of={stories.Basic} />
+
+With some text:
+
+<Canvas of={stories.WithChildren} />
+
+With a more complex React component as a child:
+
+<Canvas of={stories.WithCustomChildren} />
+
+## Variants
+
+The `variant` prop sets the colour/icon variant of the alert box. You can choose from `info` (default), `warning`, `success`, `error` and `danger`. `error` and `danger` are identical, but we have both for backwards compatibility. This has no real semantic value - it just sets the colour and changes the icon. Make sure your messages have appropriate text and markup to convey the severity.
+
+<Canvas of={stories.WithChildren} />
+
+<Canvas of={stories.Warning} />
+
+<Canvas of={stories.Success} />
+
+<Canvas of={stories.Danger} />
+
+## Nested
+
+The nested flag renders a minimalist version of the Alert for use within or alongside other components. It doesn't render the children to maintain the minimalist look.
+
+<Canvas of={stories.Nested} />
+
+## Accessibility
+
+As the AlertBox can be used in variety of contexts, adding appropriate accessibility features is dependent on the message you want it to convey.
+In the case of a simple dialog box in a modal, you can use the `ariaLabelledById` and `ariaDescribedById` props to ensure both the dialog message and title are read out when it is focused.
+
+**Note:** the `aria-labelledby` and `aria-describedby` props must be added to the parent component in the consuming app.
+
+<Canvas of={stories.PageWarning} />
+
+<Canvas of={stories.Alert} />
+
+### ARIA Roles
+
+The component uses the optional `role` prop to ensure that screen readers correctly announce the messages as they appear, providing timely feedback to users.
+The `role` attribute should be used for content that has changed, or to bring the user's attention to it immediately, so it should not be used for static content or used regularly.
+There are three possible roles assignable to the AlertBox component:
+
+- [role="alert"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/alert_role): used for important, and usually time-sensitive, information. Setting `role="alert"` is equivalent to setting `aria-live="assertive"` and `aria-atomic="true"`.
+- [role="status"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/status_role): used for advisory information, not important enough to be an alert. Setting `role="status"` is equivalent to setting `aria-live="polite"` and `aria-atomic="true"`.
+- [role="log"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/log_role): used where new information is added in a meaningful order and old information may disappear. Setting `role="log"` is equivalent to setting `aria-live="polite"`. Where the user needs to hear the entire live region upon a change, `aria-atomic="true"` should be set.
+
+For more details about choosing the appropriate `role`, check the MDN docs linked in the list.
+More guidance on the alert role can be found in [the WAI-ARIA guidelines](https://www.w3.org/TR/wai-aria-1.1/#alert).
+
+If this error message is being used to bring attention to a validation error in a form, ensure that the [Error Identification Guidelines from WCAG are followed](https://www.w3.org/WAI/WCAG21/Understanding/error-identification.html).
+
+Note: a noticeable difference between using `alert` and `status` and `log` is that the screen reader will play a sound similar to a “beep” before announcing the message. You can test the `AlertBox` component below with a screen reader.
+
+<Canvas of={stories.Alert} />

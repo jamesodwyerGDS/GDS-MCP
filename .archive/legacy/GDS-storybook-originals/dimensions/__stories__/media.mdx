@@ -1,0 +1,55 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+import viewports from "../../images/viewports.png";
+
+<Meta title="Tokens/Media" />
+
+# Media queries
+
+`import { media } from "@ticketmaster/global-design-system";`
+
+## Available breakpoints
+
+```js
+export const media = {
+  small: "min-width: 512px",
+  medium: "min-width: 1024px",
+  large: "min-width: 1680px",
+};
+```
+
+The individual breakpoints are also exported as `px` values:
+
+```js
+export const breakpoints = {
+  small: "512px",
+  medium: "1024px",
+  large: "1680px",
+};
+```
+
+TM designers should create layouts for **four primary viewport sizes**:
+
+<img src={viewports} alt="Viewports diagram" />
+
+However, these can be extended by individual projects if other breakpoints are needed in-between.
+
+## Example
+
+For example, if a container needs to be narrower on desktop screens, you can set a media query as follows:
+
+```jsx
+import { media } from "@ticketmaster/global-design-system";
+
+export const Container = styled.div`
+  width: 95%;
+
+  @media (${media.medium}) {
+    width: 75%;
+  }
+`;
+```
+
+## Use in GDS components
+
+Most GDS components are **designed to fill 100% of whatever container they are in**. This allows them to **adapt fluidly and scale naturally** as the layout resizes, and **avoids hardcoding sizes** that might break this responsiveness.
+But in rare cases, media queries are used to ensure correct responsive behaviour.
