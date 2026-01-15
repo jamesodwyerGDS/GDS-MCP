@@ -4,46 +4,29 @@ description: "Brief description of the component and its purpose"
 category: "atoms"              # atoms | molecules | organisms
 status: "draft"                # draft | beta | stable | deprecated
 version: "1.0.0"
-updated: "2025-01-06"
+updated: "YYYY-MM-DD"
 
-tags: ["form", "interaction"]
-keywords: ["click", "submit", "action"]
+tags: []
+keywords: []
 
 dependencies: []
-relatedComponents:
-  - name: "RelatedComponent"
-    relationship: "alternative"  # alternative | variant | parent | child
+relatedComponents: []
 
 tokens:
-  colours:
-    primary: { token: "color.action.primary", hex: "#024DDF" }
-    hover: { token: "color.action.primary.hover", hex: "#0141B8" }
-  spacing:
-    paddingX: { token: "space.auditorium", value: "16px" }
-    paddingY: { token: "space.club", value: "8px" }
-  typography:
-    label: "font.body.medium"
+  colours: []
+  spacing: []
+  typography: []
   elevation: []
   breakpoints: []
 
-tailwind:
-  colors:
-    component-primary: "#024DDF"
-    component-hover: "#0141B8"
-  spacing:
-    component-px: "16px"
-    component-py: "8px"
+tailwind: {}
 
-cssVariables:
-  - name: "--component-bg"
-    value: "var(--color-action-primary)"
-  - name: "--component-padding-x"
-    value: "var(--space-auditorium)"
+cssVariables: []
 
 accessibility:
   wcagLevel: "AA"
   keyboardNavigable: true
-  ariaRoles: ["button"]
+  ariaRoles: []
 
 figmaNodeId: null
 figmaFileKey: null
@@ -53,25 +36,23 @@ figmaFileKey: null
 
 ## Overview
 
-Brief description of the component's purpose and primary use cases. This component is used when users need to...
+{Component description from Figma}
 
 ### When to use
 
-- Use this component when...
-- Ideal for scenarios involving...
+- {Use case 1}
+- {Use case 2}
 
 ### When not to use
 
-- Do not use for...
-- Consider alternatives when...
+- {Anti-pattern 1}
+- {Anti-pattern 2}
 
 ## Variants
 
 | Variant | Description |
 |---------|-------------|
-| Primary | Main action, high emphasis |
-| Secondary | Supporting action, medium emphasis |
-| Tertiary | Low emphasis action |
+| {Variant name} | {Variant description} |
 
 ## States
 
@@ -87,8 +68,7 @@ Brief description of the component's purpose and primary use cases. This compone
 
 | Property | Values | Default |
 |----------|--------|---------|
-| variant | primary, secondary, tertiary | primary |
-| size | small, medium, large | medium |
+| {Property name} | {Possible values} | {Default value} |
 
 ## Styling
 
@@ -96,62 +76,57 @@ Brief description of the component's purpose and primary use cases. This compone
 
 | Property | Value |
 |----------|-------|
-| Font | Averta Semibold |
-| Size | 16px |
-| Line Height | 24px |
-| Letter Spacing | 0.32px |
+| Font | {Font family from Figma} |
+| Size | {Font size from Figma} |
+| Line Height | {Line height from Figma} |
+| Letter Spacing | {Letter spacing from Figma} |
 
 ### Spacing
 
 | Area | Token | Value |
 |------|-------|-------|
-| Horizontal padding | Auditorium | 16px |
-| Vertical padding | Club | 8px |
+| {Spacing area} | {Token name} | {Value from Figma} |
 
 ### Colours
 
 | State | Token | Hex |
 |-------|-------|-----|
-| Primary default | Neptune | #024DDF |
-| Primary hover | Neptune Dark | #0141B8 |
+| {State name} | {Token name} | {Hex from Figma} |
+
+### Border Radius
+
+{Border radius value from Figma, if applicable}
 
 ### Elevation
 
 | Level | Value |
 |-------|-------|
-| Default | none |
-| Hover | shadow-sm |
+| {Level name} | {Shadow value from Figma} |
 
 ## Accessibility
 
-- **Keyboard navigation**: Fully accessible via Tab and Enter/Space keys
-- **Screen readers**: Includes proper ARIA labels and announcements
-- **Focus indicators**: Visible focus ring meeting WCAG requirements
-- **Color contrast**: All variants meet 4.5:1 contrast ratio
+- **Keyboard navigation**: {Keyboard interaction details}
+- **Screen readers**: {ARIA and screen reader considerations}
+- **Focus indicators**: {Focus state details}
+- **Color contrast**: {Contrast ratio compliance}
 
 ## Do's and Don'ts
 
 ### Do's
 
-- Use primary variant for the main action in a view
-- Maintain consistent sizing within a context
-- Include clear, action-oriented labels
+- {Best practice 1}
+- {Best practice 2}
 
 ### Don'ts
 
-- Do not use multiple primary actions in the same view
-- Do not use for navigation (use Link instead)
-- Do not override the component's built-in accessibility features
+- {Anti-pattern 1}
+- {Anti-pattern 2}
 
 ## CSS Custom Properties
 
 ```css
 :root {
-  --component-bg: var(--color-action-primary);
-  --component-hover: #0141B8;
-  --component-padding-x: var(--space-auditorium);
-  --component-padding-y: var(--space-club);
-  --component-radius: 8px;
+  /* Generated from Figma tokens */
 }
 ```
 
@@ -162,16 +137,7 @@ Brief description of the component's purpose and primary use cases. This compone
 module.exports = {
   theme: {
     extend: {
-      colors: {
-        component: {
-          primary: '#024DDF',
-          'primary-hover': '#0141B8',
-        }
-      },
-      spacing: {
-        'component-px': '16px',
-        'component-py': '8px'
-      }
+      /* Generated from Figma tokens */
     }
   }
 }
@@ -181,16 +147,14 @@ module.exports = {
 
 | Variable | Type | Value |
 |----------|------|-------|
-| color.action.primary | COLOR | #024DDF |
-| space.auditorium | NUMBER | 16 |
+| {Variable name} | {Type} | {Value from Figma} |
 
 ## Related Components
 
-- [Link](./link.md) - For navigation actions
-- [IconButton](./icon-button.md) - For icon-only actions
+- {Related component links}
 
 ## Changelog
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0.0 | 2025-01-06 | Initial release |
+| 1.0.0 | YYYY-MM-DD | Initial release |

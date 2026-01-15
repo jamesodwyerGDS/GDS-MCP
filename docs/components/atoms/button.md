@@ -56,7 +56,7 @@ tokens:
   typography:
     standard: 'Averta Semibold 16px/24px, letter-spacing 0.32px'
     transactional: 'Averta Semibold 18px/26px, letter-spacing 0.36px, capitalize'
-  borderRadius: 8px
+  borderRadius: 4px
 accessibility:
   wcagLevel: AA
   keyboardNavigable: true
@@ -168,7 +168,7 @@ Each variant supports five states:
 
 ### Border Radius
 
-All buttons use `8px` border radius.
+All buttons use `4px` border radius.
 
 ## Button Widths
 
@@ -268,7 +268,7 @@ All variants display a visible focus ring:
   --button-icon-gap: var(--space-club);
 
   /* Button Shape */
-  --button-radius: 8px;
+  --button-radius: 4px;
 }
 ```
 

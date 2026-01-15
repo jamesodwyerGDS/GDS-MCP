@@ -74,10 +74,15 @@ CHANGELOG.md              # Design system changelog (MUST be updated with any ch
   /skills
     /figma-doc            # /figma-doc skill
       SKILL.md
+    /figma-make-guidelines # /figma-make-guidelines skill
+      SKILL.md
     /project-summary      # /project-summary skill
       SKILL.md
     /resources            # Shared templates for skills
       project-summary-template.md
+
+/guidelines               # Figma Make configuration
+  Guidelines.md           # Tailwind config and design tokens for Figma Make
 
 PROJECT-SUMMARY.md        # High-level project summary for team sharing
 
@@ -151,6 +156,7 @@ Valid statuses: `draft`, `beta`, `stable`, `deprecated`
 - Component filenames use kebab-case (e.g., `button.md`, `date-picker.md`)
 - The `DocumentationGenerator` class is trigger-agnostic (CLI, GitHub Actions, webhooks)
 - Output is markdown documentation with Tailwind utility mappings - no framework-specific code
+- Prioritize GDS design tokens in documentation; use raw values (px, #hex, rem) only when tokens are unavailable
 
 ## Skills
 
@@ -191,6 +197,33 @@ Update the PROJECT-SUMMARY.md with current features, learnings, and Claude tools
 **Output:** Updated PROJECT-SUMMARY.md suitable for sharing with the wider team.
 
 **Template:** Uses `.claude/skills/resources/project-summary-template.md` for consistent structure.
+
+### /figma-make-guidelines
+
+Generate or update the Figma Make guidelines file with complete Tailwind configuration from the design system foundations.
+
+**Usage:**
+```
+/figma-make-guidelines
+```
+
+**What it does:**
+1. Reads foundation docs (color, typography, spacing) to extract current tokens
+2. Reads component docs to extract styling patterns
+3. Generates a comprehensive `guidelines/Guidelines.md` file
+4. Includes complete Tailwind configuration (copy-paste ready)
+5. Updates `CHANGELOG.md` with the update
+
+**Output:** A single `guidelines/Guidelines.md` file optimized for Figma Make to generate matching Tailwind CSS.
+
+**Contains:**
+- Complete `tailwind.config.js` theme.extend block
+- Color palette with hex values and Tailwind class mappings
+- Typography tokens with all properties (size, weight, line-height, letter-spacing)
+- Spacing scale (8px baseline grid)
+- Border radius and color specifications
+- Component styling patterns (buttons, inputs, cards)
+- Critical usage rules
 
 ## Changelog Maintenance
 

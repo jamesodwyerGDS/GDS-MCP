@@ -49,7 +49,8 @@ export class MarkdownTransformer {
         spacing: simplifyTokens(data.tokens?.spacing),
         typography: simplifyTokens(data.tokens?.typography),
         elevation: simplifyTokens(data.tokens?.elevation),
-        breakpoints: data.tokens?.breakpoints || []
+        breakpoints: data.tokens?.breakpoints || [],
+        borderRadius: data.cornerRadius !== undefined ? `${data.cornerRadius}px` : null
       },
       tailwind: this.generateTailwindMappings(data),
       cssVariables: this.generateCSSVariablesList(data),
@@ -313,6 +314,12 @@ ${rows.join('\n')}`;
       }
     }
 
+    // Border Radius
+    if (data.cornerRadius !== undefined) {
+      content += `\n### Border Radius\n\n`;
+      content += `All variants use \`${data.cornerRadius}px\` border radius.\n`;
+    }
+
     return content;
   }
 
@@ -411,6 +418,11 @@ ${cssVars.map(v => `  ${v.name}: ${v.value};`).join('\n')}
       });
     }
 
+    // Border radius
+    if (data.cornerRadius !== undefined) {
+      vars.push({ name: `--${name}-radius`, value: `${data.cornerRadius}px` });
+    }
+
     return vars;
   }
 
@@ -430,7 +442,7 @@ module.exports = {
   }
 
   generateTailwindMappings(data) {
-    const mappings = { colors: {}, spacing: {}, fontSize: {} };
+    const mappings = { colors: {}, spacing: {}, fontSize: {}, borderRadius: {} };
     const name = this.kebabCase(data.name);
     const tokens = data.tokens || {};
 
@@ -467,6 +479,11 @@ module.exports = {
           mappings.fontSize[key] = `${t.value}px`;
         }
       });
+    }
+
+    // Border radius
+    if (data.cornerRadius !== undefined) {
+      mappings.borderRadius[name] = `${data.cornerRadius}px`;
     }
 
     return mappings;

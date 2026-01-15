@@ -46,6 +46,15 @@ Add a new entry when:
 
 ---
 
+## 15th Jan 2026
+
+| Change | Type | JIRA | Figma | Storybook |
+|--------|------|------|-------|-----------|
+| Added `/figma-make-guidelines` skill for generating Tailwind config from design tokens | 🟢 Added | NA | NA | NA |
+| Created `guidelines/Guidelines.md` with complete Tailwind configuration for Figma Make | 🟢 Added | NA | NA | NA |
+
+---
+
 ## 14th Jan 2026
 
 | Change | Type | JIRA | Figma | Notes |
